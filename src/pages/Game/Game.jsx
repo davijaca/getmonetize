@@ -10,7 +10,7 @@ const Game = () => {
           <meta charSet="utf-8" />
           <title>GAME</title>
           <link rel="canonical" href="https://www.smatched.io/" />
-          <link rel="canonical" href="https://www.offerwallmonetization.com/" />
+          <link rel="canonical" href="https://www.smatched-io.com/" />
       </Helmet>
 
       {/* FIRST SECTION */}
