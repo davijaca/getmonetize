@@ -40,9 +40,10 @@ prod:deploy:
     - deploy
   variables:
     GIT_STRATEGY: none
+    PUBLIC_URL: "/smatched-io" # slash is important
   environment:
     name: production
-    url: https://www.offerwallmonetization.com
+    url: https://www.smatched.io
   before_script:
     - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
     - eval $(ssh-agent -s)
