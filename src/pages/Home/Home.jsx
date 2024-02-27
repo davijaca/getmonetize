@@ -25,7 +25,7 @@ const Home = () => {
                 <meta charSet="utf-8" />
                 <title>HOME PAGE</title>
                 <link rel="canonical" href="https://www.smatched.io/" />
-                <link rel="canonical" href="https://www.smatched-io.com/" />
+                <link rel="canonical" href="https://www.offerwallmonetization.com/" />
             </Helmet>
 
             {/* First Home */}
