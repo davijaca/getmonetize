@@ -1,31 +1,8 @@
-image: node:18.18.0
-
-stages:
-  - build
-  - deploy
-
-cache:
-  paths:
-    - node_modules/
-
-
-build:
-  stage: build
-  script:
-    - rm -rf build
-    - CI=false npm install
-    - CI=false npm run build
-    - rm -rf public
-    - cp build/index.html build/404.html
-    - mv build public
-  artifacts:
-    paths:
-      - $CI_PROJECT_DIR/*
-
+# The Docker image that will be used to build your app
+image: "image: node:18.18.0"
 pages:
-  stage: deploy
   script:
-      - ls
+
   artifacts:
     paths:
       - $CI_PROJECT_DIR/*
