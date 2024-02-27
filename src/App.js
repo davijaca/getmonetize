@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './App.module.css';
-import { createHashRouter, RouterProvider, Outlet } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import { AppRoutes } from './common/routes/AppRoutes';
 import Header from './components/Header/Header';
 import Home from './pages/Home/Home';
@@ -11,7 +11,11 @@ import Newspaper from './pages/Newspaper/Newspaper';
 import ExploringOfferwall from './pages/Articles/ExploringOfferwall';
 import BlogArticle from './pages/BlogArticle/BlogArticle';
 import Contact from './pages/Contact/Contact';
+import Mobile from './pages/Mobile/Mobile';
+import BlogAllArticles from './pages/BlogAllArticles/BlogAllArticles';
 import Footer from './components/Footer/Footer';
+import { Helmet } from 'react-helmet';
+import ReactGA from 'react-ga';
 
 function App() {
   const [showFormFooter, setShowFormFooter] = useState(true);
@@ -20,13 +24,14 @@ function App() {
     return (
       <div className={styles.app}>
         <Header />
+        <Helmet/>
         <Outlet />
         <Footer showFormFooter={showFormFooter} />
       </div>
     );
   };
 
-  const router = createHashRouter(
+  const router = createBrowserRouter(
     [
       {
         path: AppRoutes.MAIN,
@@ -79,6 +84,18 @@ function App() {
             element: <Contact />,
             errorElement: <h1> PAGE NOT FOUND 7</h1>,
           },
+
+          {
+            path: AppRoutes.MOBILE,
+            element: <Mobile />,
+            errorElement: <h1> PAGE NOT FOUND 7</h1>,
+          },
+
+          {
+            path: AppRoutes.BLOGALLARTICLES,
+            element: <BlogAllArticles />,
+            errorElement: <h1>HOME PAGE NOT FOUND</h1>,
+          },
         ],
       },
     ],
@@ -91,5 +108,7 @@ function App() {
     </div>
   );
 }
+
+ReactGA.initialize('G-QZV34VEC5N');
 
 export default App;

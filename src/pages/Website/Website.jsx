@@ -67,6 +67,7 @@ const Website = () => {
                 Subscription-based business models have become the standard way
                 to drive user-generated revenue.
               </p>
+              <br />
               <p className={styles.firstMobileText}>
                 However, implementing a paywall introduces a barrier between
                 your product or service and the consumer – with only about 10%
@@ -96,14 +97,14 @@ const Website = () => {
         </div>
 
         <div className={styles.imageSec2Bow}>
-          <img src='./images/website_sec2_bow.png' alt='' />
+          <img src='./images/website_sec2_bow.svg' alt='' />
         </div>
 
         <div className={styles.secondWebsiteContainerBox2}>
           <div className={styles.secondWebsiteContainerBox2Content}>
             <img
               className={styles.imageSec2}
-              src='./images/website_sec2_1.png'
+              src='./images/website_sec2_icon1.svg'
               alt=''
             />
             <p className={styles.textImgSec2}>
@@ -114,7 +115,7 @@ const Website = () => {
           <div className={styles.secondWebsiteContainerBox2Content}>
             <img
               className={styles.imageSec2}
-              src='./images/website_sec2_2.png'
+              src='./images/website_sec2_icon2.svg'
               alt=''
             />
             <p className={styles.textImgSec2}>
@@ -141,37 +142,14 @@ const Website = () => {
         </div>
 
         <div className={styles.secondWebsiteContainerBox2Mobile}>
-          <div className={styles.secondWebsiteContainerBox2ContentMobile}>
-            <img
-              className={styles.imageSec2Mobile}
-              src='./images/website_sec2_1.png'
-              alt=''
-            />
-            <p className={styles.textImgSec2Mobile}>
-              Smatched offers a solution that empowers users to access your
-              premium content by completing surveys and sharing their opinions.
-            </p>
-          </div>
-
-          <div>
-            <img
-              className={styles.imageSec2BowMobile}
-              src='./images/website_sec2_bow_mobile.png'
-              alt=''
-            />
-          </div>
-
-          <div className={styles.secondWebsiteContainerBox2ContentMobile}>
-            <img
-              className={styles.imageSec2Mobile}
-              src='./images/website_sec2_2.png'
-              alt=''
-            />
-            <p className={styles.textImgSec2Mobile}>
-              Users receive rewards, vouchers, tokens and exclusive access to
-              your premium content, in return.
-            </p>
-          </div>
+          <p>
+            Smatched offers a solution that empowers users to access your
+            premium content by completing surveys and sharing their opinions.
+          </p>
+          <p>
+            Users receive rewards, vouchers, tokens and exclusive access to your
+            premium content, in return.
+          </p>
         </div>
       </div>
 
@@ -179,6 +157,8 @@ const Website = () => {
 
       <div className={styles.thirdWebsiteContainer}>
         <div className={styles.thirdLeft}>
+          <div className={styles.thirdLeftBgTop}></div>
+          <div className={styles.thirdLeftBgBottom}></div>
           <img src='./images/website_sec3.png' alt='A monitor' />
         </div>
         <div className={styles.thirdRight}>
@@ -201,6 +181,8 @@ const Website = () => {
 
       <div className={styles.mobileThirdWebsiteContainer}>
         <div className={styles.thirdLeftMobile}>
+          <div className={styles.thirdLeftBgTopMobile}></div>
+          <div className={styles.thirdLeftBgBottomMobile}></div>
           <img src='./images/website_sec3.png' alt='A monitor' />
         </div>
         <div className={styles.thirdRightMobile}>

@@ -23,7 +23,6 @@
     src: url('/public/fonts/Inter/Inter-Regular.ttf');
   }
   
-  /* I did not find class home in the jsx doc to be changed to website (?) */
   .website .website * {
     box-sizing: border-box;
   }
@@ -227,7 +226,7 @@
     width: 315px;
     padding-top: 20px;
   }
-  
+
   /*THIRD SECTION*/
   
   .thirdWebsiteContainer {
@@ -239,10 +238,31 @@
   .mobileThirdWebsiteContainer {
     display: none;
   }
+
+  .thirdLeft {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .thirdLeftBgTop {
+    background-color: #9D8029;
+    box-shadow: 43px -46px 66px 42px rgba(0, 0, 0, 0.4) inset;
+    background: linear-gradient(#A0802A, #1E1B18);
+    height: 690px;
+  }
+
+  .thirdLeftBgBottom {
+    background-color: #9D8029;
+    background: linear-gradient(to top left, #A6862C, #7A611F);
+    border-radius: 0px 0px 120px 0px;
+    height: 111px;
+  }
   
   .thirdLeft > img {
-    /* width: 729px; is for screen 1512px, for screen 1920px I adjusted to:*/
-    width: 800px;
+    margin-top: -588px;
+    margin-left: 200px;   
+    max-width: 607px;
   }
   
   .thirdRight {
@@ -396,9 +416,7 @@
     }
   
     .firstMobileImg {
-      width: 86%;
-      /* width: 335px;
-      height: 257px; */
+      width: 335px;
     }
   
     .firstMobileBottomContent {
@@ -482,6 +500,7 @@
     }
   
     .secondWebsiteContainerBox1Mobile {
+      width: 350px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -489,7 +508,6 @@
     }
   
     .secondLeftMobile {
-      width: 89%;
       color: #07090a;
       font-feature-settings: 'clig' off, 'liga' off;
       font-family: gotham-medium;
@@ -501,7 +519,6 @@
     }
   
     .secondRightMobile {
-      width: 89%;
       color: #07090a;
       font-feature-settings: 'clig' off, 'liga' off;
       font-family: gotham-book;
@@ -514,27 +531,16 @@
     }
   
     .secondWebsiteContainerBox2Mobile {
+      width: 350px;
+      height: 509px;
+      background: url(/public/images/website_sec2_group_mobile.svg) no-repeat center;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
-      margin-top: 55px;
     }
-  
-    .secondWebsiteContainerBox2ContentMobile {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0 36px;
-    }
-  
-    .imageSec2Mobile {
-      width: 90px;
-      height: 90px;
-      z-index: 5;
-    }
-  
-    .textImgSec2Mobile {
+   
+    .secondWebsiteContainerBox2Mobile > p {
       color: #1e1e1e;
       text-align: center;
       font-feature-settings: 'clig' off, 'liga' off;
@@ -543,13 +549,8 @@
       font-style: normal;
       font-weight: 400;
       line-height: 20px;
-      width: 90%;
-      margin-top: 20px;
-    }
-  
-    .imageSec2BowMobile {
-      margin: -133px 0 -26px 30px;
-      width: 86px;
+      width: 86%;    
+      margin-top: 200px;
     }
   
     /*THIRD SECTION*/
@@ -563,17 +564,36 @@
       width: 100%;
       min-height: 852px;
       display: flex;
-      justify-content: center;
       flex-direction: column;
       align-items: center;
+      gap: 40px;
     }
-  
+
     .thirdLeftMobile {
-     margin-left: -32px;
+      width: 361px;
+      display: flex;
+      flex-direction: column;
+      margin-left: -33px;
     }
   
+    .thirdLeftBgTopMobile {
+      background-color: #9D8029;
+      box-shadow: 43px -46px 66px 42px rgba(0, 0, 0, 0.4) inset;
+      background: linear-gradient(#A0802A, #1E1B18);
+      height: 342px;
+    }
+  
+    .thirdLeftBgBottomMobile {
+      background-color: #9D8029;
+      background: linear-gradient(to top left, #A6862C, #7A611F);
+      border-radius: 0px 0px 120px 0px;
+      height: 54px;
+    }
+    
     .thirdLeftMobile > img {
-      width: 361px;
+      margin-top: -289px;
+      margin-left: 45px;   
+      max-width: 300px;
     }
   
     .thirdRightMobile {
@@ -582,6 +602,7 @@
       justify-content: center;
       gap: 24px;
       margin: 56px 21px 75px 18px;
+      width: 354px;
     }
   
     .titleSec3Mobile {
@@ -628,6 +649,7 @@
       justify-content: center;
       gap: 30px;
       margin: 0px 22px 49px 22px;
+      width: 350px;
     }
   
     .titleSec4Mobile {
@@ -684,7 +706,7 @@
     }
   
     .fourthRightMobile > img {
-      width: 95%;
+      width: 353px;
       margin-left: 10px;
     }
   }

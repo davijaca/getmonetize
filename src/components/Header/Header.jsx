@@ -45,7 +45,7 @@ const Header = () => {
                         <nav className='topMenu'>
                             <a className='topMenuItem' href="/">PRODUCT</a>
                             {/*<a className={styles.topMenuItem}>How it Works</a>*/}
-                            <a className='topMenuItem' href="/#/blog">OUR MISSION</a>
+                            <a className='topMenuItem' href="/blog">OUR MISSION</a>
                             <a className='topMenuItem'>INFLUENCER</a>
                             <a className='dropDown'>
                                     <div
@@ -64,32 +64,32 @@ const Header = () => {
                                         <div ref={menuRef} className='dropDownBtn'>
                                             <ul>
                                                 <li>
-                                                <a href='/#/game' onClick={closeMenu}>Game Industry</a>
+                                                <a href='/game' onClick={closeMenu}>Game Industry</a>
                                                 </li>
                                                 <li>
-                                                <a href='/#/nonprofit' onClick={closeMenu}>Nonprofit Companies</a>
+                                                <a href='/nonprofit' onClick={closeMenu}>Nonprofit Companies</a>
                                                 </li>
                                                 <li>
-                                                <a href='/#/newspaper' onClick={closeMenu}>Newspaper Publishing Industry</a>
+                                                <a href='/newspaper' onClick={closeMenu}>Newspaper Publishing Industry</a>
                                                 </li>
                                                 <li>
-                                                <a href='/#/mobile' onClick={closeMenu}>Mobile App Monetization</a>
+                                                <a href='/mobile' onClick={closeMenu}>Mobile App Monetization</a>
                                                 </li>
                                                 <li>
-                                                <a href='/#/website' onClick={closeMenu}>Website Monetization</a>
+                                                <a href='/website' onClick={closeMenu}>Website Monetization</a>
                                                 </li>
                                             </ul>
                                         </div>
                                     }
 
                                 </a>
-                            <a className='topMenuItem' href="/#/blog">BLOG</a>
+                            <a className='topMenuItem' href="/blog">BLOG</a>
 
                         </nav>
                     </div>
 
                     <div className='contact'>
-                        <a href="/#/contact">
+                        <a href="/contact">
                         <div className='contactButton'>HOW IT WORKS</div>
                         </a>
                         <div className='hamburger' onClick={handleClick}>
@@ -108,7 +108,7 @@ const Header = () => {
                                 <a href='#about' onClick={closeMenu}>INFLUENCER</a>
                             </li>
                             <li className='nav-item'>
-                                {/* <a href='/#/contact' onClick={closeMenu}>FOR BUSINESS</a> */}
+                                {/* <a href='/contact' onClick={closeMenu}>FOR BUSINESS</a> */}
                                 <div className='dropDown'>
                                         <div
                                             ref = {mobileBusinessRef}
@@ -126,19 +126,19 @@ const Header = () => {
                                         <div ref={menuRef} className='dropDownBtn'>
                                         <ul>
                                             <li>
-                                            <a href='/#/game' onClick={closeMenu}>Game Industry</a>
+                                            <a href='/game' onClick={closeMenu}>Game Industry</a>
                                             </li>
                                             <li>
-                                            <a href='/#/nonprofit' onClick={closeMenu}>Nonprofit Companies</a>
+                                            <a href='/nonprofit' onClick={closeMenu}>Nonprofit Companies</a>
                                             </li>
                                             <li>
-                                            <a href='/#/newspaper' onClick={closeMenu}>Newspaper Publishing Industry</a>
+                                            <a href='/newspaper' onClick={closeMenu}>Newspaper Publishing Industry</a>
                                             </li>
                                             <li>
-                                            <a href='/#/mobile' onClick={closeMenu}>Mobile App Monetization</a>
+                                            <a href='/mobile' onClick={closeMenu}>Mobile App Monetization</a>
                                             </li>
                                             <li>
-                                            <a href='/#/website' onClick={closeMenu}>Website Monetization</a>
+                                            <a href='/website' onClick={closeMenu}>Website Monetization</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -147,7 +147,7 @@ const Header = () => {
                                 </div>
                             </li>
                             <li className='nav-item'>
-                                <a href='/#/blog' onClick={closeMenu}>BLOG</a>
+                                <a href='/blog' onClick={closeMenu}>BLOG</a>
                             </li>
                         </ul>
                     </div>

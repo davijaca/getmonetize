@@ -42,7 +42,7 @@ prod:deploy:
     GIT_STRATEGY: none
   environment:
     name: production
-    url: https://$DEPLOY_SSH_TARGET
+    url: https://www.offerwallmonetization.com
   before_script:
     - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
     - eval $(ssh-agent -s)

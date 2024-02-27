@@ -1,9 +1,17 @@
 import React from 'react';
 import styles from './Game.module.css';
+import { Helmet } from "react-helmet";
 
 const Game = () => {
   return (
     <div className={styles.gameContainer}>
+
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>GAME</title>
+          <link rel="canonical" href="https://www.smatched.io/" />
+          <link rel="canonical" href="https://www.offerwallmonetization.com/" />
+      </Helmet>
 
       {/* FIRST SECTION */}
       <div className={styles.firstGameContainer}>

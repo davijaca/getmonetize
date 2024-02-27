@@ -1,0 +1,293 @@
+@font-face {
+  font-family: inter-regular;
+  src: url('/public/fonts/Inter/Inter-Regular.ttf');
+}
+
+@font-face {
+  font-family: gotham-medium;
+  src: url('/public/fonts/Gotham/Gotham-Medium.otf');
+}
+
+@font-face {
+  font-family: gotham-book;
+  src: url('/public/fonts/Gotham/Gotham-Book.otf');
+}
+
+.Mobile,
+.Mobile * {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Added 'page' or 'Page' in front of 'Mobile' to not get confused when we
+  are reffering to mobile design */
+
+.pageMobileContainer {
+  width: 100vw;
+  max-width: 1920px;
+  margin: auto;
+  margin-top: -120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.containerToMatchDesign {
+  /* This container is used when the section has a left and a right box.
+  width: 1512px is the current(Jan/2024) design on Figma, so using this container
+  makes easier to position boxes into the section and matches the design.
+  justify-content: flex-start, instead of center is easier to align
+  the boxes from margin left. */
+
+  width: 1512px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.button {
+  margin: 0 auto;
+  display: flex;
+  width: 210px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  background: #fff;
+}
+
+.buttonText {
+  color: #0a0a0a;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-medium;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px;
+}
+
+.titleAllSections {
+  color: #fff;
+  font-family: gotham-medium;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  margin: 0;
+}
+
+.paragraphAllSections {
+  color: #fff;
+  font-family: gotham-book;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0;
+}
+
+/*FIRST SECTION*/
+
+.firstSection{
+  background: url(/public/heroBackground.svg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 950px;
+
+
+}
+
+/*SECOND SECTION*/
+
+/*THIRD SECTION*/
+
+/*FOURTH SECTION*/
+
+/*MOBILE RESPONSIVENESS*/
+
+@media only screen and (max-width: 1130px) and (min-width: 320px) {
+  /* FIRST MOBILE SECTION */
+
+  .firstSection {
+    min-height: 964px;
+    background: url(/public/images/mobile_sec1_bg_mobile.png) no-repeat fixed
+      right;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .firstSectionImage {
+    margin-top: 80px;
+  }
+
+  .firstSectionImage > img {
+    margin-left: -80px;
+  }
+
+  .firstSectionContent {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin: -70px 19px 85px 19px;
+  }
+
+  .firstSectionContent > h1 {
+    font-family: gotham-book;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 43px;
+  }
+
+  .firstSectionContent > h1 > span {
+    font-family: gotham-medium;
+    font-weight: 500;
+  }
+
+  .firstSectionContent > p {
+    /* this is the only font-family inter-regular, maybe it was wrong in the design!; */
+    /* In the design it seems thinner then the current result */
+    font-family: inter-regular;
+  }
+
+  /* SECOND MOBILE SECTION*/
+
+  .secondSection {
+    min-height: 964px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .secondSectionImage {
+    margin-top: 70px;
+  }
+
+  .secondSectionContent {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 10px 23px 70px 19px;
+  }
+
+  .secondSectionContent > h2 {
+    color: #07090a;
+  }
+
+  .secondSectionContent > p {
+    line-height: 24px;
+    color: #07090a;
+  }
+
+  .secondSectionContent > p > span {
+    font-family: gotham-medium;
+    font-weight: 500;
+  }
+
+  /* THIRD MOBILE SECTION*/
+
+  .thirdSection {
+    min-height: 968px;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .thirdSectionContent {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 60px 24px 70px 21px;
+  }
+
+  /* FOURTH MOBILE SECTION*/
+
+  .fourthSection {
+    min-height: 1134px;
+    background: url(/public/images/mobile_sec4_bg_mobile.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fourthSectionContent {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 50px 24px 80px 21px;
+  }
+
+  .fourthSectionContent > h2 {
+    text-align: center;
+  }
+
+  .fourthSectionContent > p {
+    text-align: center;
+  }
+
+  .fourthSectionContent > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .fourthSectionContent > ul > li {
+    color: #fff;
+    font-family: gotham-book;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .fourthSectionContent > ul > li > img {
+    margin: 6px 20px -6px 0;
+  }
+
+  .fourthSectionImageMobile {
+    margin-top: 80px;
+  }
+
+  .fourthSectionImageMobile > img {
+    margin: -13px 0px -4px 551px;
+  }
+
+  .bottomBand {
+    background-color: #101010;
+    min-height: 65px;
+  }
+
+  .bottomBand > img {
+    width: 224px;
+    height: 413px;
+    margin: -354px 555px 0px 309px;
+  }
+}

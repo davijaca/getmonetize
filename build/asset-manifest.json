@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.045e2002.css",
+    "main.js": "/static/js/main.8d23c336.js",
+    "static/js/592.d86351a0.chunk.js": "/static/js/592.d86351a0.chunk.js",
+    "static/media/heroExplore.png": "/static/media/heroExplore.de8ec6d057a1c94670ae.png",
+    "static/media/headerBg.svg": "/static/media/headerBg.76791009dbfb8fcd0385.svg",
+    "static/media/backgthird.png": "/static/media/backgthird.d7b2b2ab90438811c381.png",
+    "static/media/mobile_sec4_bg_mobile.png": "/static/media/mobile_sec4_bg_mobile.46d8ac748aaa6c7e1cc5.png",
+    "static/media/Inter-SemiBold.ttf": "/static/media/Inter-SemiBold.6058d3da655fb35169c2.ttf",
+    "static/media/Inter-Regular.ttf": "/static/media/Inter-Regular.9ca9ba81e9dcaa12b3a1.ttf",
+    "static/media/mobile_sec1_bg_mobile.png": "/static/media/mobile_sec1_bg_mobile.9e9d74405cd6be92610f.png",
+    "static/media/Gotham-Medium.otf": "/static/media/Gotham-Medium.a52599fa8cce74bab773.otf",
+    "static/media/Gotham-Book.otf": "/static/media/Gotham-Book.7f34eb053257cab413dc.otf",
+    "static/media/Gotham-Bold.otf": "/static/media/Gotham-Bold.eaee1032db0d2ff750d2.otf",
+    "static/media/Gotham-Light.otf": "/static/media/Gotham-Light.a21d1577f411612a2753.otf",
+    "static/media/fifthHomeImage.svg": "/static/media/fifthHomeImage.4ab0e6ca877edf60053d.svg",
+    "static/media/newsletterBg.svg": "/static/media/newsletterBg.8c42924aa62bbeb6df27.svg",
+    "static/media/heroBackground.svg": "/static/media/heroBackground.e1782f19bd91b28785b9.svg",
+    "static/media/fifthHomeBg.svg": "/static/media/fifthHomeBg.70c6c424b7a2d4149f74.svg",
+    "static/media/sendButton.svg": "/static/media/sendButton.c2157983cbc6c219c1c5.svg",
+    "static/media/Sec2firstImg.svg": "/static/media/Sec2firstImg.5c6ed80cdfbe0fbdd3a6.svg",
+    "static/media/website_sec2_group_mobile.svg": "/static/media/website_sec2_group_mobile.df32daf7aca66473a0fe.svg",
+    "static/media/mobileBG.svg": "/static/media/mobileBG.53542382c210d41c0361.svg",
+    "static/media/heroBackgroundMobile.svg": "/static/media/heroBackgroundMobile.94d95033082a4d201270.svg",
+    "static/media/bulletListIcon.svg": "/static/media/bulletListIcon.c222ba38e4d020388bec.svg",
+    "index.html": "/index.html",
+    "main.045e2002.css.map": "/static/css/main.045e2002.css.map",
+    "main.8d23c336.js.map": "/static/js/main.8d23c336.js.map",
+    "592.d86351a0.chunk.js.map": "/static/js/592.d86351a0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.045e2002.css",
+    "static/js/main.8d23c336.js"
+  ]
+}
