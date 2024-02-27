@@ -1,53 +1,30 @@
-image: node:18.18.0
-
-stages:
-  - build
-  - deploy
-
-cache:
-  paths:
-    - node_modules/
-
-
-build:
-  stage: build
-  script:
-    - rm -rf build
-    - CI=false npm install
-    - CI=false npm run build
-    - rm -rf public
-    - cp build/index.html build/404.html
-    - mv build public
-  artifacts:
-    paths:
-      - $CI_PROJECT_DIR/*
-
+# The Docker image that will be used to build your app
+image: "image: node:18.18.0"
 pages:
-  stage: deploy
   script:
-      - ls
+    - "image: node:18.18.0  stages:   - build   - deploy  cache:   paths:     -
+      node_modules/   build:   stage: build   script:     - rm -rf build     -
+      CI=false npm install     - CI=false npm run build     - rm -rf
+      public     - cp build/index.html build/404.html     - mv build
+      public   artifacts:     paths:       - $CI_PROJECT_DIR/*  pages:   stage:
+      deploy   script:       - ls   artifacts:     paths:       -
+      $CI_PROJECT_DIR/*  prod:deploy:   stage: deploy   when:
+      manual   only:     - main   image: docker:latest   tags:     -
+      deploy   variables:     GIT_STRATEGY: none     PUBLIC_URL:
+      \"/smatched-io\" # slash is important   environment:     name:
+      production     # url: \"\"   before_script:     - 'which ssh-agent || (
+      apt-get update -y && apt-get install openssh-client -y )'     - eval
+      $(ssh-agent -s)     - echo \"$DEPLOY_SSH_PRIVATE_KEY\" | tr -d '\\r' |
+      ssh-add - > /dev/null     - '[ -d ~/.ssh ] || ( mkdir -p ~/.ssh && chmod
+      700 ~/.ssh )'   script:     - LC_GL_TOKEN=$DEPLOY_API_TOKEN
+      LC_GL_PROJECT_ID=$CI_PROJECT_ID LC_GL_PIPELINE_ID=$CI_PIPELINE_ID
+      LC_GL_COMMIT_SHORT_SHA=$CI_COMMIT_SHORT_SHA ssh -o SendEnv=LC_* -o
+      'StrictHostKeyChecking no' -tt $DEPLOY_SSH_TARGET     - ssh-agent -k"
   artifacts:
     paths:
-      - $CI_PROJECT_DIR/*
-
-prod:deploy:
-  stage: deploy
-  when: manual
-  only:
-    - main
-  image: docker:latest
-  tags:
-    - deploy
-  variables:
-    GIT_STRATEGY: none
-  environment:
-    name: production
-    url: https://www.offerwallmonetization.com
-  before_script:
-    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
-    - eval $(ssh-agent -s)
-    - echo "$DEPLOY_SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
-    - '[ -d ~/.ssh ] || ( mkdir -p ~/.ssh && chmod 700 ~/.ssh )'
-  script:
-    - LC_GL_TOKEN=$DEPLOY_API_TOKEN LC_GL_PROJECT_ID=$CI_PROJECT_ID LC_GL_PIPELINE_ID=$CI_PIPELINE_ID LC_GL_COMMIT_SHORT_SHA=$CI_COMMIT_SHORT_SHA ssh -o SendEnv=LC_* -o 'StrictHostKeyChecking no' -tt $DEPLOY_SSH_TARGET
-    - ssh-agent -k
+      # The folder that contains the files to be exposed at the Page URL
+      - public
+  rules:
+    # This ensures that only pushes to the default branch will trigger
+    # a pages deploy
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
