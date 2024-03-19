@@ -13,7 +13,10 @@ const SectionList = ({ title, body, subSections }) => {
       <div className={styles.subSectionItems}>
         {subSections.map((subSectionItem) => {
           return (
-            <section className={styles.subSectionItem}>
+            <section
+              key={subSectionItem.title}
+              className={styles.subSectionItem}
+            >
               <h3 className={styles.subSectionItem__title}>
                 {subSectionItem.title}
               </h3>

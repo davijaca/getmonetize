@@ -13,7 +13,7 @@ const SectionListWithBulletPoints = ({ title, body, subSections }) => {
       <ul className={styles.subSectionItems}>
         {subSections.map((subSectionItem) => {
           return (
-            <li>
+            <li key={subSectionItem.title}>
               <section className={styles.subSectionItem}>
                 <h3 className={styles.subSectionItem__title}>
                   {subSectionItem.title}

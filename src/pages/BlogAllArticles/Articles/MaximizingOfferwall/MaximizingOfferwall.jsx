@@ -21,8 +21,8 @@ const article = {
   title:
     'Maximizing Offerwall Monetization: Best Practices for Conversions and Retention',
   heroImg: {
-    desktop: "/images/MaximizingOfferwall_Hero_Img.png",
-    mobile: "/images/MaximizingOfferwall_Hero_Img_mobile.png",
+    desktop: '/images/MaximizingOfferwall_Hero_Img.png',
+    mobile: '/images/MaximizingOfferwall_Hero_Img_mobile.png',
   },
   metadata: {
     readTime: '8 min',
@@ -111,8 +111,8 @@ const article = {
     {
       type: 'image',
       sources: {
-        desktop: "/images/MaximizingOfferwall_Img.svg",
-        mobile: "/images/MaximizingOfferwall_Img_mobile.png",
+        desktop: '/images/MaximizingOfferwall_Img.svg',
+        mobile: '/images/MaximizingOfferwall_Img_mobile.png',
       },
     },
     {
@@ -187,7 +187,7 @@ const MaximizingOfferwall = () => {
           {nextArticles.map((article) => {
             return (
               <ReadNextArticleCard
-                key={article._id}
+                key={article.id}
                 image={article.image}
                 title={article.title}
                 readTime={article.infos.readTime}

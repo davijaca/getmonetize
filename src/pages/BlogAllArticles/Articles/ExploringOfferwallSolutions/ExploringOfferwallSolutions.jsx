@@ -21,8 +21,8 @@ const article = {
   title:
     'Exploring Offerwall Solutions for Monetization and Retention: a Comparative Analysis',
   heroImg: {
-    desktop: "/images/ExploringOfferwall_Hero_Img.svg",
-    mobile: "/images/allArticleleft2.png",
+    desktop: '/images/ExploringOfferwall_Hero_Img.svg',
+    mobile: '/images/allArticleleft2.png',
   },
   metadata: {
     readTime: '7 min',
@@ -73,8 +73,8 @@ const article = {
     {
       type: 'image',
       sources: {
-        desktop: "/images/ExploringOfferwall_Img.png",
-        mobile: "/images/ExploringOferwall_Img_mobile.png",
+        desktop: '/images/ExploringOfferwall_Img.png',
+        mobile: '/images/ExploringOferwall_Img_mobile.png',
       },
     },
     {
@@ -149,7 +149,7 @@ const ExploringOfferwallSolutions = () => {
           {nextArticles.map((article) => {
             return (
               <ReadNextArticleCard
-                key={article._id}
+                key={article.id}
                 image={article.image}
                 title={article.title}
                 readTime={article.infos.readTime}

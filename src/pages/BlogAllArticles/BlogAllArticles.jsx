@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useState } from 'react';
 import { articlesData } from './utils/articlesData';
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet';
 import ArticleCard from './ArticleCard/ArticleCard';
 import Pagination from './Pagination/Pagination';
 
@@ -34,7 +34,7 @@ const BlogAllArticles = ({
   });
 
   useEffect(() => {
-    // Will call the slice function again to set the correspondent list of articles with the page selected
+    // Will call the slice function again to set the correspondent list of articles with if a new page is selected
     // the displayArticlesList will be mapped and displayed inside the render to render the article Cards
     setDisplayedArticlesList(
       getArticlesForPage(articlesList, currentPage, articlesPerPage)
@@ -58,9 +58,9 @@ const BlogAllArticles = ({
   return (
     <>
       <div className={styles.headerAllArticles}>
-      <Helmet>
+        <Helmet>
           <title>All Articles</title>
-      </Helmet>
+        </Helmet>
         <div className={styles.introColorsContainer}>
           <img
             src="/images/blogAllArticlesIntroFrameColors.svg"
@@ -96,7 +96,7 @@ const BlogAllArticles = ({
             {displayedArticlesList.map((article) => {
               return (
                 <ArticleCard
-                  key={article._id}
+                  key={article.id}
                   image={article.image}
                   title={article.title}
                   readTime={article.infos.readTime}
@@ -111,10 +111,9 @@ const BlogAllArticles = ({
 
           //  DISABLED TEMPORARILY UNTIL MORE ARTICLES ARE PUBLISHED
 
-            // currentPage={currentPage}
-            // numberOfPages={numberOfPages}
-            // onPaginationChange={handlePaginationChange}
-            
+          // currentPage={currentPage}
+          // numberOfPages={numberOfPages}
+          // onPaginationChange={handlePaginationChange}
           />
         </div>
       </div>

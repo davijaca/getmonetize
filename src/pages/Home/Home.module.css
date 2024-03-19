@@ -126,7 +126,7 @@ h2 {
 }
 
 .mainFirst {
-    width: 1110px;
+    width: 1220px;
     display: flex;
     margin-top: 100px;
 }
@@ -139,73 +139,68 @@ h2 {
 }
 
 .text {
-    color: var(--White, #FFF);
-    font-family: gotham-light;
+    color: var(--White, #fff);
+    font-family: gotham-medium;
     font-size: 80px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 131.5%;
-    /* 72.325px */
+    font-weight: 500;
+    line-height: 109%;
     z-index: 5;
 }
 
 .text2 {
-    color: var(--White, #FFF);
-    font-family: gotham-light;
+    color: var(--White, #fff);
+    font-family: gotham-book;
     font-size: 80px;
     font-style: normal;
     font-weight: 400;
-    line-height: 131.5%;
-    /* 72.325px */
-    z-index: 5;
+    line-height: 109%;
+    z-index: 5
 }
 
-
 .parag {
-    width: 100%;
+    width: 102%;
     padding-top: 30px;
     padding-bottom: 60px;
 }
 
 .innerParag {
-    color: #FFF;
+    color: #fff;
     width: 80%;
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: gotham-light;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: gotham-book;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 29px;
-
-}
+  }
+  
+  .innerParag > span {
+    font-family: gotham-medium;
+    font-weight: 500;
+  }
 
 .buttonText {
-    width: 90%;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    z-index: 5;
-    margin-bottom: 30px;
-}
-
-.buttonText1, .buttonText2 {
-    border: 1px solid #FFF;
-    width: 220px;
-    height: 46px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
+    width: 210px;
+    height: 60px;
     justify-content: center;
-    background-color: #FFFFFF;
-    color: var(--Modal-grey-1, #000000);
-    text-align: center;
-    font-family: gotham-light, sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    z-index: 5;
+    align-items: center;
+    border: 1px solid #fff;
+    background: #fff;
 }
+.buttonText1 {
+    color: #0a0a0a;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: gotham-medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+  }
+
+
 
 .buttonText2 {
     width: 320px;
@@ -213,6 +208,7 @@ h2 {
 }
 
 .bottomHero {
+    margin-top: 70px;
     width: 100%;
     height: 100px;
     display: flex;
@@ -232,8 +228,8 @@ h2 {
     color: #FFF;
     width: 200px;
     font-feature-settings: 'clig'off, 'liga'off;
-    font-family: gotham-light;
-    font-size: 12.6px;
+    font-family: gotham-book;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
@@ -246,7 +242,7 @@ h2 {
     flex-shrink: 0;
     color: #FFF;
     font-feature-settings: 'clig'off, 'liga'off;
-    font-family: gotham-light;
+    font-family: gotham-medium;
     font-size: 50px;
     font-style: normal;
     font-weight: 500;
@@ -254,8 +250,6 @@ h2 {
     /* 60% */
     letter-spacing: -2.25px;
 }
-
-
 
 .bottomHero2 {
     display: flex;
@@ -266,7 +260,7 @@ h2 {
     flex-shrink: 0;
     color: #FFF;
     font-feature-settings: 'clig'off, 'liga'off;
-    font-family: gotham-light;
+    font-family: gotham-medium;
     font-size: 50px;
     font-style: normal;
     font-weight: 500;
@@ -275,18 +269,11 @@ h2 {
     letter-spacing: -2.25px;
 }
 
-
-
-
-
 .leftMain {
-    width: 50%;
     display: flex;
     align-items: center;
     justify-content: left;
     z-index: 5;
-
-
 }
 
 .leftImgInfo {
@@ -298,20 +285,10 @@ h2 {
 }
 
 .leftImg {
-    width: 600px;
-    height: 600px;
+    width: 750px;
+    height: 710px;
     transition: all 2s ease;
 }
-
-/*
-.leftImg:hover {
-    overflow: hidden;
-    transform:  scale(1.05);
-    transition: all 2s ease-in-out;
-}
-*/
-
-
 
 .blog {
     font-size: 80px;
@@ -356,7 +333,7 @@ h2 {
 }
 
 .secondHomeContainerBox1 {
-    width: 1100px;
+    width: 1220px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -374,16 +351,14 @@ h2 {
 }
 
 .secondLeft {
-    color: #1E1E1E;
-
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: gotham-light;
-    font-size: 47.7px;
+    color: #1e1e1e;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: gotham-medium;
+    font-size: 53px;
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
-    /* 63.6px */
-    letter-spacing: -0.265px;
+    letter-spacing: -0.5px;
 }
 
 .secondRight {
@@ -393,19 +368,24 @@ h2 {
 }
 
 .innerAnOfferwall {
-    width: 76%;
+    width: 87%;
 }
 
 .anOfferwallParag {
-    color: var(--Primary-Black-1, #1E1E1E);
-    font-family: gotham-light;
+    color: var(--Primary-Black-1, #1e1e1e);
+    font-family: gotham-book;
     font-size: 18px;
     font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 30px;
     text-align: left;
-}
-
+  }
+  
+  .anOfferwallParag > span {
+    font-family: gotham-medium;
+    font-weight: 500;
+  }
+  
 .secondHomeContainerBox2 {
     margin-top: 450px;
     display: flex;
@@ -417,6 +397,7 @@ h2 {
 .image1 {
     min-width: 1920px;
     max-width: 1920px;
+    /* margin-top: -10px; */
 }
 
 .secondHomeContainerBox3 {
@@ -436,7 +417,7 @@ h2 {
 }
 
 .secondImg {
-    background: url(/public/Sec2firstImg.svg) no-repeat;
+    background: url(/public/Sec2secondImg.svg) no-repeat;
     color: #000000;
     width: 200px;
     height: 200px;
@@ -445,7 +426,7 @@ h2 {
 }
 
 .thirdImg {
-    background: url(/public/Sec2firstImg.svg) no-repeat;
+    background: url(/public/Sec2thirdImg.svg) no-repeat;
     color: #000000;
     width: 200px;
     height: 200px;
@@ -454,7 +435,7 @@ h2 {
 }
 
 .fourthImg {
-    background: url(/public/Sec2firstImg.svg) no-repeat;
+    background: url(/public/Sec2fourthImg.svg) no-repeat;
     color: #000000;
     width: 200px;
     height: 200px;
@@ -470,6 +451,18 @@ h2 {
     height: 100px;
     margin-top: 50px;
 }
+
+.secondHomeContainerBox4 > div {
+    color: #1e1e1e;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: gotham-medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20.5px;
+    width: 200px;
+  }
 
 
 .firstImgText {
@@ -529,12 +522,12 @@ h2 {
 
 .thirdHomeContainer {
     width: 100%;
-    min-height: 950px;
+    min-height: 850px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 950px;
+    height: 850px;
 }
 
 .mobileThirdHomeContainer {
@@ -570,8 +563,8 @@ h2 {
 
 .thirdSectionLeftBG {
     display: block;
-    width: 860px;
-    height: 640px;
+    width: 930px;
+    height: 750px;
     margin-right: 100px;
     border-radius: 0px 0px 120px 0px;
     background: #1E1E1E;
@@ -584,15 +577,20 @@ h2 {
     display: flex;
     justify-content: flex-end;
     margin: auto;
-    margin-left: 150px;
-    margin-top: 100px;
+    margin-left: 178px;
+    margin-top: 50px;
 }
+
+.thirdHomeImage > img {
+    width: 847px;
+    height: 931px;
+  }
 
 .thirdSectionRight {
     width: 50%;
     display: flex;
     flex-direction: column;
-    margin-top: 170px;
+    margin-top: 120px;
     margin-left: 100px;
 
 }
@@ -605,34 +603,30 @@ h2 {
 
 .thirdSectionRightH1,
 .with {
-    color: #1E1E1E;
-
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: gotham-light;
-    font-size: 47.7px;
+    color: #1e1e1e;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: gotham-medium;
+    font-size: 53px;
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
-    /* 63.6px */
 }
 
 
 .thirdSectionRightH2 {
-    width: 450px;
     display: flex;
-
     margin-top: -20px;
+    margin-bottom: 50px;
 }
 
 .thirdSectionRightList {
     color: var(--White, black);
-    font-family: gotham-light, sans-serif;
+    font-family: gotham-book;
     width: 474px;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    height: 110px;
+    line-height: 30px;
 }
 
 .thirdSectionRightList>li {
@@ -643,35 +637,30 @@ h2 {
     background-repeat: no-repeat;
     padding-left: 50px;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-left: -40px;
 }
 
 .buttonTextGold {
-    width: 100%;
     display: flex;
-    z-index: 5;
-    margin-top: 230px;
-}
-
-.buttonText1Gold {
-    border: 1px solid #A18129;
-    background: #A18129;
-    width: 220px;
-    height: 46px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
+    width: 210px;
+    height: 60px;
     justify-content: center;
-    color: var(--Modal-grey-1, #fff);
+    align-items: center;
+    border: 1px solid #a18129;
+    background: #a18129;
+  }
+  
+  .buttonText1Gold {
+    color: #fff;
     text-align: center;
-    font-family: gotham-light, sans-serif;
-    font-size: 18px;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: gotham-medium;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    z-index: 5;
-}
+    font-weight: 500;
+    line-height: 38px;
+  }
 
 
 /*FOURTH SECTION*/
@@ -723,7 +712,7 @@ h2 {
 
 .fourthHomeBox2 {
     height: 670px;
-    width: 1100px;
+    width: 1220px;
     display: flex;
     justify-content: center;
     align-items: center;

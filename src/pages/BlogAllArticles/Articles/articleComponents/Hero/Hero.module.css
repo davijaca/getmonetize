@@ -50,6 +50,33 @@
   gap: 10px;
 }
 
+/* Extra Div (navbar background color)*/
+.extraDiv_active,
+.extraDiv {
+  display: none;
+}
+/* Extra Div (navbar background color) Desktop */
+@media only screen and (min-width: 1531px) {
+  .extraDiv {
+    display: none;
+  }
+
+  .extraDiv_active {
+    display: block;
+    position: fixed;
+    opacity: 0.89;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+
+  .extraDiv_img {
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
 /* Desktop style */
 @media only screen and (min-width: 769px) {
   /* Page Hero Desktop */

@@ -20,7 +20,6 @@ h2 {
     max-width: 1920px;
     margin: auto;
     margin-top: -120px;
-    margin-left: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -148,7 +147,7 @@ h2 {
     border: 1px solid #FFF;
     width: 220px;
     height: 46px;
-    flex-shrink: 0;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -206,9 +205,10 @@ h2 {
 }
 
 .leftImg {
-    width:1000px;
-    height:875px;
-    transition: all 2s ease;
+    width:875px;
+    height:750px;
+    margin-right: 200px;
+
     
 }
 
@@ -508,21 +508,25 @@ h2 {
     height: 950px;
     width: 100%;
     display: flex;
+    justify-content: center;
 
 }
 
 
 .thirdSectionLeft {
-    width: 770px;
+    /* width: 770px; */
     height: inherit;
     display: flex;
     justify-content: center;
-    margin-top: auto;
+    margin-top: 250px;
+    margin-left: 100px;
+    margin-right: -80px
 }
 
 .thirdSectionLeft>img {
-    width: 600px;
-    flex-shrink: 0;
+    width: 640px;
+    height: 440px;
+    
 }
 
 
@@ -638,7 +642,9 @@ h2 {
 }
 
 .fourthNewsImage img {
-    width: 120%; 
+    width: 80%; 
+    margin-top: 220px;
+    margin-right: 200px
     
 }
 
@@ -709,7 +715,7 @@ h2 {
     background: #A18129;
     width: 220px;
     height: 46px;
-    flex-shrink: 0;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -855,7 +861,7 @@ h2 {
         border: 1px solid #FFF;
         width: 210px;
         height: 50px;
-        flex-shrink: 0;
+        
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1363,7 +1369,7 @@ h2 {
         background: #A18129;
         width: 220px;
         height: 46px;
-        flex-shrink: 0;
+        
         display: flex;
         align-items: center;
         justify-content: center;

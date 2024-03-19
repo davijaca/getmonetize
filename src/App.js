@@ -10,6 +10,7 @@ import Website from './pages/Website/Website';
 import Newspaper from './pages/Newspaper/Newspaper';
 import ExploringOfferwall from './pages/Articles/ExploringOfferwall';
 import BlogArticle from './pages/BlogArticle/BlogArticle';
+import HowItWorks from './pages/HowItWorks/HowItWorks';
 import Contact from './pages/Contact/Contact';
 import Mobile from './pages/Mobile/Mobile';
 import BlogAllArticles from './pages/BlogAllArticles/BlogAllArticles';
@@ -83,6 +84,12 @@ function App() {
             path: AppRoutes.CONTACT,
             element: <Contact />,
             errorElement: <h1> PAGE NOT FOUND 7</h1>,
+          },
+
+          {
+            path: AppRoutes.HOWITWORKS,
+            element: <HowItWorks />,
+            errorElement: <h1> PAGE NOT FOUND 8</h1>
           },
 
           {

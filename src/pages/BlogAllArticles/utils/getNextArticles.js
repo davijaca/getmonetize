@@ -1,6 +1,6 @@
 export const getNextArticles = (currentArticleId, articleList = []) => {
   const currentIndex = articleList.findIndex(
-    ({ _id }) => _id === currentArticleId
+    ({ id }) => id === currentArticleId
   );
 
   if (currentIndex === -1 || !articleList.length) {

@@ -19,8 +19,8 @@ const article = {
   id: 2,
   title: 'What is an Offerwall?\nExploring the various types and benefits',
   heroImg: {
-    desktop: "/images/whatIsAnOfferwall_Hero_Img.png",
-    mobile: "/images/whatIsAnOfferwall_Hero_Img_mobile.png",
+    desktop: '/images/whatIsAnOfferwall_Hero_Img.png',
+    mobile: '/images/whatIsAnOfferwall_Hero_Img_mobile.png',
   },
   metadata: {
     readTime: '8 min',
@@ -64,8 +64,8 @@ const article = {
     {
       type: 'image',
       sources: {
-        desktop: "/images/whatIsAnOfferwall_Img.png",
-        mobile: "/images/whatIsAnOfferwall_Img_mobile.png"
+        desktop: '/images/whatIsAnOfferwall_Img.png',
+        mobile: '/images/whatIsAnOfferwall_Img_mobile.png',
       },
     },
     {
@@ -165,7 +165,7 @@ const WhatIsAnOfferwall = () => {
           {nextArticles.map((article) => {
             return (
               <ReadNextArticleCard
-                key={article._id}
+                key={article.id}
                 image={article.image}
                 title={article.title}
                 readTime={article.infos.readTime}

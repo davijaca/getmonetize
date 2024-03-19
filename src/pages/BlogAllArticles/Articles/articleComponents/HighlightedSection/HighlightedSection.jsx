@@ -15,7 +15,7 @@ const HighlightedSection = ({ body }) => {
           <div className={styles.icons_wrapper}>
             <img
               role="button"
-              src="/images/share.svg"
+              src="/images/share_grey.svg"
               className={styles.icons}
               alt=""
             />

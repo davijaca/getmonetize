@@ -11,7 +11,7 @@ const Mobile = () => {
           <img
             srcset='./images/mobile_sec1_mobile.png 260w, ./images/mobile_sec1_web.png 600w'
             sizes='(max-width: 1130px) 260px,
-         600px'
+        640px'
             src='./images/mobile_sec1_web.png'
             alt='Two smartphones'
           />
@@ -24,10 +24,8 @@ const Mobile = () => {
           </h1>
           <p className={styles.paragraphAllSections}>
             Only around 10% of users remain active 1 week after installation,
-            offering users more choice is crucial for generating revenue.
-          </p>
-          <p className={styles.paragraphAllSections}>
-            One popular approach is leveraging mobile offerwalls, which provide
+            offering users more choice is crucial for generating revenue. One
+            popular approach is leveraging mobile offerwalls, which provide
             present users with a variety of offers, surveys or app testing
             opportunities in exchange for access to premium content, vouchers or
             rewards.
@@ -42,7 +40,10 @@ const Mobile = () => {
       <div className={styles.secondSection}>
         <div className={styles.secondSectionImage}>
           <img
-            src='./images/mobile_sec2_mobile.png'
+            srcset='./images/mobile_sec2_mobile.png 260w, ./images/mobile_sec2_web.png 600w'
+            sizes='(max-width: 1130px) 380px,
+        640px'
+            src='./images/mobile_sec2_web.png'
             alt='A box shaped as a smartphone with coins inside'
           />
         </div>
@@ -74,7 +75,10 @@ const Mobile = () => {
       <div className={styles.thirdSection}>
         <div className={styles.thirdSectionImage}>
           <img
-            src='./images/mobile_sec3_mobile.png'
+            srcset='./images/mobile_sec3_mobile.png 260w, ./images/mobile_sec3_web.png 600w'
+            sizes='(max-width: 1130px) 320px,
+        600px'
+            src='./images/mobile_sec3_web.png'
             alt='Hands handle a smartphones'
           />
         </div>
@@ -125,22 +129,19 @@ const Mobile = () => {
             <div className={styles.buttonText}>BOOK A DEMO</div>
           </Link>
         </div>
-        <div className={styles.fourthSectionImageMobile}>
-          <img src='./images/mobile_sec4_phone2_mobile.png' alt='Smartphones' />
-          <div className={styles.bottomBand}>
-            <img
-              src='./images/mobile_sec4_phone1_mobile.png'
-              alt='Smartphone'
-            />
-          </div>
+        <div className={styles.fourthSectionImage}>
+          <img
+            className={styles.groupSmartphones}
+            src='./images/mobile_sec4_phones_group.png'
+            alt='Smartphones'
+          />
+          <div className={styles.bottomBand}></div>
+          <img
+            className={styles.oneSmartphone}
+            src='./images/mobile_sec4_phone2.png'
+            alt='Smartphone'
+          />
         </div>
-
-        {/* <div className={styles.fourthSectionImageDesktop}>
-          <img src='./images/mobile_sec4_phone_group_desktop.png' alt='Smartphones' />
-          <div className={styles.bottomBand}>
-            <img src='./images/mobile_sec4_phone2_desktop.png' alt='Smartphone' />
-          </div>
-        </div> */}
       </div>
     </div>
   );

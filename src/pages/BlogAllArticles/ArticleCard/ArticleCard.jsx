@@ -22,7 +22,26 @@ const ArticleCard = ({
             {title}
           </h1>
           <div className={styles.articlesInfo}>
-            <div>{readTime} read</div> <div>{publishedDate}</div>
+            <div className={styles.info_wrapper}>
+              <span className={styles.span_dot}>
+                <img
+                  src={'/images/Ellipse.svg'}
+                  className={styles.elipse}
+                  alt=""
+                />
+              </span>
+              {readTime} read
+            </div>{' '}
+            <div className={styles.info_wrapper}>
+              <span className={styles.span_dot}>
+                <img
+                  src={'/images/Ellipse.svg'}
+                  className={styles.elipse}
+                  alt=""
+                />
+              </span>
+              {publishedDate}
+            </div>
           </div>
           {/* You can change how many lines the cards will display at line=() below */}
           <TextTruncate line={3} element="p" text={text} />
