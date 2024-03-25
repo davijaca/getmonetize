@@ -22,7 +22,6 @@ prod:build:
     DOCKER_DRIVER: overlay2
     DOCKER_TLS_CERTDIR: ''
   script:
-    - env | grep '^\(PROD_\)\?BUILD_ENV_' | sed -e  's/\(PROD_\)\?BUILD_ENV_//g' > .env
     - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
     - DOCKER_BUILDKIT=1 docker build -t $IMAGE:latest-prod --target=container .
     - docker tag $IMAGE:latest-prod $IMAGE:${CI_COMMIT_SHORT_SHA}-prod
