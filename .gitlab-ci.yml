@@ -8,27 +8,26 @@ cache:
   paths:
     - node_modules/
 
-
-build:
+prod:build:
   stage: build
+  only:
+    - main
+  image: docker:latest
+  services:
+    - name: docker:dind
+      alias: dockerhost
+  variables:
+    IMAGE: $CI_REGISTRY_IMAGE
+    DOCKER_HOST: tcp://dockerhost:2375/
+    DOCKER_DRIVER: overlay2
+    DOCKER_TLS_CERTDIR: ''
   script:
-    - rm -rf build
-    - CI=false npm install
-    - CI=false npm run build
-    - rm -rf public
-    - cp build/index.html build/404.html
-    - mv build public
-  artifacts:
-    paths:
-      - $CI_PROJECT_DIR/*
-
-pages:
-  stage: deploy
-  script:
-      - ls
-  artifacts:
-    paths:
-      - $CI_PROJECT_DIR/*
+    - env | grep '^\(PROD_\)\?BUILD_ENV_' | sed -e  's/\(PROD_\)\?BUILD_ENV_//g' > .env
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - DOCKER_BUILDKIT=1 docker build -t $IMAGE:latest-prod --target=container .
+    - docker tag $IMAGE:latest-prod $IMAGE:${CI_COMMIT_SHORT_SHA}-prod
+    - docker push $IMAGE:latest-prod
+    - docker push $IMAGE:${CI_COMMIT_SHORT_SHA}-prod
 
 prod:deploy:
   stage: deploy
@@ -42,12 +41,12 @@ prod:deploy:
     GIT_STRATEGY: none
   environment:
     name: production
-    url: https://www.offerwallmonetization.com
+    url: https://www.getmonetize.io
   before_script:
     - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
     - eval $(ssh-agent -s)
     - echo "$DEPLOY_SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
     - '[ -d ~/.ssh ] || ( mkdir -p ~/.ssh && chmod 700 ~/.ssh )'
   script:
-    - LC_GL_TOKEN=$DEPLOY_API_TOKEN LC_GL_PROJECT_ID=$CI_PROJECT_ID LC_GL_PIPELINE_ID=$CI_PIPELINE_ID LC_GL_COMMIT_SHORT_SHA=$CI_COMMIT_SHORT_SHA ssh -o SendEnv=LC_* -o 'StrictHostKeyChecking no' -tt $DEPLOY_SSH_TARGET
+    - LC_CI_COMMIT_SHORT_SHA=$CI_COMMIT_SHORT_SHA ssh -o SendEnv=LC_* -o 'StrictHostKeyChecking no' $DEPLOY_SSH_TARGET
     - ssh-agent -k
