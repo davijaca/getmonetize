@@ -17,10 +17,13 @@ RUN npm install && npm run build --ignore-scripts
 
 FROM nginx:1.19.0
 
-WORKDIR /usr/share/nginx/html
-RUN rm -rf ./*
-COPY --from=builder /app/build .
-ENTRYPOINT ["nginx", "-g", "daemon off;"]
+RUN mkdir -p /usr/src/app && chown -R node:node /usr/src/app
+
+WORKDIR /usr/src/app
+
+COPY --from=build --chown=node:node /usr/src/app/build/ .
+
+RUN npm install -g serve
 
 USER node
 
