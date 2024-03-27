@@ -1,27 +1,32 @@
-FROM node:16.3.0-alpine AS prod
+FROM node:18-bullseye-slim as build
 
-WORKDIR /app
+RUN mkdir -p /usr/src/app && chown -R node:node /usr/src/app
 
-COPY package.json /app
+WORKDIR /usr/src/app
 
-RUN npm install
+COPY package.json package-lock.json ./
 
-COPY . /app
+USER node
 
-RUN npm run build
+RUN npm ci
 
-FROM nginx:alpine
+COPY --chown=node:node . .
 
-WORKDIR /usr/local/bin
+RUN npm run build --ignore-scripts
 
-COPY --from=prod /app/build /usr/share/nginx/html
 
-COPY generate-config.sh .
+FROM node:18-bullseye-slim as container
 
-COPY custom-nginx.template /etc/nginx/conf.d/
+RUN mkdir -p /usr/src/app && chown -R node:node /usr/src/app
 
-RUN chmod +x generate-config.sh
+WORKDIR /usr/src/app
 
-EXPOSE 80
+COPY --from=build --chown=node:node /usr/src/app/build/ .
 
-ENTRYPOINT [ "/bin/sh", "generate-config.sh"]
+RUN npm install -g serve
+
+USER node
+
+EXPOSE 3000
+
+CMD ["serve"]
