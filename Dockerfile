@@ -1,6 +1,7 @@
 FROM node:18-bullseye-slim as build
 
-RUN mkdir -p /usr/src/app && chown -R node:node /usr/src/app
+RUN npm install && npm run build --ignore-scripts
+RUN  mkdir -p /usr/src/app && chown -R node:node /usr/src/app
 
 WORKDIR /usr/src/app
 
@@ -10,12 +11,10 @@ USER node
 
 RUN npm ci
 
-COPY --chown=node:node . .
-
-RUN npm install && npm run build --ignore-scripts
+COPY --chown=node:node . 
 
 
-FROM nginx:1.19.0
+FROM node:18-bullseye-slim as container
 
 RUN mkdir -p /usr/src/app && chown -R node:node /usr/src/app
 
