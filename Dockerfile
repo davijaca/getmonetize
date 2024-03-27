@@ -1,8 +1,8 @@
 FROM node:18-bullseye-slim as build
 
-RUN mkdir -p /usr/src/node-app && chown -R node:node /usr/src/node-app
+RUN mkdir -p /usr/src/app && chown -R node:node /usr/src/app
 
-WORKDIR /usr/src/node-app
+WORKDIR /usr/src/app
 
 COPY package.json package-lock.json ./
 
@@ -17,11 +17,11 @@ RUN npm run build --ignore-scripts
 
 FROM node:18-bullseye-slim as container
 
-RUN mkdir -p /usr/src/node-app && chown -R node:node /usr/src/node-app
+RUN mkdir -p /usr/src/app && chown -R node:node /usr/src/app
 
-WORKDIR /usr/src/node-app
+WORKDIR /usr/src/app
 
-COPY --from=build --chown=node:node /usr/src/node-app/build/ .
+COPY --from=build --chown=node:node /usr/src/app/build/ .
 
 RUN npm install -g serve
 
