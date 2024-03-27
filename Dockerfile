@@ -1,32 +1,41 @@
-FROM node:18-bullseye-slim as build
+# syntax=docker/dockerfile:1.4
 
-RUN mkdir -p /usr/src/app && chown -R node:node /usr/src/app
+# Create image based on the official Node image from dockerhub
+FROM node:lts-buster AS development
 
+# Create app directory
 WORKDIR /usr/src/app
 
-COPY . .
+# Copy dependency definitions
+COPY package.json /usr/src/app
+COPY package-lock.json /usr/src/app
 
-USER node
-
+# Install dependecies
+#RUN npm set progress=false \
+#    && npm config set depth 0 \
+#    && npm i install
 RUN npm ci
 
-COPY --chown=node:node . .
+# Get all the code needed to run the app
+COPY . /usr/src/app
 
-RUN npm run build --ignore-scripts
-
-
-FROM node:18-bullseye-slim as container
-
-RUN mkdir -p /usr/src/app && chown -R node:node /usr/src/app
-
-WORKDIR /usr/src/app
-
-COPY --from=build --chown=node:node /usr/src/app/build/ .
-
-RUN npm install -g serve
-
-USER node
-
+# Expose the port the app runs in
 EXPOSE 3000
 
-CMD ["serve"]
+# Serve the app
+CMD ["npm", "start"]
+
+FROM development as dev-envs
+RUN <<EOF
+apt-get update
+apt-get install -y --no-install-recommends git
+EOF
+
+RUN <<EOF
+useradd -s /bin/bash -m vscode
+groupadd docker
+usermod -aG docker vscode
+EOF
+# install Docker tools (cli, buildx, compose)
+COPY --from=gloursdocker/docker / /
+CMD [ "npm", "start" ]
