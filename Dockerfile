@@ -15,15 +15,12 @@ COPY --chown=node:node . .
 RUN npm install && npm run build --ignore-scripts
 
 
-FROM node:18-bullseye-slim as container
+FROM nginx:1.19.0
 
-RUN mkdir -p /usr/src/app && chown -R node:node /usr/src/app
-
-WORKDIR /usr/src/app
-
-COPY --from=build --chown=node:node /usr/src/app/build/ .
-
-RUN npm install -g serve
+WORKDIR /usr/share/nginx/html
+RUN rm -rf ./*
+COPY --from=builder /app/build .
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
 
 USER node
 
