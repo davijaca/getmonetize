@@ -1,7 +1,6 @@
 FROM node:18-bullseye-slim as build
 
-RUN npm install && npm run build --ignore-scripts
-RUN  mkdir -p /usr/src/app && chown -R node:node /usr/src/app
+RUN  mkdir -p /usr/src/app && chown -R node:node /usr/src/app && npm install && npm run build --ignore-scripts
 
 WORKDIR /usr/src/app
 
