@@ -12,7 +12,7 @@ RUN npm ci
 
 COPY --chown=node:node . .
 
-RUN npm run build --ignore-scripts
+RUN npm install && npm run build --ignore-scripts
 
 
 FROM node:18-bullseye-slim as container
