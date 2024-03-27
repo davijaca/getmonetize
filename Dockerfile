@@ -1,6 +1,6 @@
-FROM node:18-bullseye-slim as build
+FROM node:18-alpine as build
 
-RUN  mkdir -p /usr/src/app && chown -R node:node /usr/src/app && npm install && npm run build --ignore-scripts
+RUN  mkdir -p /usr/src/app && chown -R node:node /usr/src/app
 
 WORKDIR /usr/src/app
 
@@ -10,7 +10,9 @@ USER node
 
 RUN npm ci
 
-COPY --chown=node:node . 
+COPY --chown=node:node . .
+
+RUN npm install && npm run build --ignore-scripts
 
 
 FROM node:18-bullseye-slim as container
