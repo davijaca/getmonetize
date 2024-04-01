@@ -9,5 +9,6 @@ export const AppRoutes = {
   CONTACT: '/contact',
   MOBILE: '/mobile',
   BLOGALLARTICLES: '/blog-all',
-  HOWITWORKS: '/howitworks'
+  HOWITWORKS: '/howitworks',
+  ABOUTUS: '/aboutus',
 };

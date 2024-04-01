@@ -1,1516 +1,913 @@
 @font-face {
-    font-family: gotham-medium;
-    src: url('/public/fonts/Gotham/Gotham-Medium.otf');
+  font-family: gotham-medium;
+  src: url('/public/fonts/Gotham/Gotham-Medium.otf');
 }
 
 @font-face {
-    font-family: gotham-book;
-    src: url('/public/fonts/Gotham/Gotham-Book.otf');
-}
-
-@font-face {
-    font-family: inter-semibold;
-    src: url('/public/fonts/Inter/Inter-SemiBold.ttf');
-}
-
-@font-face {
-    font-family: inter-regular;
-    src: url('/public/fonts/Inter/Inter-Regular.ttf');
+  font-family: gotham-book;
+  src: url('/public/fonts/Gotham/Gotham-Book.otf');
 }
 
 .nonprofit,
 .nonprofit * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-h1 {
-    margin: 0;
-}
-
+h1,
 h2 {
-    margin: 0;
+  margin: 0;
 }
 
 .nonprofitContainer {
-    width: 100vw;
-    max-width: 1920px;
-    margin: auto;
-    margin-top: -120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 100vw;
+  max-width: 1920px;
+  margin: auto;
+  margin-top: -120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*FIRST SECTION*/
 
 .firstNonprofitContainer {
-    width: 100vw;
-    position: relative;
-    left: calc(-50vw + 50%);
-    overflow: visible;
-    display: inline-block;
-    margin: auto;
+  width: 100%;
+  left: calc(-50vw + 50%);
+  overflow: visible;
+  display: inline-block;
+  margin: auto;
 }
 
 .mobileFirstNonprofitContainer {
-    display: none;
+  display: none;
 }
-
-
-.gradientContainer {
-    width: 100%;
-    max-width: 1530px;
-    position: absolute;
-}
-
-
-
-.gradientContainerLeft {
-    /* background-color: rgba(76, 175, 80, 0.4); */
-    z-index: 3;
-    position: absolute;
-    width: 70%;
-    float: right;
-    margin-left: 33%;
-
-}
-
 
 .topFirst {
-    background: url(/public/heroBackground.svg) no-repeat;
-    background-size: cover;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 950px;
-}
-
-.topFirstBg {
-    width: 100vw;
-    max-width: 1530px;
-    display: flex;
-    justify-content: center;
-    background-size: contain;
+  background: url(/public/heroBackground.svg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 1026px;
 }
 
 .mobileTopFirstBg {
-    display: none;
+  display: none;
 }
 
 .mainFirst {
-    width: 1110px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .rightMain {
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 623px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .text {
-    color: var(--White, #FFF);
-    font-family: gotham-book;
-    font-size: 55px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 131.5%;
-    /* 72.325px */
-    z-index: 5;
+  color: var(--White, #fff);
+  font-family: gotham-medium;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 76px;
+  z-index: 5;
 }
 
 .text2 {
-    color: var(--White, #FFF);
-    font-family: gotham-light;
-    font-size: 55px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 131.5%;
-    /* 72.325px */
-    z-index: 5;
+  color: var(--White, #fff);
+  font-family: gotham-book;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 76px;
+  z-index: 5;
 }
 
-
 .parag {
-    width: 100%;
-    padding-top: 30px;
-    padding-bottom: 60px;
+  width: 114%;
+  padding-top: 72px;
+  padding-bottom: 60px;
 }
 
 .innerParag {
-    color: #FFF;
-    width: 80%;
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: gotham-book;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 29px;
-
+  color: #fff;
+  width: 80%;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-book;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
 }
 
 .buttonText {
+  width: 210px;
+  height: 60px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  margin-bottom: 30px;
+}
+
+.buttonText1 {
+  border: 1px solid #fff;
+  width: 220px;
+  height: 60px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #1e1e1e;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: gotham-medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.leftMain {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  z-index: 5;
+}
+
+.leftImgInfo {
+  height: 1026px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.leftImg {
+  width: 700px;
+  height: 837px;
+}
+
+/*SECOND SECTION*/
+
+.secondNonprofitContainer {
+  width: 100%;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 803px;
+}
+
+.mobileSecondNonprofitContainer {
+  display: none;
+}
+
+.secondNonprofitTopContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.secondNonprofitContainerBox1 {
+  width: 1300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 2;
+  align-items: flex-start;
+}
+
+.whatOffer {
+  width: 59%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.secondLeft {
+  color: #1e1e1e;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-medium;
+  font-size: 53px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.secondRight {
+  width: 524px;
+  display: flex;
+  justify-content: flex-end;
+  color: var(--Primary-Black-1, #1e1e1e);
+  font-family: gotham-book;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+
+.secondNonprofitBottomContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.secondNonprofitContainerBox2 {
+  width: 1100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+  z-index: 2;
+  align-items: flex-start;
+  margin-top: 100px;
+}
+
+.arrow {
+  margin-top: 70px;
+}
+
+.secondBottomLeft {
+  width: 310px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.secondBottomRight {
+  width: 310px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottomEmote {
+  width: 55px;
+}
+
+.secondBottomTextContainer {
+  width: 310px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.spanBottom {
+  color: var(--Primary-Black-1, #1e1e1e);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-book;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+
+/*THIRD SECTION*/
+
+.thirdNonprofitContainer {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 894px;
+}
+
+.mobileThirdNonprofitContainer {
+  display: none;
+}
+
+.thirdSectionLeft {
+  display: flex;
+  justify-content: flex-start;
+  width: 60%;
+  height: 725px;
+}
+
+.imageThirdNonprofitContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin: 86px 0 0 268px;
+}
+
+.thirdSectionRight {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.innerThirdSectionRight {
+  width: 520px;
+  height: 356px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.thirdSectionRightH1 {
+  color: #1e1e1e;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-medium;
+  font-size: 53px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.thirdSectionRightP {
+  width: 524px;
+  height: 180px;
+  display: flex;
+  margin-top: -20px;
+  color: #1e1e1e;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-book;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+/*FOURTH SECTION*/
+
+.fourthNonprofitContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 1034px;
+}
+
+.mobileFourthNonprofitContainer {
+  display: none;
+}
+
+.fourthNonprofitContainerBox {
+  background: #1e1e1e;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.fourthSectionLeft {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerFourthSectionLeft {
+  height: 650px;
+  width: 548px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 28px 0 0 205px;
+}
+
+.innerFourthFreeResources {
+  height: 192px;
+  color: #fff;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-medium;
+  font-size: 53px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.innerFourthText {
+  width: 548px;
+  height: 255px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.innerFourthText > p {
+  color: #fff;
+  font-family: gotham-book;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.innerFourthText > p > span {
+  font-family: gotham-medium;
+  font-weight: 500;
+}
+
+.fourthSectionRight {
+  width: 50%;
+}
+
+.fourthSectionRight > img {
+  width: 960px;
+  flex-shrink: 0;
+}
+
+.buttonText2 {
+  width: 210px;
+  height: 60px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+/*MOBILE RESPONSIVENESS*/
+
+@media only screen and (max-width: 1130px) and (min-width: 320px) {
+  .nonprofitContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    position: relative;
+    margin-top: -150px;
+  }
+
+  /*FIRST MOBILE SECTION*/
+
+  .firstNonprofitContainer {
+    display: none;
+  }
+
+  .mobileFirstNonprofitContainer {
+    background-color: #000000;
+    display: flex;
+    width: 100%;
+    height: 1153px;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobileTopFirst {
+    display: flex;
+    width: 100vw;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background: url(/public/heroBackgroundMobile.svg) no-repeat right top 0;
+    height: 1026px;
+    padding-top: 100px;
+  }
+
+  .mobileMainFirst {
+    width: 352px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 42px;
+  }
+
+  .mobileTopMain {
+    width: 341px;
+    height: 411px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobileImgInfo {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .mobileImg {
+    width: 343px;
+    height: 411px;
+    margin-left: 25px;
+  }
+
+  .mobileBottomMain {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    height: 443px;
+    z-index: 5;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .text {
+    color: var(--White, #fff);
+    font-family: gotham-medium;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 43px;
+    z-index: 5;
+  }
+
+  .text2 {
+    color: var(--White, #fff);
+    font-family: gotham-book;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 43px;
+    z-index: 5;
+  }
+
+  .parag {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .innerParag {
+    color: #fff;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: gotham-book;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    width: 100%;
+  }
+
+  .buttonText {
     width: 210px;
-    height: 60px;
-    border: 1px solid #FFF;
+    height: 50px;
+    border: 1px solid #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 5;
     margin-bottom: 30px;
-}
+  }
 
-.buttonText1 {
-    border: 1px solid #FFF;
+  .buttonText1 {
+    border: 1px solid #fff;
     width: 220px;
-    height: 60px;
+    height: 50px;
     flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FFFFFF;
-    color: #1E1E1E;
+    background-color: #ffffff;
+    color: #1e1e1e;
     text-align: center;
     text-transform: uppercase;
     font-family: gotham-medium, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 38px;
     z-index: 5;
     cursor: pointer;
-}
+  }
 
+  /*SECOND MOBILE SECTION*/
 
+  .secondNonprofitContainer {
+    display: none;
+  }
 
-.leftMain {
-    width: 50%;
+  .mobileSecondNonprofitContainer {
+    background-color: #f0f0f0;
     display: flex;
-    align-items: center;
-    justify-content: left;
-    z-index: 5;
-
-}
-
-.leftImgInfo {
-    height: 1008px;
-    display: flex;
-    align-items: flex-end;
-}
-
-.leftImg {
-    width: 700px;
-    height: 837px;
-}
-
-
-/*SECOND SECTION*/
-
-.secondNonprofitContainer {
     width: 100%;
-    background-color: #F0F0F0;
+    height: 834px;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .mobileSecondNonprofitTopContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .mobileSecondNonprofitContainerBox1 {
+    width: 350px;
+    height: 204px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 803px;
-}
-
-.mobileSecondNonprofitContainer {
-    display: none;
-}
-
-
-.secondNonprofitTopContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start
-}
-
-.secondNonprofitContainerBox1 {
-    width: 1100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     position: relative;
     z-index: 2;
     align-items: flex-start;
-}
+  }
 
-.whatOffer {
+  .whatOffer {
     width: 100%;
+    height: 108px;
     display: flex;
     flex-direction: row;
     align-items: center;
-}
+  }
 
-.secondLeft {
-    color: #1E1E1E;
-    font-feature-settings: 'clig'off, 'liga'off;
+  .secondLeft {
+    color: #1e1e1e;
+    font-feature-settings: 'clig' off, 'liga' off;
     font-family: gotham-medium;
-    font-size: 53px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 500;
-    line-height: 120%;
+    line-height: 36px;
+  }
 
-}
-
-.secondRight {
-    width: 524px;
+  .secondRight {
+    width: 100%;
     display: flex;
     justify-content: flex-end;
-    color: var(--Primary-Black-1, #1E1E1E);
+    color: var(--Primary-Black-1, #1e1e1e);
     font-family: gotham-book;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 24px;
     text-align: left;
-}
+  }
 
-
-.secondNonprofitBottomContainer {
+  .mobileSecondNonprofitBottomContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
-}
+  }
 
-.secondNonprofitContainerBox2 {
-    width: 1100px;
+  .mobileSecondNonprofitContainerBox2 {
+    width: 354px;
+    height: 483px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     position: relative;
     z-index: 2;
-    align-items: flex-start;
-    margin-top: 100px;
-}
+    align-items: center;
+  }
 
-.secondBottomLeft {
-    width: 310px;
-    height: 210px;
+  .mobileSecondBottomLeft {
+    width: 294px;
+    height: 121px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+  }
 
-}
+  .mobileSecondBottomMiddle {
+    width: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-.secondBottomRight {
-    width: 310px;
-    height: 210px;
+  .mobileSecondBottomRight {
+    width: 294px;
+    height: 121px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-}
+  }
 
-.bottomEmote {
-    width: 55px;
-}
+  .bottomEmote {
+    width: 40px;
+  }
 
-.secondBottomTextContainer {
-    width: 310px;
-    height: 120px;
+  .mobileSecondBottomTextContainer {
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
-}
+  }
 
-.spanBottom {
-    color: var(--Primary-Black-1, #1E1E1E);
-    font-feature-settings: 'clig'off, 'liga'off;
+  .spanBottom {
+    color: var(--Primary-Black-1, #1e1e1e);
+    font-feature-settings: 'clig' off, 'liga' off;
     font-family: gotham-book;
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
-    text-align: center;
-}
+    line-height: 20px;
+    text-align: left;
+  }
 
+  .spanBottom > span {
+    font-family: gotham-medium;
+    font-weight: 500;
+  }
 
-/*THIRD SECTION*/
+  /* THIRD MOBILE SECTION */
 
-.thirdNonprofitContainer {
-    width: 100%;
+  .thirdNonprofitContainer {
+    display: none;
+  }
+
+  .mobileThirdNonprofitContainer {
     background-color: #ffffff;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    height: 894px;
-}
+    height: 797px;
+  }
 
-
-.mobileThirdNonprofitContainer {
-    display: none;
-}
-
-.thirdNonprofitContainerBox {
-    height: 894px;
+  .thirdNonprofitContainerBox {
+    height: 797px;
     width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .thirdSectionLeft {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 311px;
+  }
+
+  .imageThirdNonprofitContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 0;
+  }
+
+  .imageThirdNonprofitContainer img {
+    width: 293px;
+    height: 310.26px;
+  }
+
+  .thirdSectionRight {
+    width: 100%;
+    height: 228px;
+    display: flex;
+    justify-content: center;
     flex-direction: row;
+  }
+
+  .innerThirdSectionRight {
+    width: 350px;
+    height: 228px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .thirdSectionRightH1 {
+    color: #1e1e1e;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: gotham-medium;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+  }
+
+  .thirdSectionRightP {
+    width: 350px;
+    height: 168px;
+    display: flex;
+    color: #1e1e1e;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: gotham-book;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  /* FOURTH MOBILE SECTION */
+
+  .fourthNonprofitContainer {
+    display: none;
+  }
+
+  .mobileFourthNonprofitContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1048px;
+    background: #1e1e1e;
+  }
+
+  .mobileFourthNonprofitContainerBox {
+    height: 1048px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.thirdSectionLeft {
-    display: flex;
+    align-items: center;
     justify-content: flex-start;
-    width: 60%;
-    height: 725px;
-}
+  }
 
-.imageThirdNonprofitContainer {
-
+  .mobileFourthSectionLeft {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
-    margin-left: 200px;
-}
-
-
-.thirdSectionRight {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+  }
 
-}
-
-.innerThirdSectionRight {
-    width: 520px;
-    height: 356px;
+  .imageMobileFourthNonprofitContainer {
+    width: 100%;
+    height: 471px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
+    justify-content: flex-start;
+    align-items: center;
+  }
 
+  .mobileFourthNonprofitImage {
+    width: 100%;
+    height: 471px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
 
-.thirdSectionRightH1 {
-    color: #1E1E1E;
-    font-feature-settings: 'clig'off, 'liga'off;
+  .mobileFourthNonprofitImage img {
+    width: 393px;
+    height: 471px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .mobileFourthSectionRight {
+    width: 393px;
+    height: 577px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .mobileFourthSectionRightH1 {
+    color: #fff;
+    width: 350px;
+    font-feature-settings: 'clig' off, 'liga' off;
     font-family: gotham-medium;
-    font-size: 53px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 500;
-    line-height: 120%;
+    line-height: 36px;
+  }
 
-}
-
-
-.thirdSectionRightP {
-    width: 524px;
-    height: 180px;
-    display: flex;
-    margin-top: -20px;
-    color: #1E1E1E;
-    font-feature-settings: 'clig'off, 'liga'off;
+  .bottomFourthMobile > p {
+    font-feature-settings: 'clig' off, 'liga' off;
+    width: 350px;
+    color: var(--White, #fff);
     font-family: gotham-book;
-    font-size: 16px;
+    font-size: 14px;
+    font-style: normal;
     font-weight: 400;
-    line-height: 30px;
-}
+    line-height: 24px;
+    text-align: left;
+  }
 
-
-
-
-/*FOURTH SECTION*/
-
-.fourthNonprofitContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 1034px;
-}
-
-
-.mobileFourthNonprofitContainer {
-    display: none;
-}
-
-.fourthNonprofitContainerBox {
-    height: 1034px;
-    background: #1E1E1E;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-}
-
-
-.fourthSectionLeft {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.innerFourthSectionLeft {
-    height: 650px;
-    width: 548px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.innerFourthFreeResources {
-    height: 192px;
-    color: #fff;
-    font-feature-settings: 'clig'off, 'liga'off;
+  .bottomFourthMobile > p > span {
     font-family: gotham-medium;
-    font-size: 53px;
     font-weight: 500;
-    line-height: 120%;
-}
+  }
 
-
-.innerFourthText {
-    width: 548px;
-    height: 255px;
+  .buttonFourthDiv {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-
-}
-
-.spanText {
-    color: #fff;
-    font-family: gotham-book;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-}
-
-
-
-.fourthSectionRight {
-    width: 755px;
-    height: 1034px;
-    display: flex;
-    justify-content: flex-start;
-
-}
-
-.fourthSectionRight>img {
-    width: 755px;
-    height: 1034px;
-    flex-shrink: 0;
-}
-
-
-.fourthNonprofitImage {
-    width: 100%;
-    height: 700px;
-    display: flex;
-    justify-content: flex-end;
-    margin: auto;
-    margin-left: 150px;
-    margin-top: 100px;
-}
-
-.buttonText2 {
-    width: 210px;
-    height: 60px;
-    border: 1px solid #FFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 5;
-}
-
-/*MOBILE RESPONSIVENESS*/
-
-
-@media only screen and (max-width: 1130px) and (min-width: 320px) {
-
-
-    .homeContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100vw;
-        position: relative;
-        margin-top: -150px;
-    }
-
-    .waves {
-        display: none;
-    }
-
-    /*FIRST MOBILE SECTION*/
-
-
-    .firstHomeContainer {
-        display: none;
-    }
-
-    .mobileFirstHomeContainer {
-        background-color: #000000;
-        display: flex;
-        width: 100%;
-        height: 1100px;
-        position: relative;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .topFirst {
-        background: none;
-    }
-
-    .topFirstBg {
-        display: none;
-    }
-
-
-
-    .mobileTopFirstBg {
-        display: flex;
-        height: 1500px;
-        width: 100vw;
-        background-repeat: no-repeat;
-        justify-content: center;
-        background: url(/public/heroBackgroundMobile.svg) no-repeat right top 0;
-    }
-
-
-    .mainFirstMobile {
-        display: flex;
-        width: 352px;
-        ;
-        height: 1305px;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 100px;
-    }
-
-    .rightMainMobile {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin-top: 20px;
-    }
-
-    .textMobile {
-        color: var(--White, #FFF);
-        font-family: gotham-light;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 131.5%;
-        /* 72.325px */
-        z-index: 5;
-    }
-
-    .text2Mobile {
-        color: var(--White, #FFF);
-        font-family: gotham-light;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 131.5%;
-        /* 72.325px */
-        z-index: 5;
-    }
-
-    .bottomHeroMobile {
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .bottomHeroMobile h2 {
-        color: #FFF;
-        width: 200px;
-        font-feature-settings: 'clig'off, 'liga'off;
-        font-family: gotham-light;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 26px;
-        /* 185.714% */
-    }
-
-    .bottomHeroRightMobile {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 15px;
-    }
-
-    .bottomHero1Mobile {
-        color: #FFF;
-        font-family: gotham-light;
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 30px;
-        /* 60% */
-        letter-spacing: -2.25px;
-        margin-right: 35px;
-    }
-
-    .bottomHeroLeftMobile {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .bottomHero2Mobile {
-        color: #FFF;
-        font-family: gotham-light;
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 30px;
-        /* 60% */
-        letter-spacing: -2.25px;
-        margin-right: 30px;
-    }
-
-
-    .forMonetize {
-        display: flex;
-    }
-
-    .paragMobile {
-        width: 100%;
-        height: 90px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .innerParagMobile {
-        width: 352px;
-        height: 95px;
-        color: var(--White, #FFF);
-        font-family: gotham-light;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 22px;
-        /* 157.143% */
-    }
-
-    .buttonTextMobile {
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .buttonText1Mobile, .buttonText2Mobile {
-        border: 1px solid #FFF;
-        width: 220px;
-        height: 46px;
-        flex-shrink: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #FFFFFF;
-        color: var(--Modal-grey-1, #000000);
-        text-align: center;
-        font-family: gotham-light, sans-serif;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        z-index: 5;
-    }
-
-    .buttonText2Mobile {
-        width: 320px;
-    }
-
-    .downClickImgMobile {
-        width: 99.5%;
-        height: 250px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 60px;
-    }
-
-    .downClickImgMobile>img {
-        width: 144px;
-        height: 144px;
-    }
-
-
-    .leftMainMobile {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 5;
-
-
-    }
-
-    .leftImgInfoMobile {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .leftImgMobile {
-        width: 350px;
-        height: 350px;
-        transition: all 2s ease;
-    }
-
-
-
-
-
-    /*SECOND MOBILE SECTION*/
-
-
-    .secondHomeContainer {
-        display: none;
-    }
-
-    .mobileSecondHomeContainer {
-        background: #F0F0F0;
-        display: flex;
-        width: 100%;
-        height: 950px;
-        position: relative;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-
-    .mainFirstMobile {
-        display: flex;
-        width: 352px;
-
-        height: 1305px;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 100px;
-    }
-
-    .rightMainMobile {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin-top: 20px;
-    }
-
-    .textSecondMobile {
-        color: var(--White, black);
-        font-family: gotham-light;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: bold;
-        line-height: 36px;
-    }
-
-    .bottomHeroMobile {
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .bottomHeroMobile h2 {
-        color: #FFF;
-        width: 200px;
-        font-feature-settings: 'clig'off, 'liga'off;
-        font-family: gotham-light;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 26px;
-        /* 185.714% */
-    }
-
-    .bottomHeroRightMobile {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 15px;
-    }
-
-    .bottomHero1Mobile {
-        color: #FFF;
-        font-family: gotham-light;
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 30px;
-        /* 60% */
-        letter-spacing: -2.25px;
-        margin-right: 35px;
-    }
-
-    .bottomHeroLeftMobile {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .bottomHero2Mobile {
-        color: #FFF;
-        font-family: gotham-light;
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 30px;
-        /* 60% */
-        letter-spacing: -2.25px;
-        margin-right: 30px;
-    }
-
-
-    .forMonetize {
-        display: flex;
-    }
-
-    .paragMobile {
-        width: 100%;
-        height: 90px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .innerParagSecondMobile {
-        width: 352px;
-        height: 95px;
-        color: var(--White, black);
-        font-family: gotham-light;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 22px;
-        /* 157.143% */
-    }
-
-    .buttonTextMobile {
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .buttonText1Mobile, .buttonText2Mobile {
-        border: 1px solid #FFF;
-        width: 220px;
-        height: 46px;
-        flex-shrink: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #FFFFFF;
-        color: var(--Modal-grey-1, #000000);
-        text-align: center;
-        font-family: gotham-light, sans-serif;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        z-index: 5;
-    }
-
-    .buttonText2Mobile {
-        width: 320px;
-    }
-
-    .downClickImgMobile {
-        width: 99.5%;
-        height: 250px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 60px;
-    }
-
-    .downClickImgMobile>img {
-        width: 144px;
-        height: 144px;
-    }
-
-
-    .leftMainMobile {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 5;
-
-
-    }
-
-    .leftImgInfoSecondMobile {
-
-        margin-top: -50px;
-        margin-bottom: 100px;
-    }
-
-    .leftImgMobile {
-        width: 350px;
-        height: 350px;
-        transition: all 2s ease;
-    }
-
-
-    /* THIRD MOBILE SECTION */
-
-    .thirdHomeContainer {
-        display: none;
-    }
-
-    .mobileThirdHomeContainer {
-        width: 100%;
-        min-height: 950px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        height: 950px;
-    }
-
-    .mobileThirdHomeContainerBox {
-        height: 400px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        background-repeat: no-repeat;
-        background-size: cover;
-        align-items: center;
-        justify-content: flex-start
-    }
-
-    .imageMobileThirdHomeContainer {
-        width: 100%;
-        height: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        margin-right: 650px;
-    }
-
-    .mobileThirdSectionLeft {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-
-    }
-
-    .mobileThirdSectionLeftBG {
-        display: block;
-        width: 1060px;
-        height: 350px;
-        margin-right: 100px;
-        border-radius: 0px 0px 120px 0px;
-        background: #1E1E1E;
-        box-shadow: -147px -139px 120px 20px rgba(0, 0, 0, 0.48) inset;
-    }
-
-    .mobileThirdHomeImage {
-        width: 100%;
-        height: 400px;
-        display: flex;
-        justify-content: flex-end;
-        margin: auto;
-        margin-left: 50px;
-        margin-top: 50px;
-    }
-
-    .mobileThirdSectionRight {
-        margin-top: 50px;
-        width: 393px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .mobileThirdSectionRightH1 {
-        color: #1E1E1E;
-        font-feature-settings: 'clig'off, 'liga'off;
-        font-family: gotham-light;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: bold;
-        line-height: 120%;
-    }
-
-
-    .mobileThirdSectionRightH2 {
-        width: 350px;
-        display: flex;
-        margin-top: -20px;
-    }
-
-    .mobileThirdSectionRightList {
-        color: var(--White, black);
-        font-family: gotham-light, sans-serif;
-        width: 474px;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 30px;
-        height: 110px;
-    }
-
-    .mobileThirdSectionRightList>li {
-        display: flex;
-        height: 50px;
-        background: url(/public/bulletListIcon.svg) left;
-        background-size: 2rem;
-        background-repeat: no-repeat;
-        padding-left: 50px;
-        align-items: center;
-        margin-top: 30px;
-        margin-left: -40px;
-    }
-
-    .mobileButtonTextGold {
-        margin-top: 230px;
-    }
-
-    .mobileButtonText1Gold {
-        border: 1px solid #A18129;
-        background: #A18129;
-        width: 220px;
-        height: 46px;
-        flex-shrink: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--Modal-grey-1, #fff);
-        text-align: center;
-        font-family: gotham-light, sans-serif;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        z-index: 5;
-    }
-
-    /* FOURTH MOBILE SECTION */
-
-    .mobileFourthHomeContainer {
-        width: 100%;
-        max-width: 1920px;
-        height: 1580px;
-        display: flex;
-        justify-content: center;
-        background-color: #F0F0F0
-    }
-
-    .fourthHomeContainer {
-        display: none;
-    }
-
-    .subMobileFourthHomeContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin-top: 50px;
-    }
-
-    .mobileFourthHomeBox1 {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--Primary-Black-1, #1E1E1E);
-        text-align: center;
-        font-family: gotham-light, sans-serif;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: bold;
-        line-height: 36px;
-    }
-
-    .mobileFourthHomeBox2 {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .mobileFourthBox2Container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .mobileFourth1234 {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 50px;
-        gap: 20px
-    }
-
-    .mobileFourthOne, .mobileFourthTwo, .mobileFourthThree, .mobileFourthFour {
-        width: 350px;
-        height: 330px;
-        display: flex;
-        align-items: center;
-        border: #F8F8F8 1px solid;
-        box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.07);
-
-
-    }
-
-    /* .mobileFourth12One, .mobileFourth34One {
-        margin-bottom: 50px
-    } */
-
-    /* .mobileFourth12One, .mobileFourth12Two {}
-    
-    .mobileFourth34One, .mobileFourth34Two {} */
-
-    .mobileFourthInner12 {
-        width: 100%;
-        height: 100px;
-        padding-left: 25px;
-        padding-right: 25px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center
-    }
-
-    .mobileFourthInner34 {
-        padding-top: 50px;
-        width: 100%;
-        height: 100px;
-        padding-left: 25px;
-        padding-right: 25px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center
-    }
-
-    .mobileFourthInner12 h1 {
-        color: var(--Primary-Black-1, #1E1E1E);
-        font-family: gotham-light;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 30px;
-        margin-bottom: 15px;
-    }
-
-    .mobileFourthInner34 h1 {
-        color: var(--Primary-Black-1, #1E1E1E);
-        font-family: gotham-light;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 30px;
-        margin-bottom: 15px;
-    }
-
-    .mobileFourthStepOneImg {
-        margin-top: -10px;
-        margin-bottom: 25px;
-        height: 45px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .mobileFourthInnerTwo {
-        width: 100%;
-        height: 100px;
-        padding-left: 45px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
-
-
-    .mobileFourthInnerTwo h1 {
-        color: var(--Primary-Black-1, #1E1E1E);
-        font-family: gotham-light;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 30px;
-        margin-bottom: 15px;
-    }
-
-    .mobileFourthStepTwoImg {
-        margin-top: 10px;
-        margin-bottom: 25px;
-        height: 45px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .mobileFourthInnerThree {
-        width: 100%;
-        height: 100px;
-        padding-left: 45px;
-        margin-top: 100px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
-
-    .mobileFourthInnerThree h1 {
-        color: var(--Primary-Black-1, #1E1E1E);
-        font-family: gotham-light;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 30px;
-        margin-bottom: 15px;
-    }
-
-    .mobileFourthStepThreeImg {
-        margin-top: -30px;
-        margin-bottom: 25px;
-        height: 45px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .mobileFourthInnerFour {
-        width: 100%;
-        height: 100px;
-        padding-left: 45px;
-        margin-top: 100px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
-
-    .mobileFourthInnerFour h1 {
-        color: var(--Primary-Black-1, #1E1E1E);
-        font-family: gotham-light;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 30px;
-        margin-bottom: 15px;
-    }
-
-    .mobileFourthStepFourImg {
-        margin-top: -60px;
-        margin-bottom: 25px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    .mobileFourth12Integration {
-        padding-top: 10px;
-        color: var(--Primary-Black-1, #1E1E1E);
-        font-family: gotham-light;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        display: flex;
-        flex-direction: column;
-        margin-top: -20px;
-        text-align: center;
-    }
-
-    .likeSmatchedWork {
-        display: flex;
-    }
-
-    .mobileFourth12Smatched {
-        color: var(--Primary-Blue-1, #2A2AFF);
-        font-family: gotham-light;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 32px;
-    }
-
-    .mobileFourth12Two {
-        align-items: flex-start;
-    }
-
-    .mobileFourthImg1 {
-        width: 490px;
-        height: 580px;
-        flex-shrink: 0;
-        position: relative;
-        z-index: 1;
-        top: 13px;
-    }
-
-    .mobileFourthImg2 {
-        width: 490px;
-        height: 610px;
-        flex-shrink: 0;
-        transition: 1.5s ease;
-        position: absolute;
-        z-index: 2;
-
-    }
-
-    .mobileFourthImg2:hover {
-        transform: scale(1.2);
-
-    }
-
-    .mobileFourthHomeBox3 {
-        height: 230px;
-        width: 100%;
-        color: var(--Primary-Black-1, #1E1E1E);
-        text-align: center;
-        font-family: gotham-light, sans-serif;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-    }
-
-
-    .mobileFourthInnerFourthHomeBox3 {
-        height: 120px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-    /* FIFTH MOBILE SECTION */
-
-    .fifthHomeContainer {
-        display: none;
-    }
-
-    .mobileFifthHomeContainer {
-        background-color: #000000;
-        display: flex;
-        width: 100%;
-        height: 853px;
-        position: relative;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .mobileFifthHomeBackground {
-        position: relative;
-        display: flex;
-        height: 853px;
-        background-repeat: no-repeat;
-        justify-content: center;
-        background: url(/public/fifthHomeBg.svg) no-repeat right top 0;
-        object-fit: fill;
-    }
-
-
-    .mobileInnerFifthHomeContainer {
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-around;
-        margin-left: 15px;
-    }
-
-    .mobileInnerFifthTop {
-        width: 226px;
-        height: 114px;
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        margin-top: -80px;
-    }
-
-    .mobileIcons {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        height: 114px;
-        justify-content: space-between;
-    }
-
-    .mobileBenefits {
-        position: relative;
-        display: flex;
-        height: 119px;
-        font: 500 15px 'DM Sans', normal;
-        line-height: 1.5px;
-        color: #C9C9C9;
-        flex-direction: column;
-    }
-
-
-    .mobileInnerFifthBottom {
-        width: 350px;
-        height: 276px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-
-    .mobileInnerFifthTitle {
-        color: var(--White, #FFF);
-        font: 500 24px 'gotham-medium', normal;
-        line-height: 36px;
-        display: flex;
-
-    }
-
-
-    .mobileInnerFifthText {
-        color: var(--White, #FFF);
-        font: 400 14px 'gotham-book', normal;
-        line-height: 24px;
-        display: flex;
-
-    }
-
-
+  }
 }

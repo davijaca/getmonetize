@@ -14,6 +14,7 @@ import HowItWorks from './pages/HowItWorks/HowItWorks';
 import Contact from './pages/Contact/Contact';
 import Mobile from './pages/Mobile/Mobile';
 import BlogAllArticles from './pages/BlogAllArticles/BlogAllArticles';
+import AboutUs from './pages/AboutUs/AboutUs';
 import Footer from './components/Footer/Footer';
 import { Helmet } from 'react-helmet';
 import ReactGA from 'react-ga';
@@ -102,6 +103,12 @@ function App() {
             path: AppRoutes.BLOGALLARTICLES,
             element: <BlogAllArticles />,
             errorElement: <h1>HOME PAGE NOT FOUND</h1>,
+          },
+
+          {
+            path: AppRoutes.ABOUTUS,
+            element: <AboutUs />,
+            errorElement: <h1> PAGE NOT FOUND 4</h1>,
           },
         ],
       },

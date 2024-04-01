@@ -75,10 +75,10 @@
 .topMenu {
     display: flex;
     flex-direction: row;
-    gap: 80px;
+    gap: 100px;
     align-items: center;
-    justify-content: center;
-    margin-left: 400px;
+    justify-content: right;
+    margin-left: 700px;
 }
 
 .topMenuItem {

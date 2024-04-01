@@ -90,25 +90,22 @@ h2 {
 }
 
 .text {
-    color: var(--White, #FFF);
-    font-family: gotham-light;
+    color: var(--White, #fff);
+    font-family: gotham-medium;
     font-size: 80px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 131.5%;
-    /* 72.325px */
+    font-weight: 500;
+    line-height: 109%;
     z-index: 5;
 }
 
 .text2 {
-    color: var(--White, #FFF);
-    font-family: gotham-light;
+    color: var(--White, #fff);
+    font-family: gotham-book;
     font-size: 80px;
     font-style: normal;
     font-weight: 400;
-    line-height: 131.5%;
-    /* 72.325px */
-    z-index: 5;
+    line-height: 109%;
 }
 
 
@@ -131,36 +128,24 @@ h2 {
 }
 
 .buttonText {
-    width: 90%;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    z-index: 5;
-    margin-bottom: 30px;
-}
-
-.buttonText1, .buttonText2 {
-    border: 1px solid #FFF;
-    width: 220px;
-    height: 46px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
+    width: 210px;
+    height: 60px;
     justify-content: center;
-    background-color: #FFFFFF;
-    color: var(--Modal-grey-1, #000000);
-    text-align: center;
-    font-family: gotham-light, sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    z-index: 5;
+    align-items: center;
+    border: 1px solid #fff;
+    background: #fff;
 }
 
-.buttonText2 {
-    width: 320px;
-
+.buttonText1 {
+    color: #0a0a0a;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: gotham-medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
 }
 
 .bottomHero {
@@ -234,11 +219,10 @@ h2 {
 
 
 .leftMain {
-    width: 50%;
     display: flex;
     align-items: center;
     justify-content: left;
-    z-index: 5;
+    z-index: 5
 
 
 }
@@ -248,13 +232,13 @@ h2 {
     height: 500px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center
 }
 
 .gameLeftImg {
-    width: 700px;
-    height: 720px;
-    margin-top: 130px;
+    width: 750px;
+    height: 800px;
+    margin-top: 50px;
     /*transition: all 2s ease;*/
 }
 
