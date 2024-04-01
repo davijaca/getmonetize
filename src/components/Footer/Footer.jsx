@@ -3,7 +3,7 @@ import styles from './Footer.module.css';
 import { db } from '../../firebase';
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 
-const Footer = () => {
+const Footer = ({ showFormFooter }) => {
   const [input, setInput] = useState('');
   const [message, setMessage] = useState('');
 
