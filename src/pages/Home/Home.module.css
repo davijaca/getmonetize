@@ -1,3 +1,13 @@
+@font-face {
+    font-family: gotham-medium;
+    src: url('/public/fonts/Gotham/Gotham-Medium.otf');
+  }
+  
+  @font-face {
+    font-family: gotham-book;
+    src: url('/public/fonts/Gotham/Gotham-Book.otf');
+  }
+
 .home,
 .home * {
     box-sizing: border-box;
@@ -563,7 +573,7 @@ h2 {
 
 .thirdSectionLeftBG {
     display: block;
-    width: 930px;
+    width: 850px;
     height: 750px;
     margin-right: 100px;
     border-radius: 0px 0px 120px 0px;
@@ -1005,7 +1015,7 @@ h2 {
 .bottomBG {
     background-color: #101010;
     height: 150px;
-    width: 100vw;
+    width: 1920px;
     margin-top: -150px;
     z-index: -5;
 }
