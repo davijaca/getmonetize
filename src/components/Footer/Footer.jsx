@@ -31,15 +31,14 @@ const Footer = () => {
     <>
       <div className={styles.footerContainer}>
         <div className={styles.footerLeft}>
-          <div className={styles.topLeft}>
-            <span className={styles.spanJoin}>Join Our Newsletter </span>
-          </div>
+          {showFormFooter && (
+            <div className={styles.topLeft}>
+              <span className={styles.spanJoin}>Join Our Newsletter </span>
+            </div>
+          )}
           <div className={styles.bottomLeft}>
             <div className={styles.logo}>
-              <img
-                src='./logo.svg'
-                alt=''
-              />
+              <img src='./logo.svg' alt='' />
               <div className={styles.monetize}>
                 <span className={styles.spanMonetize}>
                   Monetize – Unleash your data’s value{' '}
@@ -48,26 +47,11 @@ const Footer = () => {
             </div>
 
             <div className={styles.social}>
-              <img
-                src='./facebook.svg'
-                alt=''
-              />
-              <img
-                src='./instagram.svg'
-                alt=''
-              />
-              <img
-                src='./linkedin.svg'
-                alt=''
-              />
-              <img
-                src='./tiktok.svg'
-                alt=''
-              />
-              <img
-                src='./youtube.svg'
-                alt=''
-              />
+              <img src='./facebook.svg' alt='' />
+              <img src='./instagram.svg' alt='' />
+              <img src='./linkedin.svg' alt='' />
+              <img src='./tiktok.svg' alt='' />
+              <img src='./youtube.svg' alt='' />
             </div>
             <div className={styles.copyright}>
               <span className={styles.spanCopy}>
@@ -79,46 +63,33 @@ const Footer = () => {
         <div className={styles.footerRight}>
           <div className={styles.topRight}>
             <div className={styles.subscribe}>
-              <form
-                onSubmit={submitHandler}
-                className={styles.form}
-              >
-                <div className={styles.subscribeBox}>
-                  <input
-                    className={styles.inputE}
-                    type='email'
-                    onChange={inputHandler}
-                    placeholder='Enter your email..'
-                    value={input}
-                  />
-                </div>
-                <div className={styles.submit}>
-                  <button
-                    type='submit'
-                    className={styles.submitButton}
-                  >
-                    subscribe
-                  </button>
-                </div>
-              </form>
+              {showFormFooter && (
+                <form onSubmit={submitHandler} className={styles.form}>
+                  <div className={styles.subscribeBox}>
+                    <input
+                      className={styles.inputE}
+                      type='email'
+                      onChange={inputHandler}
+                      placeholder='Enter your email..'
+                      value={input}
+                    />
+                  </div>
+                  <div className={styles.submit}>
+                    <button type='submit' className={styles.submitButton}>
+                      subscribe
+                    </button>
+                  </div>
+                </form>
+              )}
             </div>
           </div>
           {message && <div className={styles.alertMessage}> {message} </div>}
           <div className={styles.bottomRight}>
             <div className={styles.supportedBy}>
               <span className={styles.spanTitleBottom}>Supported by </span>
-              <img
-                src='./srh.svg'
-                alt=''
-              />
-              <img
-                src='./innowerft.svg'
-                alt=''
-              />
-              <img
-                src='./startUp.svg'
-                alt=''
-              />
+              <img src='./srh.svg' alt='' />
+              <img src='./innowerft.svg' alt='' />
+              <img src='./startUp.svg' alt='' />
             </div>
             <div className={styles.company}>
               <span className={styles.spanTitleBottom}>Company </span>
@@ -142,66 +113,44 @@ const Footer = () => {
       </div>
 
       <div className={styles.footerContainerMobile}>
-        <div className={styles.topMobile}>
-          <span className={styles.spanJoinMobile}>Join Our Newsletter </span>
+        {showFormFooter && (
+          <div className={styles.topMobile}>
+            <span className={styles.spanJoinMobile}>Join Our Newsletter </span>
 
-          <form
-            onSubmit={submitHandler}
-            className={styles.formMobile}
-          >
-            <div className={styles.subscribeBoxMobile}>
-              <input
-                className={styles.inputEMobile}
-                type='email'
-                onChange={inputHandler}
-                placeholder='Enter your email..'
-                value={input}
-              />
-            </div>
-            <div className={styles.submitMobile}>
-              <button
-                type='submit'
-                className={styles.submitButtonMobile}
-              >
-                subscribe
-              </button>
-            </div>
-          </form>
-        </div>
+            <form onSubmit={submitHandler} className={styles.formMobile}>
+              <div className={styles.subscribeBoxMobile}>
+                <input
+                  className={styles.inputEMobile}
+                  type='email'
+                  onChange={inputHandler}
+                  placeholder='Enter your email..'
+                  value={input}
+                />
+              </div>
+              <div className={styles.submitMobile}>
+                <button type='submit' className={styles.submitButtonMobile}>
+                  subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        )}
         {message && <div className={styles.alertMessage}> {message} </div>}
 
         <div className={styles.bottomMobile}>
           <div className={styles.topBottomMobile}>
-            <img
-              src='./logo.svg'
-              alt=''
-            />
+            <img src='./logo.svg' alt='' />
             <div className={styles.monetizeMobile}>
               <span className={styles.spanMonetizeMobile}>
                 Monetize – Unleash your data’s value{' '}
               </span>
             </div>
             <div className={styles.socialMobile}>
-              <img
-                src='./facebook.svg'
-                alt=''
-              />
-              <img
-                src='./instagram.svg'
-                alt=''
-              />
-              <img
-                src='./linkedin.svg'
-                alt=''
-              />
-              <img
-                src='./tiktok.svg'
-                alt=''
-              />
-              <img
-                src='./youtube.svg'
-                alt=''
-              />
+              <img src='./facebook.svg' alt='' />
+              <img src='./instagram.svg' alt='' />
+              <img src='./linkedin.svg' alt='' />
+              <img src='./tiktok.svg' alt='' />
+              <img src='./youtube.svg' alt='' />
             </div>
           </div>
           <div className={styles.bottomDivMobile}>
@@ -209,18 +158,9 @@ const Footer = () => {
               <span className={styles.spanTitleBottomMobile}>
                 Supported by{' '}
               </span>
-              <img
-                src='./srh.svg'
-                alt=''
-              />
-              <img
-                src='./innowerft.svg'
-                alt=''
-              />
-              <img
-                src='./startUp.svg'
-                alt=''
-              />
+              <img src='./srh.svg' alt='' />
+              <img src='./innowerft.svg' alt='' />
+              <img src='./startUp.svg' alt='' />
             </div>
             <div className={styles.companyMobile}>
               <span className={styles.spanTitleBottomMobile}>Company </span>

@@ -303,7 +303,9 @@ a:hover, a:active {
         position: relative;
         background-color: #101010;
         width: 100vw;
-        height: 1386px;
+         /* to make the content fits in case we do not show the newsletter form in some pages: */
+        /* height: 1386px; */
+        height: 100%;
         margin: auto;
         overflow-x: hidden;
         display: flex;
