@@ -89,7 +89,7 @@ const Header = () => {
                     </div>
 
                     <div className='contact'>
-                        <a href="/contact">
+                        <a href="/howitworks">
                         <div className='contactButton'>HOW IT WORKS</div>
                         </a>
                         <div className='hamburger' onClick={handleClick}>
@@ -108,7 +108,7 @@ const Header = () => {
                                 <a href='#about' onClick={closeMenu}>INFLUENCER</a>
                             </li> */}
                             <li className='nav-item'>
-                                {/* <a href='/contact' onClick={closeMenu}>FOR BUSINESS</a> */}
+                                {/* <a href='/howitworks' onClick={closeMenu}>FOR BUSINESS</a> */}
                                 <div className='dropDown'>
                                         <div
                                             ref = {mobileBusinessRef}
