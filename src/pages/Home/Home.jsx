@@ -142,77 +142,98 @@ const Home = () => {
 
             <div className={styles.mobileFirstHomeContainer}>
                 <div className={styles.topFirst}>
-                    <div>
-                        <div className={styles.mobileTopFirstBg}>
-                            <div className={styles.mainFirstMobile}>
-                                <div className={styles.leftMainMobile}>
-                                    <div className={styles.leftImgInfoMobile}>
-                                        <img className={styles.leftImgMobile} src="./heroImage.png" alt='An iPhone with an offerwall' />
-                                    </div>
-                                </div>
-                                <div className={styles.rightMainMobile}>
-                                    <h1 className={styles.textMobile}>
-                                        <b>Boost</b>
-                                        <br />
-                                        Monetization.
-                                    </h1>
-                                    <h2 className={styles.text2Mobile}>
-                                        Retain Users.
-                                    </h2>
-                                    <div className={styles.paragMobile}>
-                                        <div className={styles.innerParagMobile}> Metered paywalls have an average
-                                            conversion rate of just 0.36%. Smatched builds customized
-                                            ‘earn to play’ offerwalls that boost monetization on your
-                                            mobile app or website and helps you retain users by offering more choice.
-                                        </div>
-                                    </div>
-                                    <div className={styles.bottomHeroMobile}>
-                                        <div className={styles.bottomHeroRightMobile}>
-                                            <h1 className={styles.bottomHero1Mobile}>+50%</h1>
-                                            <h2>Sales increase
-                                                <br />
-                                                through existing users</h2>
-                                        </div>
-                                        <div className={styles.bottomHeroLeftMobile}>
-                                            <h1 className={styles.bottomHero2Mobile}>1000+</h1>
-                                            <h2>New subscriptions</h2>
-                                        </div>
-                                    </div>
-                                    <div className={styles.buttonTextMobile}>
-                                        <div className={styles.buttonText1Mobile} onClick={toggleBookingForm}>BOOK A DEMO</div>
-                                    </div>
-                                    {showBookingForm && (
-                                        <div className={styles.bookingFormPopup}>
-                                            <div className={styles.bookingFormContent}>
-                                                <span className={styles.closeButton} onClick={toggleBookingForm}>&times;</span>
-                                                <Booking />
-                                            </div>
-                                        </div>
-                                    )}
-                                </div>
-                            </div>
+                <div className={styles.mobileTopFirstBg}>
+                    <div className={styles.mainFirstMobile}>
+                    <div className={styles.leftMainMobile}>
+                        <div className={styles.leftImgInfoMobile}>
+                        <img
+                            className={styles.leftImgMobile}
+                            src='./heroImage.png'
+                            alt='An iPhone with an offerwall'
+                        />
                         </div>
                     </div>
+                    <div className={styles.rightMainMobile}>
+                        <h1 className={styles.textMobile}>
+                        Boost
+                        <br />
+                        Monetization.
+                        </h1>
+                        <h2 className={styles.text2Mobile}>Retain Users.</h2>
+                        <div className={styles.paragMobile}>
+                        <div className={styles.innerParagMobile}>
+                            {' '}
+                            Metered paywalls have an average conversion rate of just
+                            0.36%. Smatched builds customized ‘earn to play’ offerwalls
+                            that <span>boost monetization</span> on your mobile app or
+                            website and helps you <span>retain users</span> by offering
+                            more choice.
+                        </div>
+                        </div>
+                        <div className={styles.bottomHeroMobile}>
+                        <div className={styles.bottomHeroRightMobile}>
+                            <h1 className={styles.bottomHero1Mobile}>+50%</h1>
+                            <h2>
+                            Sales increase
+                            <br />
+                            through existing users
+                            </h2>
+                        </div>
+                        <div className={styles.bottomHeroLeftMobile}>
+                            <h1 className={styles.bottomHero2Mobile}>1000+</h1>
+                            <h2>New subscriptions</h2>
+                        </div>
+                        </div>
+                        <div className={styles.buttonTextMobile}>
+                        <div
+                            className={styles.buttonText1Mobile}
+                            onClick={toggleBookingForm}
+                        >
+                            BOOK A DEMO
+                        </div>
+                        </div>
+                        {showBookingForm && (
+                        <div className={styles.bookingFormPopup}>
+                            <div className={styles.bookingFormContent}>
+                            <span
+                                className={styles.closeButton}
+                                onClick={toggleBookingForm}
+                            >
+                                &times;
+                            </span>
+                            <Booking />
+                            </div>
+                        </div>
+                        )}
+                    </div>
+                    </div>
+                </div>
                 </div>
             </div>
 
             {/* Second Home */}
 
             <div className={styles.secondHomeContainer}>
-                <div style={{ display: "flex", flexDirection: "row", alignItems: "flex-start", marginTop: '100px' }}>
+                <div style={{ display: "flex", flexDirection: "row", alignItems: "flex-start", marginTop: '40px' }}>
                     <div className={styles.secondHomeContainerBox1}>
                         <div className={styles.whatOffer}>
-                            <div className={styles.secondLeft}>Monetize provides
-                                an alternative Subscription Model </div>
+                            <div className={styles.secondLeft}>
+                                Monetize provides <br />
+                                an alternative Subscription Model{' '}
+                            </div>
                         </div>
 
                         <div className={styles.secondRight}>
                             <div className={styles.innerAnOfferwall}>
                                 <div className={styles.anOfferwallParag}>
-                                    Paywalls are a great revenue option for many businesses but unfortunately, making users pay means your revenue potential is capped. Businesses that offer more than one monetization model retain <b>50% more users.</b>
+                                    Paywalls are a great revenue option for many businesses but
+                                    unfortunately, making users pay means your revenue potential
+                                    is capped. Businesses that offer more than one monetization
+                                    model retain <span>50% more users</span>.
                                     <br />
                                     <br />
-                                    What if your users could earn their way past a paywall without having to open their wallet?
+                                    What if your users could earn their way past a paywall without
+                                    having to open their wallet?
                                 </div>
                             </div>
 
@@ -220,7 +241,13 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div style={{ height: "200px", display: "flex", flexDirection: "row", marginTop: '100px' }}>
+                <div 
+                    style={{ 
+                        height: "200px", 
+                        display: "flex", 
+                        flexDirection: "row", 
+                        marginTop: '124px' 
+                    }}>
                     <div className={styles.secondHomeContainerBox3}>
                         <div className={styles.firstImg} />
                         <div className={styles.secondImg} />
@@ -246,80 +273,103 @@ const Home = () => {
             {/*Second Home mobile responsiveness*/}
 
             <div className={styles.mobileSecondHomeContainer}>
-
-                <div>
-                    <div className={styles.mobileTopSecondBg}>
-                        <div className={styles.mainSecondMobile}>
-                            <div className={styles.leftMainMobile}>
-                                <div className={styles.leftImgInfoSecondMobile}>
-                                    <img className={styles.leftImgMobile} src="./secondHomeImg.png" alt='An iPhone with an offerwall' />
-                                </div>
-                            </div>
-                            <div className={styles.rightMainMobile}>
-                                <h2 className={styles.textSecondMobile}>
-                                    Smatched provides an alternative Subscription Model
-                                </h2>
-                                <div className={styles.paragMobile}>
-                                    <div className={styles.innerParagSecondMobile}> Paywalls are a great revenue option for
-                                        many businesses but unfortunately, making users pay means your revenue potential
-                                        is capped. Businesses that offer more than one monetization model retain <b>50% more users</b>.
-                                        <br />
-                                        <br />
-                                        What if your users could earn their way past a paywall without having to open their wallet?
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div className={styles.mainSecondMobile}>
+                <div className={styles.leftMainMobile}>
+                    <div className={styles.leftImgInfoSecondMobile}>
+                    <img
+                        src='./images/secondHomeImg.png'
+                        alt='An iPhone with an offerwall'
+                    />
                     </div>
                 </div>
-
+                <div className={styles.rightMainMobile}>
+                    <h2 className={styles.textSecondMobile}>
+                    Smatched provides an alternative Subscription Model
+                    </h2>
+                    <div className={styles.paragMobile}>
+                    <div className={styles.innerParagSecondMobile}>
+                        {' '}
+                        Paywalls are a great revenue option for many businesses but
+                        unfortunately, making users pay means your revenue potential is
+                        capped. Businesses that offer more than one monetization model
+                        retain <b>50% more users</b>.
+                        <br />
+                        <br />
+                        What if your users could earn their way past a paywall without
+                        having to open their wallet?
+                    </div>
+                    </div>
+                </div>
+                </div>
             </div>
 
             {/* Third Home */}
 
             <div className={styles.thirdHomeContainer}>
                 <div className={styles.thirdHomeContainerBox}>
-                    <div className={styles.thirdSectionLeft}>
-                        <div className={styles.imageThirdHomeContainer}>
-                            <div className={styles.thirdSectionLeftBG}>
-                                <div className={styles.thirdHomeImage}>
-                                    <img src="./thirdSectionImg.png" alt='A laptop and a phone with offerwall rewards' />
-                                </div>
-                            </div>
+                <div className={styles.thirdSectionLeft}>
+                    <div className={styles.imageThirdHomeContainer}>
+                    <div className={styles.thirdSectionLeftBG}>
+                        <div className={styles.thirdHomeImage}>
+                        <img
+                            src='./thirdSectionImg.png'
+                            alt='A laptop and a phone with offerwall rewards'
+                        />
                         </div>
                     </div>
-
-                    <div className={styles.thirdSectionRight}>
-                        <>
-                            <div className={styles.innerThirdSectionRight}>
-                                <div className={styles.thirdSectionRightH1}>Why partner<br />with Monetize?</div>
-                            </div>
-
-                            <div className={styles.thirdSectionRightH2}>
-                                <ul className={styles.thirdSectionRightList}>
-                                    <li>Open up another revenue stream</li>
-                                    <li>Our business model incentivizes us to provide better experiences for your customers</li>
-                                    <li>Easy set-up: no set-up costs or integration work</li>
-                                    <li>The Smatched web app is independent, GDPR-compliant and completely secure</li>
-                                </ul>
-                            </div>
-
-                            <div className={styles.buttonTextGold}>
-                                <div className={styles.buttonText1Gold} onClick={toggleBookingForm}>BOOK A DEMO</div>
-                            </div>
-                            {showBookingForm && (
-                                <div className={styles.bookingFormPopup}>
-                                    <div className={styles.bookingFormContent}>
-                                        <span className={styles.closeButton} onClick={toggleBookingForm}>&times;</span>
-                                        <Booking />
-                                    </div>
-                                </div>
-                            )}
-                        </>
                     </div>
                 </div>
 
-            </div>
+                <div className={styles.thirdSectionRight}>
+                    <>
+                    <div className={styles.innerThirdSectionRight}>
+                        <div className={styles.thirdSectionRightH1}>
+                        Why partner
+                        <br />
+                        with Monetize?
+                        </div>
+                    </div>
+
+                    <div className={styles.thirdSectionRightH2}>
+                        <ul className={styles.thirdSectionRightList}>
+                        <li>Open up another revenue stream</li>
+                        <li>
+                            Our business model incentivizes us to provide better
+                            experiences for your customers
+                        </li>
+                        <li>Easy set-up: no set-up costs or integration work</li>
+                        <li>
+                            The Smatched web app is independent, GDPR-compliant and
+                            completely secure
+                        </li>
+                        </ul>
+                    </div>
+
+                    <div className={styles.buttonTextGold}>
+                        <div
+                        className={styles.buttonText1Gold}
+                        onClick={toggleBookingForm}
+                        >
+                        BOOK A DEMO
+                        </div>
+                    </div>
+                    {showBookingForm && (
+                        <div className={styles.bookingFormPopup}>
+                        <div className={styles.bookingFormContent}>
+                            <span
+                            className={styles.closeButton}
+                            onClick={toggleBookingForm}
+                            >
+                            &times;
+                            </span>
+                            <Booking />
+                        </div>
+                        </div>
+                    )}
+                    </>
+                </div>
+                </div>
+             </div>
 
 
             {/*Third Home mobile Responsiveness*/}
@@ -521,50 +571,44 @@ const Home = () => {
 
             <div className={styles.mobileFifthHomeContainer}>
                 <div className={styles.mobileFifthHomeBackground}>
-                    <div className={styles.mobileInnerFifthHomeContainer}>
-                        <div className={styles.mobileInnerFifthTop}>
-                            <div className={styles.mobileIcons}>
-                                <img
-                                    src='./fifthIcon3.svg'
-                                    alt='grafic icon'
-                                />
-                                <img
-                                    src='./fifthIcon2.svg'
-                                    alt='eye icon'
-                                />
-                                <img
-                                    src='./fifthIcon3.svg'
-                                    alt='grafic icon'
-                                />
-                                <img
-                                    src='./fifthIcon1.svg'
-                                    alt='grafic icon'
-                                />
-                            </div>
-                            <div className={styles.mobileBenefits}>
-                                <p>Increase new visitors</p>
-                                <p>1,355,900 Views</p>
-                                <p>Growth organic customers</p>
-                                <p>Increase your revenue</p>
-                            </div>
-                        </div>
-
-                        <div className={styles.mobileInnerFifthBottom}>
-                            <div className={styles.mobileInnerFifthTitle}>
-                                Revenue Sharing Model
-                            </div>
-                            <div className={styles.mobileInnerFifthText}>
-                                We have a profit sharing model so there is no monthly cost. This
-                                means there is no risk on your end because make our money the
-                                same way you do.
-                                <br />
-                                <br />
-                                We are constantly working with our customers to optimize the
-                                user experience of their users and this model has proven very
-                                successful for increasing monetization and retention.
-                            </div>
-                        </div>
+                <div className={styles.mobileInnerFifthHomeContainer}>
+                    <div className={styles.mobileInnerFifthTop}>
+                    <ul>
+                        <li>
+                        <img src='./fifthIcon3.svg' alt='A icon' />
+                        Increase new visitors
+                        </li>
+                        <li>
+                        <img src='./fifthIcon2.svg' alt='A icon' />
+                        1,355,900 Views
+                        </li>
+                        <li>
+                        <img src='./fifthIcon3.svg' alt='A icon' />
+                        Growth or customers
+                        </li>
+                        <li>
+                        <img src='./fifthIcon1.svg' alt='A icon' />
+                        Increase your revenue
+                        </li>
+                    </ul>
                     </div>
+
+                    <div className={styles.mobileInnerFifthBottom}>
+                    <div className={styles.mobileInnerFifthTitle}>
+                        Revenue Sharing Model
+                    </div>
+                    <div className={styles.mobileInnerFifthText}>
+                        We have a profit sharing model so there is no monthly cost. This
+                        means there is no risk on your end because make our money the
+                        same way you do.
+                        <br />
+                        <br />
+                        We are constantly working with our customers to optimize the
+                        user experience of their users and this model has proven very
+                        successful for increasing monetization and retention.
+                    </div>
+                    </div>
+                </div>
                 </div>
             </div>
 

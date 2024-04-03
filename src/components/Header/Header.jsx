@@ -89,6 +89,9 @@ const Header = () => {
                     </div>
 
                     <div className='contact'>
+                    <a href="/howitworks">
+                        <div className='contactButton'>HOW IT WORKS</div>
+                        </a>
                         <div className='hamburger' onClick={handleClick}>
                             {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
                                 : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
