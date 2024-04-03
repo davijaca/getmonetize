@@ -89,9 +89,6 @@ const Header = () => {
                     </div>
 
                     <div className='contact'>
-                        <a href="/howitworks">
-                        <div className='contactButton'>HOW IT WORKS</div>
-                        </a>
                         <div className='hamburger' onClick={handleClick}>
                             {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
                                 : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
@@ -149,7 +146,16 @@ const Header = () => {
                             <li className='nav-item'>
                                 <a href='/blog-all' onClick={closeMenu}>BLOG</a>
                             </li>
+                            <li className='nav-item'>
+                                <a href='/howitworks' onClick={closeMenu}>HOW IT WORKS</a>
+                            </li>
+                            
+                            {/* Easy fix to bottom of item being hard to see */}
+                            <li className='nav-item'>
+                                <a href='' onClick={closeMenu}></a>
+                            </li>
                         </ul>
+
                     </div>
 
                 </div>
