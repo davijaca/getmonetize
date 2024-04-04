@@ -105,9 +105,12 @@ const Home = () => {
                             </h2>
                             <div className={styles.parag}>
                                 <div className={styles.innerParag}> Metered paywalls have an average
-                                    conversion rate of just 0.36%. Smatched builds customized
-                                    ‘earn to play’ offerwalls that boost monetization on your
-                                    mobile app or website and helps you retain users by offering more choice.
+                                    {' '}
+                                    Metered paywalls have an average conversion rate of just
+                                    0.36%. Smatched builds customized ‘earn to play’ offerwalls
+                                    that <span>boost monetization</span> on your mobile app or
+                                    website and helps you <span>retain users</span> by offering
+                                    more choice.
                                 </div>
                             </div>
                             <div className={styles.buttonText}>
