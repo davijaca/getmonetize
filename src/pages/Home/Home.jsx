@@ -541,33 +541,50 @@ const Home = () => {
 
             <div className={styles.fifthHomeContainer}>
                 <div className={styles.fifthHomeBackground}>
-
-                    <div className={styles.innerFifthHomeContainer1}>
-
-                        <div className={styles.innerFifthLeft}>
-                        </div>
-
-                        <div className={styles.innerFifthRight}>
-                            <div className={styles.innerFifthMainBox1}>
-                                <div className={styles.innerFifthBox1}>
-                                    <div>Revenue Sharing Model</div>
-                                </div>
-                            </div>
-
-                            <div className={styles.innerFifthMainBox2}>
-                                We have a profit sharing model so there is no monthly cost.
-                                This means there is no risk on your end because make our money<br /> the same way you do.<br /><br />
-                                We are constantly working with our customers to optimize the user experience of their
-                                users and this model has proven very successful for increasing monetization and retention.
-                            </div>
-                        </div>
-
+                <div className={styles.innerFifthHomeContainer1}>
+                    <div className={styles.innerFifthLeft}>
+                    <ul>
+                        <li>
+                        <img src='./fifthIcon3.svg' alt='A icon' />
+                        Increase new visitors
+                        </li>
+                        <li>
+                        <img src='./fifthIcon3.svg' alt='A icon' />
+                        Growth or customers
+                        </li>
+                        <li>
+                        <img src='./fifthIcon2.svg' alt='A icon' />
+                        1,355,900 Views
+                        </li>
+                        <li>
+                        <img src='./fifthIcon1.svg' alt='A icon' />
+                        Increase your revenue
+                        </li>
+                    </ul>
                     </div>
 
-                    <div className={styles.bottomBG}></div>
+                    <div className={styles.innerFifthRight}>
+                    <div className={styles.innerFifthMainBox1}>
+                        <div className={styles.innerFifthBox1}>
+                        <div>Revenue Sharing Model</div>
+                        </div>
+                    </div>
 
+                    <div className={styles.innerFifthMainBox2}>
+                        We have a profit sharing model so there is no monthly cost. This
+                        means there is no risk on your end because make our money
+                        <br /> the same way you do.
+                        <br />
+                        <br />
+                        We are constantly working with our customers to optimize the
+                        user experience of their users and this model has proven very
+                        successful for increasing monetization and retention.
+                    </div>
+                    </div>
                 </div>
 
+                <div className={styles.bottomBG}></div>
+                </div>
             </div>
 
             {/*MOBILE FIFTH HOME CONTAINER*/}
