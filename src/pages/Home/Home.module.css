@@ -894,6 +894,30 @@ h2 {
     align-items: flex-start;
 }
 
+.innerFifthLeft > ul {
+  margin: 68px 0 0 40px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 14px;
+}
+
+.innerFifthLeft > ul > li {
+  color: #c9c9c9;
+  font-family: gotham-book;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  width: 36%;
+}
+
+.innerFifthLeft > ul > li > img {
+  width: 19px;
+  margin: 0px 8px -1px 0;
+}
+
 .innerFifthRight {
     width: 45%;
     height: 100%;
@@ -911,40 +935,28 @@ h2 {
 }
 
 .innerFifthBox1, .highest {
-    color: var(--White, #FFF);
-    font-family: gotham-light, sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    width: 100%;
-    display: flex;
-
+  color: var(--White, #fff);
+  font-family: gotham-medium;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px;
+  width: 100%;
+  display: flex;
+}
+.innerFifthMainBox2 {
+  width: 500px;
 }
 
 .innerFifthMainBox2 {
-    width: 500px;
-
+  color: var(--White, #fff);
+  font-family: gotham-book;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
 }
 
-.engagement {
-    color: var(--White, #E0FF22);
-    font-family: gotham-light, sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    width: 50%;
-}
-
-.innerFifthMainBox2 {
-    color: var(--White, #FFF);
-    font-family: gotham-light;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-}
 
 .noInAppPurchase {
     width: 50%;
@@ -954,42 +966,6 @@ h2 {
     align-items: center;
     justify-content: space-between;
 }
-
-.appPerc {
-    width: 176px;
-    color: #E0FF22;
-    text-align: center;
-    font-family: gotham-light;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -2.4px;
-    height: 88px;
-    flex-shrink: 0;
-}
-
-.makeInApp {
-    color: #BCBCBC;
-    text-align: center;
-    font-family: gotham-light, sans-serif;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.50px;
-    width: 137px;
-}
-
-.onlyMakeOnePurchase {
-    width: 50%;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
 
 /*SIXTH SECTION*/
 
