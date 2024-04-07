@@ -83,7 +83,7 @@ h2 {
 }
 
 .firstLeftTitle1 {
-  font-family: Gotham;
+  font-family: gotham-light;
 font-size: 53px;
 font-weight: 500;
 line-height: 64px;
@@ -92,10 +92,11 @@ text-align: center;
 color: #FFFFFF;
 width: 605px;
 height: 64px;
+margin-left: -20px;
 }
 
 .firstLeftText {
-  font-family: Gotham;
+  font-family: gotham-light;
 font-size: 18px;
 font-weight: 400;
 line-height: 31px;
@@ -215,7 +216,7 @@ color: #FFFFFF;
 }
 
 .secondTitle {
-  font-family: Gotham;
+  font-family: gotham-light;
   font-size: 53px;
   font-weight: 500;
   line-height: 64px;
@@ -226,7 +227,7 @@ color: #FFFFFF;
 }
 
 .secondSubTitle {
-  font-family: Gotham;
+  font-family: gotham-light;
   font-size: 16px;
   font-weight: 400;
   line-height: 27px;
@@ -236,18 +237,19 @@ color: #FFFFFF;
 }
 
 .secondCardTitle {
-  font-family: Gotham;
+  font-family: gotham-light;
   font-size: 38px;
   font-weight: 500;
   line-height: 46px;
   letter-spacing: 0em;
   text-align: left;
   color: #1e1e1e;
-  padding: 0px 0px 10px 0px
+  padding: 0px 0px 10px 0px;
+  margin: 0;
 }
 
 .secondCardContent {
-  font-family: Gotham;
+  font-family: gotham-light;
   font-size: 16px;
   font-weight: 400;
   line-height: 27px;
@@ -341,7 +343,7 @@ color: #FFFFFF;
 }
 
 .thirdTitleSecOne {
-  font-family: Gotham;
+  font-family: gotham-light;
 font-size: 53px;
 font-weight: 500;
 line-height: 51px;
@@ -350,10 +352,11 @@ text-align: center;
 width: 405px;
 height: 51px;
 padding-bottom: 50px;
+margin: 0;
 }
 
 .thirdTitleSecTwo {
-  font-family: Gotham;
+  font-family: gotham-light;
 font-size: 53px;
 font-weight: 500;
 line-height: 51px;
@@ -369,7 +372,7 @@ margin: auto; /* Center horizontally */
 }
 
 .textSec3 {
-  font-family: Gotham;
+  font-family: gotham-light;
   font-size: 30px;
   font-weight: 500;
   line-height: 51px;
@@ -377,6 +380,7 @@ margin: auto; /* Center horizontally */
   text-align: center;
   width: 851px;
 height: 204px;
+margin-top: 0;
 }
 
 .rootSecThree {
@@ -424,7 +428,7 @@ top: 3943px;
 left: 118px;
 gap: 0px;
 opacity: 0px;
-font-family: Gotham;
+font-family: gotham-light;
 font-size: 38px;
 font-weight: 500;
 line-height: 64.6px;
@@ -439,12 +443,13 @@ color: #A18129;
   left: 118px;
   gap: 0px;
   opacity: 0px;
-  font-family: Gotham;
+  font-family: gotham-light;
   font-size: 57px;
   font-weight: 500;
   line-height: 38px;
   text-align: left;
-  color: #FFFFFF;    
+  color: #FFFFFF;  
+  margin: 0;  
 }
 
 .textSec4 {
@@ -454,12 +459,13 @@ top: 4129px;
 left: 118px;
 gap: 0px;
 opacity: 0px;
-font-family: Gotham;
+font-family: gotham-light;
 font-size: 18px;
 font-weight: 400;
 line-height: 38px;
 text-align: left;
 color: #FFFFFF;
+margin: 0;
 }
 
 .buttonSec4 {
@@ -472,6 +478,7 @@ color: #FFFFFF;
   /* gap: 24px; */
   border: 1px solid #a18129;
   background: #a18129;
+  margin: 0;
 }
 
 .buttonDemoSec4 {
@@ -582,7 +589,7 @@ padding-left: 200px;
 height: 50px;
 gap: 0px;
 opacity: 0px;
-font-family: Gotham;
+font-family: gotham-light;
 font-size: 40px;
 font-weight: 500;
 line-height: 50px;
@@ -613,7 +620,7 @@ color: #FFFFFF;
   width: 350px;
   padding-bottom: 30px;
   opacity: 0px;
-  font-family: Gotham;
+  font-family: gotham-light;
   font-size: 30px;
   font-weight: 500;
   line-height: 28.71px;
@@ -654,7 +661,7 @@ background: #00000080;
 height: 15px;
 gap: 0px;
 opacity: 0px;
-font-family: Gotham;
+font-family: gotham-light;
 font-size: 16px;
 font-weight: 500;
 line-height: 15.31px;

@@ -8,7 +8,7 @@
     "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.0",
-    "@mui/material": "^5.9.2",
+    "@mui/material": "^5.15.15",
     "emailjs": "^4.0.3",
     "firebase": "^10.8.0",
     "react": "^18.2.0",
@@ -25,13 +25,11 @@
     "schema-dts": "^1.1.2",
     "web-vitals": "^2.1.4"
   },
-
   "devDependencies": {
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.1",
     "@testing-library/user-event": "^14.5.2"
   },
-
   "scripts": {
     "start": "set PORT=3000 && react-scripts start",
     "build": "react-scripts build",
