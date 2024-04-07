@@ -19,6 +19,7 @@ import BlogAllArticles from './pages/BlogAllArticles/BlogAllArticles';
 // import MaximizingOfferwall from './pages/BlogAllArticles/Articles/MaximizingOfferwall/MaximizingOfferwall';
 import Article from './pages/BlogAllArticles/Articles/Article/Article';
 import AboutUs from './pages/AboutUs/AboutUs';
+import Imprint from './pages/Imprint/Imprint';
 import Footer from './components/Footer/Footer';
 import { Helmet } from 'react-helmet';
 import ReactGA from 'react-ga';
@@ -138,6 +139,12 @@ function App() {
           {
             path: AppRoutes.ABOUTUS,
             element: <AboutUs />,
+            errorElement: <h1> PAGE NOT FOUND 4</h1>,
+          },
+
+          {
+            path: AppRoutes.IMPRINT,
+            element: <Imprint />,
             errorElement: <h1> PAGE NOT FOUND 4</h1>,
           },
         ],

@@ -1,130 +1,119 @@
-.game,
-.game * {
-    box-sizing: border-box;
+@font-face {
+  font-family: gotham-medium;
+  src: url('/public/fonts/Gotham/Gotham-Medium.otf');
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
+@font-face {
+  font-family: gotham-book;
+  src: url('/public/fonts/Gotham/Gotham-Book.otf');
+}
+
+.game,
+.game * {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 h1 {
-    margin: 0;
+  margin: 0;
 }
 
 h2 {
-    margin: 0;
+  margin: 0;
 }
 
 .gameContainer {
-    width: 100vw;
-    max-width: 1920px;
-    margin: auto;
-    margin-top: -120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 100vw;
+  max-width: 1920px;
+  margin: auto;
+  margin-top: -120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*FIRST SECTION*/
 
 .firstGameContainer {
-    width: 100vw;
-    position: relative;
-    left: calc(-50vw + 50%);
-    overflow: visible;
-    display: inline-block;
-    margin: auto;
+  width: 100%;
+  /* position: relative; */
+  left: calc(-50vw + 50%);
+  overflow: visible;
+  display: inline-block;
+  margin: auto;
 }
 
 .mobileFirstGameContainer {
-    display: none;
-}
-
-.gradientContainer {
-    width: 100%;
-    max-width: 1530px;
-    position: absolute;
-}
-
-.gradientContainerLeft {
-    /* background-color: rgba(76, 175, 80, 0.4); */
-    z-index: 3;
-    position: absolute;
-    width: 70%;
-    float: right;
-    margin-left: 33%;
+  display: none;
 }
 
 .topFirst {
-    background: url(/public/heroBackground.svg) no-repeat;
-    background-size: cover;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 950px;
-}
-
-.topFirstBg {
-    width: 100vw;
-    max-width: 1530px;
-    display: flex;
-    justify-content: center;
-    background-size: contain;
+  background: url(/public/heroBackground.svg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 1026px;
 }
 
 .mobileTopFirstBg {
-    display: none;
+  display: none;
 }
 
 .mainFirst {
-    width: 1110px;
-    display: flex;
-    margin-top: 100px;
+  width: 1220px;
+  display: flex;
 }
 
 .rightMain {
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .text {
-    color: var(--White, #fff);
-    font-family: gotham-medium;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 109%;
-    z-index: 5;
+  color: var(--White, #fff);
+  font-family: gotham-medium;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 109%;
+  /* 72.325px */
+  z-index: 5;
 }
 
 .text2 {
-    color: var(--White, #fff);
-    font-family: gotham-book;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 109%;
+  color: var(--White, #fff);
+  font-family: gotham-book;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 109%;
+  /* 72.325px */
+  z-index: 5;
 }
 
-
 .parag {
-    width: 100%;
-    padding-top: 30px;
-    padding-bottom: 60px;
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .innerParag {
-    color: #FFF;
-    width: 608px;
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: gotham-light;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 29px;
-
+  color: #fff;
+  width: 608px;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-book;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
 }
 
 .buttonText {
@@ -148,1988 +137,948 @@ h2 {
     line-height: 38px;
 }
 
-.bottomHero {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 5;
-}
-
-
-
-@font-face {
-    font-family: gotham-light;
-    src: url('/public/fonts/Gotham/Gotham-Light.otf');
-}
-
-@font-face {
-    font-family: gotham-bold;
-    src: url('/public/fonts/Gotham/Gotham-Bold.otf');
-}
-
-.bottomHero h2 {
-    color: #FFF;
-    width: 200px;
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: gotham-light;
-    font-size: 12.6px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-    /* 185.714% */
-}
-
-.bottomHero1 {
-    width: 156.035px;
-    height: 34px;
-    flex-shrink: 0;
-    color: #FFF;
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: gotham-light;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 30px;
-    /* 60% */
-    letter-spacing: -2.25px;
-}
-
-
-
-.bottomHero2 {
-    display: flex;
-    width: 167.873px;
-    height: 42px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #FFF;
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: gotham-light;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    /* 48% */
-    letter-spacing: -2.25px;
-}
-
-
-
 .leftMain {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    z-index: 5
-
-
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  z-index: 5;
 }
 
 .leftImgInfo {
-    width: 90%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center
+  width: 90%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .gameLeftImg {
-    width: 750px;
-    height: 800px;
-    margin-top: 50px;
-    /*transition: all 2s ease;*/
+  width: 750px;
+  height: 863px;
+  margin-top: 161px;
+  /*transition: all 2s ease;*/
 }
-
-/*
-.leftImg:hover {
-    overflow: hidden;
-    transform:  scale(1.05);
-    transition: all 2s ease-in-out;
-}
-*/
-
-
-
-.blog {
-    font-size: 80px;
-    width: 68%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.explore {
-    height: 80px;
-    width: 68%;
-    display: flex;
-    align-items: flex-start;
-}
-
-.readMore {
-    height: 60px;
-    width: 68%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 /*SECOND SECTION*/
 
 .secondGameContainer {
-    width: 100%;
-    background-color: #F0F0F0;
-    min-height: 950px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 950px;
+  width: 100%;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 1010px;
 }
 
 .mobileSecondGameContainer {
-    display: none;
+  display: none;
 }
 
 .secondGameContainerBox1 {
-    width: 465px;
-    height: 480px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    z-index: 2;
-    align-items: flex-start;
-    margin-top: 40px;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  align-items: flex-start;
+  margin-top: 80px;
 }
 
 .levelUp {
-    width: 600px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .secondLeft {
-    width: 600px;
-    color: #07090A;
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: gotham-medium;
-    font-size: 53px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
-    /* 63.6px */
-}
-
-@font-face {
-    font-family: gotham-medium;
-    src: url('/public/fonts/Gotham/Gotham-Medium.otf');
+  width: 600px;
+  color: #07090a;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-medium;
+  font-size: 53px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  /* 63.6px */
 }
 
 .secondRight {
-    width: 450px;
-    height: 240px;
+  width: 450px;
+  height: 240px;
 }
 
-.innerAnOfferwall {
-    width: inherit;
+.anOfferwallParag > p {
+  width:569px;
+  color: #07090a;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-book;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
 }
 
-.anOfferwallParag {
-    width: 600px;
-    color: #07090A;
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: Gotham;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    /* 166.667% */
-    display: flex;
-    flex-direction: column;
-
-}
-
-.lowBoxInfo {
-    width: 475px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.willingPay {
-    background: grey;
-}
-
-.lowPeople {
-    color: #07090A;
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: Gotham;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 30px;
-
+.anOfferwallParag > p > span {
+  color: #07090a;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-medium;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
 }
 
 .secondGameContainerBox2 {
-    width: 650px;
-    height: 640px;
-    flex-shrink: 0;
-    margin-top: 50px;
-    position: relative;
-    z-index: 3;
-    top: 70px;
-
-
+  width: 650px;
+  height: 640px;
+  flex-shrink: 0;
+  margin: 45px 0 0 -91px;
+  position: relative;
+  z-index: 3;
+  top: 70px;
 }
 
-
-.secondGameContainerBox2>img {
-    width: 791.224px;
-    height: 640px;
-    flex-shrink: 0;
+.secondGameContainerBox2 > img {
+  width: 800px;
+  height: 680px;
+  flex-shrink: 0;
 }
-
 
 /*THIRD SECTION*/
 
 .thirdGameContainer {
-    width: 100%;
-    min-height: 950px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 950px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 1034px;
 }
 
 .mobileThirdGameContainer {
-    display: none;
+  display: none;
 }
 
 .thirdGameContainerBox {
-    height: 950px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  height: 950px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-
 
 .thirdSectionLeft {
-    width: 50%;
-    height: inherit;
-    display: flex;
-    justify-content: flex-start;
+  width: 50%;
+  height: inherit;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.thirdSectionLeft>img {
-    width: 100%;
-    height: 950px;
-    flex-shrink: 0;
-    object-fit: cover;
+.thirdSectionLeft > img {
+  width: 100%;
+  height: 1034px;
+  flex-shrink: 0;
+  object-fit: cover;
 }
 
 .thirdSectionLeftBG {
-    display: block;
-    width: 860px;
-    height: 640px;
-    margin-right: 100px;
-    border-radius: 0px 0px 120px 0px;
-    background: #1E1E1E;
-    box-shadow: -147px -139px 120px 20px rgba(0, 0, 0, 0.48) inset;
+  display: block;
+  width: 860px;
+  height: 640px;
+  margin-right: 100px;
+  border-radius: 0px 0px 120px 0px;
+  background: #1e1e1e;
+  box-shadow: -147px -139px 120px 20px rgba(0, 0, 0, 0.48) inset;
 }
 
 .thirdGameImage {
-    width: 100%;
-    height: 700px;
-    display: flex;
-    justify-content: flex-end;
-    margin: auto;
-    margin-left: 150px;
-    margin-top: 100px;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: flex-end;
+  margin: auto;
+  margin-left: 150px;
+  margin-top: 100px;
 }
 
 .thirdSectionRight {
-    width: 50%;
-    background: #1E1E1E;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
+  width: 50%;
+  height: 1034px;
+  background: #1e1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .innerThirdSectionRight {
-    height: 460px;
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    margin-right: 150px;
+  height: 460px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-right: 150px;
 }
 
 .innerThirdAddWalls {
-    color: #FFF;
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: Gotham;
-    font-size: 53px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
-    /* 63.6px */
+  color: #fff;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-medium;
+  font-size: 53px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
 }
 
 .innerThirdInGame {
-    width: 513px;
-    height: 350px;
-    color: #FFF;
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: Gotham;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    /* 166.667% */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+  width: 513px;
+  height: 350px;
+  color: #fff;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-book;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
 }
 
-.inTimeGame {
-    width: 513px;
-    height: 280px;
+.innerThirdInGame > p > span {
+  font-family: gotham-medium;
+  font-weight: 500;
 }
-
-.majorModels {
-    display: flex;
-    justify-content: space-between;
-    width: 500px;
-}
-
-.interrupt {
-    color: #FFF;
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: Gotham;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 30px;
-}
-
-.surveyMobile {
-    display: flex;
-    justify-content: space-between;
-    width: 450px;
-}
-
-.upfrontDeals {
-    display: flex;
-    justify-content: space-between;
-    width: 500px;
-}
-
-
-
 
 /*FOURTH SECTION*/
 
 .fourthGameContainer {
-    width: 100%;
-    max-width: 1920px;
-    height: 950px;
-    display: flex;
-    justify-content: center;
-    background-color: #F0F0F0
+  width: 100%;
+  max-width: 1920px;
+  height: 1041px;
+  display: flex;
+  justify-content: center;
+  background-color: #f0f0f0;
 }
 
 .mobileFourthGameContainer {
-    display: none;
+  display: none;
 }
 
 .SubFourthGameContainer {
-    height: 950px;
-    display: flex;
-    flex-direction: column;
+  height: 950px;
+  display: flex;
+  flex-direction: column;
 }
 
 .fourthGameBox1 {
-    height: 300px;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+  height: 300px;
+  width: 1220px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .growRevenue {
-    width: 564px;
-    height: 200px;
-    color: #1E1E1E;
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: Gotham-medium;
-    font-size: 53px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 108.5%;
-    /* 57.505px */
-}
-
-@font-face {
-    font-family: Gotham-medium;
-    src: url('/public/fonts/Gotham/Gotham-Medium.otf');
+  width: 564px;
+  height: 200px;
+  color: #1e1e1e;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-medium;
+  font-size: 53px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 108.5%;
+  /* 57.505px */
 }
 
 .uniqueOffers {
-    width: 490px;
-    height: 190px;
-    color: #1E1E1E;
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: Gotham;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    /* 166.667% */
+  width: 490px;
+  height: 190px;
+  color: #1e1e1e;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-book;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  /* 166.667% */
 }
 
-
 .fourthGameBox2 {
-    height: 670px;
-    width: 1100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 670px;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fourthBox2Container {
-    width: inherit;
-    height: 650px;
-    display: flex;
+  width: inherit;
+  height: 650px;
+  display: flex;
 }
 
 .fourthBox2Container1 {
-    height: inherit;
-    width: 550px;
-    display: flex;
+  height: inherit;
+  width: 550px;
+  display: flex;
 }
 
 .innerFourthBox1 {
-    height: inherit;
-    width: 275px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  height: inherit;
+  width: 275px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-.like, .disLike {
-    width: 95px;
-    height: 95px;
-    position: relative;
-    top: 13px;
+.like,
+.disLike {
+  width: 95px;
+  height: 95px;
+  position: relative;
+  top: 13px;
 }
 
 .verticalLike {
-    width: 95px;
-    height: 420px;
-    display: flex;
-    justify-content: center;
+  width: 95px;
+  height: 420px;
+  display: flex;
+  justify-content: center;
 }
 
 .vertical {
-    width: 50px;
-    height: 420px;
+  width: 50px;
+  height: 420px;
 }
 
 .innerFourthBox2 {
-    height: 900px;
-    width: 275px;
-    display: flex;
-    flex-direction: column;
-
+  height: 900px;
+  width: 275px;
+  display: flex;
+  flex-direction: column;
 }
 
 .innerFourthBox2details1 {
-    width: 214px;
-    height: 220px;
-    color: #1E1E1E;
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: Gotham-light;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    /* 160% */
-    display: flex;
-    align-items: flex-end;
-
-}
-
-
-@font-face {
-    font-family: Gotham;
-    src: url('/public/fonts/Gotham/Gotham-Light.otf');
+  width: 214px;
+  height: 220px;
+  color: #1e1e1e;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-book;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* 160% */
+  display: flex;
+  align-items: flex-end;
 }
 
 .innerFourthBox2details2 {
-    width: 214px;
-    height: 240px;
-    color: #1E1E1E;
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: Gotham-light;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    /* 160% */
-    display: flex;
-    align-items: center;
+  width: 214px;
+  height: 240px;
+  color: #1e1e1e;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-book;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 160% */
+  display: flex;
+  align-items: center;
 }
 
-.innerFourthBox2details3, .innerFourthBox2details3Players {
-    width: 214px;
-    height: 220px;
-    color: #1E1E1E;
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: Gotham-light;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    /* 160% */
+.innerFourthBox2details3,
+.innerFourthBox2details3Players {
+  width: 214px;
+  height: 220px;
+  color: #1e1e1e;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-book;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 160% */
 }
 
 .innerFourthBox2details3Players {
-    width: 200px;
+  width: 200px;
 }
 
 .increasingRevenue {
-    color: #1E1E1E;
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: Gotham;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 24px;
+  color: #1e1e1e;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-medium;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 .fourthBox2Container2 {
-    height: 500px;
-    width: 550px;
-    display: flex;
+  height: 500px;
+  width: 550px;
+  display: flex;
 }
-
-
-
-
 
 /*FIFTH SECTION*/
 
 .fifthGameContainer {
-    background-color: #FFFFFF;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 1010px;
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1010px;
 }
 
 .fifthGameBackground {
-    width: 100%;
-    height: 801px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 0;
-    z-index: 5;
+  width: 100%;
+  height: 801px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  z-index: 5;
 }
 
 .fifthGameLeft {
-    width: 50%;
-    height: 801px;
-    flex-shrink: 0;
-    border-radius: 0px 0px 120px 0px;
-    background: #1E1E1E;
-    box-shadow: -147px -139px 120px 20px rgba(0, 0, 0, 0.48) inset;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 50%;
+  height: 801px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 120px 0px;
+  background: #1e1e1e;
+  box-shadow: -147px -139px 120px 20px rgba(0, 0, 0, 0.48) inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fifthGameLeft img {
-    margin-left: 250px;
+  margin-left: 250px;
 }
 
 .fifthGameRight {
-    width: 50%;
-    height: 801px;
-    flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-
-
+  width: 50%;
+  height: 801px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .innerFifthGameRight {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 524px;
-    height: 580px;
-    margin-right: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 524px;
+  height: 580px;
+  margin-right: 250px;
 }
 
 .fifthGameRightModel {
-    color: #1E1E1E;
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: Gotham-medium;
-    font-size: 53px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
-    /* 63.6px */
-}
-
-@font-face {
-    font-family: Gotham-medium;
-    src: url('/public/fonts/Gotham/Gotham-Medium.otf');
+  color: #1e1e1e;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-medium;
+  font-size: 53px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  /* 63.6px */
 }
 
 .increaseSubscription {
-    color: #1E1E1E;
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: Gotham-light;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    /* 200% */
+  color: #1e1e1e;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-book;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  /* 200% */
 }
 
-@font-face {
-    font-family: Gotham-light;
-    src: url('/public/fonts/Gotham/Gotham-Light.otf');
+.increaseSubscription > span {
+  font-family: gotham-medium;
+  font-weight: 500;
 }
-
-.smatchInreaseOnline {
-    width: 520px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.industryNews {
-    width: 490px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.increaseRate {
-    color: #1E1E1E;
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: Gotham;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 30px;
-}
-
-
 
 .buttonTextDemo {
-    width: 524px;
-    height: 60px;
+  display: flex;
+  width: 210px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #A18129;
+  background: #A18129;
 }
 
 .buttonTextDemo1 {
-    width: 210px;
-    height: 60px;
-    color: #FFF;
-    text-align: center;
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: Gotham-medium;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 38px;
-    /* 237.5% */
-    text-transform: uppercase;
-    gap: 24px;
-    border: 1px solid #A18129;
-    background: #A18129;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  color: #fff;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px;
 }
 
 .mobileFifthGameContainer {
-    display: none;
+  display: none;
 }
-
-
-
-
-
-/*SIXTH SECTION*/
-
-.sixthGameContainer {
-    width: 100%;
-    height: 840px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.sixthBox1 {
-    width: 100%;
-    height: 280px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.offerwallSolves, .problems {
-    color: var(--Primary-Black-1, #1E1E1E);
-    text-align: center;
-    font-family: gotham-light, sans-serif;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    display: flex;
-}
-
-.solves {
-    color: #8764E3;
-    font-family: gotham-light, sans-serif;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.sixthBox2 {
-    width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-
-}
-
-.innerSixthBox2 {
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    height: 500px;
-
-}
-
-
-.willingUsers {
-    width: 48.2%;
-    height: inherit;
-    border-radius: 10px;
-    background: #9AD3CC;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.hateUsers {
-    border-radius: 10px;
-    background: #5C59C0;
-    width: 49.2%;
-    height: inherit;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.dollar, .megaphone {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding-top: 20px;
-}
-
-.pay, .ads {
-    width: 75%;
-    height: 230px;
-    color: var(--Primary-Black-1, #1E1E1E);
-    text-align: center;
-    font-family: gotham-light, sans-serif;
-    font-size: 23px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    padding-top: 20px;
-
-}
-
-.ads {
-    color: #FFFF;
-}
-
-
-/*SEVENTH SECTION*/
-
-.seventhGameContainer {
-    width: 100%;
-    z-index: 1;
-}
-
-.seventhMobileGameContainer {
-    display: none;
-}
-
-.innerSeventhGameContainer {
-
-    width: 80%;
-}
-
-.seventhGameBox1 {
-    width: 80%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-
-}
-
-.implementingSoln {
-    display: flex;
-    color: var(--Primary-Black-1, #1E1E1E);
-    font-family: gotham-light, sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    justify-content: center;
-}
-
-.implementing {
-    color: var(--Primary-Black-1, #8764E3);
-    text-align: center;
-    font-family: gotham-light, sans-serif;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-
-}
-
-.an {
-    padding-top: 13px;
-}
-
-.avenue {
-    color: var(--Primary-Black-1, #1E1E1E);
-    font-family: gotham-light, sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    justify-content: center;
-    text-align: center;
-}
-
-.priceEngage {
-    display: flex;
-    color: var(--Primary-Black-1, #1E1E1E);
-    font-family: gotham-light, sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    justify-content: center;
-    text-align: center;
-}
-
-.engage, .users {
-    color: var(--Primary-Black-1, #8764E3);
-}
-
-.usersDecrease {
-    display: flex;
-    color: var(--Primary-Black-1, #1E1E1E);
-    font-family: gotham-light, sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    justify-content: center;
-    text-align: center;
-}
-
-.seventhGameBox2 {
-    width: 74%;
-    height: 1300px;
-    display: flex;
-    align-items: flex-end;
-    background-color: #F7F8FC;
-    justify-content: center;
-}
-
-.innerSeventhBoxContainer {
-    width: 100%;
-    height: 950px;
-}
-
-.innerSeven1 {
-    width: 100%;
-    height: 85px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.innerSevenBlog {
-    color: var(--Primary-Black-1, #1E1E1E);
-    font-family: gotham-light, sans-serif;
-    font-size: 52px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.65px;
-}
-
-.innerSevenArticles {
-    color: var(--Primary-Blue-1, #2A2AFF);
-    text-align: right;
-    font-family: gotham-light, sans-serif;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: uppercase;
-}
-
-.innerSeven2 {
-    width: 100%;
-    height: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.sevenRight {
-    width: 54%;
-    height: 660px;
-    border-radius: 10px 10px 0px 0px;
-}
-
-.topRightSeven {
-    width: 100%;
-    height: 285px;
-    border-radius: 10px 10px 0 0;
-}
-
-.topRightSeven>img {
-    width: 100%;
-    height: 330px;
-}
-
-.belowRightSeven {
-    width: 100%;
-    height: 500px;
-    border-radius: 0 0 10px 10px;
-    background: #9AD3CC;
-    margin: auto;
-}
-
-.innerBelowRightSeven {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 50px;
-    align-items: center;
-    justify-content: center;
-}
-
-.exploring {
-    color: var(--Primary-Black-1, #1E1E1E);
-    font-family: gotham-light, sans-serif;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    height: 180px;
-    width: 480px;
-}
-
-.dateTime {
-    width: 480px;
-    height: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--Primary-Black-1, #1E1E1E);
-    font-family: gotham-light, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-
-}
-
-.imgTime {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 25%;
-
-}
-
-.imgTime>img {
-    width: 24px;
-    height: 24px;
-}
-
-.minRead {
-    color: var(--Primary-Black-1, #1E1E1E);
-    font-family: gotham-light, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.readMoreExplore {
-    width: 92%;
-    height: 125px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
-.readMoreButton {
-    display: flex;
-    width: 192px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    border-radius: 4px;
-    border: 1px solid var(--Primary-Black-1, #1E1E1E);
-    color: var(--Primary-Black-1, #1E1E1E);
-    text-align: center;
-    font-family: gotham-light, sans-serif;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: uppercase;
-}
-
-.readMoreButton:hover {
-    background-color: black;
-    color: white;
-}
-
-
-
-.sevenLeft {
-    width: 44%;
-    height: 785px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.topLeftSeven {
-    width: 100%;
-    height: 380px;
-    border-radius: 10px;
-    background: #DFDFDE;
-}
-
-.topLeftSeven>img {
-    width: 100%;
-}
-
-.topLeftSevenBox1 {
-    width: 100%;
-    height: 220px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.mastering {
-    width: 382px;
-    flex-shrink: 0;
-    height: 80px;
-    color: var(--Primary-Black-1, #1E1E1E);
-    font-family: gotham-light, sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    display: flex;
-    align-items: center;
-}
-
-.leftDateTime {
-    width: 382px;
-    flex-shrink: 0;
-    height: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--Primary-Black-1, #1E1E1E);
-    font-family: gotham-light, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.leftImgTime {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 29%;
-
-}
-
-.LeftReadMoreExplore {
-    width: 85%;
-    height: 90px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
-.belowLeftSeven {
-    width: 100%;
-    height: 380px;
-    border-radius: 10px;
-    background: #E7CAA2;
-}
-
-.belowLeftSeven>img {
-    width: 100%;
-}
-
-.seventhGameBox3 {
-    width: 100%;
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-
-.innerSeventhGame {
-    width: 74%;
-    height: 720px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.rightSevenBox3 {
-    width: 50%;
-    height: 550px;
-}
-
-.getInTouch {
-    color: var(--Primary-Black-1, #1E1E1E);
-    font-family: gotham-light, sans-serif;
-    font-size: 52px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    display: flex;
-    height: 120px;
-    width: 533px;
-}
-
-.inTouch {
-    color: var(--Primary-Black-1, #8764E3);
-    font-family: gotham-light, sans-serif;
-    font-size: 52px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.schedule {
-    color: var(--Primary-Black-1, #1E1E1E);
-    font-family: gotham-light, sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 551px;
-}
-
-.contactImg {
-    width: 100%;
-    height: 220px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-
-.contactLayOut {
-    display: flex;
-    width: 100%;
-    height: 80px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-}
-
-.contactUs {
-    color: var(--Primary-Black-1, #1E1E1E);
-    text-align: center;
-    font-family: Inter;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: uppercase;
-
-
-}
-
-
-
-.leftSevenBox3 {
-    width: 50%;
-    height: 550px;
-    display: flex;
-    justify-content: flex-end;
-
-}
-
-.mobile005 {
-    width: 80%;
-    height: 550px;
-}
-
-
-
-.footerName {
-    display: flex;
-    align-items: flex-end;
-    background-color: #F7F8FC;
-    ;
-
-}
-
-.footerInfo {
-    position: absolute;
-    width: 100%;
-    height: 370px;
-    display: flex;
-    justify-content: center;
-}
-
-.innerFooterInfo {
-    width: 74%;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-.TopFooterInfo {
-    width: 100%;
-    height: 120px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.rightFooterInfo {
-    width: 100%;
-    height: 100px;
-
-}
-
-.imgValuable {
-    width: 50%;
-    height: 70px;
-    display: flex;
-
-}
-
-.footerLogo {
-    width: 50px;
-    height: 58px;
-}
-
-.offerwall {
-    width: 220px;
-    height: 58px;
-    padding-left: 12px;
-
-}
-
-.offerwallBox {
-    color: #FFF;
-    font: 400 30px/0% "NordiquePro", sans-serif;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 30px;
-}
-
-.monetization {
-    color: #E0FF22;
-    font: 400 30px/0% "NordiquePro-Bold", sans-serif;
-    font-size: 28px;
-    font-style: bold;
-    font-weight: 500;
-    line-height: 30px;
-}
-
-.valuable {
-    width: 100%;
-    height: 40px;
-    font-family: 'gotham-light', sans-serif;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 131.5%;
-    color: #FFF;
-}
-
-.leftFooterInfo {
-    width: 100%;
-    height: 160px;
-    display: flex;
-    align-items: center;
-
-}
-
-.info {
-    width: 100%;
-    height: 20px;
-}
-
-.rightInfo {
-    display: flex;
-    justify-content: space-between;
-    color: var(--Modal-grey-1, #DBDAD7);
-    font-family: gotham-light, sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-
-}
-
-.leftInfo {
-    width: 20%;
-    height: 100px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-bottom: 5px;
-}
-
-
-.footerDivider {
-    width: 100%;
-    height: 30px;
-
-}
-
-.footerDivider>hr {
-    border: 0.5px solid #DEDEDE
-}
-
-.downFooterInfo {
-    width: 100%;
-    height: 100px;
-    font-size: 15px;
-    font-family: 'gotham-light', sans-serif;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-
-
-
 
 /*MOBILE RESPONSIVENESS*/
 
-
 @media only screen and (max-width: 1130px) and (min-width: 320px) {
-
-
-    /*FIRST MOBILE SECTION*/
-
-
-    .firstGameContainer {
-        display: none;
-    }
-
-    .mobileFirstGameContainer {
-        background-color: #000000;
-        display: flex;
-        width: 100%;
-        height: 1050px;
-        position: relative;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-
-    .topFirstBg {
-        display: none;
-    }
-
-    .mobileTopFirstBg {
-        display: flex;
-        height: 1500px;
-        width: 100%;
-        background-repeat: no-repeat;
-        justify-content: center;
-        margin-top: 50px ;
-        /* background: url(/public/heroBackgroundMobile.svg) no-repeat right top 0; */
-    }
-
-
-    .mainFirstMobile {
-        display: flex;
-        width: 352px;
-        ;
-        height: 1305px;
-        flex-direction: column;
-        align-items: center;
-        /* padding-top: 100px; */
-    }
-
-    .rightMainMobile {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin-top: 20px;
-    }
-
-    .textMobile {
-        color: var(--White, #FFF);
-        font-family: gotham-light;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 131.5%;
-        /* 72.325px */
-        z-index: 5;
-    }
-
-    .text2Mobile {
-        color: var(--White, #FFF);
-        font-family: gotham-light;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 131.5%;
-        /* 72.325px */
-        z-index: 5;
-    }
-
-    .bottomHeroMobile {
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .bottomHeroMobile h2 {
-        color: #FFF;
-        width: 200px;
-        font-feature-settings: 'clig'off, 'liga'off;
-        font-family: gotham-light;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 26px;
-        /* 185.714% */
-    }
-
-    .bottomHeroRightMobile {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 15px;
-    }
-
-    .bottomHero1Mobile {
-        color: #FFF;
-        font-family: gotham-light;
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 30px;
-        /* 60% */
-        letter-spacing: -2.25px;
-        margin-right: 35px;
-    }
-
-    .bottomHeroLeftMobile {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .bottomHero2Mobile {
-        color: #FFF;
-        font-family: gotham-light;
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 30px;
-        /* 60% */
-        letter-spacing: -2.25px;
-        margin-right: 30px;
-    }
-
-
-    .forMonetize {
-        display: flex;
-    }
-
-    .paragMobile {
-        width: 100%;
-        height: 90px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .innerParagMobile {
-        width: 352px;
-        height: 95px;
-        color: var(--White, #FFF);
-        font-family: gotham-light;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 22px;
-        /* 157.143% */
-    }
-
-    .buttonTextMobile {
-        margin-top: 20px;
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .buttonText1Mobile, .buttonText2Mobile {
-        border: 1px solid #FFF;
-        width: 210px;
-        height: 50px;
-        flex-shrink: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #FFFFFF;
-        color: var(--Modal-grey-1, #000000);
-        text-align: center;
-        font-family: gotham-medium, sans-serif;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        z-index: 5;
-    }
-
-    .buttonText2Mobile {
-        width: 320px;
-    }
-
-    .downClickImgMobile {
-        width: 99.5%;
-        height: 250px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 60px;
-    }
-
-    .downClickImgMobile>img {
-        width: 144px;
-        height: 144px;
-    }
-
-
-    .leftMainMobile {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 5;
-
-
-    }
-
-    .leftImgInfoMobile {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .leftImgMobile {
-        width: 350px;
-        height: 400px;
-        transition: all 2s ease;
-    }
-
-
-    /*SECOND MOBILE SECTION*/
-
-
-    .secondGameContainer{
-        display: none;
-    }
-
-    .mobileSecondGameContainer {
-        background: #F0F0F0;
-        display: flex;
-        width: 100%;
-        height: 650px;
-        position: relative;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .mainSecondMobile{
-        display: flex;
-        width: 352px;
-        /* height: 1105px; */
-        flex-direction: column;
-        align-items: center;
-        /* padding-top: 100px; */
-    }
-
-    .textSecondMobile {
-        color: var(--White, black);
-        font-family: gotham-light;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: bold;
-        line-height: 36px;
-    }
-
-
-    .innerParagSecondMobile {
-        width: 352px;
-        height: 95px;
-        color: var(--White, black);
-        font-family: gotham-light;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 22px;
-        /* 157.143% */
-    }
-
-
-    .leftMainMobile {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 5;
-    }
-
-    .secondImgMobile {
-        width: 350px;
-        height: 300px;
-        transition: all 2s ease;
-    }
-    
-    /* THIRD MOBILE SECTION */
-
-    .thirdGameContainer {
-        display: none;
-    }
-    
-    .mobileThirdGameContainer {
-        width: 100%;
-        min-height: 1000px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        height: 950px;
-        background: #1E1E1E;
-    }
-    
-    .mobileThirdGameContainerBox {
-        height: 400px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        background-repeat: no-repeat;
-        background-size: cover;
-        align-items: center;
-        justify-content: flex-start
-    }
-    
-    .imageMobileThirdGameContainer {
-        width: 100%;
-        height: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    
-    .mobileThirdSectionLeft {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    
-    }
-    
-    .mobileThirdSectionLeftBG {
-        display: block;
-        width: 1060px;
-        height: 350px;
-        margin-right: 100px;
-        border-radius: 0px 0px 120px 0px;
-        background: #1E1E1E;
-        box-shadow: -147px -139px 120px 20px rgba(0, 0, 0, 0.48) inset;
-    }
-    
-    .mobileThirdGameImage {
-        width: 100%;
-        height: 400px;
-        display: flex;
-        justify-content: center;
-        margin: auto;
-    }
-
-    .mobileThirdGameImage img {
-        height: 540px;
-        display: flex;
-        justify-content: center;
-        margin: auto;
-    }
-
-    
-    .mobileThirdSectionRight {
-        margin-top: 200px;
-        width: 393px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .mobileThirdSectionRightH1 {
-        color: #FFF;
-        font-feature-settings: 'clig'off, 'liga'off;
-        font-family: gotham-light;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: bold;
-        line-height: 120%;
-    }
-
-    .bottomThirdMobile {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin-top: 20px;
-    }
-
-    .paragThirdMobile {
-        width: 100%;
-        height: 90px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .innerParagThirdMobile {
-        width: 350px;
-        height: 95px;
-        color: var(--White, #FFF);
-        font-family: gotham-light;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 30px; 
-        /* 157.143% */
-    }
-
-    /* FOURTH MOBILE SECTION */
-
-    .fourthGameContainer {
-        display: none;
-    }
-
-    .mobileFourthGameContainer {
-        background: #F0F0F0;
-        display: flex;
-        width: 100%;
-        height: 1000px;
-        position: relative;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .mainFourthMobile{
-        margin-top: 50px;
-        display: flex;
-        width: 352px;
-        /* height: 1105px; */
-        flex-direction: column;
-        align-items: center;
-        /* padding-top: 100px; */
-    }
-
-    .textFourthMobile {
-        color: var(--White, black);
-        font-family: gotham-light;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: bold;
-        line-height: 36px;
-    }
-
-
-    .innerParagFourthMobile {
-        width: 352px;
-        height: 95px;
-        color: var(--White, black);
-        font-family: gotham-light;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 22px;
-        /* 157.143% */
-    }
-
-
-    .bottomFourthMobile {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 5;
-    }
-
-    .fourthImgMobile {
-        width:350px;
-        height: 100%;
-        transition: all 2s ease;
-    }
-
-    /* FIFTH MOBILE SECTION */
-
-    .fifthGameContainer {
-        display: none;
-    }
-    
-    .mobileFifthGameContainer {
-        width: 100%;
-        min-height: 950px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        height: 950px;
-    }
-    
-    .mobileFifthGameContainerBox {
-        height: 400px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        background-repeat: no-repeat;
-        background-size: cover;
-        align-items: center;
-        justify-content: flex-start
-    }
-
-    
-    .mobileFifthGameImage {
-        width: 100%;
-        height: 400px;
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        margin-top: 50px;
-    }
-    
-    .mobileFifthSectionRight {
-        width: 393px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: auto;
-        margin-top: 50px;
-    }
-    
-    .mobileFifthSectionRightH1 {
-        margin-left: 20px;
-        margin-bottom: 30px;
-        color: #1E1E1E;
-        font-feature-settings: 'clig'off, 'liga'off;
-        font-family: gotham-light;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: bold;
-        line-height: 120%;
-    }
-    
-
-    .paragMobile {
-        width: 100%;
-        height: 90px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .innerParagMobile {
-        width: 352px;
-        height: 95px;
-        color: var(--White, #FFF);
-        font-family: gotham-light;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 22px;
-        /* 157.143% */
-    }
-
-    
-    .mobileButtonTextGold {
-        margin-top: 230px;
-    }
-    
-    .mobileButtonText1Gold {
-        border: 1px solid #A18129;
-        background: #A18129;
-        width: 220px;
-        height: 46px;
-        flex-shrink: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--Modal-grey-1, #fff);
-        text-align: center;
-        font-family: gotham-light, sans-serif;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        z-index: 5;
-    }
-
+  /*FIRST MOBILE SECTION*/
+
+  .firstGameContainer {
+    display: none;
+  }
+
+  .mobileFirstGameContainer {
+    background: url(/public/images/mobile_sec1_bg_mobile.png) no-repeat fixed
+      right;
+      background-color: #000000;
+    display: flex;
+    width: 100%;
+    height: 1026px;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rightMainMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px 0 0 10px;
+  }
+
+  .textMobile {
+    color: var(--White, #fff);
+    font-family: gotham-medium;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 43px;
+    /* 72.325px */
+    z-index: 5;
+  }
+
+  .text2Mobile {
+    color: var(--White, #fff);
+    font-family: gotham-book;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 43px;
+    /* 72.325px */
+    z-index: 5;
+  }
+
+  .paragMobile {
+    width: 100%;
+    height: 90px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .innerParagFirstMobile {
+    width: 368px;
+    color: var(--White, #fff);
+    font-family: gotham-book;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    /* 157.143% */
+  }
+
+  .buttonTextMobile {
+    margin-top: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .buttonText1Mobile {
+    border: 1px solid #fff;
+    width: 210px;
+    height: 50px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: var(--Modal-grey-1, #000000);
+    text-align: center;
+    font-family: gotham-medium, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    z-index: 5;
+  }
+
+  .leftMainMobile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    margin-top: 80px;
+  }
+
+  .leftImgInfoMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .leftImgMobile {
+    width: 362px;
+    height: 416px;
+    transition: all 2s ease;
+  }
+
+  /*SECOND MOBILE SECTION*/
+
+  .secondGameContainer {
+    display: none;
+  }
+
+  .mobileSecondGameContainer {
+    background: #f0f0f0;
+    display: flex;
+    width: 100%;
+    height: 760px;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .mainSecondMobile {
+    display: flex;
+    width: 352px;
+    /* height: 1105px; */
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 100px; */
+  }
+
+  .textSecondMobile {
+    color: var(--White, black);
+    font-family: gotham-medium;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+  }
+
+  .innerParagSecondMobile {
+    width: 361px;
+    height: 95px;
+    color: var(--White, black);
+    font-family: gotham-book;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 157.143% */
+  }
+
+  .innerParagSecondMobile > span {
+    font-family: gotham-medium;
+    font-weight: 500;
+  }
+
+  .leftMainMobile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+  }
+
+  .secondImgMobile {
+    width: 350px;
+    height: 300px;
+    transition: all 2s ease;
+  }
+
+  /* THIRD MOBILE SECTION */
+
+  .thirdGameContainer {
+    display: none;
+  }
+
+  .mobileThirdGameContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1006px;
+    background: #1e1e1e;
+  }
+
+  .mobileThirdGameContainerBox {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .imageMobileThirdGameContainer {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .mobileThirdSectionLeft {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobileThirdSectionLeftBG {
+    display: block;
+    width: 1060px;
+    height: 350px;
+    margin-right: 100px;
+    border-radius: 0px 0px 120px 0px;
+    background: #1e1e1e;
+    box-shadow: -147px -139px 120px 20px rgba(0, 0, 0, 0.48) inset;
+  }
+
+  .mobileThirdGameImage {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .mobileThirdGameImage img {
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .mobileThirdSectionRight {
+    margin: 200px 0 0 41px;
+    width: 393px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobileThirdSectionRightH1 {
+    color: #fff;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: gotham-medium;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+  }
+
+  .bottomThirdMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .paragThirdMobile {
+    width: 100%;
+    height: 90px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .innerParagThirdMobile {
+    width: 350px;
+    height: 95px;
+    color: var(--White, #fff);
+    font-family: gotham-book;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 157.143% */
+  }
+
+  /* FOURTH MOBILE SECTION */
+
+  .fourthGameContainer {
+    display: none;
+  }
+
+  .mobileFourthGameContainer {
+    background: #f0f0f0;
+    display: flex;
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .mainFourthMobile {
+    margin-top: 50px;
+    display: flex;
+    width: 352px;
+    /* height: 1105px; */
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 100px; */
+  }
+
+  .textFourthMobile {
+    color: var(--White, black);
+    font-family: gotham-book;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 36px;
+  }
+
+  .innerParagFourthMobile {
+    width: 352px;
+    height: 95px;
+    color: var(--White, black);
+    font-family: gotham-book;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 157.143% */
+  }
+
+  .bottomFourthMobile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+  }
+
+  .fourthImgMobile {
+    width: 350px;
+    height: 100%;
+    transition: all 2s ease;
+  }
+
+  /* FIFTH MOBILE SECTION */
+
+  .fifthGameContainer {
+    display: none;
+  }
+
+  .mobileFifthGameContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 879px;
+  }
+
+  .mobileFifthGameContainerBox {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .mobileFifthGameImage {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .mobileFifthSectionRight {
+    width: 393px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  .mobileFifthSectionRightH1 {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    color: #1e1e1e;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: gotham-medium;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+  }
+
+  .paragMobile {
+    width: 100%;
+    height: 90px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .increaseSubscription {
+    width: 353px;
+    height: 95px;
+    color: var(--White, black);
+    font-family: gotham-book;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .increaseSubscription > span {
+    font-family: gotham-medium;
+    font-weight: 500;
+  }
+
+  .mobileButtonTextGold {
+    margin-top: 225px;
+    display: flex;
+    width: 210px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #a18129;
+    background: #a18129;
+  }
+
+  .mobileButtonText1Gold {
+    color: #fff;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: gotham-medium;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+  }
 }

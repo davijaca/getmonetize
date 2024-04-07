@@ -66,8 +66,9 @@ the boxes from margin left. */
 /*FIRST SECTION*/
 
 .firstTapjoyVsSmatchedContainer {
-  background-color: #f0f0f0;
-  min-height: 1010px;
+  background: url(/public/images/tapVsSmat_sec1_bg.png) no-repeat;
+  background-size: cover;
+  min-height: 664px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,51 +79,51 @@ the boxes from margin left. */
 }
 
 .firstContent {
-  width: 605px;
-  height: 492px;
+  width: 830px;
+  height: 352px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 60px;
-  margin: 0 73px 0 118px;
 }
 
 .firstContent > h1 {
-  color: #07090a;
+  color: #FFFFFF;
   font-feature-settings: 'clig' off, 'liga' off;
   font-family: gotham-medium;
-  font-size: 53px;
+  font-size: 70px;
   font-style: normal;
   font-weight: 500;
-  line-height: 120%;
+  line-height: 84px;
+  text-align: center;
+}
+
+.firstContent > h1 > span {
+  font-size: 30px;
+  line-height: 36px;
 }
 
 .firstContent > p {
-  overflow: hidden;
-  color: #07090a;
+  width: 605px;
+  height: 147px;
+  color: #FFFFFF;
   font-feature-settings: 'clig' off, 'liga' off;
-  text-overflow: ellipsis;
   font-family: gotham-book;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 170%;
-}
-
-.firstImage {
-  width: 636px;
-  height: 663px;
-  flex-shrink: 0;
+  line-height: 30.6px;
+  text-align: center;
 }
 
 /*SECOND SECTION*/
 
 .secondTapjoyVsSmatchedContainer {
   background-color: #fdfdff;
-  min-height: 726px; /* it was not especified, I set by summing the boxes heigth and margins*/
+  min-height: 751px; /* it was not especified, I set by summing the boxes heigth and margins */
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -138,7 +139,7 @@ the boxes from margin left. */
   justify-content: center;
   align-items: center;
   gap: 48px;
-  margin: 176px 35px 0px 118px;
+  margin: 0px 35px 0px 118px;
 }
 
 .secondContent > h2 {
@@ -158,6 +159,27 @@ the boxes from margin left. */
   font-style: normal;
   font-weight: 400;
   line-height: 170%;
+}
+
+.secondImage {
+  width: 1000px;
+  height: 751px;
+  background: url(/public/images/tapVsSmat_sec2_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.secondLogo {
+  width: 202px;
+  margin-bottom: -40px;
+}
+
+.secondPhone {
+  width: 400px ;
 }
 
 /*THIRD SECTION*/
@@ -322,7 +344,7 @@ the boxes from margin left. */
   margin-bottom: 120px;
 }
 
-.fifthMobileCardsContainer {
+.fifthCardsContainer {
   display: flex;
   justify-content: center;
   align-items: center;

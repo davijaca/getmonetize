@@ -92,21 +92,21 @@ const Footer = ({ showFormFooter }) => {
               <img src='./startUp.svg' alt='' />
             </div>
             <div className={styles.company}>
-              <span className={styles.spanTitleBottom}>Company </span>
-              <span className={styles.spanTextBottom}>Our mission </span>
+              <a className={styles.spanTitleBottom}>Company </a>
+              <a href='/aboutus' className={styles.spanTextBottom}>Our mission </a>
             </div>
             <div className={styles.services}>
-              <span className={styles.spanTitleBottom}>Services </span>
-              <span className={styles.spanTextBottom}>Product </span>
-              <span className={styles.spanTextBottom}>For influencer </span>
-              <span className={styles.spanTextBottom}>For Business </span>
+              <a className={styles.spanTitleBottom}>Services </a>
+              <a className={styles.spanTextBottom}>Product </a>
+              <a className={styles.spanTextBottom}>For influencer </a>
+              <a className={styles.spanTextBottom}>For Business </a>
             </div>
             <div className={styles.legal}>
-              <span className={styles.spanTitleBottom}>Legal </span>
-              <span className={styles.spanTextBottom}>Imprint </span>
-              <span className={styles.spanTextBottom}>Data Security </span>
-              <span className={styles.spanTextBottom}>ToC </span>
-              <span className={styles.spanTextBottom}>Cookies</span>
+              <a className={styles.spanTitleBottom}>Legal </a>
+              <a href='/imprint' className={styles.spanTextBottom}>Imprint </a>
+              <a className={styles.spanTextBottom}>Data Security </a>
+              <a className={styles.spanTextBottom}>ToC </a>
+              <a className={styles.spanTextBottom}>Cookies</a>
             </div>
           </div>
         </div>
@@ -163,25 +163,25 @@ const Footer = ({ showFormFooter }) => {
               <img src='./startUp.svg' alt='' />
             </div>
             <div className={styles.companyMobile}>
-              <span className={styles.spanTitleBottomMobile}>Company </span>
-              <span className={styles.spanTextBottomMobile}>Our mission </span>
+              <a className={styles.spanTitleBottomMobile}>Company </a>
+              <a href='/aboutus' className={styles.spanTextBottomMobile}>Our mission </a>
             </div>
             <div className={styles.legalMobile}>
-              <span className={styles.spanTitleBottomMobile}>Legal </span>
-              <span className={styles.spanTextBottomMobile}>Imprint </span>
-              <span className={styles.spanTextBottomMobile}>
+              <a className={styles.spanTitleBottomMobile}>Legal </a>
+              <a href='/imprint' className={styles.spanTextBottomMobile}>Imprint </a>
+              <a className={styles.spanTextBottomMobile}>
                 Data Security{' '}
-              </span>
-              <span className={styles.spanTextBottomMobile}>ToC </span>
-              <span className={styles.spanTextBottomMobile}>Cookies</span>
+              </a>
+              <a className={styles.spanTextBottomMobile}>ToC </a>
+              <a className={styles.spanTextBottomMobile}>Cookies</a>
             </div>
             <div className={styles.servicesMobile}>
-              <span className={styles.spanTitleBottomMobile}>Services </span>
-              <span className={styles.spanTextBottomMobile}>Product </span>
-              <span className={styles.spanTextBottomMobile}>
+              <a className={styles.spanTitleBottomMobile}>Services </a>
+              <a className={styles.spanTextBottomMobile}>Product </a>
+              <a className={styles.spanTextBottomMobile}>
                 For influencer{' '}
-              </span>
-              <span className={styles.spanTextBottomMobile}>For Business </span>
+              </a>
+              <a className={styles.spanTextBottomMobile}>For Business </a>
             </div>
           </div>
           <div className={styles.footerDivider}>
