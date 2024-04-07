@@ -1,7 +1,9 @@
 .readNextCard,
 .readNextCard * {
   box-sizing: border-box;
-  font-family: gotham-book;
+  font-family: gotham;
+  line-height: 26px;
+  font-weight: 400;
 }
 
 .readNextCard h1,
@@ -9,13 +11,6 @@
 .readNextCard h3 {
   font-family: gotham-medium;
   white-space: pre-line;
-}
-
-.readNextCard p,
-.readNextCard li {
-  margin: 0;
-  line-height: 26px;
-  font-weight: 400;
 }
 
 /* Mobile first */
@@ -59,6 +54,18 @@
 .readNextCardInfo {
   display: flex;
   gap: 25px;
+  line-height: 24px;
+  align-items: center;
+}
+
+.span_dot {
+  display: flex;
+  gap: 10px;
+}
+
+.articlesInfo {
+  display: flex;
+  gap: 10px;
   line-height: 24px;
 }
 

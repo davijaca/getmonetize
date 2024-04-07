@@ -31,16 +31,19 @@ const Hero = ({
         <div className={styles.heroWhiteBackground_right}>
           <div className={styles.heroSizeWithIcons_wrapper}>
             <div className={styles.titleOrTextIcon_wrapper}>
-              <img
-                role="button"
-                src={'/images/Arrow_Left_Circle.svg'}
-                className={styles.icons}
-                alt=""
-                onClick={() => {
-                  window.history.back();
-                }}
-                data-testid="btn-goBack"
-              />
+              <div className={styles.heroIcon_wrapper}>
+                <img
+                  role="button"
+                  src={'/images/Arrow_Left_Circle.svg'}
+                  className={styles.icons}
+                  alt=""
+                  onClick={() => {
+                    window.history.back();
+                  }}
+                  data-testid="btn-goBack"
+                />
+              </div>
+
               <div className={styles.heroTitle_wrapper}>
                 <h1 className={styles.heroTitle}>{title}</h1>
               </div>

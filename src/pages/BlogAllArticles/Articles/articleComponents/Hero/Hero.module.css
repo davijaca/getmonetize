@@ -19,15 +19,23 @@
     object-fit: cover;
   }
 }
+.heroIcon_wrapper {
+  padding-left: 15px;
+  align-self: center;
+}
 
 .icons {
   display: none;
   cursor: pointer;
+  width: 70px;
+  height: 70px;
 }
 
 .heroWhiteBackground_right {
   background-color: white;
   margin-right: 22px;
+  padding-bottom: unset;
+  margin-top: 40px;
 }
 
 .heroTitle {
@@ -89,10 +97,12 @@
     padding-top: 500px;
     margin: 0 auto;
     max-width: 1920px;
+    height: 914px;
   }
 
   .heroWhiteBackground_right {
     margin-right: 220px;
+    padding-bottom: 20px;
   }
 
   .heroSizeWithIcons_wrapper {

@@ -16,8 +16,28 @@ const ReadNextArticleCard = (props) => {
         <div className={styles.readNextCardContent_grid}>
           <h1 className={styles.readNextCardTitle}>{title}</h1>
           <div className={styles.readNextCardInfo}>
-            <div> {readTime} read</div> <div>{publishedDate}</div>
+            <div className={styles.articlesInfo}>
+              <span className={styles.span_dot}>
+                <img
+                  src={'/images/Ellipse.svg'}
+                  className={styles.elipse}
+                  alt=""
+                />
+              </span>
+              {readTime} read
+            </div>{' '}
+            <div className={styles.articlesInfo}>
+              <span className={styles.span_dot}>
+                <img
+                  src={'/images/Ellipse.svg'}
+                  className={styles.elipse}
+                  alt=""
+                />
+              </span>
+              {publishedDate}
+            </div>
           </div>
+
           {/* You can change how many lines the cards will display at line=() below */}
           <TextTruncate line={4} element="p" text={text} />
         </div>

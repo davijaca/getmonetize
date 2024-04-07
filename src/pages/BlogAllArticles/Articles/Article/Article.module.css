@@ -36,11 +36,18 @@
   padding: 40px 20px 20px;
   font-weight: bold;
 }
+
 .whatToReadNextCards_wrapper {
   padding-top: 30px;
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+.whatToReadNext_title {
+  font-family: 'gotham';
+  font-size: 53px;
+  font-weight: 600;
 }
 
 /* Desktop style */
