@@ -1,15 +1,15 @@
 .articleWrapper,
 .articleWrapper * {
   box-sizing: border-box;
-  font-family: Gotham;
-  font-weight: 500;
+  font-family: gotham-book;
+  font-weight: 400;
 }
 
 .articleWrapper h1,
 .articleWrapper h2,
 .articleWrapper h3 {
-  font-family: Gotham;
-  font-weight: bold;
+  font-family: Gotham-medium;
+  font-weight: 500;
   white-space: pre-line;
 }
 
@@ -45,9 +45,9 @@
 }
 
 .whatToReadNext_title {
-  font-family: 'gotham';
+  font-family: Gotham-medium;
   font-size: 53px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* Desktop style */
