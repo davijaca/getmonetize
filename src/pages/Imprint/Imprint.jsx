@@ -7,7 +7,7 @@ import { useLocation } from 'react-router-dom';
 import ReactGA from 'react-ga';
 import Booking from '../Booking/Booking.jsx';
 
-const Home = () => {
+const Imprint = () => {
 
     // CONTACT FORM POPUP
 
@@ -169,4 +169,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default Imprint;

@@ -7,17 +7,19 @@ const TapjoyVsSmatched = () => {
       {/* First TapjoyVsSmatched */}
 
       <div className={styles.firstTapjoyVsSmatchedContainer}>
-        <div className={styles.firstContent}>
-          <h1>
-            Tapjoy vs. Smatched: <br />
-            <span>A Comprehensive Comparison in 2023</span>
-          </h1>
-          <p>
-            Explore the benefits of Tapjoy Offerwall and its comparison with
-            Smatched in 2023. Learn how Tapjoy operates and discover Smatched as
-            a potential alternative. Get insights into their features, pros and
-            cons, pricing, and make an informed choice.
-          </p>
+        <div className={styles.containerToMatchDesign}>
+          <div className={styles.firstContent}>
+            <h1>Tapjoy vs. Smatched: A Comprehensive Comparison in 2023</h1>
+            <p>
+              Explore the benefits of Tapjoy Offerwall and its comparison with
+              Smatched in 2023. Learn how Tapjoy operates and discover Smatched
+              as a potential alternative. Get insights into their features, pros
+              and cons, pricing, and make an informed choice.
+            </p>
+          </div>
+          <div className={styles.firstImage}>
+            <img src='./images/tapVsSmat_sec1_web.png' alt='Two smartphones' />
+          </div>
         </div>
       </div>
 
@@ -41,31 +43,24 @@ const TapjoyVsSmatched = () => {
       {/* Second Tapjoy */}
 
       <div className={styles.secondTapjoyVsSmatchedContainer}>
-        <div className={styles.secondContent}>
-          <h2>What Is Tapjoy and How Does It Work?</h2>
-          <p>
-            Tapjoy is a versatile advertising and monetization platform designed
-            to assist mobile app developers in effectively monetizing their user
-            base, especially those who may not typically make in-app purchases.
-            Central to Tapjoy's approach is its offer wall solution, which
-            presents users with a curated selection of tasks in exchange for
-            virtual currencies. These virtual currencies can later be redeemed
-            for premium in-app content. Additionally, Tapjoy excels in
-            distributing applications seamlessly and capturing real-time data
-            for strategic advertising campaigns.
-          </p>
-        </div>
-        <div className={styles.secondImage}>
-          <img
-            className={styles.secondLogo}
-            src='./images/tapVsSmat_sec2_logo.svg'
-            alt='Tapjoy logo'
-          />
-          <img
-            className={styles.secondPhone}
-            src='./images/tapVsSmat_sec2_phone.png'
-            alt='A smartphone'
-          />
+        <div className={styles.containerToMatchDesign}>
+          <div className={styles.secondContent}>
+            <h2>What Is Tapjoy and How Does It Work?</h2>
+            <p>
+              Tapjoy is a versatile advertising and monetization platform
+              designed to assist mobile app developers in effectively monetizing
+              their user base, especially those who may not typically make
+              in-app purchases. Central to Tapjoy's approach is its offer wall
+              solution, which presents users with a curated selection of tasks
+              in exchange for virtual currencies. These virtual currencies can
+              later be redeemed for premium in-app content. Additionally, Tapjoy
+              excels in distributing applications seamlessly and capturing
+              real-time data for strategic advertising campaigns.
+            </p>
+          </div>
+          <div className={styles.secondImage}>
+            <img src='./images/tapVsSmat_sec2_web.png' alt='A smartphone' />
+          </div>
         </div>
       </div>
 
@@ -277,11 +272,11 @@ const TapjoyVsSmatched = () => {
 
       <div className={styles.fifthTapjoyVsSmatchedContainer}>
         <h2>Smatched stands out by offering:</h2>
-        <div className={styles.fifthCardsContainer}>
+        <div className={styles.fifthMobileCardsContainer}>
           <div className={styles.fifthCard}>
             <img
               className={styles.fifthCardIconOne}
-              src='./images/tapVsSmat_sec5_icon1.svg'
+              src='./images/tapVsSmat_sec5_icon1.png'
               alt='A icon'
             />
             <h3>No Upfront Costs</h3>
@@ -293,7 +288,7 @@ const TapjoyVsSmatched = () => {
           <div className={styles.fifthCard}>
             <img
               className={styles.fifthCardIconTwo}
-              src='./images/tapVsSmat_sec5_icon2.svg'
+              src='./images/tapVsSmat_sec5_icon2.png'
               alt='A icon'
             />
             <h3>Insights and Customer Support</h3>
@@ -305,7 +300,7 @@ const TapjoyVsSmatched = () => {
           <div className={styles.fifthCard}>
             <img
               className={styles.fifthCardIconThree}
-              src='./images/tapVsSmat_sec5_icon3.svg'
+              src='./images/tapVsSmat_sec5_icon3.png'
               alt='A icon'
             />
             <h3>Data Integrity and Transparency</h3>
@@ -324,7 +319,7 @@ const TapjoyVsSmatched = () => {
         <div className={styles.fifthMobileCard}>
           <img
             className={styles.fifthMobileCardIconOne}
-            src='./images/tapVsSmat_sec5_icon1.svg'
+            src='./images/tapVsSmat_sec5_icon1.png'
             alt='A icon'
           />
           <h3>No Upfront Costs</h3>
@@ -336,7 +331,7 @@ const TapjoyVsSmatched = () => {
         <div className={styles.fifthMobileCard}>
           <img
             className={styles.fifthMobileCardIconTwo}
-            src='./images/tapVsSmat_sec5_icon2.svg'
+            src='./images/tapVsSmat_sec5_icon2.png'
             alt='A icon'
           />
           <h3>Insights and Customer Support</h3>
@@ -348,7 +343,7 @@ const TapjoyVsSmatched = () => {
         <div className={styles.fifthMobileCard}>
           <img
             className={styles.fifthMobileCardIconThree}
-            src='./images/tapVsSmat_sec5_icon3.svg'
+            src='./images/tapVsSmat_sec5_icon3.png'
             alt='A icon'
           />
           <h3>Data Integrity and Transparency</h3>

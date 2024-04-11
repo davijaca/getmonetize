@@ -104,9 +104,9 @@ const Footer = ({ showFormFooter }) => {
             <div className={styles.legal}>
               <a className={styles.spanTitleBottom}>Legal </a>
               <a href='/imprint' className={styles.spanTextBottom}>Imprint </a>
-              <a className={styles.spanTextBottom}>Data Security </a>
-              <a className={styles.spanTextBottom}>ToC </a>
-              <a className={styles.spanTextBottom}>Cookies</a>
+              <a href='/dataprivacy' className={styles.spanTextBottom}>Data Security </a>
+              <a href='/toc' className={styles.spanTextBottom}>ToC </a>
+              {/* <a className={styles.spanTextBottom}>Cookies</a> */}
             </div>
           </div>
         </div>
@@ -169,11 +169,11 @@ const Footer = ({ showFormFooter }) => {
             <div className={styles.legalMobile}>
               <a className={styles.spanTitleBottomMobile}>Legal </a>
               <a href='/imprint' className={styles.spanTextBottomMobile}>Imprint </a>
-              <a className={styles.spanTextBottomMobile}>
+              <a href='/dataprivacy' className={styles.spanTextBottomMobile}>
                 Data Security{' '}
               </a>
-              <a className={styles.spanTextBottomMobile}>ToC </a>
-              <a className={styles.spanTextBottomMobile}>Cookies</a>
+              <a href='/toc' className={styles.spanTextBottomMobile}>ToC </a>
+              {/* <a href='/imprint' className={styles.spanTextBottomMobile}>Cookies</a> */}
             </div>
             <div className={styles.servicesMobile}>
               <a className={styles.spanTitleBottomMobile}>Services </a>

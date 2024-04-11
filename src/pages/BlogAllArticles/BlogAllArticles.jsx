@@ -90,7 +90,7 @@ const BlogAllArticles = ({
       </div>
 
       <div className={styles.bodyAllArticles}>
-        <h2 className={styles.bodyAllArticles_Title}>More Articles</h2>
+        <h1 className={styles.bodyAllArticles_Title}>More Articles</h1>
         <div className={styles.bodyAllArticlesWrapper}>
           <div className={styles.articlesCardsGrid}>
             {displayedArticlesList.map((article) => {

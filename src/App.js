@@ -20,6 +20,8 @@ import BlogAllArticles from './pages/BlogAllArticles/BlogAllArticles';
 import Article from './pages/BlogAllArticles/Articles/Article/Article';
 import AboutUs from './pages/AboutUs/AboutUs';
 import Imprint from './pages/Imprint/Imprint';
+import ToC from './pages/ToC/ToC';
+import DataPrivacy from './pages/DataPrivacy/DataPrivacy';
 import Footer from './components/Footer/Footer';
 import { Helmet } from 'react-helmet';
 import ReactGA from 'react-ga';
@@ -145,6 +147,18 @@ function App() {
           {
             path: AppRoutes.IMPRINT,
             element: <Imprint />,
+            errorElement: <h1> PAGE NOT FOUND 4</h1>,
+          },
+
+          {
+            path: AppRoutes.DATAPRIVACY,
+            element: <DataPrivacy />,
+            errorElement: <h1> PAGE NOT FOUND 4</h1>,
+          },
+
+          {
+            path: AppRoutes.TOC,
+            element: <ToC />,
             errorElement: <h1> PAGE NOT FOUND 4</h1>,
           },
         ],

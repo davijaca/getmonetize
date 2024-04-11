@@ -1,20 +1,15 @@
 .blogAllArticles,
 .blogAllArticles * {
   box-sizing: border-box;
-  margin: 0;
 }
 
 .headerAllArticlesGrid h1,
 .headerAllArticlesGrid h2,
-.headerAllArticlesGrid h3 {
-  font-family: gotham-medium;
-  font-weight: 500;
-  line-height: 23px; /* within paragraph */
-}
-
+.headerAllArticlesGrid h3,
 .headerAllArticlesGrid p {
-  font-family: gotham-book;
-  font-weight: 400;
+  margin: 0;
+  font-family: gotham;
+  line-height: 23px; /* within paragraph */
 }
 
 button {
@@ -34,7 +29,12 @@ button {
 
 .headerAllArticlesGrid {
   display: grid;
-  gap: 76px;
+  gap: 36px;
+  padding: 20px;
+}
+
+.headerAllArticles_Title {
+  font-weight: 600;
 }
 
 .introColorsContainer {
@@ -73,6 +73,10 @@ button {
       bottom: 0;
     }
 
+    .introColorsImg {
+      height: 561px;
+    }
+
     .headerAllArticles_Title {
       text-transform: uppercase;
       font-size: 68px;
@@ -83,6 +87,7 @@ button {
       font-size: 16px;
       font-weight: 400;
       line-height: 29px;
+      padding: 0 25px 0 50px;
     }
   }
 
@@ -106,13 +111,8 @@ button {
 /* End of header style */
 
 /* Mobile bodyAllArticles style */
-.bodyAllArticles h1 {
-  font-size: gotham-medium;
-  font-weight: 500;
-}
-
 .bodyAllArticles {
-  font-family: gotham-book;
+  font-family: Gotham;
   padding: 0 20px;
   font-weight: 400;
   z-index: 5;
@@ -139,16 +139,14 @@ button {
   .bodyAllArticlesWrapper {
     max-width: 1470px;
     margin: 0 auto;
-    padding: 45px 45px 0px;
+    padding: 30px 45px 0px;
   }
 
   .bodyAllArticles_Title {
     display: block;
-    font-family: gotham-medium;
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 50px;
-    padding-top: 100px;
+    line-height: 60px;
+    font-weight: 600;
+    padding-top: 80px;
   }
 }
 /* End of bodyAllArticles style */

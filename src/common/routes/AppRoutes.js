@@ -17,4 +17,6 @@ export const AppRoutes = {
   ARTICLE: '/article',
   ABOUTUS: '/aboutus',
   IMPRINT: '/imprint',
+  DATAPRIVACY: '/dataprivacy',
+  TOC: '/toc',
 };

@@ -5,14 +5,6 @@
     left: 352px;
     padding: 32px;
     gap: 24px;
-    display: flex;
-    flex-direction: column;
-    color: #1e1e1e;
-    text-align: left;
-    font: 400 15px "Poppins", sans-serif;
-    margin-top: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 .inlineFields {
@@ -173,71 +165,4 @@ body.active-modal {
     top: 10px;
     right: 10px;
     padding: 5px 7px;
-}
-
-@media only screen and (max-width: 768px) {
-    .bookingForm {
-        width: calc(100% - 40px); 
-        height: auto;
-        padding: 20px; 
-        margin: 50px auto 0; 
-        box-sizing: border-box;
-    }
-    
-    .formTitle {
-        width: auto; 
-        font-size: 24px;
-        line-height: 30px; 
-        margin-bottom: 10px; 
-        font-family: 'Gotham';
-        font-weight: 500;
-        color: #07090A;
-        background: none;
-        text-align: center;
-    }
-    
-    .bookingLabel {
-        width: 100%; 
-        margin-bottom: 5px; 
-    }
-    
-    .sendGroup {
-        width: 100%; 
-    }
-    .modal-content {
-        width: 90%; 
-        max-width: 90%; 
-        min-width: 90%; 
-        padding: 10px; 
-    }
-    .overlay {
-        padding: 0; 
-    }
-    .dataBox {
-        width: 300px;
-        height: 46px;
-        padding: 8px 18px;
-        border: 1px solid #1E1E1E;
-        background: #FFFFFF;
-        gap: 16px;
-        border-radius: 8px;
-        box-sizing: border-box;
-        text-align: left;
-    }
-
-    .messageBox {
-        width: 300px;
-        height: 218px;
-        border: 1px solid #1E1E1E;
-        border-radius: 8px;
-        background-color: #FFFFFF;
-        padding: 19px;
-        box-sizing: border-box;
-        text-align: left;
-    }
-
-    .sendGroup {
-        width: 80%;
-        margin: auto
-    }
 }
