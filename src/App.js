@@ -11,7 +11,7 @@ import Newspaper from './pages/Newspaper/Newspaper';
 import ExploringOfferwall from './pages/Articles/ExploringOfferwall';
 import BlogArticle from './pages/BlogArticle/BlogArticle';
 import HowItWorks from './pages/HowItWorks/HowItWorks';
-import Contact from './pages/Contact/Contact';
+// import Contact from './pages/Contact/Contact';
 import Mobile from './pages/Mobile/Mobile';
 import BlogAllArticles from './pages/BlogAllArticles/BlogAllArticles';
 // import WhatIsAnOfferwall from './pages/BlogAllArticles/Articles/WhatIsAnOfferwall/WhatIsAnOfferwall';
@@ -88,11 +88,11 @@ function App() {
             errorElement: <h1> PAGE NOT FOUND 6</h1>,
           },
 
-          {
-            path: AppRoutes.CONTACT,
-            element: <Contact />,
-            errorElement: <h1> PAGE NOT FOUND 7</h1>,
-          },
+          // {
+          //   path: AppRoutes.CONTACT,
+          //   element: <Contact />,
+          //   errorElement: <h1> PAGE NOT FOUND 7</h1>,
+          // },
 
           {
             path: AppRoutes.HOWITWORKS,

@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from "react";
 import styles from './Mobile.module.css';
 import { Link } from 'react-router-dom';
+import Booking from '../../pages/Booking/Booking.jsx';
 
 const Mobile = () => {
+  const [showBookingForm, setShowBookingForm] = useState(false);
+  const toggleBookingForm = () => {
+    setShowBookingForm(!showBookingForm);
+  };
+
   return (
     <div className={styles.pageMobileContainer}>
       {/* First section */}
@@ -30,9 +36,17 @@ const Mobile = () => {
             opportunities in exchange for access to premium content, vouchers or
             rewards.
           </p>
-          <Link className={styles.button} to=''>
-            <div className={styles.buttonText}>BOOK A DEMO</div>
-          </Link>
+            <Link className={styles.button} to=''>
+            <div className={styles.buttonText} onClick={() => setShowBookingForm(true)}>BOOK A DEMO</div>
+            </Link>
+              {showBookingForm && (
+                  <div className={styles.bookingFormPopup}>
+                      <div className={styles.bookingFormContent}>
+                          <span className={styles.closeButton} onClick={toggleBookingForm}>&times;</span>
+                          <Booking />
+                      </div>
+                  </div>
+              )}
         </div>
       </div>
 
@@ -126,8 +140,16 @@ const Mobile = () => {
             </li>
           </ul>
           <Link className={styles.button} to=''>
-            <div className={styles.buttonText}>BOOK A DEMO</div>
+            <div className={styles.buttonText} onClick={() => setShowBookingForm(true)}>BOOK A DEMO</div>
           </Link>
+              {showBookingForm && (
+                  <div className={styles.bookingFormPopup}>
+                      <div className={styles.bookingFormContent}>
+                          <span className={styles.closeButton} onClick={toggleBookingForm}>&times;</span>
+                          <Booking />
+                      </div>
+                  </div>
+              )}
         </div>
         <div className={styles.fourthSectionImage}>
           <img

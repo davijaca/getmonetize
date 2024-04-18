@@ -1,11 +1,19 @@
-import React from 'react';
-import styles from './NonProfit.module.css';
+
+import React, { useState } from "react";
+import styles from "./NonProfit.module.css";
+import Booking from "../../pages/Booking/Booking.jsx";
 
 const NonProfit = () => {
+
+  const [showBookingForm, setShowBookingForm] = useState(false);
+  const toggleBookingForm = () => {
+    setShowBookingForm(!showBookingForm);
+  };
+
   return (
     <div className={styles.nonprofitContainer}>
       {/* FIRST NONPROFIT CONTAINER */}
-
+      
       <div className={styles.firstNonprofitContainer}>
         <div className={styles.topFirst}>
           <div className={styles.mainFirst}>
@@ -19,27 +27,40 @@ const NonProfit = () => {
               <h2 className={styles.text2}>Nonprofits</h2>
               <div className={styles.parag}>
                 <div className={styles.innerParag}>
-                  {' '}
+                  {" "}
                   The nonprofit industry is faced with the challenge of
                   converting potential supporters into paying donors. By
                   exploring creative revenue streams, you can differentiate your
                   organization and motivate people to donate in impactful ways.
-                  <br />
-                  <br />
                   Diversifying your donation options can significantly increase
                   engagement and donor acquisition rates.
                 </div>
               </div>
               <button className={styles.buttonText}>
-                <div className={styles.buttonText1}>BOOK A DEMO</div>
+                <div className={styles.buttonText1} onClick={() => setShowBookingForm(true)}>
+                  BOOK A DEMO
+                </div>
               </button>
+              {showBookingForm && (
+                <div className={styles.bookingFormPopup}>
+                  <div className={styles.bookingFormContent}>
+                    <span
+                      className={styles.closeButton}
+                      onClick={toggleBookingForm}
+                    >
+                      &times;
+                    </span>
+                    <Booking />
+                  </div>
+                </div>
+              )}
             </div>
             <div className={styles.leftMain}>
               <div className={styles.leftImgInfo}>
                 <img
                   className={styles.leftImg}
-                  src='./images/nonprofitHero.png'
-                  alt='Three people donating'
+                  src="./nonprofitHero.svg"
+                  alt="revenue image"
                 />
               </div>
             </div>
@@ -81,9 +102,24 @@ const NonProfit = () => {
                 </div>
               </div>
             </div>
-            <button className={styles.buttonText}>
-              <div className={styles.buttonText1}>BOOK A DEMO</div>
-            </button>
+            <button className={styles.buttonText2}>
+                <div className={styles.buttonText1} onClick={() => setShowBookingForm(true)}>
+                  BOOK A DEMO
+                </div>
+              </button>
+              {showBookingForm && (
+                <div className={styles.bookingFormPopup}>
+                  <div className={styles.bookingFormContent}>
+                    <span
+                      className={styles.closeButton}
+                      onClick={toggleBookingForm}
+                    >
+                      &times;
+                    </span>
+                    <Booking />
+                  </div>
+                </div>
+              )}
           </div>
         </div>
       </div>
@@ -295,8 +331,23 @@ const NonProfit = () => {
                 </p>
               </div>
               <button className={styles.buttonText2}>
-                <div className={styles.buttonText1}>BOOK A DEMO</div>
+                <div className={styles.buttonText1} onClick={() => setShowBookingForm(true)}>
+                  BOOK A DEMO
+                </div>
               </button>
+              {showBookingForm && (
+                <div className={styles.bookingFormPopup}>
+                  <div className={styles.bookingFormContent}>
+                    <span
+                      className={styles.closeButton}
+                      onClick={toggleBookingForm}
+                    >
+                      &times;
+                    </span>
+                    <Booking />
+                  </div>
+                </div>
+                )}
             </div>
           </div>
 
@@ -344,9 +395,24 @@ const NonProfit = () => {
               </p>
             </div>
             <div className={styles.buttonFourthDiv}>
-              <button className={styles.buttonText}>
-                <div className={styles.buttonText1}>BOOK A DEMO</div>
+            <button className={styles.buttonText2}>
+                <div className={styles.buttonText1} onClick={() => setShowBookingForm(true)}>
+                  BOOK A DEMO
+                </div>
               </button>
+              {showBookingForm && (
+                <div className={styles.bookingFormPopup}>
+                  <div className={styles.bookingFormContent}>
+                    <span
+                      className={styles.closeButton}
+                      onClick={toggleBookingForm}
+                    >
+                      &times;
+                    </span>
+                    <Booking />
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>

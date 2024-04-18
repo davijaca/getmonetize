@@ -1,8 +1,15 @@
-import React from 'react';
-import styles from './Game.module.css';
+import React, { useState } from "react";
+import styles from "./Game.module.css";
 import { Helmet } from "react-helmet";
+import Booking from "../../pages/Booking/Booking.jsx";
 
 const Game = () => {
+  const [showBookingForm, setShowBookingForm] = useState(false);
+
+  const toggleBookingForm = () => {
+    setShowBookingForm(!showBookingForm);
+  };
+
 
   const articleStructuredData = {
     '@context': 'https://schema.org',
@@ -75,18 +82,23 @@ const Game = () => {
                 </div>
               </div>
               <div className={styles.buttonText}>
-                <div className={styles.buttonText1}>BOOK A DEMO</div>
+                <div className={styles.buttonText1} onClick={() => setShowBookingForm(true)}>
+                  BOOK A DEMO
+                </div>
               </div>
-              {/*<div className={styles.bottomHero}>*/}
-              {/*    <h1 className={styles.bottomHero1}>+50%</h1>*/}
-              {/*    <h2>Sales increase*/}
-              {/*    <br />*/}
-              {/*    through existing users</h2>*/}
-              {/*    <h1 className={styles.bottomHero2}>1000+</h1>*/}
-              {/*    <h2>New*/}
-              {/*    <br />*/}
-              {/*    subscriptions</h2>*/}
-              {/*</div>*/}
+              {showBookingForm && (
+                <div className={styles.bookingFormPopup}>
+                  <div className={styles.bookingFormContent}>
+                    <span
+                      className={styles.closeButton}
+                      onClick={toggleBookingForm}
+                    >
+                      &times;
+                    </span>
+                    <Booking />
+                  </div>
+                </div>
+              )}
             </div>
             <div className={styles.leftMain}>
               <div className={styles.leftImgInfo}>
@@ -128,8 +140,26 @@ const Game = () => {
                                 </div>
 
                                 <div className={styles.buttonTextMobile}>
-                                    <div className={styles.buttonText1Mobile}>BOOK A DEMO</div>
+                            <div
+                              className={styles.buttonText1Mobile}
+                              onClick={() => setShowBookingForm(true)}
+                            >
+                              BOOK A DEMO
+                            </div>
+                          </div>
+                          {showBookingForm && (
+                              <div className={styles.bookingFormPopup}>
+                                <div className={styles.bookingFormContent}>
+                                  <span
+                                    className={styles.closeButton}
+                                    onClick={toggleBookingForm}
+                                  >
+                                    &times;
+                                  </span>
+                                  <Booking />
                                 </div>
+                              </div>
+                            )}
 
                             </div>
                             </div>
@@ -447,8 +477,26 @@ const Game = () => {
                 </div>
               </div>
               <div className={styles.buttonTextDemo}>
-                <div className={styles.buttonTextDemo1}>BOOK A DEMO</div>
+                <div
+                  className={styles.buttonTextDemo1}
+                  onClick={() => setShowBookingForm(true)}
+                >
+                  BOOK A DEMO
+                </div>
               </div>
+              {showBookingForm && (
+                      <div className={styles.bookingFormPopup}>
+                        <div className={styles.bookingFormContent}>
+                          <span
+                            className={styles.closeButton}
+                            onClick={toggleBookingForm}
+                          >
+                            &times;
+                          </span>
+                          <Booking />
+                        </div>
+                      </div>
+                    )}
             </div>
           </div>
         </div>
@@ -475,8 +523,26 @@ const Game = () => {
                   </div>
 
                   <div className={styles.mobileButtonTextGold}>
-                      <div className={styles.mobileButtonText1Gold}>BOOK A DEMO</div>
-                  </div>
+              <div
+                className={styles.mobileButtonText1Gold}
+                onClick={() => setShowBookingForm(true)}
+              >
+                BOOK A DEMO
+              </div>
+            </div>
+            {showBookingForm && (
+                      <div className={styles.bookingFormPopup}>
+                        <div className={styles.bookingFormContent}>
+                          <span
+                            className={styles.closeButton}
+                            onClick={toggleBookingForm}
+                          >
+                            &times;
+                          </span>
+                          <Booking />
+                        </div>
+                      </div>
+                    )}
                 </div>
             </div>
 

@@ -6,7 +6,7 @@ export const AppRoutes = {
   WEBSITE: '/website',
   NONPROFIT: '/nonprofit',
   NEWSPAPER: '/newspaper',
-  CONTACT: '/contact',
+  // CONTACT: '/contact',
   MOBILE: '/mobile',
   BLOGALLARTICLES: '/blog-all',
   // Use a query path to go to each article dynamically and not lost the images path by doing this:
