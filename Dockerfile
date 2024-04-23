@@ -8,8 +8,6 @@ COPY package.json package-lock.json ./
 
 USER node
 
-RUN npm install -g npm@10.5.2
-
 RUN npm ci
 
 COPY --chown=node:node . .
