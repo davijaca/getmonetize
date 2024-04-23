@@ -1,5 +1,5 @@
 /* Hightlighted section */
-.backgroundGrey_section {
+.highlightedBackground_section {
   background-color: #fafafa;
   color: #6d6d6d;
   padding: 40px 20px 60px;
@@ -12,7 +12,7 @@
 
 /* Desktop style */
 @media only screen and (min-width: 769px) {
-  .backgroundGrey_session {
+  .highlightedBackground_section {
     background-color: #fafafa;
     color: #6d6d6d;
     padding: 40px 20px 90px;

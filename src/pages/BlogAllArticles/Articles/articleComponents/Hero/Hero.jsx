@@ -40,7 +40,13 @@ const Hero = ({
                   onClick={() => {
                     window.history.back();
                   }}
+                  onKeyDown={(e) => {
+                    if (e.keyCode === 13) {
+                      window.history.back();
+                    }
+                  }}
                   data-testid="btn-goBack"
+                  tabindex="0"
                 />
               </div>
 

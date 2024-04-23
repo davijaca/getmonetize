@@ -7,7 +7,7 @@ import styles from './HighlightedSection.module.css';
 const HighlightedSection = ({ body }) => {
   return (
     <section>
-      <div className={styles.backgroundGrey_section}>
+      <div className={styles.highlightedBackground_section}>
         <div
           className={styles.titleOrTextIcon_wrapper}
           data-testid="article-highlighted"
@@ -18,6 +18,7 @@ const HighlightedSection = ({ body }) => {
               src="/images/share_grey.svg"
               className={styles.icons}
               alt=""
+              tabindex="0"
             />
             <img
               role="button"
@@ -25,6 +26,12 @@ const HighlightedSection = ({ body }) => {
               className={styles.icons}
               alt=""
               onClick={() => window.print()}
+              onKeyDown={(e) => {
+                if (e.keyCode === 13) {
+                  window.print();
+                }
+              }}
+              tabindex="0"
             />
           </div>
 
