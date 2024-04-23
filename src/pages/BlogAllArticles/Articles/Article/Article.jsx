@@ -12,8 +12,10 @@ import ReadNextArticleCard from '../../ReadNextArticleCards/ReadNextArticleCards
 import { getNextArticles } from '../../utils/getNextArticles';
 
 import styles from './Article.module.css';
+import SubscribeNews from '../../../../utilities/SubscribeNews/SubscribeNews';
 
-const Article = () => {
+const Article = ({ setShowFormFooter }) => {
+  setShowFormFooter(false);
   // Hook to navigate to other path
   const navigate = useNavigate();
   // Hook to read URL query
@@ -129,6 +131,9 @@ const Article = () => {
             );
           })}
         </div>
+      </div>
+      <div className={styles.subscribeNews_wrapper}>
+        <SubscribeNews />
       </div>
     </div>
   );

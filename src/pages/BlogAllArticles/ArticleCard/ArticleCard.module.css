@@ -19,7 +19,6 @@
 }
 
 .articleContent {
-  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -28,11 +27,12 @@
 .article {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .articleTitle {
   font-size: 20px;
+  font-family: Gotham-medium;
+  padding-bottom: 20px;
 }
 
 .info_wrapper {
@@ -57,8 +57,9 @@
   padding: 16px 43px;
   max-width: 210px;
   margin: 0 auto;
-  font-weight: bold;
   cursor: pointer;
+  font-family: gotham-medium;
+  font-weight: 500;
 }
 
 /* Desktop ArticleCard style */

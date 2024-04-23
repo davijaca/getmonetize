@@ -1,7 +1,6 @@
 export const AppRoutes = {
   MAIN: '/',
   GAME: '/game',
-  EXPLORINGOFFERWALL: '/exploringofferwall',
   BLOGARTICLE: '/blogarticle',
   WEBSITE: '/website',
   NONPROFIT: '/nonprofit',

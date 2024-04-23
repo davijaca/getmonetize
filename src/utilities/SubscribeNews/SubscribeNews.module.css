@@ -1,0 +1,74 @@
+.subscribeNews_wrapper {
+  position: relative;
+  height: 370px;
+}
+
+.subscribeNews {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  max-width: 1365px;
+  height: 495px;
+  background-image: url(/public/images/SubscribeNews_Colours.png);
+  background-size: cover;
+}
+
+.subscribeNews_content {
+  font-family: gotham-medium;
+  color: white;
+  padding-top: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.subscribeNews_stayUpDate_subtitle {
+  color: #a18129;
+  font-size: 38px;
+}
+
+.SubscribeNews_h1 {
+  font-size: 57px;
+}
+
+.subscribeNews_form {
+  display: flex;
+  justify-content: space-between;
+  width: 556px;
+}
+
+.subscribeNews_input {
+  font-size: 14px;
+  color: #b9bcce;
+  width: 325px;
+  padding-left: 24px;
+}
+
+.subscribeNews_button {
+  color: black;
+  background-color: white;
+  padding: 18px 56px;
+  text-transform: uppercase;
+}
+
+.subscribeInfos_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe_message {
+  height: 18px;
+}
+
+.subscribeInfo {
+  font-family: inter;
+  font-size: 15px;
+  color: #b9bcce;
+}

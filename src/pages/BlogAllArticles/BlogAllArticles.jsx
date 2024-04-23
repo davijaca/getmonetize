@@ -4,6 +4,7 @@ import { articlesData } from './utils/articlesData';
 import { Helmet } from 'react-helmet';
 import ArticleCard from './ArticleCard/ArticleCard';
 import Pagination from './Pagination/Pagination';
+import SubscribeNews from '../../utilities/SubscribeNews/SubscribeNews';
 
 // import heroFrameColours from './../../images/blogAllArticlesIntroFrameColors.svg';
 import styles from './BlogAllArticles.module.css';
@@ -21,7 +22,9 @@ const BlogAllArticles = ({
   allArticles = articlesData,
   articlesPerPage = 3,
   initialPage = 1,
+  setShowFormFooter,
 }) => {
+  setShowFormFooter(false);
   const [currentPage, setCurrentPage] = useState(initialPage);
   // Temporarely hard coded state -> to be fetch from a server in the future
   const [articlesList, setArticlesList] = useState(allArticles);
@@ -90,7 +93,7 @@ const BlogAllArticles = ({
       </div>
 
       <div className={styles.bodyAllArticles}>
-        <h1 className={styles.bodyAllArticles_Title}>More Articles</h1>
+        <h2 className={styles.bodyAllArticles_Title}>More Articles</h2>
         <div className={styles.bodyAllArticlesWrapper}>
           <div className={styles.articlesCardsGrid}>
             {displayedArticlesList.map((article) => {
@@ -116,6 +119,9 @@ const BlogAllArticles = ({
           // onPaginationChange={handlePaginationChange}
           />
         </div>
+      </div>
+      <div className={styles.subscribeNews_wrapper}>
+        <SubscribeNews />
       </div>
     </>
   );

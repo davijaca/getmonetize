@@ -1,7 +1,7 @@
 .readNextCard,
 .readNextCard * {
   box-sizing: border-box;
-  font-family: gotham;
+  font-family: gotham-book;
   line-height: 26px;
   font-weight: 400;
 }
@@ -70,11 +70,12 @@
 }
 
 .readNextCardBtnReadMore {
+  font-family: Gotham-medium;
   background-color: #a18129;
   color: white;
   padding: 16px 43px;
   max-width: 210px;
-  font-weight: bold;
+  font-weight: 500;
   cursor: pointer;
 }
 

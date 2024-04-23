@@ -166,3 +166,14 @@ body.active-modal {
     right: 10px;
     padding: 5px 7px;
 }
+
+.successMessage {
+    color: black; /* White text color */
+    padding: 0px; /* Padding around the message */
+    border-radius: 5px; /* Rounded corners */
+    width: 100%; /* Width of the success message */
+    max-width: 800px; /* Maximum width */
+    margin: 40px auto; /* Center the message horizontally */
+    text-align: center; /* Center text */
+    font-size: 18px; /* Font size */
+}
