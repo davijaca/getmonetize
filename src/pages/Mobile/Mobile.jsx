@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import styles from './Mobile.module.css';
-import { Link } from 'react-router-dom';
 import Booking from '../../pages/Booking/Booking.jsx';
+import Button from '../../components/Button/Button.jsx';
 
 const Mobile = () => {
   const [showBookingForm, setShowBookingForm] = useState(false);
@@ -36,17 +36,20 @@ const Mobile = () => {
             opportunities in exchange for access to premium content, vouchers or
             rewards.
           </p>
-            <Link className={styles.button} to=''>
-            <div className={styles.buttonText} onClick={() => setShowBookingForm(true)}>BOOK A DEMO</div>
-            </Link>
-              {showBookingForm && (
-                  <div className={styles.bookingFormPopup}>
-                      <div className={styles.bookingFormContent}>
-                          <span className={styles.closeButton} onClick={toggleBookingForm}>&times;</span>
-                          <Booking />
-                      </div>
-                  </div>
-              )}
+          <Button onClick={toggleBookingForm} />
+          {showBookingForm && (
+            <div className={styles.bookingFormPopup}>
+              <div className={styles.bookingFormContent}>
+                <span
+                  className={styles.closeButton}
+                  onClick={toggleBookingForm}
+                >
+                  &times;
+                </span>
+                <Booking />
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
@@ -139,17 +142,20 @@ const Mobile = () => {
               Providing valuable content or services
             </li>
           </ul>
-          <Link className={styles.button} to=''>
-            <div className={styles.buttonText} onClick={() => setShowBookingForm(true)}>BOOK A DEMO</div>
-          </Link>
-              {showBookingForm && (
-                  <div className={styles.bookingFormPopup}>
-                      <div className={styles.bookingFormContent}>
-                          <span className={styles.closeButton} onClick={toggleBookingForm}>&times;</span>
-                          <Booking />
-                      </div>
-                  </div>
-              )}
+          <Button onClick={toggleBookingForm} />
+          {showBookingForm && (
+            <div className={styles.bookingFormPopup}>
+              <div className={styles.bookingFormContent}>
+                <span
+                  className={styles.closeButton}
+                  onClick={toggleBookingForm}
+                >
+                  &times;
+                </span>
+                <Booking />
+              </div>
+            </div>
+          )}
         </div>
         <div className={styles.fourthSectionImage}>
           <img

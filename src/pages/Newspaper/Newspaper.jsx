@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Newspaper.module.css';
 import Booking from '../../pages/Booking/Booking.jsx';
+import Button from '../../components/Button/Button.jsx';
 
 const Newspaper = () => {
   const [showBookingForm, setShowBookingForm] = useState(false);
@@ -37,14 +38,7 @@ const Newspaper = () => {
                   revenue?
                 </div>
               </div>
-              <div className={styles.buttonText}>
-                <div
-                  className={styles.buttonText1}
-                  onClick={() => setShowBookingForm(true)}
-                >
-                  BOOK A DEMO
-                </div>
-              </div>
+              <Button onClick={toggleBookingForm} />
               {showBookingForm && (
                 <div className={styles.bookingFormPopup}>
                   <div className={styles.bookingFormContent}>
@@ -106,14 +100,7 @@ const Newspaper = () => {
                     revenue?
                   </div>
                 </div>
-                <div className={styles.buttonTextMobile}>
-                  <div
-                    className={styles.buttonText1Mobile}
-                    onClick={() => setShowBookingForm(true)}
-                  >
-                    BOOK A DEMO
-                  </div>
-                </div>
+                <Button onClick={toggleBookingForm} />
                 {showBookingForm && (
                   <div className={styles.bookingFormPopup}>
                     <div className={styles.bookingFormContent}>
@@ -410,14 +397,7 @@ const Newspaper = () => {
             their position in the digital age.
           </p>
 
-          <div className={styles.buttonGold}>
-            <div
-              className={styles.buttonTextGold}
-              onClick={() => setShowBookingForm(true)}
-            >
-              BOOK A DEMO
-            </div>
-          </div>
+          <Button color='gold' onClick={toggleBookingForm} />
           {showBookingForm && (
             <div className={styles.bookingFormPopup}>
               <div className={styles.bookingFormContent}>
@@ -460,14 +440,7 @@ const Newspaper = () => {
             their position in the digital age.
           </p>
 
-          <div className={styles.mobileButtonGold}>
-            <div
-              className={styles.mobileButtonTextGold}
-              onClick={() => setShowBookingForm(true)}
-            >
-              BOOK A DEMO
-            </div>
-          </div>
+          <Button color='gold' onClick={toggleBookingForm} />
           {showBookingForm && (
             <div className={styles.bookingFormPopup}>
               <div className={styles.bookingFormContent}>

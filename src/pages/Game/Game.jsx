@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Game.module.css';
 import { Helmet } from 'react-helmet';
+import Button from '../../components/Button/Button';
 
 const Game = () => {
   return (
@@ -32,9 +33,7 @@ const Game = () => {
                   upfront.
                 </div>
               </div>
-              <div className={styles.buttonText}>
-                <div className={styles.buttonText1}>BOOK A DEMO</div>
-              </div>
+              <Button />
             </div>
             <div className={styles.leftMain}>
               <div className={styles.leftImgInfo}>
@@ -61,22 +60,22 @@ const Game = () => {
           </div>
         </div>
         <div className={styles.rightMainMobile}>
-          <h1 className={styles.textMobile}>
-            Enhance <span className={styles.text2Mobile}>your</span>
-          </h1>
-          <h2 className={styles.text2Mobile}>
-            game <br /> monetization <br /> model.
-          </h2>
-          <div className={styles.paragMobile}>
+          <div>
+            <h1 className={styles.textMobile}>
+              Enhance <span className={styles.text2Mobile}>your</span>
+            </h1>
+            <h2 className={styles.text2Mobile}>
+              game <br /> monetization <br /> model.
+            </h2>
+          </div>
+          <div className={styles.paragFirstMobile}>
             <div className={styles.innerParagFirstMobile}>
               Give players more choice when it comes to monetization. While
               gaming payment gateways are a necessary evil for many gaming
               companies, many gamers are not willing to pay for games upfront.
             </div>
           </div>
-          <div className={styles.buttonTextMobile}>
-            <div className={styles.buttonText1Mobile}>BOOK A DEMO</div>
-          </div>
+          <Button />
         </div>
       </div>
 
@@ -321,7 +320,7 @@ const Game = () => {
               <h2 className={styles.textSecondMobile}>
                 Grow your revenue. <br /> Monetize your game or app.
               </h2>
-              <div className={styles.paragMobile}>
+              <div className={styles.paragFourthMobile}>
                 <div className={styles.innerParagSecondMobile}>
                   Smatched offers a unique solution to the monetization
                   challenges faced by the gaming industry.
@@ -366,9 +365,7 @@ const Game = () => {
                 increasingly important as the gaming industry continues to
                 evolve and grow.
               </p>
-              <div className={styles.buttonTextDemo}>
-                <div className={styles.buttonTextDemo1}>BOOK A DEMO</div>
-              </div>
+              <Button color='gold' />
             </div>
           </div>
         </div>
@@ -401,9 +398,7 @@ const Game = () => {
               and grow.
             </div>
 
-            <div className={styles.mobileButtonTextGold}>
-              <div className={styles.mobileButtonText1Gold}>BOOK A DEMO</div>
-            </div>
+            <Button color='gold' />
           </div>
         </div>
       </div>

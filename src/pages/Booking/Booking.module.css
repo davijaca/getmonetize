@@ -70,37 +70,6 @@
     margin-right: 20px;
 }
 
-.sendGroup {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 14px 34px;
-    gap: 24px;
-    width: 210px;
-    height: 60px;
-    background: #1E1E1E;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.sendButtonText {
-    width: 124px;
-    height: 38px;
-    font-family: 'Gotham';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 38px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
 .bookingLabel {
     width: 360px;
     height: 30px;

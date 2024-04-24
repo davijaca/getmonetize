@@ -1,76 +1,77 @@
-import React, { useState, useRef } from "react";
-import styles from "./AboutUs.module.css";
-import { Link } from "react-router-dom";
-import Booking from "../../pages/Booking/Booking.jsx";
-import { Card, CardContent, Grid, Typography } from "@mui/material";
-import emailjs from "@emailjs/browser";
+import React, { useState, useRef } from 'react';
+import styles from './AboutUs.module.css';
+import { Link } from 'react-router-dom';
+import Booking from '../../pages/Booking/Booking.jsx';
+import { Card, CardContent, Grid, Typography } from '@mui/material';
+import emailjs from '@emailjs/browser';
+import Button from '../../components/Button/Button.jsx';
 
 const cards = [
   {
     id: 1,
-    color: "#6B96984D",
-    title: "Innovative Solutions",
+    color: '#6B96984D',
+    title: 'Innovative Solutions',
     content:
-      "Reflecting your commitment to pioneering and cutting-edge approaches in offer wall monetization.",
+      'Reflecting your commitment to pioneering and cutting-edge approaches in offer wall monetization.',
   },
   {
     id: 2,
-    color: "#6B96984D",
-    title: "Profitable Partnership",
+    color: '#6B96984D',
+    title: 'Profitable Partnership',
     content:
-      "Signifying your focus on establishing mutually beneficial relationships with clients, ensuring profitability and success for both parties.",
+      'Signifying your focus on establishing mutually beneficial relationships with clients, ensuring profitability and success for both parties.',
   },
   {
     id: 3,
-    color: "#6B96984D",
-    title: "User-Centric Engagement",
+    color: '#6B96984D',
+    title: 'User-Centric Engagement',
     content:
-      "Emphasizing your dedication to creating meaningful and user-friendly experiences within offer walls, enhancing customer engagement.",
+      'Emphasizing your dedication to creating meaningful and user-friendly experiences within offer walls, enhancing customer engagement.',
   },
   {
     id: 4,
-    color: "#A4832B4D",
-    title: "Data-Driven Strategies",
+    color: '#A4832B4D',
+    title: 'Data-Driven Strategies',
     content:
-      "Emphasizing how you use data analysis and insights to make good and focused strategies.",
+      'Emphasizing how you use data analysis and insights to make good and focused strategies.',
   },
   {
     id: 5,
-    color: "#A4832B4D",
-    title: "Reliability and Trust",
+    color: '#A4832B4D',
+    title: 'Reliability and Trust',
     content:
       "Communicating your company's trustworthiness, reliability, and consistency in delivering high-quality offer wall services to clients.",
   },
   {
     id: 6,
-    color: "#A4832B4D",
-    title: "Customized Solutions",
+    color: '#A4832B4D',
+    title: 'Customized Solutions',
     content:
-      "Demonstrating your ability to tailor offer wall monetization solutions to meet the unique needs and goals of each client.",
+      'Demonstrating your ability to tailor offer wall monetization solutions to meet the unique needs and goals of each client.',
   },
 ];
 
 const cardsSecThree = [
   {
     id: 1,
-    color: "#C3E1E4",
-    src: "/images/PocketHost.png",
-    width: "240px",
-    height: "52.02px",
+    color: '#C3E1E4',
+    src: '/images/PocketHost.png',
+    width: '240px',
+    height: '52.02px',
   },
   {
     id: 2,
-    color: "#C3E1E4",
-    src: "/images/Experial.png",
-    width: "180px",
-    height: "40px",
+    color: '#C3E1E4',
+    src: '/images/Experial.png',
+    width: '180px',
+    height: '40px',
   },
   {
     id: 3,
-    color: "#C3E1E4",
-    src: "/images/Vector.png",
-    width: "240px",
-    height: "52.02px",
+    color: '#C3E1E4',
+    src: '/images/Vector.png',
+    width: '240px',
+    height: '52.02px',
   },
 ];
 
@@ -85,20 +86,20 @@ const AboutUs = () => {
 
     emailjs
       .sendForm(
-        "service_kqfam0m",
-        "template_0nk7u7r",
+        'service_kqfam0m',
+        'template_0nk7u7r',
         form.current,
-        "AuTqDu9UI6pmz293H"
+        'AuTqDu9UI6pmz293H'
       )
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. We will get back to you as soon as possible.");
+          alert('Thank you. We will get back to you as soon as possible.');
           form.current.reset();
         },
         (error) => {
           setLoading(false);
-          alert("Something went wrong.");
+          alert('Something went wrong.');
         }
       );
   };
@@ -132,9 +133,9 @@ const AboutUs = () => {
 
       <div
         style={{
-          display: "grid",
-          placeItems: "center",
-          minHeight: "100vh",
+          display: 'grid',
+          placeItems: 'center',
+          minHeight: '100vh',
           padding: 130,
         }}
       >
@@ -171,8 +172,10 @@ const AboutUs = () => {
         <div className={styles.thirdSectionOne}>
           <h3 className={styles.thirdTitleSecOne}>With our App...</h3>
           <p className={styles.textSec3}>
-    With the Monetize mobile app we created the fastest reward network on the market which rewards users with an increasing payout for their consumption of personalized ads.
-</p>
+            With the Monetize mobile app we created the fastest reward network
+            on the market which rewards users with an increasing payout for
+            their consumption of personalized ads.
+          </p>
         </div>
 
         <div className={styles.thirdSectionTwo}>
@@ -213,24 +216,14 @@ const AboutUs = () => {
             </p>
             <Grid container>
               <Grid xs={6}>
-                <Link className={styles.buttonSec4} to="">
-                  <div
-                    className={styles.buttonSec4Text}
-                    onClick={() => setShowBookingForm(true)}
-                  >
-                    TRY FOR FREE
-                  </div>
-                </Link>
+                <Button
+                  text='TRY FOR FREE'
+                  color='gold'
+                  onClick={() => setShowBookingForm(true)}
+                />
               </Grid>
               <Grid xs={6}>
-                <Link className={styles.buttonDemoSec4} to="">
-                  <div
-                    className={styles.buttonDemoSec4Text}
-                    onClick={() => setShowBookingForm(true)}
-                  >
-                    BOOK A DEMO
-                  </div>
-                </Link>
+                <Button onClick={() => setShowBookingForm(true)} />
               </Grid>
             </Grid>
             {showBookingForm && (
@@ -249,8 +242,8 @@ const AboutUs = () => {
           </div>
           <div className={styles.fourthRight}>
             <img
-              src="/images/Group 1000004746.png"
-              alt="A graph with an arrow to the top "
+              src='/images/Group 1000004746.png'
+              alt='A graph with an arrow to the top '
             />
           </div>
         </div>
@@ -270,18 +263,18 @@ const AboutUs = () => {
                   <div className={styles.bookingField}>
                     <input
                       className={styles.dataBox}
-                      type="text"
-                      placeholder="Name"
-                      name="Name"
+                      type='text'
+                      placeholder='Name'
+                      name='Name'
                       required
                     />
                   </div>
                   <div className={styles.bookingField}>
                     <input
                       className={styles.dataBox}
-                      type="text"
-                      placeholder="Email"
-                      name="Email"
+                      type='text'
+                      placeholder='Email'
+                      name='Email'
                       required
                     />
                   </div>
@@ -289,9 +282,9 @@ const AboutUs = () => {
                   <div className={styles.bookingField}>
                     <input
                       className={styles.dataBox}
-                      type="text"
-                      placeholder="Phone Number"
-                      name="Phone Number"
+                      type='text'
+                      placeholder='Phone Number'
+                      name='Phone Number'
                       required
                     />
                   </div>
@@ -301,24 +294,14 @@ const AboutUs = () => {
                   <div className={styles.bookingField}>
                     <textarea
                       className={styles.messageBox}
-                      name="message"
-                      placeholder="Message"
+                      name='message'
+                      placeholder='Message'
                       required
                     ></textarea>
                   </div>
                 </Grid>
                 <Grid xs={12}>
-                  <div>
-                    <button
-                      className={styles.sendGroup}
-                      type="submit"
-                      id="btnSubmit"
-                    >
-                      <typography className={styles.sendButtonText}>
-                        SEND
-                      </typography>
-                    </button>
-                  </div>
+                  <Button text='SEND' type='submit' />
                 </Grid>
               </Grid>
             </div>
@@ -332,8 +315,8 @@ const AboutUs = () => {
           <div className={styles.firstMobileTopImg}>
             <img
               className={styles.firstMobileImg}
-              src="./images/website_sec1.png"
-              alt="A monitor and a laptop screen"
+              src='./images/website_sec1.png'
+              alt='A monitor and a laptop screen'
             />
           </div>
           <div className={styles.firstMobileBottomContent}>
@@ -357,7 +340,7 @@ const AboutUs = () => {
                 of users on average willing to pay for what’s behind your wall.
               </p>
             </div>
-            <Link className={styles.firstMobileButton} to="">
+            <Link className={styles.firstMobileButton} to=''>
               <div
                 className={styles.firstMobileButtonText}
                 onClick={() => setShowBookingForm(true)}

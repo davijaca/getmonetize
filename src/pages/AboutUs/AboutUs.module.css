@@ -462,54 +462,6 @@ text-align: left;
 color: #FFFFFF;
 }
 
-.buttonSec4 {
-  display: flex;
-  width: 210px;
-  height: 55px;
-  /* padding: 24px 64px; */
-  justify-content: center;
-  align-items: center;
-  /* gap: 24px; */
-  border: 1px solid #a18129;
-  background: #a18129;
-}
-
-.buttonDemoSec4 {
-  display: flex;
-  width: 210px;
-  height: 55px;
-  /* padding: 24px 64px; */
-  justify-content: center;
-  align-items: center;
-  /* gap: 24px; */
-  border: 1px solid #a18129;
-  background: #FFFFFF;
-}
-/* in the design it seems thinner */
-.buttonSec4Text {
-  color: #fff;
-  text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: gotham-medium;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 38px;
-  /* text-transform: uppercase; */
-}
-
-.buttonDemoSec4Text {
-  color: #1E1E1E;
-  text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: gotham-medium;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 38px;
-  /* text-transform: uppercase; */
-}
-
 .fourthRight {
   display: flex;
   align-items: center;
@@ -649,18 +601,6 @@ background: #00000080;
   background: #FFFFFF;  
 }
 
-.sendButtonText {
-  width: 47px;
-height: 15px;
-gap: 0px;
-opacity: 0px;
-font-family: Gotham;
-font-size: 16px;
-font-weight: 500;
-line-height: 15.31px;
-text-align: left;
-color: #1E1E1E;
-}
 /*MOBILE RESPONSIVENESS*/
 
 @media only screen and (max-width: 1130px) and (min-width: 320px) {

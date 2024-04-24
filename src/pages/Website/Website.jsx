@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import styles from './Website.module.css';
 import { Link } from 'react-router-dom';
-import Booking from "../../pages/Booking/Booking.jsx";
+import Booking from '../../pages/Booking/Booking.jsx';
+import Button from '../../components/Button/Button.jsx';
 
 const Website = () => {
   const [showBookingForm, setShowBookingForm] = useState(false);
@@ -35,14 +36,7 @@ const Website = () => {
                 of users on average willing to pay for what’s behind your wall.
               </p>
             </div>
-            <Link className={styles.firstLeftButton} to="">
-              <div
-                className={styles.firstLeftButtonText}
-                onClick={() => setShowBookingForm(true)}
-              >
-                BOOK A DEMO{" "}
-              </div>
-            </Link>
+            <Button onClick={toggleBookingForm} />
             {showBookingForm && (
               <div className={styles.bookingFormPopup}>
                 <div className={styles.bookingFormContent}>
@@ -98,47 +92,19 @@ const Website = () => {
                 of users on average willing to pay for what’s behind your wall.
               </p>
             </div>
-
-            <Link className={styles.firstMobileButton} to="">
-
-              <div
-
-                className={styles.firstMobileButtonText}
-
-                onClick={() => setShowBookingForm(true)}
-
-              >
-
-                BOOK A DEMO
-
-              </div>
-
-            </Link>
-
+            <Button onClick={toggleBookingForm} />
             {showBookingForm && (
-
               <div className={styles.bookingFormPopup}>
-
                 <div className={styles.bookingFormContent}>
-
                   <span
-
                     className={styles.closeButton}
-
                     onClick={toggleBookingForm}
-
                   >
-
                     &times;
-
                   </span>
-
                   <Booking />
-
                 </div>
-
               </div>
-
             )}
           </div>
         </div>
@@ -158,11 +124,9 @@ const Website = () => {
             make money from website traffic.
           </p>
         </div>
-
         <div className={styles.imageSec2Bow}>
           <img src='./images/website_sec2_bow.svg' alt='' />
         </div>
-
         <div className={styles.secondWebsiteContainerBox2}>
           <div className={styles.secondWebsiteContainerBox2Content}>
             <img
@@ -203,7 +167,6 @@ const Website = () => {
             make money from website traffic.
           </p>
         </div>
-
         <div className={styles.secondWebsiteContainerBox2Mobile}>
           <p>
             Smatched offers a solution that empowers users to access your
@@ -282,47 +245,19 @@ const Website = () => {
               way past your paywalls by answering surveys or testing apps on our
               customized offerwall.
             </p>
-
-            <Link className={styles.buttonSec4} to="">
-
-              <div
-
-                className={styles.buttonSec4Text}
-
-                onClick={() => setShowBookingForm(true)}
-
-              >
-
-                BOOK A DEMO{" "}
-
-              </div>
-
-            </Link>
-
+            <Button color='gold' onClick={toggleBookingForm} />
             {showBookingForm && (
-
               <div className={styles.bookingFormPopup}>
-
                 <div className={styles.bookingFormContent}>
-
                   <span
-
                     className={styles.closeButton}
-
                     onClick={toggleBookingForm}
-
                   >
-
                     &times;
-
                   </span>
-
                   <Booking />
-
                 </div>
-
               </div>
-
             )}
           </div>
           <div className={styles.fourthRight}>
@@ -357,48 +292,20 @@ const Website = () => {
             way past your paywalls by answering surveys or testing apps on our
             customized offerwall.
           </p>
-
-          <Link className={styles.buttonSec4Mobile} to="">
-
-            <div
-
-              className={styles.buttonSec4MobileText}
-
-              onClick={() => setShowBookingForm(true)}
-
-            >
-
-              BOOK A DEMO{" "}
-
-            </div>
-
-          </Link>
-
+          <Button color='gold' onClick={toggleBookingForm} />
           {showBookingForm && (
-
-              <div className={styles.bookingFormPopup}>
-
-                <div className={styles.bookingFormContent}>
-
-                  <span
-
-                    className={styles.closeButton}
-
-                    onClick={toggleBookingForm}
-
-                  >
-
-                    &times;
-
-                  </span>
-
-                  <Booking />
-
-                </div>
-
+            <div className={styles.bookingFormPopup}>
+              <div className={styles.bookingFormContent}>
+                <span
+                  className={styles.closeButton}
+                  onClick={toggleBookingForm}
+                >
+                  &times;
+                </span>
+                <Booking />
               </div>
-
-            )}
+            </div>
+          )}
         </div>
       </div>
     </div>

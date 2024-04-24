@@ -115,27 +115,6 @@ h2 {
   line-height: 29px;
 }
 
-.buttonText {
-  display: flex;
-  width: 210px;
-  height: 60px;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #fff;
-  background: #fff;
-}
-
-.buttonText1 {
-  color: #0a0a0a;
-  text-align: center;
-  font-feature-settings: 'clig' off, 'liga' off;
-  font-family: gotham-medium;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 38px;
-}
-
 .leftMain {
   width: 50%;
   display: flex;
@@ -342,27 +321,6 @@ h2 {
   margin: 0;
 }
 
-.buttonGold {
-  display: flex;
-  width: 210px;
-  height: 55px;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #a18129;
-  background: #a18129;
-}
-
-.buttonTextGold {
-  color: #fff;
-  text-align: center;
-  font-feature-settings: 'clig' off, 'liga' off;
-  font-family: gotham-medium;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 38px;
-}
-
 .bookingFormPopup {
   position: fixed;
   top: 0;
@@ -487,46 +445,18 @@ h2 {
 
   .paragMobile {
     width: 100%;
-    height: 90px;
     margin-top: 30px;
     margin-bottom: 30px;
   }
 
   .innerParagMobile {
     width: 352px;
-    height: 95px;
     color: var(--White, #fff);
     font-family: gotham-book;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-  }
-
-  .buttonTextMobile {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .buttonText1Mobile {
-    border: 1px solid #fff;
-    width: 210px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
-    color: var(--Modal-grey-1, #000000);
-    text-align: center;
-    font-family: gotham-medium;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 38px;
-    z-index: 5;
-    margin-top: 150px;
   }
 
   .leftMainMobile {
@@ -736,28 +666,6 @@ h2 {
     font-weight: 400;
     line-height: 24px;
     margin: 0;
-  }
-  
-  .mobileButtonGold {
-    display: flex;
-    width: 210px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #a18129;
-    background: #a18129;
-    margin: 0 auto;
-  }
-  
-  .mobileButtonTextGold {
-    color: #fff;
-    text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: gotham-medium;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 38px;
   }
 }
 

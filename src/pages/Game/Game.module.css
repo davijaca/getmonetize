@@ -116,27 +116,6 @@ h2 {
   line-height: 29px;
 }
 
-.buttonText {
-    display: flex;
-    width: 210px;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #fff;
-    background: #fff;
-}
-
-.buttonText1 {
-    color: #0a0a0a;
-    text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: gotham-medium;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 38px;
-}
-
 .leftMain {
   display: flex;
   align-items: center;
@@ -604,27 +583,6 @@ h2 {
   font-weight: 500;
 }
 
-.buttonTextDemo {
-  display: flex;
-  width: 210px;
-  height: 60px;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #A18129;
-  background: #A18129;
-}
-
-.buttonTextDemo1 {
-  color: #fff;
-  text-align: center;
-  font-feature-settings: 'clig' off, 'liga' off;
-  font-family: gotham-medium;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 38px;
-}
-
 .mobileFifthGameContainer {
   display: none;
 }
@@ -655,6 +613,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    gap: 30px;
     margin: 20px 0 0 10px;
   }
 
@@ -680,10 +639,9 @@ h2 {
     z-index: 5;
   }
 
-  .paragMobile {
+  .paragFirstMobile {
     width: 100%;
     height: 90px;
-    margin-top: 30px;
     margin-bottom: 30px;
   }
 
@@ -696,33 +654,6 @@ h2 {
     font-weight: 400;
     line-height: 29px;
     /* 157.143% */
-  }
-
-  .buttonTextMobile {
-    margin-top: 20px;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .buttonText1Mobile {
-    border: 1px solid #fff;
-    width: 210px;
-    height: 50px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
-    color: var(--Modal-grey-1, #000000);
-    text-align: center;
-    font-family: gotham-medium, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    z-index: 5;
   }
 
   .leftMainMobile {
@@ -956,6 +887,13 @@ h2 {
     line-height: 36px;
   }
 
+   .paragFourthMobile {
+    width: 100%;
+    height: 90px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
   .innerParagFourthMobile {
     width: 352px;
     height: 95px;
@@ -1023,11 +961,11 @@ h2 {
     flex-direction: column;
     align-items: center;
     margin: auto;
+    gap: 24px;
   }
 
   .mobileFifthSectionRightH1 {
     margin-left: 20px;
-    margin-bottom: 30px;
     color: #1e1e1e;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: gotham-medium;
@@ -1037,16 +975,8 @@ h2 {
     line-height: 36px;
   }
 
-  .paragMobile {
-    width: 100%;
-    height: 90px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
   .increaseSubscription {
     width: 353px;
-    height: 95px;
     color: var(--White, black);
     font-family: gotham-book;
     font-size: 14px;
@@ -1058,27 +988,5 @@ h2 {
   .increaseSubscription > span {
     font-family: gotham-medium;
     font-weight: 500;
-  }
-
-  .mobileButtonTextGold {
-    margin-top: 225px;
-    display: flex;
-    width: 210px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #a18129;
-    background: #a18129;
-  }
-
-  .mobileButtonText1Gold {
-    color: #fff;
-    text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: gotham-medium;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 38px;
   }
 }

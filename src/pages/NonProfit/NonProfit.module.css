@@ -136,38 +136,6 @@ h2 {
   line-height: 29px;
 }
 
-.buttonText {
-  width: 210px;
-  height: 60px;
-  border: 1px solid #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 5;
-  margin-bottom: 30px;
-}
-
-.buttonText1 {
-  border: 1px solid #fff;
-  width: 220px;
-  height: 60px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ffffff;
-  color: #1e1e1e;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: gotham-medium;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 38px;
-  z-index: 5;
-  cursor: pointer;
-}
-
 .leftMain {
   width: 50%;
   display: flex;
@@ -470,17 +438,6 @@ h2 {
   flex-shrink: 0;
 }
 
-.buttonText2 {
-  width: 210px;
-  height: 60px;
-  border: 1px solid #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 5;
-}
-
-
 .bookingFormPopup {
   position: fixed;
   top: 0;
@@ -596,7 +553,6 @@ h2 {
     display: flex;
     align-items: flex-start;
     justify-content: left;
-    height: 443px;
     z-index: 5;
     flex-direction: column;
     margin-top: 20px;
@@ -637,38 +593,6 @@ h2 {
     font-weight: 400;
     line-height: 24px;
     width: 100%;
-  }
-
-  .buttonText {
-    width: 210px;
-    height: 50px;
-    border: 1px solid #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 5;
-    margin-bottom: 30px;
-  }
-
-  .buttonText1 {
-    border: 1px solid #fff;
-    width: 220px;
-    height: 50px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
-    color: #1e1e1e;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: gotham-medium, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 38px;
-    z-index: 5;
-    cursor: pointer;
   }
 
   /*SECOND MOBILE SECTION*/
@@ -955,7 +879,8 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
   }
 
   .mobileFourthSectionRightH1 {
@@ -979,17 +904,13 @@ h2 {
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+    margin: 0;
   }
 
   .bottomFourthMobile > p > span {
     font-family: gotham-medium;
     font-weight: 500;
   }
-
-  .buttonFourthDiv {
-    display: flex;
-  }
-
   
 .bookingFormPopup {
   display: unset;

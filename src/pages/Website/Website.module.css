@@ -1,46 +1,405 @@
 @font-face {
-    font-family: gotham-light;
-    src: url('/public/fonts/Gotham/Gotham-Light.otf');
-  }
-  
-  @font-face {
-    font-family: gotham-medium;
-    src: url('/public/fonts/Gotham/Gotham-Medium.otf');
-  }
-  
-  @font-face {
-    font-family: gotham-book;
-    src: url('/public/fonts/Gotham/Gotham-Book.otf');
-  }
-  
-  @font-face {
-    font-family: inter-semibold;
-    src: url('/public/fonts/Inter/Inter-SemiBold.ttf');
-  }
-  
-  @font-face {
-    font-family: inter-regular;
-    src: url('/public/fonts/Inter/Inter-Regular.ttf');
-  }
-  
-  .website .website * {
-    box-sizing: border-box;
-  }
-  
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  
-  h1 {
-    margin: 0;
-  }
-  
-  h2 {
-    margin: 0;
-  }
-  
+  font-family: gotham-light;
+  src: url('/public/fonts/Gotham/Gotham-Light.otf');
+}
+
+@font-face {
+  font-family: gotham-medium;
+  src: url('/public/fonts/Gotham/Gotham-Medium.otf');
+}
+
+@font-face {
+  font-family: gotham-book;
+  src: url('/public/fonts/Gotham/Gotham-Book.otf');
+}
+
+@font-face {
+  font-family: inter-semibold;
+  src: url('/public/fonts/Inter/Inter-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: inter-regular;
+  src: url('/public/fonts/Inter/Inter-Regular.ttf');
+}
+
+.website .website * {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+.websiteContainer {
+  width: 100vw;
+  max-width: 1920px;
+  margin: auto;
+  margin-top: -120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*FIRST SECTION*/
+
+.firstWebsiteContainer {
+  background: url(/public/heroBackground.svg) no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 1026px;
+}
+
+.mobileFirstWebsiteContainer {
+  display: none;
+}
+
+.mobileFirstBg {
+  display: none;
+}
+
+.containerToMatchDesign {
+  width: 1512px;
+  display: flex;
+  justify-content: center;
+}
+
+.firstLeft {
+  width: 37%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-top: 216px;
+}
+
+.firstLeftTitle1 {
+  color: var(--White, #fff);
+  font-family: gotham-medium;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 108.5%;
+}
+
+.firstLeftTitle2 {
+  color: var(--White, #fff);
+  font-family: gotham-book;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 108.5%;
+}
+
+.firstLeftText {
+  color: #fff;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-book;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.firstRight {
+  margin-top: 297px;
+  width: 50%;
+}
+
+/*SECOND SECTION*/
+
+.secondWebsiteContainer {
+  width: 100%;
+  background-color: #f0f0f0;
+  min-height: 1010px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobileSecondWebsiteContainer {
+  display: none;
+}
+
+.secondWebsiteContainerBox1 {
+  width: 1273px;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  margin-top: 150px;
+}
+
+.secondLeft {
+  max-width: 711px;
+  color: #1e1e1e;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-medium;
+  font-size: 53px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  margin: 0px;
+}
+
+.secondRight {
+  max-width: 562px;
+  color: #1e1e1e;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-book;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  margin: 0px;
+}
+
+.imageSec2Bow {
+  margin-top: 100px;
+  max-width: 610px;
+}
+
+.secondWebsiteContainerBox2 {
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+  width: 100%;
+}
+
+.secondWebsiteContainerBox2Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.imageSec2 {
+  width: 108px;
+  height: 108px;
+  z-index: 5;
+}
+
+.textImgSec2 {
+  color: #1e1e1e;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-book;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  width: 315px;
+  padding-top: 20px;
+}
+
+/*THIRD SECTION*/
+
+.thirdWebsiteContainer {
+  background-color: #1e1e1e;
+  min-height: 1010px;
+  display: flex;
+}
+
+.mobileThirdWebsiteContainer {
+  display: none;
+}
+
+.thirdLeft {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+}
+
+.thirdLeftBgTop {
+  background-color: #9d8029;
+  box-shadow: 43px -46px 66px 42px rgba(0, 0, 0, 0.4) inset;
+  background: linear-gradient(#a0802a, #1e1b18);
+  height: 690px;
+}
+
+.thirdLeftBgBottom {
+  background-color: #9d8029;
+  background: linear-gradient(to top left, #a6862c, #7a611f);
+  border-radius: 0px 0px 120px 0px;
+  height: 111px;
+}
+
+.thirdLeft > img {
+  margin-top: -588px;
+  margin-left: 200px;
+  max-width: 607px;
+}
+
+.thirdRight {
+  margin-left: 130px;
+  width: 850px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 48px;
+}
+
+.titleSec3 {
+  max-width: 538px;
+  margin: 0;
+  color: #fff;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-medium;
+  font-size: 53px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+/* in the design it seems thinner */
+.textSec3 {
+  max-width: 532px;
+  color: #fff;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-book;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+/*FOURTH SECTION*/
+
+.fourthWebsiteContainer {
+  background-color: #f0f0f0;
+  min-height: 1010px;
+  display: flex;
+  justify-content: center;
+}
+
+.mobileFourthWebsiteContainer {
+  display: none;
+}
+
+.fourthLeft {
+  max-width: 522px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 48px;
+}
+
+.titleSec4 {
+  color: #1e1e1e;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-medium;
+  font-size: 53px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  margin: 0;
+}
+
+.textSec4 {
+  color: #1e1e1e;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-book;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0;
+}
+
+.fourthRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 73px;
+  margin-left: 106px;
+}
+
+.bookingFormPopup {
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  z-index: 1000;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  overflow-y: auto;
+}
+
+.bookingFormContent {
+  position: relative;
+
+  background-color: #fff;
+
+  padding: 20px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+  overflow: hidden;
+}
+
+.closeButton {
+  position: absolute;
+
+  top: 10px;
+
+  right: 10px;
+
+  cursor: pointer;
+
+  font-size: 24px;
+
+  width: 40px;
+
+  height: 40px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border-radius: 50%;
+
+  background-color: #ffffff;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  transition: background-color 0.3s ease;
+}
+
+.closeButton:hover {
+  background-color: #f0f0f0;
+}
+
+/*MOBILE RESPONSIVENESS*/
+
+@media only screen and (max-width: 1130px) and (min-width: 320px) {
   .websiteContainer {
     width: 100vw;
     max-width: 1920px;
@@ -50,760 +409,287 @@
     flex-direction: column;
     justify-content: center;
   }
-  
-  /*FIRST SECTION*/
-  
+
+  /* FIRST MOBILE SECTION */
+
   .firstWebsiteContainer {
-    background: url(/public/heroBackground.svg) no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    height: 1026px;
+    display: none;
   }
-  
+
   .mobileFirstWebsiteContainer {
-    display: none;
-  }
-  
-  .mobileFirstBg {
-    display: none;
-  }
-  
-  .containerToMatchDesign {
-    width: 1512px;
+    background-color: #000000;
     display: flex;
-    justify-content: center;
+    min-height: 1026px;
   }
-  
-  .firstLeft {
-    width: 37%;
+
+  .mobileFirstWebsiteContainerBg {
+    /* In the design, this background seems wider */
+    background: url(/public/heroBackgroundMobile.svg) no-repeat fixed right;
     display: flex;
     flex-direction: column;
-    gap: 60px;
-    margin-top: 216px;
-  }
-  
-  .firstLeftTitle1 {
-    color: var(--White, #fff);
-    font-family: gotham-medium;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 108.5%;
-  }
-  
-  .firstLeftTitle2 {
-    color: var(--White, #fff);
-    font-family: gotham-book;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 108.5%;
-  }
-  
-  .firstLeftText {
-    color: #fff;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: gotham-book;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 29px;
-  }
-  
-  .firstLeftButton {
-    display: flex;
-    width: 210px;
-    height: 60px;
-    /* padding: 24px 64px; */
     justify-content: center;
     align-items: center;
-    /* gap: 24px; */
-    border: 1px solid #fff;
-    background: #fff;
   }
-  
-  .firstLeftButtonText {
-    color: #0a0a0a;
-    text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: gotham-medium;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 38px;
-    /* text-transform: uppercase; */
+
+  .firstMobileTopImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 169px;
   }
-  
-  .firstRight {
-    width: 50%;
-    margin-top: 297px;
+
+  .firstMobileImg {
+    width: 335px;
   }
-/*SECOND SECTION*/
-  
-  .secondWebsiteContainer {
-    width: 100%;
-    background-color: #f0f0f0;
-    min-height: 1010px;
+
+  .firstMobileBottomContent {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 43px 22px 112px 22px;
   }
-  
-  .mobileSecondWebsiteContainer {
-    display: none;
-  }
-  
-  .secondWebsiteContainerBox1 {
-    width: 1273px;
-    display: flex;
-    position: relative;
-    z-index: 2;
-    margin-top: 150px;
-  }
-  
-  .secondLeft {
-    max-width: 711px;
-    color: #1e1e1e;
-    font-feature-settings: 'clig' off, 'liga' off;
+
+  .firstMobileTitle1 {
+    color: var(--White, #fff);
     font-family: gotham-medium;
-    font-size: 53px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
-    margin: 0px;
   }
-  
-  .secondRight {
-    max-width: 562px;
-    color: #1e1e1e;
-    font-feature-settings: 'clig' off, 'liga' off;
+
+  .firstMobileTitle2 {
+    color: var(--White, #fff);
     font-family: gotham-book;
-    font-size: 18px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
-    text-align: left;
-    margin: 0px;
+    line-height: 120%;
   }
-  
-  .imageSec2Bow {
-    margin-top: 100px;
-    max-width: 610px;
-  }
-  
-  .secondWebsiteContainerBox2 {
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-    gap: 300px;
-    width: 100%;
-  }
-  
-  .secondWebsiteContainerBox2Content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 20px;
-  }
-  
-  .imageSec2 {
-    width: 108px;
-    height: 108px;
-    z-index: 5;
-  }
-  
-  .textImgSec2 {
-    color: #1e1e1e;
-    text-align: center;
+
+  /* In the design, the font seem thinner */
+  .firstMobileText {
+    color: #ffffff;
     font-feature-settings: 'clig' off, 'liga' off;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: gotham-book;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    width: 315px;
-    padding-top: 20px;
+    margin: 0;
+  }
+
+  /*SECOND MOBILE SECTION*/
+
+  .secondWebsiteContainer {
+    display: none;
+  }
+
+  .mobileSecondWebsiteContainer {
+    background-color: #f0f0f0;
+    display: flex;
+    width: 100%;
+    height: 969px;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .secondWebsiteContainerBox1Mobile {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .secondLeftMobile {
+    color: #07090a;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: gotham-medium;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    margin: 0;
+  }
+
+  .secondRightMobile {
+    color: #07090a;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: gotham-book;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin: 0;
+  }
+
+  .secondWebsiteContainerBox2Mobile {
+    width: 350px;
+    height: 509px;
+    background: url(/public/images/website_sec2_group_mobile.svg) no-repeat
+      center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .secondWebsiteContainerBox2Mobile > p {
+    color: #1e1e1e;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: gotham-book;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    width: 86%;
+    margin-top: 200px;
   }
 
   /*THIRD SECTION*/
-  
+
   .thirdWebsiteContainer {
-    background-color: #1e1e1e;
-    min-height: 1010px;
-    display: flex;
+    display: none;
   }
-  
+
   .mobileThirdWebsiteContainer {
-    display: none;
-  }
-
-  .thirdLeft {
-    width: 55%;
+    background-color: #1e1e1e;
+    width: 100%;
+    min-height: 852px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 40px;
   }
 
-  .thirdLeftBgTop {
-    background-color: #9D8029;
+  .thirdLeftMobile {
+    width: 361px;
+    display: flex;
+    flex-direction: column;
+    margin-left: -33px;
+  }
+
+  .thirdLeftBgTopMobile {
+    background-color: #9d8029;
     box-shadow: 43px -46px 66px 42px rgba(0, 0, 0, 0.4) inset;
-    background: linear-gradient(#A0802A, #1E1B18);
-    height: 690px;
+    background: linear-gradient(#a0802a, #1e1b18);
+    height: 342px;
   }
 
-  .thirdLeftBgBottom {
-    background-color: #9D8029;
-    background: linear-gradient(to top left, #A6862C, #7A611F);
+  .thirdLeftBgBottomMobile {
+    background-color: #9d8029;
+    background: linear-gradient(to top left, #a6862c, #7a611f);
     border-radius: 0px 0px 120px 0px;
-    height: 111px;
+    height: 54px;
   }
-  
-  .thirdLeft > img {
-    margin-top: -588px;
-    margin-left: 200px;   
-    max-width: 607px;
+
+  .thirdLeftMobile > img {
+    margin-top: -289px;
+    margin-left: 45px;
+    max-width: 300px;
   }
-  
-  .thirdRight {
-    margin-left: 130px;
-    width: 850px;
+
+  .thirdRightMobile {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 48px;
+    gap: 24px;
+    margin: 56px 21px 75px 18px;
+    width: 354px;
   }
-  
-  .titleSec3 {
-    max-width: 538px;
-    margin: 0;
+
+  .titleSec3Mobile {
     color: #fff;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: gotham-medium;
-    font-size: 53px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 500;
-    line-height: 120%;
+    line-height: 36px;
+    margin: 0;
   }
-  
+
   /* in the design it seems thinner */
-  .textSec3 {
-    max-width: 532px;
+  .textSec3Mobile {
     color: #fff;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: gotham-book;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 24px;
   }
-  
+
   /*FOURTH SECTION*/
-  
+
   .fourthWebsiteContainer {
-    background-color: #f0f0f0;
-    min-height: 1010px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .mobileFourthWebsiteContainer {
     display: none;
   }
-  
-  .fourthLeft {
-    max-width: 522px;
+
+  .mobileFourthWebsiteContainer {
+    background-color: #f0f0f0;
+    width: 100%;
+    min-height: 858px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fourthLeftMobile {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 48px;
+    gap: 30px;
+    margin: 0px 22px 49px 22px;
+    width: 350px;
   }
-  
-  .titleSec4 {
+
+  .titleSec4Mobile {
     color: #1e1e1e;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: gotham-medium;
-    font-size: 53px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 500;
-    line-height: 120%;
-    margin: 0;
+    line-height: 36px;
   }
-  
-  .textSec4 {
+
+  .textSec4Mobile {
     color: #1e1e1e;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: gotham-book;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 24px;
     margin: 0;
   }
-  
-  .buttonSec4 {
-    display: flex;
-    width: 210px;
-    height: 55px;
-    /* padding: 24px 64px; */
-    justify-content: center;
-    align-items: center;
-    /* gap: 24px; */
-    border: 1px solid #a18129;
-    background: #a18129;
-  }
-  
-  /* in the design it seems thinner */
-  .buttonSec4Text {
-    color: #fff;
-    text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: gotham-medium;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 38px;
-    /* text-transform: uppercase; */
-  }
-  
-  .fourthRight {
+
+  .fourthRightMobile {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 73px;
-    margin-left: 106px;
+  }
+
+  .fourthRightMobile > img {
+    width: 353px;
+    margin-left: 10px;
   }
 
   .bookingFormPopup {
-
-    position: fixed;
-
-    top: 0;
-
-    left: 0;
-
-    width: 100%;
-
-    height: 100%;
-
-    background-color: rgba(0, 0, 0, 0.5);
-
-    z-index: 1000;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    overflow-y: auto;
-
-}
-
-
-
-.bookingFormContent {
-
-    position: relative;
-
-    background-color: #fff;
-
-    padding: 20px;
-
-    border-radius: 10px;
-
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-
-    overflow: hidden;
-
-}
-
-
-
-.closeButton {
-
-    position: absolute;
-
-    top: 10px;
-
-    right: 10px;
-
-    cursor: pointer;
-
-    font-size: 24px;
-
-    width: 40px; 
-
-    height: 40px;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    border-radius: 50%; 
-
-    background-color: #ffffff;
-
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-    transition: background-color 0.3s ease; 
-
-}
-
-
-
-.closeButton:hover {
-
-    background-color: #f0f0f0;
-
-}
-
-
-  
-  /*MOBILE RESPONSIVENESS*/
-  
-  @media only screen and (max-width: 1130px) and (min-width: 320px) {
-    .websiteContainer {
-      width: 100vw;
-      max-width: 1920px;
-      margin: auto;
-      margin-top: -120px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  
-    /* FIRST MOBILE SECTION */
-  
-    .firstWebsiteContainer {
-      display: none;
-    }
-  
-    .mobileFirstWebsiteContainer {
-      background-color: #000000;
-      display: flex;
-      min-height: 1026px;
-    }
-  
-    .mobileFirstWebsiteContainerBg {
-      /* In the design, this background seems wider */
-      background: url(/public/heroBackgroundMobile.svg) no-repeat fixed right;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .firstMobileTopImg {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 169px;
-    }
-  
-    .firstMobileImg {
-      width: 335px;
-    }
-  
-    .firstMobileBottomContent {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 30px;
-      margin: 43px 22px 112px 22px;
-    }
-  
-    .firstMobileTitle1 {
-      color: var(--White, #fff);
-      font-family: gotham-medium;
-      font-size: 40px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 120%;
-    }
-  
-    .firstMobileTitle2 {
-      color: var(--White, #fff);
-      font-family: gotham-book;
-      font-size: 40px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 120%;
-    }
-  
-    /* In the design, the font seem thinner */
-    .firstMobileText {
-      color: #ffffff;
-      font-feature-settings: 'clig' off, 'liga' off;
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      font-family: gotham-book;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 24px;
-    }
-  
-    .firstMobileButton {
-      margin: 0 auto;
-      display: flex;
-      width: 210px;
-      height: 50px;
-      /* padding: 24px 64px; */
-      justify-content: center;
-      align-items: center;
-      /* gap: 24px; */
-      border: 1px solid #fff;
-      background: #fff;
-    }
-  
-    .firstMobileButtonText {
-      color: #0a0a0a;
-      text-align: center;
-      font-feature-settings: 'clig' off, 'liga' off;
-      font-family: gotham-medium;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 38px;
-      /* text-transform: uppercase; */
-    }
-  
-    /*SECOND MOBILE SECTION*/
-  
-    .secondWebsiteContainer {
-      display: none;
-    }
-  
-    .mobileSecondWebsiteContainer {
-      background-color: #f0f0f0;
-      display: flex;
-      width: 100%;
-      height: 969px;
-      position: relative;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .secondWebsiteContainerBox1Mobile {
-      width: 350px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 24px;
-    }
-  
-    .secondLeftMobile {
-      color: #07090a;
-      font-feature-settings: 'clig' off, 'liga' off;
-      font-family: gotham-medium;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 36px;
-      margin: 0;
-    }
-  
-    .secondRightMobile {
-      color: #07090a;
-      font-feature-settings: 'clig' off, 'liga' off;
-      font-family: gotham-book;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 24px;
-      text-align: left;
-      margin: 0;
-    }
-  
-    .secondWebsiteContainerBox2Mobile {
-      width: 350px;
-      height: 509px;
-      background: url(/public/images/website_sec2_group_mobile.svg) no-repeat center;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-    }
-   
-    .secondWebsiteContainerBox2Mobile > p {
-      color: #1e1e1e;
-      text-align: center;
-      font-feature-settings: 'clig' off, 'liga' off;
-      font-family: gotham-book;
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 20px;
-      width: 86%;    
-      margin-top: 200px;
-    }
-  
-    /*THIRD SECTION*/
-  
-    .thirdWebsiteContainer {
-      display: none;
-    }
-  
-    .mobileThirdWebsiteContainer {
-      background-color: #1e1e1e;
-      width: 100%;
-      min-height: 852px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 40px;
-    }
-
-    .thirdLeftMobile {
-      width: 361px;
-      display: flex;
-      flex-direction: column;
-      margin-left: -33px;
-    }
-  
-    .thirdLeftBgTopMobile {
-      background-color: #9D8029;
-      box-shadow: 43px -46px 66px 42px rgba(0, 0, 0, 0.4) inset;
-      background: linear-gradient(#A0802A, #1E1B18);
-      height: 342px;
-    }
-  
-    .thirdLeftBgBottomMobile {
-      background-color: #9D8029;
-      background: linear-gradient(to top left, #A6862C, #7A611F);
-      border-radius: 0px 0px 120px 0px;
-      height: 54px;
-    }
-    
-    .thirdLeftMobile > img {
-      margin-top: -289px;
-      margin-left: 45px;   
-      max-width: 300px;
-    }
-  
-    .thirdRightMobile {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 24px;
-      margin: 56px 21px 75px 18px;
-      width: 354px;
-    }
-  
-    .titleSec3Mobile {
-      color: #fff;
-      font-feature-settings: 'clig' off, 'liga' off;
-      font-family: gotham-medium;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 36px;
-      margin: 0;
-    }
-  
-    /* in the design it seems thinner */
-    .textSec3Mobile {
-      color: #fff;
-      font-feature-settings: 'clig' off, 'liga' off;
-      font-family: gotham-book;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 24px;
-    }
-  
-    /*FOURTH SECTION*/
-  
-    .fourthWebsiteContainer {
-      display: none;
-    }
-  
-    .mobileFourthWebsiteContainer {
-      background-color: #f0f0f0;
-      width: 100%;
-      min-height: 858px;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .fourthLeftMobile {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 30px;
-      margin: 0px 22px 49px 22px;
-      width: 350px;
-    }
-  
-    .titleSec4Mobile {
-      color: #1e1e1e;
-      font-feature-settings: 'clig' off, 'liga' off;
-      font-family: gotham-medium;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 36px;
-    }
-  
-    .textSec4Mobile {
-      color: #1e1e1e;
-      font-feature-settings: 'clig' off, 'liga' off;
-      font-family: gotham-book;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 24px;
-      margin: 0;
-    }
-  
-    .buttonSec4Mobile {
-      margin: 0 auto;
-      display: flex;
-      width: 210px;
-      height: 50px;
-      /* padding: 24px 64px; */
-      justify-content: center;
-      align-items: center;
-      /* gap: 24px; */
-      border: 1px solid #a18129;
-      background: #a18129;
-    }
-  
-    /* in the design it seems thinner */
-    .buttonSec4TextMobile {
-      color: #fff;
-      text-align: center;
-      font-feature-settings: 'clig' off, 'liga' off;
-      font-family: gotham-medium;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 38px;
-      /* text-transform: uppercase; */
-    }
-  
-    .fourthRightMobile {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .fourthRightMobile > img {
-      width: 353px;
-      margin-left: 10px;
-    }
-
-    .bookingFormPopup {
-      display: unset;
+    display: unset;
   }
 
   .closeButton {
-      top: 40px;
-      right: 20px;
+    top: 40px;
+    right: 20px;
   }
-  }
-  
+}

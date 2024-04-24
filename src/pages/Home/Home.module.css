@@ -190,33 +190,6 @@ h2 {
     font-weight: 500;
   }
 
-.buttonText {
-    display: flex;
-    width: 210px;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #fff;
-    background: #fff;
-}
-.buttonText1 {
-    color: #0a0a0a;
-    text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: gotham-medium;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 38px;
-  }
-
-
-
-.buttonText2 {
-    width: 320px;
-
-}
-
 .bottomHero {
     margin-top: 70px;
     width: 100%;
@@ -589,26 +562,6 @@ h2 {
     margin-left: -40px;
   }
   
-  .buttonTextGold {
-    display: flex;
-    width: 210px;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #a18129;
-    background: #a18129;
-  }
-  
-  .buttonText1Gold {
-    color: #fff;
-    text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: gotham-medium;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 38px;
-  }
 
 /*FOURTH SECTION*/
 
@@ -1810,28 +1763,6 @@ h2 {
     font-weight: 500;
   }
 
-  .buttonTextMobile {
-    margin: 0 auto;
-    display: flex;
-    width: 210px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #fff;
-    background: #fff;
-  }
-
-  .buttonText1Mobile {
-    color: #0a0a0a;
-    text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: gotham-medium;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 38px;
-  }
-
   .leftMainMobile {
     width: 100%;
     display: flex;
@@ -1994,6 +1925,7 @@ h2 {
 
   .mobileThirdSectionRightH2 {
     width: 350px;
+    height: 380px;
     display: flex;
     margin-top: -20px;
   }
@@ -2019,28 +1951,6 @@ h2 {
     align-items: center;
     margin-top: 30px;
     margin-left: -32px;
-  }
-
-  .mobileButtonTextGold {
-    margin-top: 245px;
-    display: flex;
-    width: 210px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #a18129;
-    background: #a18129;
-  }
-
-  .mobileButtonText1Gold {
-    color: #fff;
-    text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: gotham-medium;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 38px;
   }
 
   /* FOURTH MOBILE SECTION */

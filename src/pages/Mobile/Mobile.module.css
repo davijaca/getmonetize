@@ -60,27 +60,6 @@
   justify-content: flex-start;
 }
 
-.button {
-  display: flex;
-  width: 210px;
-  height: 60px;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #fff;
-  background: #fff;
-}
-
-.buttonText {
-  color: #0a0a0a;
-  text-align: center;
-  font-feature-settings: 'clig' off, 'liga' off;
-  font-family: gotham-medium;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 38px;
-}
-
 .titleAllSections {
   color: #fff;
   font-family: gotham-medium;
@@ -367,15 +346,6 @@
     font-size: 14px;
   }
 
-  .button {
-    margin: 0 auto;
-    height: 50px;
-  }
-
-  .buttonText {
-    font-size: 14px;
-  }
-
   /* SECOND MOBILE SECTION*/
 
   .secondSection {
@@ -466,15 +436,6 @@
 
   .fourthSectionContent > ul > li > img {
     width: 25px;
-  }
-
-  .button {
-    margin: 0 auto;
-    height: 50px;
-  }
-
-  .buttonText {
-    font-size: 14px;
   }
 
   .fourthSectionImage {

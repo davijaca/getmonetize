@@ -1,10 +1,11 @@
-import React, { useState, useRef } from "react";
-import styles from "./Booking.module.css";
-import emailjs from "@emailjs/browser";
+import React, { useState, useRef } from 'react';
+import styles from './Booking.module.css';
+import emailjs from '@emailjs/browser';
+import Button from '../../components/Button/Button.jsx';
 
 const Booking = () => {
   const form = useRef();
-  const [isSuccess, setIsSuccess] = useState(false); 
+  const [isSuccess, setIsSuccess] = useState(false);
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -13,16 +14,16 @@ const Booking = () => {
 
     try {
       const response = await emailjs.sendForm(
-        "service_91gprvc",
-        "template_fo30bjf",
+        'service_91gprvc',
+        'template_fo30bjf',
         form.current,
-        "OO0_XYfpfwU6LG-0W"
+        'OO0_XYfpfwU6LG-0W'
       );
 
-      console.log("Email sent successfully:", response.text);
-      setIsSuccess(true); 
+      console.log('Email sent successfully:', response.text);
+      setIsSuccess(true);
     } catch (error) {
-      console.log("Error sending email:", error);
+      console.log('Error sending email:', error);
     }
 
     form.current.reset();
@@ -46,8 +47,8 @@ const Booking = () => {
                 <label className={styles.bookingLabel}>First Name</label>
                 <input
                   className={`${styles.dataBox} ${styles.firstNameInput}`}
-                  type="text"
-                  name="firstName"
+                  type='text'
+                  name='firstName'
                   required
                 />
               </div>
@@ -55,8 +56,8 @@ const Booking = () => {
                 <label className={styles.bookingLabel}>Last Name</label>
                 <input
                   className={styles.dataBox}
-                  type="text"
-                  name="lastName"
+                  type='text'
+                  name='lastName'
                   required
                 />
               </div>
@@ -66,8 +67,8 @@ const Booking = () => {
                 <label className={styles.bookingLabel}>Company</label>
                 <input
                   className={styles.dataBox}
-                  type="text"
-                  name="company"
+                  type='text'
+                  name='company'
                   required
                 />
               </div>
@@ -75,8 +76,8 @@ const Booking = () => {
                 <label className={styles.bookingLabel}>Email Address</label>
                 <input
                   className={styles.dataBox}
-                  type="email"
-                  name="email"
+                  type='email'
+                  name='email'
                   required
                 />
               </div>
@@ -85,17 +86,11 @@ const Booking = () => {
               <label className={styles.bookingLabel}>Message</label>
               <textarea
                 className={styles.messageBox}
-                name="message"
+                name='message'
                 required
               ></textarea>
             </div>
-            <div>
-              <button className={styles.sendGroup} type="submit" id="btnSubmit">
-                <typography className={styles.sendButtonText}>
-                  Book a Demo
-                </typography>
-              </button>
-            </div>
+            <Button color='black' type='submit' />
           </div>
         )}
       </form>
