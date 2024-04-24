@@ -45,7 +45,7 @@ const Header = () => {
                         <nav className='topMenu'>
                             {/* <a className='topMenuItem' href="/">PRODUCT</a> */}
                             {/*<a className={styles.topMenuItem}>How it Works</a>*/}
-                            <a className='topMenuItem' href="/aboutus">OUR MISSION</a>
+                            <a className='topMenuItem' href="/">OUR MISSION</a>
                             {/* <a className='topMenuItem'>INFLUENCER</a> */}
                             <a className='dropDown'>
                                     <div
@@ -102,7 +102,7 @@ const Header = () => {
                                 <a href='/' onClick={closeMenu}>PRODUCT</a>
                             </li> */}
                             <li className='nav-item'>
-                                <a href='/aboutus' onClick={closeMenu}>OUR MISSION</a>
+                                <a href='/' onClick={closeMenu}>OUR MISSION</a>
                             </li>
                             {/* <li className='nav-item'>
                                 <a href='#about' onClick={closeMenu}>INFLUENCER</a>
