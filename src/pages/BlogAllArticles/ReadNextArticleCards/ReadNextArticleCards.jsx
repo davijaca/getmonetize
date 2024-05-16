@@ -1,6 +1,7 @@
 import React from 'react';
 import TextTruncate from 'react-text-truncate';
 import { Link } from 'react-router-dom';
+import Button from '../../../components/Button/Button';
 
 import styles from './ReadNextArticleCard.module.css';
 
@@ -19,7 +20,7 @@ const ReadNextArticleCard = (props) => {
             <div className={styles.articlesInfo}>
               <span className={styles.span_dot}>
                 <img
-                  src={'/images/Ellipse.svg'}
+                  src={'/images/articleImgs/Icons/Ellipse.svg'}
                   className={styles.elipse}
                   alt=""
                 />
@@ -29,7 +30,7 @@ const ReadNextArticleCard = (props) => {
             <div className={styles.articlesInfo}>
               <span className={styles.span_dot}>
                 <img
-                  src={'/images/Ellipse.svg'}
+                  src={'/images/articleImgs/Icons/Ellipse.svg'}
                   className={styles.elipse}
                   alt=""
                 />
@@ -43,9 +44,7 @@ const ReadNextArticleCard = (props) => {
         </div>
         <div className={styles.readNextCardBtnReadMore_wrapper}>
           <Link to={readMoreUrl}>
-            <button className={styles.readNextCardBtnReadMore}>
-              READ MORE
-            </button>
+            <Button text="READ MORE" color="gold" />
           </Link>
         </div>
       </div>

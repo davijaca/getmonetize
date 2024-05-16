@@ -66,7 +66,7 @@ const BlogAllArticles = ({
         </Helmet>
         <div className={styles.introColorsContainer}>
           <img
-            src="/images/blogAllArticlesIntroFrameColors.svg"
+            src="/images/blogAllArticlesImgs/blogAllArticlesIntroFrameColors.svg"
             className={styles.introColorsImg}
             alt="colourfull-background"
           />

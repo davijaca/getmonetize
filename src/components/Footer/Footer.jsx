@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Footer.module.css';
 import { useHandleSubscriptionNewsletter } from '../../common/useHandleSubscriptionNewsletter';
+import Button from '../Button/Button';
 
 // import { db } from '../../firebase';
 // import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
@@ -21,7 +22,7 @@ const Footer = ({ showFormFooter }) => {
           )}
           <div className={styles.bottomLeft}>
             <div className={styles.logo}>
-              <img src="./logo.svg" alt="" />
+              <img src="/images/logo/logo.svg" alt="" />
               <div className={styles.monetize}>
                 <span className={styles.spanMonetize}>
                   Monetize – Unleash your data’s value{' '}
@@ -30,11 +31,11 @@ const Footer = ({ showFormFooter }) => {
             </div>
 
             <div className={styles.social}>
-              <img src="./facebook.svg" alt="" />
-              <img src="./instagram.svg" alt="" />
-              <img src="./linkedin.svg" alt="" />
-              <img src="./tiktok.svg" alt="" />
-              <img src="./youtube.svg" alt="" />
+              <img src="/images/socialMedia/facebook.svg" alt="" />
+              <img src="/images/socialMedia/instagram.svg" alt="" />
+              <img src="/images/socialMedia/linkedin.svg" alt="" />
+              <img src="/images/socialMedia/tiktok.svg" alt="" />
+              <img src="/images/socialMedia/youtube.svg" alt="" />
             </div>
             <div className={styles.copyright}>
               <span className={styles.spanCopy}>
@@ -58,9 +59,7 @@ const Footer = ({ showFormFooter }) => {
                     />
                   </div>
                   <div className={styles.submit}>
-                    <button type="submit" className={styles.submitButton}>
-                      subscribe
-                    </button>
+                    <Button text="SUBSCRIBE" type="sumit" />
                   </div>
                 </form>
               )}
@@ -70,9 +69,9 @@ const Footer = ({ showFormFooter }) => {
           <div className={styles.bottomRight}>
             <div className={styles.supportedBy}>
               <span className={styles.spanTitleBottom}>Supported by </span>
-              <img src="./srh.svg" alt="" />
-              <img src="./innowerft.svg" alt="" />
-              <img src="./startUp.svg" alt="" />
+              <img src="/images/supportedLogos/srh.svg" alt="" />
+              <img src="/images/supportedLogos/innowerft.svg" alt="" />
+              <img src="/images/supportedLogos/startUp.svg" alt="" />
             </div>
             <div className={styles.company}>
               <a className={styles.spanTitleBottom}>Company </a>
@@ -119,9 +118,7 @@ const Footer = ({ showFormFooter }) => {
                 />
               </div>
               <div className={styles.submitMobile}>
-                <button type="submit" className={styles.submitButtonMobile}>
-                  subscribe
-                </button>
+                <Button text="SUBSCRIBE" type="sumit" />
               </div>
             </form>
           </div>
@@ -130,18 +127,18 @@ const Footer = ({ showFormFooter }) => {
 
         <div className={styles.bottomMobile}>
           <div className={styles.topBottomMobile}>
-            <img src="./logo.svg" alt="" />
+            <img src="/images/logo/logo.svg" alt="" />
             <div className={styles.monetizeMobile}>
               <span className={styles.spanMonetizeMobile}>
                 Monetize – Unleash your data’s value{' '}
               </span>
             </div>
             <div className={styles.socialMobile}>
-              <img src="./facebook.svg" alt="" />
-              <img src="./instagram.svg" alt="" />
-              <img src="./linkedin.svg" alt="" />
-              <img src="./tiktok.svg" alt="" />
-              <img src="./youtube.svg" alt="" />
+              <img src="images/socialMedia/facebook.svg" alt="" />
+              <img src="images/socialMedia/instagram.svg" alt="" />
+              <img src="images/socialMedia/linkedin.svg" alt="" />
+              <img src="images/socialMedia/tiktok.svg" alt="" />
+              <img src="images/socialMedia/youtube.svg" alt="" />
             </div>
           </div>
           <div className={styles.bottomDivMobile}>
@@ -149,9 +146,9 @@ const Footer = ({ showFormFooter }) => {
               <span className={styles.spanTitleBottomMobile}>
                 Supported by{' '}
               </span>
-              <img src="./srh.svg" alt="" />
-              <img src="./innowerft.svg" alt="" />
-              <img src="./startUp.svg" alt="" />
+              <img src="/images/supportedLogos/srh.svg" alt="" />
+              <img src="/images/supportedLogos/innowerft.svg" alt="" />
+              <img src="/images/supportedLogos/startUp.svg" alt="" />
             </div>
             <div className={styles.companyMobile}>
               <a className={styles.spanTitleBottomMobile}>Company </a>

@@ -1,149 +1,143 @@
 .header {
-    position: sticky;
-    height: 100px;
-    width: 100%;
-    top: 0;
-    z-index: 55;
-    background: transparent;
+  position: sticky;
+  height: 100px;
+  width: 100%;
+  top: 0;
+  z-index: 55;
+  background: transparent;
 }
-.header-bg{
-    background: url(../../../public/headerBg.svg) center center no-repeat;
-    background-size: cover;
+.header-bg {
+  background: url(../../../public/images/backgroundImgs/headerBg.svg) center
+    center no-repeat;
+  background-size: cover;
 }
-
-
-
 
 .header .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1240px;
-    margin: auto;
-    height: 100%;
-    padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1240px;
+  margin: auto;
+  height: 100%;
+  padding: 0 1rem;
 }
 
 .header .nav-menu a {
-    color: #ffffff;
+  color: #ffffff;
 }
 
-
-
 .header .nav-menu {
-    display: none;
-    list-style-type: none;
+  display: none;
+  list-style-type: none;
 }
 
 .header .nav-item {
-    padding: 1.5rem;
-    font-weight: 700;
-    margin-right: 15%;
+  padding: 1.5rem;
+  font-weight: 700;
+  margin-right: 15%;
 }
 
 .header .nav-item a:hover {
-    padding-bottom: 12px;
-    border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--secondary-color);
 }
 
 .hamburger {
-    display: none;
+  display: none;
 }
 
 .headerBox {
-    height: 100px;
-    max-width: 1530px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  height: 100px;
+  max-width: 1530px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.right{
-    display: flex;
-    align-items: center;
-    height: 70px;
+.right {
+  display: flex;
+  align-items: center;
+  height: 70px;
 }
 
 .rightImg {
-    height: 55px;
-    display: flex;
-    position: relative;
+  height: 55px;
+  display: flex;
+  position: relative;
 }
 
 .topMenu {
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
-    align-items: center;
-    justify-content: right;
-    margin-left: 700px;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-items: center;
+  justify-content: right;
+  margin-left: 700px;
 }
 
 .topMenuItem {
-    color: #ffffff;
-    text-align: center;
-    font: 500 16px "Poppins", sans-serif;
-    text-transform: uppercase;
-    text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+  font: 500 16px 'Poppins', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
-
 .headerTitleItem {
-    color: #FFF;
-    font-family: sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    margin-top: 10%;
-    display: flex;
-
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 10%;
+  display: flex;
 }
 
 .headerTitleItem2 {
-    color: #e0ff22;
-    font: 400 30px/0% "NordiquePro-Bold", sans-serif;
-    padding-top: 19%;
-    display: flex;
+  color: #e0ff22;
+  font: 400 30px/0% 'NordiquePro-Bold', sans-serif;
+  padding-top: 19%;
+  display: flex;
 }
 
 .topMenu:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .dropDown {
-    position: relative;
-    /* width: 132px; */
-    color: #FFF;
+  position: relative;
+  /* width: 132px; */
+  color: #fff;
 }
 
-.arrowDown{
-    padding-left: 5px;
-    width: 22px;
-    height: 10px;
-    transition: all 0.9s;
+.arrowDown {
+  padding-left: 5px;
+  width: 22px;
+  height: 10px;
+  transition: all 0.9s;
 }
 
-.dropDownBtn{
-    position: absolute;
-    width: 260px;
-    display: flex;
-    align-items: center;
-    background-color: #080503;
-    opacity: 0.9999999761581421;
-    justify-content: space-between;
-    transition: all 0.9s;
-    left: -20px;
-    top: 60px
+.dropDownBtn {
+  position: absolute;
+  width: 260px;
+  display: flex;
+  align-items: center;
+  background-color: #080503;
+  opacity: 0.9999999761581421;
+  justify-content: space-between;
+  transition: all 0.9s;
+  left: -20px;
+  top: 60px;
 }
 
 .dropDownBtn > ul {
-    list-style: none;
-    padding: 5px;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 50px;
-    margin: auto;
+  list-style: none;
+  padding: 5px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  margin: auto;
 }
 
 /* .dropDownBtn > ul :hover{
@@ -154,236 +148,227 @@
 } */
 
 .contact {
-    background: transparent;
-    color: white;
-    border: 1px solid #FFFFFF;
-    width: 191px;
-    height: 45px;
-    
+  background: transparent;
+  color: white;
+  border: 1px solid #ffffff;
+  width: 191px;
+  height: 45px;
 }
 
 .mobileHamburgerMenu {
-    display: none;
+  display: none;
 }
 
 .contact:hover {
-     cursor: pointer;
-     border-radius: 0px;
-     background: white;
- }
-
- .contactButton:hover {
-    cursor: pointer;
-    color: black;
-    background: white;
+  cursor: pointer;
+  border-radius: 0px;
+  background: white;
 }
 
-.contactButton{
-    color: WHITE;
-    text-align: center;
-    font-family: Poppins, sans-serif;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: uppercase;
-    position: relative;
-    left: auto;
-    right: auto;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contactButton:hover {
+  cursor: pointer;
+  color: black;
+  background: white;
+}
+
+.contactButton {
+  color: WHITE;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  position: relative;
+  left: auto;
+  right: auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-logo {
-    position: absolute;
-    left: 73px;
-    top: 25px;
-    overflow: visible;
-  }
-
-
+  position: absolute;
+  left: 73px;
+  top: 25px;
+  overflow: visible;
+}
 
 /*MOBILE RESPONSIVENESS*/
 
+@media only screen and (max-width: 1530px) and (min-width: 320px) {
+  .header {
+    max-width: 100%;
+    height: 50px;
+    background: black;
+    opacity: 0.8999999761581421;
+  }
 
-@media only screen and (max-width: 1530px) and (min-width: 320px){
+  .header .navbar {
+    max-width: 100%;
+  }
 
-    .header {
-        max-width: 100%;
-        height: 50px;
-        background: black;
-        opacity: 0.8999999761581421;
-    }
+  .header .nav-menu {
+    display: flex;
+  }
 
-    .header .navbar {
-        max-width: 100%;
-    }
+  .hamburger {
+    display: block;
+  }
 
-    .header .nav-menu {
-        display: flex;
-    }
+  .nav-menu {
+    position: fixed;
+    left: -200%; /* hides hamburger menu when not toggled */
+    top: 33px;
+    flex-direction: column;
+    background: black;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    text-align: center;
+    transition: 0.3s;
+    align-items: center;
+    overflow: auto;
+  }
 
-    .hamburger {
-        display: block;
-    }
+  .nav-menu a {
+    text-decoration: none;
+  }
 
-    .nav-menu {
-        position: fixed;
-        left: -200%; /* hides hamburger menu when not toggled */
-        top: 33px;
-        flex-direction: column;
-        background: black;
-        width: 100%;
-        height: 100vh;
-        z-index: 20;
-        text-align: center;
-        transition: .3s;
-        align-items: center;
-        overflow: auto;
-    }
-    
-    .nav-menu a {
-        text-decoration: none
-    }
+  .nav-menu.active {
+    left: 0;
+  }
 
-    .nav-menu.active {
-        left: 0;
-    }
+  .nav-item {
+    margin: 1.5rem 0;
+  }
 
-    .nav-item {
-        margin: 1.5rem 0;
-    }
+  .header .navbar img {
+    width: 150px;
+  }
 
+  .headerBox {
+    height: 50px;
+    width: 320px;
+    display: flex;
+  }
 
-    .header .navbar img {
-        width: 150px;
-    }
+  .right {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 152px;
+    gap: 110px;
+  }
 
-    .headerBox {
-        height: 50px;
-        width: 320px;
-        display: flex;
-    }
+  .rightImg {
+    width: 33.1px;
+    height: 30.4px;
+    display: flex;
+    position: absolute;
+    left: 19px;
+  }
 
-    .right{
-        display: flex;
-        align-items: center;
-        height: 50px;
-        width: 152px;
-        gap: 110px;
-    }
+  .headerTitle {
+    width: 111.333px;
+    height: 42.667px;
+    flex-shrink: 0;
+    position: absolute;
+    left: 58px;
+    top: 20px;
+  }
 
-    .rightImg {
-        width: 33.1px;
-        height:30.4px;
-        display: flex;
-        position: absolute;
-        left: 19px;
-    }
+  .headerTitleItem {
+    color: var(--White, #fff);
+    font-family: NordiquePro-Bold;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 105.3%; /* 20.007px */
+  }
 
-    .headerTitle {
-        width: 111.333px;
-        height: 42.667px;
-        flex-shrink: 0;
-        position: absolute;
-        left: 58px;
-        top: 20px;
-    }
+  .headerTitleItem2 {
+    color: #e0ff22;
+    font-family: NordiquePro-Bold;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 105.3%;
+    bottom: 20px;
+    position: absolute;
+    top: 10px;
+  }
 
-    .headerTitleItem {
-        color: var(--White, #FFF);
-        font-family: NordiquePro-Bold;
-        font-size: 19px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 105.3%; /* 20.007px */
-    }
+  .topMenu {
+    display: none;
+  }
 
-    .headerTitleItem2 {
-        color: #E0FF22;
-        font-family: NordiquePro-Bold;
-        font-size: 19px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 105.3%;
-        bottom: 20px;
-        position: absolute;
-        top: 10px;
-    }
+  .topMenuItem {
+    display: none;
+  }
 
-    .topMenu {
-        display: none;
-    }
+  .contact {
+    background: none;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    position: absolute;
+    right: 5%;
+    border: none;
+  }
 
-    .topMenuItem {
-        display: none;
-    }
+  .contact:hover {
+    background: none;
+  }
 
-    .contact {
-        background: none;
-        width: 30px;
-        height: 30px;
-        flex-shrink: 0;
-        position: absolute;
-        right: 5%;
-        border: none;
-    }
+  .mobileHamburgerMenu {
+    display: inline-block;
+  }
 
-    .contact:hover {
-        background: none;
-    }
+  .mobileHamburgerMenu:hover {
+    cursor: pointer;
+  }
 
-    .mobileHamburgerMenu{
-        display: inline-block;
-    }
+  .contactButton {
+    display: none;
+  }
 
-    .mobileHamburgerMenu:hover {
-        cursor: pointer;
-    }
+  .dropDown {
+    position: relative;
+    width: 132px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .contactButton{
-        display: none;
-    }
+  .dropDownBtn {
+    position: initial;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: space-between;
+    transition: all 0.9s;
+  }
 
-    .dropDown {
-        position: relative;
-        width: 132px;
-        text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .dropDownBtn > ul {
+    list-style: none;
+    padding: 5px;
+    font-size: 16px;
+    margin: auto;
+  }
 
-    .dropDownBtn{
-        position:initial;
-        display: flex;
-        align-items: center;
-        background-color: black;
-        justify-content: space-between;
-        transition: all 0.9s;
-    }
+  .dropDownBtn li {
+    margin: 30px 0;
+  }
 
-    .dropDownBtn > ul {
-        list-style: none;
-        padding: 5px;
-        font-size: 16px;
-        margin: auto;
-    }
-
-    .dropDownBtn li {
-        margin: 30px 0;
-    }
-
-    
-    .dropDownBtn > ul :hover{
-        padding: 5px;
-        border: 0.5px solid rgb(240, 239, 239);
-        border-radius: 0 0 8px 8px ;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 2px;
-    }
-
-
+  .dropDownBtn > ul :hover {
+    padding: 5px;
+    border: 0.5px solid rgb(240, 239, 239);
+    border-radius: 0 0 8px 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 2px;
+  }
 }

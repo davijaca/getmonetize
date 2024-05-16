@@ -24,7 +24,7 @@ const Hero = ({
         <img
           className={styles.extraDiv_img}
           alt=""
-          src="/headerBackground.svg"
+          src="/images/articleImgs/headerBackground.svg"
         />
       </div>
       <header className={styles.headerWrapper}>
@@ -34,7 +34,7 @@ const Hero = ({
               <div className={styles.heroIcon_wrapper}>
                 <img
                   role="button"
-                  src={'/images/Arrow_Left_Circle.svg'}
+                  src={'/images/articleImgs/icons/Arrow_Left_Circle.svg'}
                   className={styles.icons}
                   alt=""
                   onClick={() => {
@@ -69,7 +69,7 @@ const Hero = ({
             <p className={styles.info_readTime}>
               <span className={styles.span_dot}>
                 <img
-                  src={'/images/Ellipse.svg'}
+                  src={'/images/articleImgs/icons/Ellipse.svg'}
                   className={styles.elipse}
                   alt=""
                 />
@@ -79,7 +79,7 @@ const Hero = ({
             <p className={styles.info_publishedDate}>
               <span className={styles.span_dot}>
                 <img
-                  src={'/images/Ellipse.svg'}
+                  src={'/images/articleImgs/icons/Ellipse.svg'}
                   className={styles.elipse}
                   alt=""
                 />

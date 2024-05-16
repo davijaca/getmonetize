@@ -55,21 +55,21 @@ const cardsSecThree = [
   {
     id: 1,
     color: '#C3E1E4',
-    src: '/images/PocketHost.png',
+    src: '/images/aboutusPage/PocketHost.png',
     width: '240px',
     height: '52.02px',
   },
   {
     id: 2,
     color: '#C3E1E4',
-    src: '/images/Experial.png',
+    src: '/images/aboutusPage/Experial.png',
     width: '180px',
     height: '40px',
   },
   {
     id: 3,
     color: '#C3E1E4',
-    src: '/images/Vector.png',
+    src: '/images/aboutusPage/Vector.png',
     width: '240px',
     height: '52.02px',
   },
@@ -217,8 +217,8 @@ const AboutUs = () => {
             <Grid container>
               <Grid xs={6}>
                 <Button
-                  text='TRY FOR FREE'
-                  color='gold'
+                  text="TRY FOR FREE"
+                  color="gold"
                   onClick={() => setShowBookingForm(true)}
                 />
               </Grid>
@@ -242,8 +242,8 @@ const AboutUs = () => {
           </div>
           <div className={styles.fourthRight}>
             <img
-              src='/images/Group 1000004746.png'
-              alt='A graph with an arrow to the top '
+              src="/images/aboutusPage/group_1000004746.png"
+              alt="A graph with an arrow to the top "
             />
           </div>
         </div>
@@ -263,18 +263,18 @@ const AboutUs = () => {
                   <div className={styles.bookingField}>
                     <input
                       className={styles.dataBox}
-                      type='text'
-                      placeholder='Name'
-                      name='Name'
+                      type="text"
+                      placeholder="Name"
+                      name="Name"
                       required
                     />
                   </div>
                   <div className={styles.bookingField}>
                     <input
                       className={styles.dataBox}
-                      type='text'
-                      placeholder='Email'
-                      name='Email'
+                      type="text"
+                      placeholder="Email"
+                      name="Email"
                       required
                     />
                   </div>
@@ -282,9 +282,9 @@ const AboutUs = () => {
                   <div className={styles.bookingField}>
                     <input
                       className={styles.dataBox}
-                      type='text'
-                      placeholder='Phone Number'
-                      name='Phone Number'
+                      type="text"
+                      placeholder="Phone Number"
+                      name="Phone Number"
                       required
                     />
                   </div>
@@ -294,14 +294,14 @@ const AboutUs = () => {
                   <div className={styles.bookingField}>
                     <textarea
                       className={styles.messageBox}
-                      name='message'
-                      placeholder='Message'
+                      name="message"
+                      placeholder="Message"
                       required
                     ></textarea>
                   </div>
                 </Grid>
                 <Grid xs={12}>
-                  <Button text='SEND' type='submit' />
+                  <Button text="SEND" type="submit" />
                 </Grid>
               </Grid>
             </div>
@@ -315,8 +315,8 @@ const AboutUs = () => {
           <div className={styles.firstMobileTopImg}>
             <img
               className={styles.firstMobileImg}
-              src='./images/website_sec1.png'
-              alt='A monitor and a laptop screen'
+              src="/images/backgroundImgs/website_sec1.png"
+              alt="A monitor and a laptop screen"
             />
           </div>
           <div className={styles.firstMobileBottomContent}>
@@ -340,7 +340,7 @@ const AboutUs = () => {
                 of users on average willing to pay for what’s behind your wall.
               </p>
             </div>
-            <Link className={styles.firstMobileButton} to=''>
+            <Link className={styles.firstMobileButton} to="">
               <div
                 className={styles.firstMobileButtonText}
                 onClick={() => setShowBookingForm(true)}

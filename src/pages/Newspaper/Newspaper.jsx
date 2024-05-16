@@ -56,8 +56,8 @@ const Newspaper = () => {
             <div className={styles.leftMain}>
               <img
                 className={styles.leftImg}
-                src='./images/newspaper_sec1.png'
-                alt='Three tablets placed on top of each other'
+                src="/images/newspaperPage/newspaper_sec1.png"
+                alt="Three tablets placed on top of each other"
               />
             </div>
           </div>
@@ -74,8 +74,8 @@ const Newspaper = () => {
                 <div className={styles.leftImgInfoMobile}>
                   <img
                     className={styles.leftImgMobile}
-                    src='./images/newspaper_sec1.png'
-                    alt='Three tablets placed on top of each other'
+                    src="/images/newspaperPage/newspaper_sec1.png"
+                    alt="Three tablets placed on top of each other"
                   />
                 </div>
               </div>
@@ -130,8 +130,8 @@ const Newspaper = () => {
           <div className={styles.secondNewsCard}>
             <div className={styles.secondNewsCardImg}>
               <img
-                src='./images/newspaper_sec2_icon_one.svg'
-                alt='Icon representing three people'
+                src="/images/newspaperPage/newspaper_sec2_icon_one.svg"
+                alt="Icon representing three people"
               />
             </div>
             <h1>
@@ -151,8 +151,8 @@ const Newspaper = () => {
           <div className={styles.secondNewsCard}>
             <div className={styles.secondNewsCardImg}>
               <img
-                src='./images/newspaper_sec2_icon_two.svg'
-                alt='Icon showing index finger pointing to options'
+                src="/images/newspaperPage/newspaper_sec2_icon_two.svg"
+                alt="Icon showing index finger pointing to options"
               />
             </div>
             <h1>
@@ -173,8 +173,8 @@ const Newspaper = () => {
           <div className={styles.secondNewsCard}>
             <div className={styles.secondNewsCardImg}>
               <img
-                src='./images/newspaper_sec2_icon_three.svg'
-                alt='Icon showing an unlock padlock'
+                src="/images/newspaperPage/newspaper_sec2_icon_three.svg"
+                alt="Icon showing an unlock padlock"
               />
             </div>
             <h1>
@@ -194,8 +194,8 @@ const Newspaper = () => {
           <div className={styles.secondNewsCard}>
             <div className={styles.secondNewsCardImg}>
               <img
-                src='./images/newspaper_sec2_icon_four.svg'
-                alt='Icon showing an arrow pointing up'
+                src="/images/newspaperPage/newspaper_sec2_icon_four.svg"
+                alt="Icon showing an arrow pointing up"
               />
             </div>
             <h1>
@@ -226,8 +226,8 @@ const Newspaper = () => {
           <div className={styles.mobileSecondNewsCard}>
             <div className={styles.mobileSecondNewsCardImg}>
               <img
-                src='./images/newspaper_sec2_icon_one.svg'
-                alt='Icon representing three people'
+                src="/images/newspaperPage/newspaper_sec2_icon_one.svg"
+                alt="Icon representing three people"
               />
             </div>
             <h1>
@@ -247,8 +247,8 @@ const Newspaper = () => {
           <div className={styles.mobileSecondNewsCard}>
             <div className={styles.mobileSecondNewsCardImg}>
               <img
-                src='./images/newspaper_sec2_icon_two.svg'
-                alt='Icon showing index finger pointing to options'
+                src="/images/newspaperPage/newspaper_sec2_icon_two.svg"
+                alt="Icon showing index finger pointing to options"
               />
             </div>
             <h1>
@@ -269,8 +269,8 @@ const Newspaper = () => {
           <div className={styles.mobileSecondNewsCard}>
             <div className={styles.mobileSecondNewsCardImg}>
               <img
-                src='./images/newspaper_sec2_icon_three.svg'
-                alt='Icon showing an unlock padlock'
+                src="/images/newspaperPage/newspaper_sec2_icon_three.svg"
+                alt="Icon showing an unlock padlock"
               />
             </div>
             <h1>
@@ -290,8 +290,8 @@ const Newspaper = () => {
           <div className={styles.mobileSecondNewsCard}>
             <div className={styles.mobileSecondNewsCardImg}>
               <img
-                src='./images/newspaper_sec2_icon_four.svg'
-                alt='Icon showing an arrow pointing up'
+                src="/images/newspaperPage/newspaper_sec2_icon_four.svg"
+                alt="Icon showing an arrow pointing up"
               />
             </div>
             <h1>
@@ -316,8 +316,8 @@ const Newspaper = () => {
       <div className={styles.thirdNewsContainer}>
         <div className={styles.thirdNewsImg}>
           <img
-            src='./images/newspaper_sec3.png'
-            alt='Three screens placed on top of each other'
+            src="/images/newspaperPage/newspaper_sec3.png"
+            alt="Three screens placed on top of each other"
           />
         </div>
         <div className={styles.thirdNewsContent}>
@@ -345,8 +345,8 @@ const Newspaper = () => {
       <div className={styles.mobileThirdNewsContainer}>
         <div className={styles.mobileThirdNewsImg}>
           <img
-            src='./images/newspaper_sec3.png'
-            alt='Three screens placed on top of each other'
+            src="/images/newspaperPage/newspaper_sec3.png"
+            alt="Three screens placed on top of each other"
           />
         </div>
         <div className={styles.mobileThirdNewsContent}>
@@ -375,8 +375,8 @@ const Newspaper = () => {
         <div className={styles.fourthNewsImage}>
           <div className={styles.fourthNewsImgBg}></div>
           <img
-            src='./images/newspaper_sec4.png'
-            alt='A screen showing the news'
+            src="/images/newspaperPage/newspaper_sec4.png"
+            alt="A screen showing the news"
           />
         </div>
 
@@ -397,7 +397,7 @@ const Newspaper = () => {
             their position in the digital age.
           </p>
 
-          <Button color='gold' onClick={toggleBookingForm} />
+          <Button color="gold" onClick={toggleBookingForm} />
           {showBookingForm && (
             <div className={styles.bookingFormPopup}>
               <div className={styles.bookingFormContent}>
@@ -420,8 +420,8 @@ const Newspaper = () => {
         <div className={styles.mobileFourthNewsImage}>
           <div className={styles.mobileFourthNewsImgBg}></div>
           <img
-            src='./images/newspaper_sec4.png'
-            alt='A screen showing the news'
+            src="/images/newspaperPage/newspaper_sec4.png"
+            alt="A screen showing the news"
           />
         </div>
 
@@ -440,7 +440,7 @@ const Newspaper = () => {
             their position in the digital age.
           </p>
 
-          <Button color='gold' onClick={toggleBookingForm} />
+          <Button color="gold" onClick={toggleBookingForm} />
           {showBookingForm && (
             <div className={styles.bookingFormPopup}>
               <div className={styles.bookingFormContent}>

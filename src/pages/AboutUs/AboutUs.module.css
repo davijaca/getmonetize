@@ -1,26 +1,26 @@
 @font-face {
   font-family: gotham-light;
-  src: url("/public/fonts/Gotham/Gotham-Light.otf");
+  src: url('/public/fonts/Gotham/Gotham-Light.otf');
 }
 
 @font-face {
   font-family: gotham-medium;
-  src: url("/public/fonts/Gotham/Gotham-Medium.otf");
+  src: url('/public/fonts/Gotham/Gotham-Medium.otf');
 }
 
 @font-face {
   font-family: gotham-book;
-  src: url("/public/fonts/Gotham/Gotham-Book.otf");
+  src: url('/public/fonts/Gotham/Gotham-Book.otf');
 }
 
 @font-face {
   font-family: inter-semibold;
-  src: url("/public/fonts/Inter/Inter-SemiBold.ttf");
+  src: url('/public/fonts/Inter/Inter-SemiBold.ttf');
 }
 
 @font-face {
   font-family: inter-regular;
-  src: url("/public/fonts/Inter/Inter-Regular.ttf");
+  src: url('/public/fonts/Inter/Inter-Regular.ttf');
 }
 
 .website .website * {
@@ -54,7 +54,7 @@ h2 {
 /*FIRST SECTION*/
 
 .firstWebsiteContainer {
-  background: url(/public/heroBackground.svg) no-repeat;
+  background: url(/public/images/backgroundImgs/heroBackground.svg) no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -84,24 +84,24 @@ h2 {
 
 .firstLeftTitle1 {
   font-family: Gotham;
-font-size: 53px;
-font-weight: 500;
-line-height: 64px;
-letter-spacing: 0em;
-text-align: center;
-color: #FFFFFF;
-width: 605px;
-height: 64px;
+  font-size: 53px;
+  font-weight: 500;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+  width: 605px;
+  height: 64px;
 }
 
 .firstLeftText {
   font-family: Gotham;
-font-size: 18px;
-font-weight: 400;
-line-height: 31px;
-letter-spacing: 0em;
-text-align: center;
-color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
 }
 
 .firstLeftButton {
@@ -119,7 +119,7 @@ color: #FFFFFF;
 .firstLeftButtonText {
   color: #0a0a0a;
   text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
+  font-feature-settings: 'clig' off, 'liga' off;
   font-family: gotham-medium;
   font-size: 16px;
   font-style: normal;
@@ -165,7 +165,7 @@ color: #FFFFFF;
 .secondRight {
   max-width: 562px;
   color: #1e1e1e;
-  font-feature-settings: "clig" off, "liga" off;
+  font-feature-settings: 'clig' off, 'liga' off;
   font-family: gotham-book;
   font-size: 18px;
   font-style: normal;
@@ -204,7 +204,7 @@ color: #FFFFFF;
 .textImgSec2 {
   color: #1e1e1e;
   text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
+  font-feature-settings: 'clig' off, 'liga' off;
   font-family: gotham-book;
   font-size: 16px;
   font-style: normal;
@@ -222,7 +222,7 @@ color: #FFFFFF;
   letter-spacing: 0em;
   text-align: center;
   color: #1e1e1e;
-  padding-bottom: 48px
+  padding-bottom: 48px;
 }
 
 .secondSubTitle {
@@ -243,7 +243,7 @@ color: #FFFFFF;
   letter-spacing: 0em;
   text-align: left;
   color: #1e1e1e;
-  padding: 0px 0px 10px 0px
+  padding: 0px 0px 10px 0px;
 }
 
 .secondCardContent {
@@ -254,7 +254,7 @@ color: #FFFFFF;
   letter-spacing: 0em;
   text-align: left;
   color: #1e1e1e;
-  padding: 10px 0px 0px 0px
+  padding: 10px 0px 0px 0px;
 }
 
 .card {
@@ -276,7 +276,7 @@ color: #FFFFFF;
 /*THIRD SECTION*/
 
 .thirdWebsiteContainer {
-  background-color: #28878F4D;
+  background-color: #28878f4d;
   height: 1659px;
   top: 2093px;
   display: flex;
@@ -342,28 +342,28 @@ color: #FFFFFF;
 
 .thirdTitleSecOne {
   font-family: Gotham;
-font-size: 53px;
-font-weight: 500;
-line-height: 51px;
-letter-spacing: 0em;
-text-align: center;
-width: 405px;
-height: 51px;
-padding-bottom: 50px;
+  font-size: 53px;
+  font-weight: 500;
+  line-height: 51px;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 405px;
+  height: 51px;
+  padding-bottom: 50px;
 }
 
 .thirdTitleSecTwo {
   font-family: Gotham;
-font-size: 53px;
-font-weight: 500;
-line-height: 51px;
-letter-spacing: 0em;
-text-align: center;
-color: #1E1E1E;
-width: 477px;
-height: 51px;
-padding-top: 50px;
-margin: auto; /* Center horizontally */
+  font-size: 53px;
+  font-weight: 500;
+  line-height: 51px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1e1e1e;
+  width: 477px;
+  height: 51px;
+  padding-top: 50px;
+  margin: auto; /* Center horizontally */
   max-width: 600px;
   padding-bottom: 100px;
 }
@@ -376,13 +376,13 @@ margin: auto; /* Center horizontally */
   letter-spacing: 0em;
   text-align: center;
   width: 851px;
-height: 204px;
+  height: 204px;
 }
 
 .rootSecThree {
   width: 1270px;
-height: 380px;
-gap: 35px;
+  height: 380px;
+  gap: 35px;
 }
 
 .cardSecThree {
@@ -397,12 +397,11 @@ gap: 35px;
 /*FOURTH SECTION*/
 
 .fourthWebsiteContainer {
-  //width: 1512px;
   height: 887px;
   top: 3752px;
   gap: 0px;
   opacity: 0px;
-  background: #1E1E1E;  
+  background: #1e1e1e;
 }
 
 .mobileFourthWebsiteContainer {
@@ -419,17 +418,17 @@ gap: 35px;
 
 .titleSec4 {
   width: 164px;
-height: 65px;
-top: 3943px;
-left: 118px;
-gap: 0px;
-opacity: 0px;
-font-family: Gotham;
-font-size: 38px;
-font-weight: 500;
-line-height: 64.6px;
-text-align: left;
-color: #A18129;
+  height: 65px;
+  top: 3943px;
+  left: 118px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Gotham;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 64.6px;
+  text-align: left;
+  color: #a18129;
 }
 
 .subTitleSec4 {
@@ -444,22 +443,22 @@ color: #A18129;
   font-weight: 500;
   line-height: 38px;
   text-align: left;
-  color: #FFFFFF;    
+  color: #ffffff;
 }
 
 .textSec4 {
   width: 537px;
-height: 76px;
-top: 4129px;
-left: 118px;
-gap: 0px;
-opacity: 0px;
-font-family: Gotham;
-font-size: 18px;
-font-weight: 400;
-line-height: 38px;
-text-align: left;
-color: #FFFFFF;
+  height: 76px;
+  top: 4129px;
+  left: 118px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Gotham;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 38px;
+  text-align: left;
+  color: #ffffff;
 }
 
 .fourthRight {
@@ -516,7 +515,7 @@ color: #FFFFFF;
 
 /*Fifth Screen*/
 .fifthWebsiteContainer {
-  background: url(/public/images/Group 1000004747.png) no-repeat;
+  background: url(/public/images/aboutusPage/group_1000004747.png) no-repeat;
   background-size: cover;
   justify-content: center;
   height: 750px;
@@ -524,27 +523,27 @@ color: #FFFFFF;
 }
 
 .fifthContainer {
-height: 489px;
-padding-top: 124px;
-padding-left: 200px;
+  height: 489px;
+  padding-top: 124px;
+  padding-left: 200px;
 }
 
 .fifthLeftTitle1 {
   width: 770px;
-height: 50px;
-gap: 0px;
-opacity: 0px;
-font-family: Gotham;
-font-size: 40px;
-font-weight: 500;
-line-height: 50px;
-text-align: left;
-color: #FFFFFF;
+  height: 50px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Gotham;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 50px;
+  text-align: left;
+  color: #ffffff;
 }
 
 .bookingFields {
   width: 694.26px;
-  height: 346px;  
+  height: 346px;
   padding-top: 70px;
 }
 
@@ -557,11 +556,10 @@ color: #FFFFFF;
   font-weight: 500;
   line-height: 28.71px;
   text-align: left;
-  color: #FFFFFF;
-
+  color: #ffffff;
 }
 
-.bookingFieldsTitle2{
+.bookingFieldsTitle2 {
   width: 350px;
   padding-bottom: 30px;
   opacity: 0px;
@@ -570,35 +568,35 @@ color: #FFFFFF;
   font-weight: 500;
   line-height: 28.71px;
   text-align: left;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.bookingField{
-padding-bottom: 10px;
+.bookingField {
+  padding-bottom: 10px;
 }
 .dataBox {
   width: 350px;
-height: 50px;
-padding: 9px 22px 9px 22px;
-gap: 10px;
-opacity: 0px;
-background: #00000080;
+  height: 50px;
+  padding: 9px 22px 9px 22px;
+  gap: 10px;
+  opacity: 0px;
+  background: #00000080;
 }
 
 .messageBox {
   width: 350px;
-height: 170px;
-padding: 15px 22px 15px 22px;
-opacity: 0px;
-background: #00000080;
+  height: 170px;
+  padding: 15px 22px 15px 22px;
+  opacity: 0px;
+  background: #00000080;
 }
 
 .sendGroup {
-  width: Fixed (210px)px;
-  height: Fixed (60px)px;
+  width: Fixed (210px) px;
+  height: Fixed (60px) px;
   padding: 18px 56px 18px 56px;
   gap: 10px;
   opacity: 0px;
-  background: #FFFFFF;  
+  background: #ffffff;
 }
 
 /*MOBILE RESPONSIVENESS*/
@@ -628,7 +626,8 @@ background: #00000080;
 
   .mobileFirstWebsiteContainerBg {
     /* In the design, this background seems wider */
-    background: url(/public/heroBackgroundMobile.svg) no-repeat fixed right;
+    background: url(/public/images/backgroundImgs/heroBackgroundMobile.svg)
+      no-repeat fixed right;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -675,7 +674,7 @@ background: #00000080;
   /* In the design, the font seem thinner */
   .firstMobileText {
     color: #ffffff;
-    font-feature-settings: "clig" off, "liga" off;
+    font-feature-settings: 'clig' off, 'liga' off;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: gotham-book;
     font-size: 14px;
@@ -700,7 +699,7 @@ background: #00000080;
   .firstMobileButtonText {
     color: #0a0a0a;
     text-align: center;
-    font-feature-settings: "clig" off, "liga" off;
+    font-feature-settings: 'clig' off, 'liga' off;
     font-family: gotham-medium;
     font-size: 14px;
     font-style: normal;
@@ -736,7 +735,7 @@ background: #00000080;
 
   .secondLeftMobile {
     color: #07090a;
-    font-feature-settings: "clig" off, "liga" off;
+    font-feature-settings: 'clig' off, 'liga' off;
     font-family: gotham-medium;
     font-size: 24px;
     font-style: normal;
@@ -747,7 +746,7 @@ background: #00000080;
 
   .secondRightMobile {
     color: #07090a;
-    font-feature-settings: "clig" off, "liga" off;
+    font-feature-settings: 'clig' off, 'liga' off;
     font-family: gotham-book;
     font-size: 14px;
     font-style: normal;
@@ -760,8 +759,8 @@ background: #00000080;
   .secondWebsiteContainerBox2Mobile {
     width: 350px;
     height: 509px;
-    background: url(/public/images/website_sec2_group_mobile.svg) no-repeat
-      center;
+    background: url(/public/images/backgroundImgs/website_sec2_group_mobile.svg)
+      no-repeat center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -771,7 +770,7 @@ background: #00000080;
   .secondWebsiteContainerBox2Mobile > p {
     color: #1e1e1e;
     text-align: center;
-    font-feature-settings: "clig" off, "liga" off;
+    font-feature-settings: 'clig' off, 'liga' off;
     font-family: gotham-book;
     font-size: 12px;
     font-style: normal;
@@ -831,7 +830,7 @@ background: #00000080;
 
   .titleSec3Mobile {
     color: #fff;
-    font-feature-settings: "clig" off, "liga" off;
+    font-feature-settings: 'clig' off, 'liga' off;
     font-family: gotham-medium;
     font-size: 24px;
     font-style: normal;
@@ -843,7 +842,7 @@ background: #00000080;
   /* in the design it seems thinner */
   .textSec3Mobile {
     color: #fff;
-    font-feature-settings: "clig" off, "liga" off;
+    font-feature-settings: 'clig' off, 'liga' off;
     font-family: gotham-book;
     font-size: 14px;
     font-style: normal;
@@ -878,7 +877,7 @@ background: #00000080;
 
   .titleSec4Mobile {
     color: #1e1e1e;
-    font-feature-settings: "clig" off, "liga" off;
+    font-feature-settings: 'clig' off, 'liga' off;
     font-family: gotham-medium;
     font-size: 24px;
     font-style: normal;
@@ -888,7 +887,7 @@ background: #00000080;
 
   .textSec4Mobile {
     color: #1e1e1e;
-    font-feature-settings: "clig" off, "liga" off;
+    font-feature-settings: 'clig' off, 'liga' off;
     font-family: gotham-book;
     font-size: 14px;
     font-style: normal;
@@ -914,7 +913,7 @@ background: #00000080;
   .buttonSec4TextMobile {
     color: #fff;
     text-align: center;
-    font-feature-settings: "clig" off, "liga" off;
+    font-feature-settings: 'clig' off, 'liga' off;
     font-family: gotham-medium;
     font-size: 14px;
     font-style: normal;

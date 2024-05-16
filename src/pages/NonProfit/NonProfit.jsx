@@ -54,8 +54,8 @@ const NonProfit = () => {
               <div className={styles.leftImgInfo}>
                 <img
                   className={styles.leftImg}
-                  src='./nonprofitHero.svg'
-                  alt='revenue image'
+                  src="/images/nonprofitPage/nonprofitHero.svg"
+                  alt="to represent a revenue"
                 />
               </div>
             </div>
@@ -72,8 +72,8 @@ const NonProfit = () => {
               <div className={styles.mobileImgInfo}>
                 <img
                   className={styles.mobileImg}
-                  src='./images/nonprofitHero_mobile.png'
-                  alt='Three people donating'
+                  src="./images/nonprofitPage/nonprofitHero_mobile.png"
+                  alt="Three people donating"
                 />
               </div>
             </div>
@@ -138,8 +138,8 @@ const NonProfit = () => {
             <div className={styles.secondBottomLeft}>
               <img
                 className={styles.bottomEmote}
-                src='./emoteSad.svg'
-                alt='Emoji negative smile'
+                src="/images/nonprofitPage/emoteSad.svg"
+                alt="Emoji negative smile"
               />
               <div className={styles.secondBottomTextContainer}>
                 <span className={styles.spanBottom}>
@@ -151,14 +151,14 @@ const NonProfit = () => {
             </div>
             <img
               className={styles.arrow}
-              src='./images/nonprofit_sec2_arrow.svg'
-              alt='A arrow pointing to the right'
+              src="/images/nonprofitPage/nonprofit_sec2_arrow.svg"
+              alt="A arrow pointing to the right"
             />
             <div className={styles.secondBottomRight}>
               <img
                 className={styles.bottomEmote}
-                src='./emoteHappy.svg'
-                alt='Emoji positive smile'
+                src="/images/nonprofitPage/emoteHappy.svg"
+                alt="Emoji positive smile"
               />
               <div className={styles.secondBottomTextContainer}>
                 <span className={styles.spanBottom}>
@@ -198,8 +198,8 @@ const NonProfit = () => {
             <div className={styles.mobileSecondBottomLeft}>
               <img
                 className={styles.bottomEmote}
-                src='./emoteSad.svg'
-                alt='Emoji negative smile'
+                src="/images/nonprofitPage/emoteSad.svg"
+                alt="Emoji negative smile"
               />
               <div className={styles.mobileSecondBottomTextContainer}>
                 <p className={styles.spanBottom}>
@@ -210,13 +210,13 @@ const NonProfit = () => {
               </div>
             </div>
             <div className={styles.mobileSecondBottomMiddle}>
-              <img className={styles.arrowEmote} src='./elipse.svg' alt='' />
+              <img className={styles.arrowEmote} src="./elipse.svg" alt="" />
             </div>
             <div className={styles.mobileSecondBottomRight}>
               <img
                 className={styles.bottomEmote}
-                src='./emoteHappy.svg'
-                alt='Emoji positive smile'
+                src="/images/nonprofitPage/emoteHappy.svg"
+                alt="Emoji positive smile"
               />
               <div className={styles.mobileSecondBottomTextContainer}>
                 <p className={styles.spanBottom}>
@@ -236,8 +236,8 @@ const NonProfit = () => {
         <div className={styles.thirdSectionLeft}>
           <div className={styles.imageThirdNonprofitContainer}>
             <img
-              src='./images/thirdNonprofitImg.png'
-              alt='A post with arrows to different directions'
+              src="/images/nonprofitPage/thirdNonprofitImg.png"
+              alt="A post with arrows to different directions"
             />
           </div>
         </div>
@@ -269,8 +269,8 @@ const NonProfit = () => {
           <div className={styles.thirdSectionLeft}>
             <div className={styles.imageThirdNonprofitContainer}>
               <img
-                src='./mobileThirdNonprofitImg.svg'
-                alt='A post with arrows to different directions'
+                src="/images/nonprofitPage/mobileThirdNonprofitImg.svg"
+                alt="A post with arrows to different directions"
               />
             </div>
           </div>
@@ -340,8 +340,8 @@ const NonProfit = () => {
 
           <div className={styles.fourthSectionRight}>
             <img
-              src='./images/fourthNonprofitImg.png'
-              alt='Women using a smartphone'
+              src="/images/nonprofitPage/fourthNonprofitImg.png"
+              alt="Women using a smartphone"
             />
           </div>
         </div>
@@ -355,8 +355,8 @@ const NonProfit = () => {
             <div className={styles.imageMobileFourthNonprofitContainer}>
               <div className={styles.mobileFourthNonprofitImage}>
                 <img
-                  src='./images/fourthNonprofitImgMobile.png'
-                  alt='Women using a smartphone'
+                  src="/images/nonprofitPage/fourthNonprofitImgMobile.png"
+                  alt="Women using a smartphone"
                 />
               </div>
             </div>

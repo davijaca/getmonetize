@@ -35,6 +35,7 @@ button {
 .headerAllArticlesGrid {
   display: grid;
   gap: 76px;
+  padding: 0px 20px; /* Pading for mobile Header: - do not remove! */
 }
 
 .introColorsContainer {

@@ -15,11 +15,11 @@ const Mobile = () => {
       <div className={styles.firstSection}>
         <div className={styles.firstSectionImage}>
           <img
-            srcset='./images/mobile_sec1_mobile.png 260w, ./images/mobile_sec1_web.png 600w'
-            sizes='(max-width: 1130px) 260px,
-        640px'
-            src='./images/mobile_sec1_web.png'
-            alt='Two smartphones'
+            srcset="/images/mobilePage/mobile_sec1_mobile.png 260w, /images/mobilePage/mobile_sec1_web.png 600w"
+            sizes="(max-width: 1130px) 260px,
+        640px"
+            src="/images/mobilePage/mobile_sec1_web.png"
+            alt="Two smartphones"
           />
         </div>
         <div className={styles.firstSectionContent}>
@@ -57,11 +57,11 @@ const Mobile = () => {
       <div className={styles.secondSection}>
         <div className={styles.secondSectionImage}>
           <img
-            srcset='./images/mobile_sec2_mobile.png 260w, ./images/mobile_sec2_web.png 600w'
-            sizes='(max-width: 1130px) 380px,
-        640px'
-            src='./images/mobile_sec2_web.png'
-            alt='A box shaped as a smartphone with coins inside'
+            srcset="/images/mobilePage/mobile_sec2_mobile.png 260w, /images/mobilePage/mobile_sec2_web.png 600w"
+            sizes="(max-width: 1130px) 380px,
+        640px"
+            src="/images/mobilePage/mobile_sec2_web.png"
+            alt="A box shaped as a smartphone with coins inside"
           />
         </div>
         <div className={styles.secondSectionContent}>
@@ -92,11 +92,11 @@ const Mobile = () => {
       <div className={styles.thirdSection}>
         <div className={styles.thirdSectionImage}>
           <img
-            srcset='./images/mobile_sec3_mobile.png 260w, ./images/mobile_sec3_web.png 600w'
-            sizes='(max-width: 1130px) 320px,
-        600px'
-            src='./images/mobile_sec3_web.png'
-            alt='Hands handle a smartphones'
+            srcset="/images/mobilePage/mobile_sec3_mobile.png 260w, /images/mobilePage/mobile_sec3_web.png 600w"
+            sizes="(max-width: 1130px) 320px,
+        600px"
+            src="/images/mobilePage/mobile_sec3_web.png"
+            alt="Hands handle a smartphones"
           />
         </div>
         <div className={styles.thirdSectionContent}>
@@ -126,19 +126,31 @@ const Mobile = () => {
           </p>
           <ul>
             <li>
-              <img src='./images/mobile_sec4_icon.svg' alt='A bullet point' />
+              <img
+                src="/images/mobilePage/mobile_sec4_icon.svg"
+                alt="A bullet point"
+              />
               Leveraging mobile offerwalls
             </li>
             <li>
-              <img src='./images/mobile_sec4_icon.svg' alt='A bullet point' />
+              <img
+                src="/images/mobilePage/mobile_sec4_icon.svg"
+                alt="A bullet point"
+              />
               Optimizing for both Android and iOS
             </li>
             <li>
-              <img src='./images/mobile_sec4_icon.svg' alt='A bullet point' />
+              <img
+                src="/images/mobilePage/mobile_sec4_icon.svg"
+                alt="A bullet point"
+              />
               Understanding game monetization models
             </li>
             <li>
-              <img src='./images/mobile_sec4_icon.svg' alt='A bullet point' />
+              <img
+                src="/images/mobilePage/mobile_sec4_icon.svg"
+                alt="A bullet point"
+              />
               Providing valuable content or services
             </li>
           </ul>
@@ -160,14 +172,14 @@ const Mobile = () => {
         <div className={styles.fourthSectionImage}>
           <img
             className={styles.groupSmartphones}
-            src='./images/mobile_sec4_phones_group.png'
-            alt='Smartphones'
+            src="/images/mobilePage/mobile_sec4_phones_group.png"
+            alt="Smartphones"
           />
           <div className={styles.bottomBand}></div>
           <img
             className={styles.oneSmartphone}
-            src='./images/mobile_sec4_phone2.png'
-            alt='Smartphone'
+            src="/images/mobilePage/mobile_sec4_phone2.png"
+            alt="Smartphone"
           />
         </div>
       </div>

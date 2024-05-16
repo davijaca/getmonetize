@@ -54,7 +54,7 @@ h2 {
 /*FIRST SECTION*/
 
 .firstWebsiteContainer {
-  background: url(/public/heroBackground.svg) no-repeat;
+  background: url(/public/images/backgroundImgs/heroBackground.svg) no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -424,7 +424,8 @@ h2 {
 
   .mobileFirstWebsiteContainerBg {
     /* In the design, this background seems wider */
-    background: url(/public/heroBackgroundMobile.svg) no-repeat fixed right;
+    background: url(/public/images/backgroundImgs/heroBackgroundMobile.svg)
+      no-repeat fixed right;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -532,8 +533,8 @@ h2 {
   .secondWebsiteContainerBox2Mobile {
     width: 350px;
     height: 509px;
-    background: url(/public/images/website_sec2_group_mobile.svg) no-repeat
-      center;
+    background: url(/public/images/backgroundImgs/website_sec2_group_mobile.svg)
+      no-repeat center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

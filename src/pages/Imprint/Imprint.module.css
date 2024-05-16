@@ -1,327 +1,310 @@
 @font-face {
-    font-family: gotham-medium;
-    src: url('/public/fonts/Gotham/Gotham-Medium.otf');
-  }
-  
-  @font-face {
-    font-family: gotham-book;
-    src: url('/public/fonts/Gotham/Gotham-Book.otf');
-  }
+  font-family: gotham-medium;
+  src: url('/public/fonts/Gotham/Gotham-Medium.otf');
+}
+
+@font-face {
+  font-family: gotham-book;
+  src: url('/public/fonts/Gotham/Gotham-Book.otf');
+}
 
 .home,
 .home * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 h1 {
-    margin: 0;
+  margin: 0;
 }
 
 h2 {
-    margin: 0;
+  margin: 0;
 }
 
 .bookingFormPopup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
 }
 
 .bookingFormContent {
-    position: relative;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
 .closeButton {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    font-size: 24px;
-    width: 40px; 
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%; 
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease; 
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
 }
 
 .closeButton:hover {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 .homeContainer {
-    width: 100vw;
-    max-width: 1920px;
-    margin: auto;
-    margin-top: -120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 100vw;
+  max-width: 1920px;
+  margin: auto;
+  margin-top: -120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*FIRST SECTION*/
 
 .firstHomeContainer {
-    width: 100vw;
-    position: relative;
-    left: calc(-50vw + 50%);
-    overflow: visible;
-    display: inline-block;
-    margin: auto;
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+  overflow: visible;
+  display: inline-block;
+  margin: auto;
 }
 
 .mobileFirstHomeContainer {
-    display: none;
+  display: none;
 }
-
 
 .gradientContainer {
-    width: 100%;
-    max-width: 1530px;
-    position: absolute;
+  width: 100%;
+  max-width: 1530px;
+  position: absolute;
 }
-
-
 
 .gradientContainerLeft {
-    /* background-color: rgba(76, 175, 80, 0.4); */
-    z-index: 3;
-    position: absolute;
-    width: 70%;
-    float: right;
-    margin-left: 33%;
-
+  /* background-color: rgba(76, 175, 80, 0.4); */
+  z-index: 3;
+  position: absolute;
+  width: 70%;
+  float: right;
+  margin-left: 33%;
 }
 
-
 .topFirst {
-    background: url(/public/heroBackground.svg) no-repeat;
-    background-size: cover;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 1026px;
+  background: url(/public/images/backgroundImgs/heroBackground.svg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 1026px;
 }
 
 .topFirstBg {
-    width: 100vw;
-    max-width: 1530px;
-    display: flex;
-    justify-content: center;
-    background-size: contain;
+  width: 100vw;
+  max-width: 1530px;
+  display: flex;
+  justify-content: center;
+  background-size: contain;
 }
 
 .mobileTopFirstBg {
-    display: none;
+  display: none;
 }
 
 .mainFirst {
-    width: 1220px;
-    display: flex;
-    margin-top: 100px;
+  width: 1220px;
+  display: flex;
+  margin-top: 100px;
 }
 
 .rightMain {
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .text {
-    color: var(--White, #fff);
-    font-family: gotham-medium;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 109%;
-    z-index: 5;
+  color: var(--White, #fff);
+  font-family: gotham-medium;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 109%;
+  z-index: 5;
 }
 
 .text2 {
-    color: var(--White, #fff);
-    font-family: gotham-book;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 109%;
-    z-index: 5
+  color: var(--White, #fff);
+  font-family: gotham-book;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 109%;
+  z-index: 5;
 }
 
 .parag {
-    width: 102%;
-    padding-top: 30px;
-    padding-bottom: 60px;
+  width: 102%;
+  padding-top: 30px;
+  padding-bottom: 60px;
 }
 
 .innerParag {
-    color: #fff;
-    width: 80%;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: gotham-book;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 29px;
-  }
-  
-  .innerParag > span {
-    font-family: gotham-medium;
-    font-weight: 500;
-  }
+  color: #fff;
+  width: 80%;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-book;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.innerParag > span {
+  font-family: gotham-medium;
+  font-weight: 500;
+}
 
 .buttonText {
-    display: flex;
-    width: 210px;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #fff;
-    background: #fff;
+  display: flex;
+  width: 210px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  background: #fff;
 }
 .buttonText1 {
-    color: #0a0a0a;
-    text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: gotham-medium;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 38px;
-  }
-
-
+  color: #0a0a0a;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px;
+}
 
 .buttonText2 {
-    width: 320px;
-
+  width: 320px;
 }
 
 .bottomHero {
-    margin-top: 70px;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 5;
+  margin-top: 70px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
 }
 
-
-
 @font-face {
-    font-family: gotham-light;
-    src: url('/public/fonts/Gotham/Gotham-Light.otf');
+  font-family: gotham-light;
+  src: url('/public/fonts/Gotham/Gotham-Light.otf');
 }
 
 .bottomHero h2 {
-    color: #FFF;
-    width: 200px;
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: gotham-book;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-    /* 185.714% */
+  color: #fff;
+  width: 200px;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-book;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  /* 185.714% */
 }
 
 .bottomHero1 {
-    width: 156.035px;
-    height: 34px;
-    flex-shrink: 0;
-    color: #FFF;
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: gotham-medium;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 30px;
-    /* 60% */
-    letter-spacing: -2.25px;
+  width: 156.035px;
+  height: 34px;
+  flex-shrink: 0;
+  color: #fff;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-medium;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  /* 60% */
+  letter-spacing: -2.25px;
 }
 
 .bottomHero2 {
-    display: flex;
-    width: 167.873px;
-    height: 42px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #FFF;
-    font-feature-settings: 'clig'off, 'liga'off;
-    font-family: gotham-medium;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    /* 48% */
-    letter-spacing: -2.25px;
+  display: flex;
+  width: 167.873px;
+  height: 42px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #fff;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-medium;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* 48% */
+  letter-spacing: -2.25px;
 }
 
 .leftMain {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  z-index: 5;
 }
 
 .leftImgInfo {
-    width: 70%;
-    height: 650px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 70%;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .leftImg {
-    width: 450px;
-
-
+  width: 450px;
 }
-
-
-
 
 /*MOBILE RESPONSIVENESS*/
 
-
 @media only screen and (max-width: 1130px) and (min-width: 320px) {
+  .homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    position: relative;
+    margin-top: -150px;
+  }
 
+  /*FIRST MOBILE SECTION*/
 
-    .homeContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100vw;
-        position: relative;
-        margin-top: -150px;
-    }
-
-
- /*FIRST MOBILE SECTION*/
-
- .firstHomeContainer {
+  .firstHomeContainer {
     display: none;
   }
 
@@ -346,7 +329,8 @@ h2 {
     width: 100vw;
     background-repeat: no-repeat;
     justify-content: center;
-    background: url(/public/heroBackgroundMobile.svg) no-repeat right top 0;
+    background: url(/public/images/backgroundImgs/heroBackgroundMobile.svg)
+      no-repeat right top 0;
   }
 
   .mainFirstMobile {

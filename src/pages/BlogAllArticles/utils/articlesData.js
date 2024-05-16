@@ -8,7 +8,7 @@ export const articlesData = [
   {
     id: 1,
     key: 'exploringofferwall',
-    image: './images/exploringOfferwall_Card.png',
+    image: './images/articleCardImgs/exploringOfferwall_Card.png',
     title:
       'Exploring Offerwall Solutions for Monetization and Retention: a Comparative Analysis',
     infos: {
@@ -21,7 +21,7 @@ export const articlesData = [
   {
     id: 2,
     key: 'whatisanofferwall',
-    image: './images/whatIsAnOfferwall_Card.png',
+    image: './images/articleCardImgs/whatIsAnOfferwall_Card.png',
     title: 'What is an Offerwall?\nExploring the various types and benefits',
     infos: {
       readTime: '8 min',
@@ -33,7 +33,7 @@ export const articlesData = [
   {
     id: 3,
     key: 'maximizingOfferwall',
-    image: './images/maximizingOfferwall_Card.png',
+    image: './images/articleCardImgs/maximizingOfferwall_Card.png',
     title:
       'Maximizing Offerwall Monetization: Best Practices for Conversions and Retention',
     infos: {

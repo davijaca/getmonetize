@@ -53,7 +53,7 @@ h2 {
 }
 
 .topFirst {
-  background: url(/public/images/heroBackground.svg) no-repeat;
+  background: url(/public/images/newspaperPage/heroBackground.svg) no-repeat;
   background-size: cover;
   width: 100vw;
   display: flex;
@@ -213,7 +213,7 @@ h2 {
 
 /*THIRD SECTION*/
 .thirdNewsContainer {
-  background: url(/public/images/newspaper_sec3_bg.png) no-repeat;
+  background: url(/public/images/newspaperPage/newspaper_sec3_bg.png) no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -408,7 +408,8 @@ h2 {
     width: 100%;
     background-repeat: no-repeat;
     justify-content: center;
-    background: url(/public/images/heroBackgroundMobile.svg) no-repeat right top 0;
+    background: url(/public/images/newspaperPage/heroBackgroundMobile.svg)
+      no-repeat right top 0;
   }
 
   .mainFirstMobile {
@@ -563,7 +564,8 @@ h2 {
   }
 
   .mobileThirdNewsContainer {
-    background: url(/public/images/newspaper_sec3_bg.png) no-repeat;
+    background: url(/public/images/newspaperPage/newspaper_sec3_bg.png)
+      no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -615,17 +617,17 @@ h2 {
     align-items: center;
     gap: 30px;
   }
-  
+
   .fourthNewsContainer {
     display: none;
   }
-  
+
   .mobileFourthNewsImage {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  
+
   .mobileFourthNewsImgBg {
     box-shadow: -19px -53px 60px 58px rgba(0, 0, 0, 0.2) inset;
     background: linear-gradient(#a0802a, #604e1a);
@@ -633,13 +635,13 @@ h2 {
     height: 379px;
     width: 340px;
   }
-  
+
   .mobileFourthNewsImage img {
     width: 315px;
     margin-top: -262px;
     margin-left: -24px;
   }
-  
+
   .mobileFourthNewsContent {
     width: 350px;
     display: flex;
@@ -647,7 +649,7 @@ h2 {
     justify-content: center;
     gap: 30px;
   }
-  
+
   .mobileFourthNewsContent h1 {
     color: #1e1e1e;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -657,7 +659,7 @@ h2 {
     font-weight: 500;
     line-height: 36px;
   }
-  
+
   .mobileFourthNewsContent p {
     color: var(--White, black);
     font-family: gotham-book;

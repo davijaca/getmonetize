@@ -22,6 +22,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding: 40px 20px;
 }
 
 .article {
@@ -51,7 +52,8 @@
   gap: 25px;
 }
 
-.btnReadMore {
+/* Delete after solve the issue related to Link X Button component */
+/* .btnReadMore {
   background-color: #a18129;
   color: white;
   padding: 16px 43px;
@@ -60,7 +62,8 @@
   cursor: pointer;
   font-family: gotham-medium;
   font-weight: 500;
-}
+  text-align: center;
+} */
 
 /* Desktop ArticleCard style */
 @media only screen and (min-width: 769px) {
@@ -87,7 +90,9 @@
     flex-basis: calc(50% - 70px);
     height: initial;
   }
-  .btnReadMore {
+
+  /* Delete after solve the issue related to Link X Button component */
+  /* .btnReadMore {
     margin: unset;
-  }
+  } */
 }

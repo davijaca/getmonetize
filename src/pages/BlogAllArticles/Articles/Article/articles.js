@@ -7,8 +7,8 @@ const exploringOfferWallSolutions = {
   title:
     'Exploring Offerwall Solutions for Monetization and Retention: a Comparative Analysis',
   heroImg: {
-    desktop: '/images/ExploringOfferwall_Hero_Img.svg',
-    mobile: '/images/allArticleleft2.png',
+    desktop: '/images/articleImgs/ExploringOfferwall_Hero_Img.svg',
+    mobile: '/images/articleImgs/allArticleleft2.png',
   },
   metadata: {
     readTime: '7 min',
@@ -59,8 +59,8 @@ const exploringOfferWallSolutions = {
     {
       type: 'image',
       sources: {
-        desktop: '/images/ExploringOfferwall_Img.png',
-        mobile: '/images/ExploringOferwall_Img_mobile.png',
+        desktop: '/images/articleImgs/ExploringOfferwall_Img.png',
+        mobile: '/images/articleImgs/ExploringOferwall_Img_mobile.png',
       },
     },
     {
@@ -80,8 +80,8 @@ const whatIsAnOfferWallArticle = {
   navbarBackground: false,
   title: 'What is an Offerwall?\nExploring the various types and benefits',
   heroImg: {
-    desktop: '/images/whatIsAnOfferwall_Hero_Img.png',
-    mobile: '/images/whatIsAnOfferwall_Hero_Img_mobile.png',
+    desktop: '/images/articleImgs/whatIsAnOfferwall_Hero_Img.png',
+    mobile: '/images/articleImgs/whatIsAnOfferwall_Hero_Img_mobile.png',
   },
   metadata: {
     readTime: '8 min',
@@ -125,8 +125,8 @@ const whatIsAnOfferWallArticle = {
     {
       type: 'image',
       sources: {
-        desktop: '/images/whatIsAnOfferwall_Img.png',
-        mobile: '/images/whatIsAnOfferwall_Img_mobile.png',
+        desktop: '/images/articleImgs/whatIsAnOfferwall_Img.png',
+        mobile: '/images/articleImgs/whatIsAnOfferwall_Img_mobile.png',
       },
     },
     {
@@ -168,12 +168,12 @@ const maximizingOfferwall = {
   articleId: 3,
   id: 3,
   key: 'maximizingofferwall',
-  navbarBackground: false,
+  navbarBackground: true,
   title:
     'Maximizing Offerwall Monetization: Best Practices for Conversions and Retention',
   heroImg: {
-    desktop: '/images/MaximizingOfferwall_Hero_Img.png',
-    mobile: '/images/MaximizingOfferwall_Hero_Img_mobile.png',
+    desktop: '/images/articleImgs/MaximizingOfferwall_Hero_Img.png',
+    mobile: '/images/articleImgs/MaximizingOfferwall_Hero_Img_mobile.png',
   },
   metadata: {
     readTime: '8 min',
@@ -262,8 +262,8 @@ const maximizingOfferwall = {
     {
       type: 'image',
       sources: {
-        desktop: '/images/MaximizingOfferwall_Img.svg',
-        mobile: '/images/MaximizingOfferwall_Img_mobile.png',
+        desktop: '/images/articleImgs/MaximizingOfferwall_Img.svg',
+        mobile: '/images/articleImgs/MaximizingOfferwall_Img_mobile.png',
       },
     },
     {

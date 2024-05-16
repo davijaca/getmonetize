@@ -29,11 +29,8 @@
   box-sizing: inherit;
 }
 
-
 h1 {
-
   margin: 0;
-
 }
 
 h2 {
@@ -54,16 +51,15 @@ h2 {
 
 .firstNonprofitContainer {
   width: 100vw;
-  position: relative;  left: calc(-50vw + 50%);
+  position: relative;
+  left: calc(-50vw + 50%);
   overflow: visible;
   display: inline-block;
   margin: auto;
 }
 
 .mobileFirstNonprofitContainer {
-
   display: none;
-
 }
 
 .gradientContainer {
@@ -73,7 +69,7 @@ h2 {
 }
 
 .topFirst {
-  background: url(/public/heroBackground.svg) no-repeat;
+  background: url(/public/images/backgroundImgs/heroBackground.svg) no-repeat;
   background-size: cover;
   width: 100%;
   display: flex;
@@ -296,7 +292,6 @@ h2 {
   display: none;
 }
 
-
 .thirdNonprofitContainerBox {
   height: 894px;
   width: 100%;
@@ -467,15 +462,15 @@ h2 {
   right: 10px;
   cursor: pointer;
   font-size: 24px;
-  width: 40px; 
+  width: 40px;
   height: 40px;
   display: flex;
-   justify-content: center;
+  justify-content: center;
   align-items: center;
-  border-radius: 50%; 
+  border-radius: 50%;
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease; 
+  transition: background-color 0.3s ease;
 }
 
 .closeButton:hover {
@@ -516,7 +511,8 @@ h2 {
     width: 100vw;
     background-repeat: no-repeat;
     justify-content: center;
-    background: url(/public/heroBackgroundMobile.svg) no-repeat right top 0;
+    background: url(/public/images/backgroundImgs/heroBackgroundMobile.svg)
+      no-repeat right top 0;
     height: 1026px;
     padding-top: 100px;
   }
@@ -911,15 +907,13 @@ h2 {
     font-family: gotham-medium;
     font-weight: 500;
   }
-  
-.bookingFormPopup {
-  display: unset;
+
+  .bookingFormPopup {
+    display: unset;
   }
 
-
-.closeButton {
-  top: 40px;
-  right: 20px;
+  .closeButton {
+    top: 40px;
+    right: 20px;
   }
-
 }

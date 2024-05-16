@@ -2,6 +2,7 @@ import React from 'react';
 import TextTruncate from 'react-text-truncate';
 import styles from './ArticleCard.module.css';
 import { Link } from 'react-router-dom';
+import Button from '../../../components/Button/Button';
 
 const ArticleCard = ({
   image,
@@ -12,13 +13,13 @@ const ArticleCard = ({
   readMoreUrl,
 }) => {
   return (
-    <article className={styles.articleCard} data-testid="article-card">
-      <div className={styles.cardImage} alt="article-image">
-        <img src={image} alt="" />
+    <article className={styles.articleCard} data-testid='article-card'>
+      <div className={styles.cardImage} alt='article-image'>
+        <img src={image} alt='' />
       </div>
       <div className={styles.articleContent}>
         <div className={styles.article}>
-          <h1 className={styles.articleTitle} data-testid="article-card-title">
+          <h1 className={styles.articleTitle} data-testid='article-card-title'>
             {title}
           </h1>
           <div className={styles.articlesInfo}>
@@ -27,7 +28,7 @@ const ArticleCard = ({
                 <img
                   src={'/images/Ellipse.svg'}
                   className={styles.elipse}
-                  alt=""
+                  alt=''
                 />
               </span>
               {readTime} read
@@ -37,17 +38,17 @@ const ArticleCard = ({
                 <img
                   src={'/images/Ellipse.svg'}
                   className={styles.elipse}
-                  alt=""
+                  alt=''
                 />
               </span>
               {publishedDate}
             </div>
           </div>
           {/* You can change how many lines the cards will display at line=() below */}
-          <TextTruncate line={3} element="p" text={text} />
+          <TextTruncate line={3} element='p' text={text} />
         </div>
         <Link to={readMoreUrl}>
-          <button className={styles.btnReadMore}>READ MORE</button>
+          <Button text='READ MORE' color='gold' />
         </Link>
       </div>
     </article>

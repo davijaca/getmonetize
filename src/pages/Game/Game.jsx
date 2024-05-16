@@ -7,10 +7,10 @@ const Game = () => {
   return (
     <div className={styles.gameContainer}>
       <Helmet>
-        <meta charSet='utf-8' />
+        <meta charSet="utf-8" />
         <title>GAME</title>
-        <link rel='canonical' href='https://www.smatched.io/' />
-        <link rel='canonical' href='https://www.offerwallmonetization.com/' />
+        <link rel="canonical" href="https://www.smatched.io/" />
+        <link rel="canonical" href="https://www.offerwallmonetization.com/" />
       </Helmet>
 
       {/* FIRST SECTION */}
@@ -39,8 +39,8 @@ const Game = () => {
               <div className={styles.leftImgInfo}>
                 <img
                   className={styles.gameLeftImg}
-                  src='./gameHeroImage.png'
-                  alt='A man using a helmet holding a flashlight'
+                  src="/images/gamePage/gameHeroImage.png"
+                  alt="A man using a helmet holding a flashlight"
                 />
               </div>
             </div>
@@ -54,8 +54,8 @@ const Game = () => {
           <div className={styles.leftImgInfoMobile}>
             <img
               className={styles.leftImgMobile}
-              src='./gameHeroImage.png'
-              alt='A man with a helmet holding a flashlight'
+              src="/images/gamePage/gameHeroImage.png"
+              alt="A man with a helmet holding a flashlight"
             />
           </div>
         </div>
@@ -117,7 +117,10 @@ const Game = () => {
           </div>
 
           <div className={styles.secondGameContainerBox2}>
-            <img src='./secondGameImage.png' alt='A laptop and a smartphone' />
+            <img
+              src="/images/gamePage/secondGameImage.png"
+              alt="A laptop and a smartphone"
+            />
           </div>
         </div>
       </div>
@@ -131,8 +134,8 @@ const Game = () => {
               <div className={styles.leftImgInfoSecondMobile}>
                 <img
                   className={styles.secondImgMobile}
-                  src='./secondGameImage.png'
-                  alt='A laptop and a smartphone'
+                  src="/images/gamePage/secondGameImage.png"
+                  alt="A laptop and a smartphone"
                 />
               </div>
             </div>
@@ -161,7 +164,10 @@ const Game = () => {
       <div className={styles.thirdGameContainer}>
         <div className={styles.thirdGameContainerBox}>
           <div className={styles.thirdSectionLeft}>
-            <img src='./smartPhone.png' alt='A man using smartphone' />
+            <img
+              src="/images/gamePage/smartPhone.png"
+              alt="A man using smartphone"
+            />
           </div>
 
           <div className={styles.thirdSectionRight}>
@@ -195,7 +201,10 @@ const Game = () => {
           <div className={styles.mobileThirdSectionLeft}>
             <div className={styles.imageMobileThirdGameContainer}>
               <div className={styles.mobileThirdGameImage}>
-                <img src='./smartPhone.png' alt='A man using smartphone' />
+                <img
+                  src="/images/gamePage/smartPhone.png"
+                  alt="A man using smartphone"
+                />
               </div>
             </div>
           </div>
@@ -248,14 +257,14 @@ const Game = () => {
                 <div className={styles.innerFourthBox1}>
                   <img
                     className={styles.like}
-                    src='/likeVector.png'
-                    alt='A icon with a checked sign'
+                    src="/images/gamePage/likeVector.png"
+                    alt="A icon with a checked sign"
                   />
                   <div className={styles.verticalLike}>
                     <img
                       className={styles.vertical}
-                      src='/verticalLikeVector.png'
-                      alt='A vertical line with bullet points'
+                      src="/images/gamePage/verticalLikeVector.png"
+                      alt="A vertical line with bullet points"
                     />
                   </div>
                 </div>
@@ -282,14 +291,14 @@ const Game = () => {
                 <div className={styles.innerFourthBox1}>
                   <img
                     className={styles.disLike}
-                    src='/dislikeVector.png'
-                    alt='A icon with a x sign'
+                    src="/images/gamePage/dislikeVector.png"
+                    alt="A icon with a x sign"
                   />
                   <div className={styles.verticalLike}>
                     <img
                       className={styles.vertical}
-                      src='/verticalDislikeVector.png'
-                      alt='A vertical line with bullet points'
+                      src="/images/gamePage//verticalDislikeVector.png"
+                      alt="A vertical line with bullet points"
                     />
                   </div>
                 </div>
@@ -331,8 +340,8 @@ const Game = () => {
               <div className={styles.bottomImgInfoFourthMobile}>
                 <img
                   className={styles.fourthImgMobile}
-                  src='./fourthMobileImg.png'
-                  alt=''
+                  src="/images/gamePage/fourthMobileImg.png"
+                  alt=""
                 />
               </div>
             </div>
@@ -344,7 +353,7 @@ const Game = () => {
       <div className={styles.fifthGameContainer}>
         <div className={styles.fifthGameBackground}>
           <div className={styles.fifthGameLeft}>
-            <img src='/MacBookPro17.png' alt='A laptop' />
+            <img src="/images/gamePage/MacBookPro17.png" alt="A laptop" />
           </div>
           <div className={styles.fifthGameRight}>
             <div className={styles.innerFifthGameRight}>
@@ -365,7 +374,7 @@ const Game = () => {
                 increasingly important as the gaming industry continues to
                 evolve and grow.
               </p>
-              <Button color='gold' />
+              <Button color="gold" />
             </div>
           </div>
         </div>
@@ -375,7 +384,7 @@ const Game = () => {
       <div className={styles.mobileFifthGameContainer}>
         <div className={styles.mobileFifthGameContainerBox}>
           <div className={styles.mobileFifthGameImage}>
-            <img src='./FifthSectionImg.png' alt='A laptop' />
+            <img src="/images/gamePage/FifthSectionImg.png" alt="A laptop" />
           </div>
 
           <div className={styles.mobileFifthSectionRight}>
@@ -398,7 +407,7 @@ const Game = () => {
               and grow.
             </div>
 
-            <Button color='gold' />
+            <Button color="gold" />
           </div>
         </div>
       </div>

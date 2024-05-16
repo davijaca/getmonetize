@@ -50,7 +50,6 @@ p {
   justify-content: center;
 }
 
-
 .containerToMatchDesign {
   /* This container is used when the section has a left and a right box.
 width: 1512px is the current(Jan/2024) design on Figma, so using this container
@@ -239,7 +238,8 @@ the boxes from margin left. */
 /*FOURTH SECTION*/
 
 .fourthTapjoyVsSmatchedContainer {
-  background: url(/public/images/tapVsSmat_sec4_web_bg.png) no-repeat;
+  background: url(/public/images/tapjoyvssmatchedPage/tapVsSmat_sec4_web_bg.png)
+    no-repeat;
   background-size: cover;
   min-height: 887px; /* it was not especified, I set by summing the boxes heigth and margins*/
   display: flex;
@@ -633,7 +633,8 @@ the boxes from margin left. */
   }
 
   .mobileFourthTapjoyVsSmatchedContainer {
-    background: url(/public/images/tapVsSmat_sec4_mobile_bg.png) no-repeat;
+    background: url(/public/images/tapjoyvssmatchedPage/tapVsSmat_sec4_mobile_bg.png)
+      no-repeat;
     background-size: cover;
     min-height: 1065px; /* it was not especified, I set by summing the boxes heigth and margins*/
     display: flex;

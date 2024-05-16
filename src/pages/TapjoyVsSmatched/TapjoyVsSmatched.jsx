@@ -18,7 +18,10 @@ const TapjoyVsSmatched = () => {
             </p>
           </div>
           <div className={styles.firstImage}>
-            <img src='./images/tapVsSmat_sec1_web.png' alt='Two smartphones' />
+            <img
+              src="/images/tapjoyvssmatchedPage/tapVsSmat_sec1_web.png"
+              alt="Two smartphones"
+            />
           </div>
         </div>
       </div>
@@ -27,7 +30,10 @@ const TapjoyVsSmatched = () => {
 
       <div className={styles.mobileFirstTapjoyVsSmatchedContainer}>
         <div className={styles.firstMobileImage}>
-          <img src='./images/tapVsSmat_sec1_mobile.png' alt='Two smartphones' />
+          <img
+            src="/images/tapjoyvssmatchedPage/tapVsSmat_sec1_mobile.png"
+            alt="Two smartphones"
+          />
         </div>
         <div className={styles.firstMobileContent}>
           <h1>Tapjoy vs. Smatched: A Comprehensive Comparison in 2023</h1>
@@ -59,7 +65,10 @@ const TapjoyVsSmatched = () => {
             </p>
           </div>
           <div className={styles.secondImage}>
-            <img src='./images/tapVsSmat_sec2_web.png' alt='A smartphone' />
+            <img
+              src="./images/tapjoyvssmatchedPage/tapVsSmat_sec2_web.png"
+              alt="A smartphone"
+            />
           </div>
         </div>
       </div>
@@ -68,7 +77,10 @@ const TapjoyVsSmatched = () => {
 
       <div className={styles.mobileSecondTapjoyVsSmatchedContainer}>
         <div className={styles.secondMobileImage}>
-          <img src='./images/tapVsSmat_sec2_mobile.png' alt='A smartphone' />
+          <img
+            src="./images/tapjoyvssmatchedPage/tapVsSmat_sec2_mobile.png"
+            alt="A smartphone"
+          />
         </div>
         <div className={styles.secondMobileContent}>
           <h2>What Is Tapjoy and How Does It Work?</h2>
@@ -211,14 +223,14 @@ const TapjoyVsSmatched = () => {
           <div className={styles.fourthImages}>
             <div>
               <img
-                src='./images/tapVsSmat_sec4_web_logo.png'
-                alt='Smatched logo'
+                src="./images/tapjoyvssmatchedPage/tapVsSmat_sec4_web_logo.png"
+                alt="Smatched logo"
               />
             </div>
             <div>
               <img
-                src='./images/tapVsSmat_sec4_web_phone.png'
-                alt='A smartphone'
+                src="./images/tapjoyvssmatchedPage/tapVsSmat_sec4_web_phone.png"
+                alt="A smartphone"
               />
             </div>
           </div>
@@ -243,14 +255,14 @@ const TapjoyVsSmatched = () => {
         <div className={styles.fourthMobileImages}>
           <div>
             <img
-              src='./images/tapVsSmat_sec4_mobile_logo.png'
-              alt='Smatched logo'
+              src="./images/tapjoyvssmatchedPage/tapVsSmat_sec4_mobile_logo.png"
+              alt="Smatched logo"
             />
           </div>
           <div>
             <img
-              src='./images/tapVsSmat_sec4_mobile_phone.png'
-              alt='A smartphone'
+              src="./images/tapjoyvssmatchedPage/tapVsSmat_sec4_mobile_phone.png"
+              alt="A smartphone"
             />
           </div>
         </div>
@@ -276,8 +288,8 @@ const TapjoyVsSmatched = () => {
           <div className={styles.fifthCard}>
             <img
               className={styles.fifthCardIconOne}
-              src='./images/tapVsSmat_sec5_icon1.png'
-              alt='A icon'
+              src="./images/tapjoyvssmatchedPage/tapVsSmat_sec5_icon1.png"
+              alt="A icon"
             />
             <h3>No Upfront Costs</h3>
             <p>
@@ -288,8 +300,8 @@ const TapjoyVsSmatched = () => {
           <div className={styles.fifthCard}>
             <img
               className={styles.fifthCardIconTwo}
-              src='./images/tapVsSmat_sec5_icon2.png'
-              alt='A icon'
+              src="./images/tapjoyvssmatchedPage/tapVsSmat_sec5_icon2.png"
+              alt="A icon"
             />
             <h3>Insights and Customer Support</h3>
             <p>
@@ -300,8 +312,8 @@ const TapjoyVsSmatched = () => {
           <div className={styles.fifthCard}>
             <img
               className={styles.fifthCardIconThree}
-              src='./images/tapVsSmat_sec5_icon3.png'
-              alt='A icon'
+              src="./images/tapjoyvssmatchedPage/tapVsSmat_sec5_icon3.png"
+              alt="A icon"
             />
             <h3>Data Integrity and Transparency</h3>
             <p>
@@ -319,8 +331,8 @@ const TapjoyVsSmatched = () => {
         <div className={styles.fifthMobileCard}>
           <img
             className={styles.fifthMobileCardIconOne}
-            src='./images/tapVsSmat_sec5_icon1.png'
-            alt='A icon'
+            src="./images/tapjoyvssmatchedPage/tapVsSmat_sec5_icon1.png"
+            alt="A icon"
           />
           <h3>No Upfront Costs</h3>
           <p>
@@ -331,8 +343,8 @@ const TapjoyVsSmatched = () => {
         <div className={styles.fifthMobileCard}>
           <img
             className={styles.fifthMobileCardIconTwo}
-            src='./images/tapVsSmat_sec5_icon2.png'
-            alt='A icon'
+            src="./images/tapjoyvssmatchedPage/tapVsSmat_sec5_icon2.png"
+            alt="A icon"
           />
           <h3>Insights and Customer Support</h3>
           <p>
@@ -343,8 +355,8 @@ const TapjoyVsSmatched = () => {
         <div className={styles.fifthMobileCard}>
           <img
             className={styles.fifthMobileCardIconThree}
-            src='./images/tapVsSmat_sec5_icon3.png'
-            alt='A icon'
+            src="./images/tapjoyvssmatchedPage/tapVsSmat_sec5_icon3.png"
+            alt="A icon"
           />
           <h3>Data Integrity and Transparency</h3>
           <p>
@@ -375,8 +387,8 @@ const TapjoyVsSmatched = () => {
         </div>
         <div className={styles.sixthTable}>
           <img
-            src='./images/tapVsSmat_sec6_web.png'
-            alt='A table comparing Tapjoy and Smatched features'
+            src="./images/tapjoyvssmatchedPage/tapVsSmat_sec6_web.png"
+            alt="A table comparing Tapjoy and Smatched features"
           />
         </div>
       </div>
@@ -405,8 +417,8 @@ const TapjoyVsSmatched = () => {
         </div>
         <div className={styles.sixthMobileTable}>
           <img
-            src='./images/tapVsSmat_sec6_mobile.png'
-            alt='A table comparing Tapjoy and Smatched features'
+            src="./images/tapjoyvssmatchedPage/tapVsSmat_sec6_mobile.png"
+            alt="A table comparing Tapjoy and Smatched features"
           />
         </div>
       </div>

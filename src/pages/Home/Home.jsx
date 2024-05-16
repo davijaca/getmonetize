@@ -48,15 +48,15 @@ const Home = () => {
     <div className={styles.homeContainer}>
       {/* SEO SECTION - DO NOT TOUCH */}
       <Helmet>
-        <meta charSet='utf-8' />
+        <meta charSet="utf-8" />
         <title>HOME PAGE</title>
-        <link rel='canonical' href='https://www.smatched.io/' />
-        <link rel='canonical' href='https://www.offerwallmonetization.com/' />
+        <link rel="canonical" href="https://www.smatched.io/" />
+        <link rel="canonical" href="https://www.offerwallmonetization.com/" />
       </Helmet>
 
       <div style={{ display: 'none' }}>
         <script
-          type='application/ld+json'
+          type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(articleStructuredData),
           }}
@@ -73,7 +73,7 @@ const Home = () => {
 
         <img
           style={{ width: '5em' }}
-          alt='https://json-ld.org/ - Website content released under a Creative Commons CC0 Public Domain Dedication except where an alternate is specified., CC0, via Wikimedia Commons'
+          alt="https://json-ld.org/ - Website content released under a Creative Commons CC0 Public Domain Dedication except where an alternate is specified., CC0, via Wikimedia Commons"
           src={articleStructuredData.image}
         />
 
@@ -136,8 +136,8 @@ const Home = () => {
               <div className={styles.leftImgInfo}>
                 <img
                   className={styles.leftImg}
-                  src='./heroImage.png'
-                  alt='An iPhone with an offerwall'
+                  src="/images/homePage/heroImage.png"
+                  alt="An iPhone with an offerwall"
                 />
               </div>
             </div>
@@ -155,8 +155,8 @@ const Home = () => {
                 <div className={styles.leftImgInfoMobile}>
                   <img
                     className={styles.leftImgMobile}
-                    src='./heroImage.png'
-                    alt='An iPhone with an offerwall'
+                    src="/images/homePage/heroImage.png"
+                    alt="An iPhone with an offerwall"
                   />
                 </div>
               </div>
@@ -287,8 +287,8 @@ const Home = () => {
         <div className={styles.secondHomeContainerBox2}>
           <img
             className={styles.image1}
-            src='./section2img.svg'
-            alt='A picture of a phone'
+            src="/images/homePage/section2img.svg"
+            alt="A phone"
           />
         </div>
       </div>
@@ -300,8 +300,8 @@ const Home = () => {
           <div className={styles.leftMainMobile}>
             <div className={styles.leftImgInfoSecondMobile}>
               <img
-                src='./images/secondHomeImg.png'
-                alt='An iPhone with an offerwall'
+                src="./images/homePage/secondHomeImg.png"
+                alt="An iPhone with an offerwall"
               />
             </div>
           </div>
@@ -335,8 +335,8 @@ const Home = () => {
               <div className={styles.thirdSectionLeftBG}>
                 <div className={styles.thirdHomeImage}>
                   <img
-                    src='./thirdSectionImg.png'
-                    alt='A laptop and a phone with offerwall rewards'
+                    src="/images/homePage/thirdSectionImg.png"
+                    alt="A laptop and a phone with offerwall rewards"
                   />
                 </div>
               </div>
@@ -368,7 +368,7 @@ const Home = () => {
                 </ul>
               </div>
 
-              <Button color='gold' onClick={toggleBookingForm} />
+              <Button color="gold" onClick={toggleBookingForm} />
               {showBookingForm && (
                 <div className={styles.bookingFormPopup}>
                   <div className={styles.bookingFormContent}>
@@ -396,8 +396,8 @@ const Home = () => {
               <div className={styles.mobileThirdSectionLeftBG}>
                 <div className={styles.mobileThirdHomeImage}>
                   <img
-                    src='./thirdSectionImg.png'
-                    alt='A laptop and a phone with offerwall rewards'
+                    src="/images/homePage/thirdSectionImg.png"
+                    alt="A laptop and a phone with offerwall rewards"
                   />
                 </div>
               </div>
@@ -425,7 +425,7 @@ const Home = () => {
                 </li>
               </ul>
             </div>
-            <Button color='gold' onClick={toggleBookingForm} />
+            <Button color="gold" onClick={toggleBookingForm} />
             {showBookingForm && (
               <div className={styles.bookingFormPopup}>
                 <div className={styles.bookingFormContent}>
@@ -458,8 +458,8 @@ const Home = () => {
                   <div className={styles.innerOne}>
                     <img
                       className={styles.stepOneImg}
-                      src='./one.svg'
-                      alt='A picture of a number one'
+                      src="/images/homePage/one.svg"
+                      alt="A number one"
                     />
                     <h1>Step 1</h1>
                     <div className={styles.fourth13Integration}>
@@ -473,8 +473,8 @@ const Home = () => {
                   <div className={styles.innerThree}>
                     <img
                       className={styles.stepThreeImg}
-                      src='./three.svg'
-                      alt='A picture of a number three'
+                      src="/images/homePage/three.svg"
+                      alt="A number three"
                     />
                     <h1>Step 3</h1>
                     <div className={styles.fourth13Integration}>
@@ -492,8 +492,8 @@ const Home = () => {
                   <div className={styles.innerTwo}>
                     <img
                       className={styles.stepTwoImg}
-                      src='./two.svg'
-                      alt='A picture of a number two'
+                      src="/images/homePage/two.svg"
+                      alt="A number two"
                     />
                     <h1>Step 2</h1>
                     <div className={styles.fourth13Integration}>
@@ -507,8 +507,8 @@ const Home = () => {
                   <div className={styles.innerFour}>
                     <img
                       className={styles.stepFourImg}
-                      src='./four.svg'
-                      alt='A picture of a number four'
+                      src="/images/homePage/four.svg"
+                      alt="A number four"
                     />
                     <h1>Step 4</h1>
                     <div className={styles.fourth13Integration}>
@@ -539,8 +539,8 @@ const Home = () => {
                   <div className={styles.mobileFourthInner12}>
                     <img
                       className={styles.mobileFourthStepOneImg}
-                      src='./one.svg'
-                      alt='A picture of a number one'
+                      src="/images/homePage/one.svg"
+                      alt="number one"
                     />
                     <h1>Step 1</h1>
                     <div className={styles.mobileFourth12Integration}>
@@ -555,8 +555,8 @@ const Home = () => {
                   <div className={styles.mobileFourthInner12}>
                     <img
                       className={styles.mobileFourthStepTwoImg}
-                      src='./two.svg'
-                      alt='A picture of a number two'
+                      src="/images/homePage/two.svg"
+                      alt="A number two"
                     />
                     <h1>Step 2</h1>
                     <div className={styles.mobileFourth12Integration}>
@@ -571,8 +571,8 @@ const Home = () => {
                   <div className={styles.mobileFourthInner34}>
                     <img
                       className={styles.mobileFourthStepThreeImg}
-                      src='./three.svg'
-                      alt='A picture of a number three'
+                      src="/images/homePage/three.svg"
+                      alt="A number three"
                     />
                     <h1>Step 3</h1>
                     <div className={styles.mobileFourth12Integration}>
@@ -588,8 +588,8 @@ const Home = () => {
                   <div className={styles.mobileFourthInner34}>
                     <img
                       className={styles.stepFourImg}
-                      src='./four.svg'
-                      alt='A picture of a number four'
+                      src="/images/homePage/four.svg"
+                      alt="A number four"
                     />
                     <h1>Step 4</h1>
                     <div className={styles.mobileFourth12Integration}>
@@ -613,19 +613,19 @@ const Home = () => {
             <div className={styles.innerFifthLeft}>
               <ul>
                 <li>
-                  <img src='./fifthIcon3.svg' alt='A icon' />
+                  <img src="/images/homePage/fifthIcon3.svg" alt="A icon" />
                   Increase new visitors
                 </li>
                 <li>
-                  <img src='./fifthIcon3.svg' alt='A icon' />
+                  <img src="/images/homePage/fifthIcon3.svg" alt="A icon" />
                   Growth or customers
                 </li>
                 <li>
-                  <img src='./fifthIcon2.svg' alt='A icon' />
+                  <img src="/images/homePage/fifthIcon2.svg" alt="A icon" />
                   1,355,900 Views
                 </li>
                 <li>
-                  <img src='./fifthIcon1.svg' alt='A icon' />
+                  <img src="/images/homePage/fifthIcon1.svg" alt="A icon" />
                   Increase your revenue
                 </li>
               </ul>
@@ -663,19 +663,19 @@ const Home = () => {
             <div className={styles.mobileInnerFifthTop}>
               <ul>
                 <li>
-                  <img src='./fifthIcon3.svg' alt='A icon' />
+                  <img src="/images/homePage/fifthIcon3.svg" alt="A icon" />
                   Increase new visitors
                 </li>
                 <li>
-                  <img src='./fifthIcon2.svg' alt='A icon' />
+                  <img src="/images/homePage/fifthIcon2.svg" alt="A icon" />
                   1,355,900 Views
                 </li>
                 <li>
-                  <img src='./fifthIcon3.svg' alt='A icon' />
+                  <img src="/images/homePage/fifthIcon3.svg" alt="A icon" />
                   Growth or customers
                 </li>
                 <li>
-                  <img src='./fifthIcon1.svg' alt='A icon' />
+                  <img src="/images/homePage/fifthIcon1.svg" alt="A icon" />
                   Increase your revenue
                 </li>
               </ul>

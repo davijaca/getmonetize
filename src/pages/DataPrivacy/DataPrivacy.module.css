@@ -13,7 +13,9 @@
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -58,15 +60,15 @@ html {
   right: 10px;
   cursor: pointer;
   font-size: 24px;
-  width: 40px; 
+  width: 40px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%; 
+  border-radius: 50%;
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease; 
+  transition: background-color 0.3s ease;
 }
 
 .closeButton:hover {
@@ -82,7 +84,7 @@ html {
   flex-direction: column;
   justify-content: center;
   background-color: black;
-  /* background: url(/public/heroBackground.svg) no-repeat;
+  /* background: url(/public/images/backgroundImgs/heroBackground.svg) no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; */
@@ -103,14 +105,11 @@ html {
   display: none;
 }
 
-
 .gradientContainer {
   width: 100%;
   max-width: 1530px;
   position: absolute;
 }
-
-
 
 .gradientContainerLeft {
   /* background-color: rgba(76, 175, 80, 0.4); */
@@ -119,12 +118,9 @@ html {
   width: 70%;
   float: right;
   margin-left: 33%;
-
 }
 
-
 .topFirst {
-
   width: 100%;
   display: flex;
   justify-content: center;
@@ -132,7 +128,6 @@ html {
 }
 
 .topFirstBg {
-
   width: 100vw;
   max-width: 1530px;
   display: flex;
@@ -154,7 +149,6 @@ html {
   width: 40%;
   display: flex;
   flex-direction: column;
-
 }
 
 .text {
@@ -169,7 +163,7 @@ html {
   margin-bottom: 20px;
 }
 
-.list{
+.list {
   color: var(--White, #fff);
   font-family: gotham-book;
   font-size: 15px;
@@ -187,7 +181,6 @@ html {
 .list li {
   margin-bottom: 20px;
 }
-
 
 @font-face {
   font-family: gotham-light;
@@ -217,9 +210,8 @@ html {
   align-items: flex-start;
 }
 
-.leftMain h2 { 
+.leftMain h2 {
   margin-top: 50px;
-
 }
 
 .leftMain h3 {
@@ -237,7 +229,7 @@ html {
   margin-left: 50px;
 }
 
-.leftMain a { 
+.leftMain a {
   margin-top: 50px;
   color: goldenrod;
   font-family: gotham-medium;
@@ -249,10 +241,7 @@ html {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
-  
-
 }
-
 
 .leftSub {
   color: var(--White, #fff);
@@ -294,207 +283,198 @@ html {
   align-items: flex-start;
   margin-left: 50px;
   margin-right: 50px;
-
 }
-
-
-
-
-
 
 /*MOBILE RESPONSIVENESS*/
 
-
 @media only screen and (max-width: 1130px) and (min-width: 320px) {
-
-
   .homeContainer {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 100vw;
-      position: relative;
-      margin-top: -150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    position: relative;
+    margin-top: -150px;
   }
 
+  /*FIRST MOBILE SECTION*/
 
-/*FIRST MOBILE SECTION*/
+  .firstHomeContainer {
+    display: none;
+  }
 
-.firstHomeContainer {
-  display: none;
-}
+  .mobileFirstHomeContainer {
+    background-color: #000000;
+    display: flex;
+    width: 100%;
+    height: 1026px;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.mobileFirstHomeContainer {
-  background-color: #000000;
-  display: flex;
-  width: 100%;
-  height: 1026px;
-  position: relative;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .topFirst {
+    background: none;
+  }
 
-.topFirst {
-  background: none;
-}
+  .mobileTopFirstBg {
+    display: flex;
+    height: 1026px;
+    width: 100vw;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background: url(/public/images/backgroundImgs/heroBackgroundMobile.svg)
+      no-repeat right top 0;
+  }
 
-.mobileTopFirstBg {
-  display: flex;
-  height: 1026px;
-  width: 100vw;
-  background-repeat: no-repeat;
-  justify-content: center;
-  background: url(/public/heroBackgroundMobile.svg) no-repeat right top 0;
-}
+  .mainFirstMobile {
+    display: flex;
+    width: 352px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+  }
 
-.mainFirstMobile {
-  display: flex;
-  width: 352px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 100px;
-}
+  .rightMainMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 
-.rightMainMobile {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
+  .textMobile {
+    color: var(--White, #fff);
+    font-family: gotham-medium;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 108%;
+    z-index: 5;
+  }
 
-.textMobile {
-  color: var(--White, #fff);
-  font-family: gotham-medium;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 108%;
-  z-index: 5;
-}
+  .text2Mobile {
+    color: var(--White, #fff);
+    font-family: gotham-book;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 108%;
+    z-index: 5;
+  }
 
-.text2Mobile {
-  color: var(--White, #fff);
-  font-family: gotham-book;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 108%;
-  z-index: 5;
-}
+  .bottomHeroMobile {
+    margin: 10px 0 50px 40px;
+  }
 
-.bottomHeroMobile {
-  margin: 10px 0 50px 40px;
-}
+  .bottomHeroMobile h2 {
+    color: #fff;
+    width: 200px;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: gotham-book;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
 
-.bottomHeroMobile h2 {
-  color: #fff;
-  width: 200px;
-  font-feature-settings: 'clig' off, 'liga' off;
-  font-family: gotham-book;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
+  .bottomHeroRightMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
 
-.bottomHeroRightMobile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 15px;
-}
+  .bottomHero1Mobile {
+    color: #fff;
+    font-family: gotham-medium;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -2.25px;
+    margin-right: 35px;
+  }
 
-.bottomHero1Mobile {
-  color: #fff;
-  font-family: gotham-medium;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 30px;
-  letter-spacing: -2.25px;
-  margin-right: 35px;
-}
+  .bottomHeroLeftMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.bottomHeroLeftMobile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .bottomHero2Mobile {
+    color: #fff;
+    font-family: gotham-medium;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -2.25px;
+    margin-right: 30px;
+  }
 
-.bottomHero2Mobile {
-  color: #fff;
-  font-family: gotham-medium;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: -2.25px;
-  margin-right: 30px;
-}
+  .paragMobile {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 
-.paragMobile {
-  width: 100%;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
+  .innerParagMobile {
+    width: 352px;
+    height: 95px;
+    color: var(--White, #fff);
+    font-family: gotham-book;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
 
-.innerParagMobile {
-  width: 352px;
-  height: 95px;
-  color: var(--White, #fff);
-  font-family: gotham-book;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
+  .innerParagMobile > span {
+    font-family: gotham-medium;
+    font-weight: 500;
+  }
 
-.innerParagMobile > span {
-  font-family: gotham-medium;
-  font-weight: 500;
-}
+  .buttonTextMobile {
+    margin: 0 auto;
+    display: flex;
+    width: 210px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    background: #fff;
+  }
 
-.buttonTextMobile {
-  margin: 0 auto;
-  display: flex;
-  width: 210px;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #fff;
-  background: #fff;
-}
+  .buttonText1Mobile {
+    color: #0a0a0a;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: gotham-medium;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+  }
 
-.buttonText1Mobile {
-  color: #0a0a0a;
-  text-align: center;
-  font-feature-settings: 'clig' off, 'liga' off;
-  font-family: gotham-medium;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 38px;
-}
+  .leftMainMobile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+  }
 
-.leftMainMobile {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 5;
-}
+  .leftImgInfoMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.leftImgInfoMobile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.leftImgMobile {
-  width: 150px;
-  margin-top: -150px;
-  margin-bottom: 100px;
-  transition: all 2s ease;
-}
+  .leftImgMobile {
+    width: 150px;
+    margin-top: -150px;
+    margin-bottom: 100px;
+    transition: all 2s ease;
+  }
 }

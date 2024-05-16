@@ -15,14 +15,14 @@ const HighlightedSection = ({ body }) => {
           <div className={styles.icons_wrapper}>
             <img
               role="button"
-              src="/images/share_grey.svg"
+              src="/images/articleImgs/icons/share_grey.svg"
               className={styles.icons}
               alt=""
               tabindex="0"
             />
             <img
               role="button"
-              src="/images/print.svg"
+              src="/images/articleImgs/icons/print.svg"
               className={styles.icons}
               alt=""
               onClick={() => window.print()}

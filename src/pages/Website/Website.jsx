@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from './Website.module.css';
-import { Link } from 'react-router-dom';
 import Booking from '../../pages/Booking/Booking.jsx';
 import Button from '../../components/Button/Button.jsx';
 
@@ -53,8 +52,8 @@ const Website = () => {
           </div>
           <div className={styles.firstRight}>
             <img
-              src='./images/website_sec1.png'
-              alt='A monitor and a laptop screen'
+              src="/images/backgroundImgs/website_sec1.png"
+              alt="A monitor and a laptop screen"
             />
           </div>
         </div>
@@ -67,8 +66,8 @@ const Website = () => {
           <div className={styles.firstMobileTopImg}>
             <img
               className={styles.firstMobileImg}
-              src='./images/website_sec1.png'
-              alt='A monitor and a laptop screen'
+              src="/images/backgroundImgs/website_sec1.png"
+              alt="A monitor and a laptop screen"
             />
           </div>
           <div className={styles.firstMobileBottomContent}>
@@ -125,14 +124,14 @@ const Website = () => {
           </p>
         </div>
         <div className={styles.imageSec2Bow}>
-          <img src='./images/website_sec2_bow.svg' alt='' />
+          <img src="/images/websitePage/website_sec2_bow.svg" alt="" />
         </div>
         <div className={styles.secondWebsiteContainerBox2}>
           <div className={styles.secondWebsiteContainerBox2Content}>
             <img
               className={styles.imageSec2}
-              src='./images/website_sec2_icon1.svg'
-              alt=''
+              src="/images/websitePage/website_sec2_icon1.svg"
+              alt=""
             />
             <p className={styles.textImgSec2}>
               Smatched offers a solution that empowers users to access your
@@ -142,8 +141,8 @@ const Website = () => {
           <div className={styles.secondWebsiteContainerBox2Content}>
             <img
               className={styles.imageSec2}
-              src='./images/website_sec2_icon2.svg'
-              alt=''
+              src="/images/websitePage/website_sec2_icon2.svg"
+              alt=""
             />
             <p className={styles.textImgSec2}>
               Users receive rewards, vouchers, tokens and exclusive access to
@@ -185,7 +184,7 @@ const Website = () => {
         <div className={styles.thirdLeft}>
           <div className={styles.thirdLeftBgTop}></div>
           <div className={styles.thirdLeftBgBottom}></div>
-          <img src='./images/website_sec3.png' alt='A monitor' />
+          <img src="/images/websitePage/website_sec3.png" alt="A monitor" />
         </div>
         <div className={styles.thirdRight}>
           <h3 className={styles.titleSec3}>
@@ -209,7 +208,7 @@ const Website = () => {
         <div className={styles.thirdLeftMobile}>
           <div className={styles.thirdLeftBgTopMobile}></div>
           <div className={styles.thirdLeftBgBottomMobile}></div>
-          <img src='./images/website_sec3.png' alt='A monitor' />
+          <img src="/images/websitePage/website_sec3.png" alt="A monitor" />
         </div>
         <div className={styles.thirdRightMobile}>
           <h3 className={styles.titleSec3Mobile}>
@@ -245,7 +244,7 @@ const Website = () => {
               way past your paywalls by answering surveys or testing apps on our
               customized offerwall.
             </p>
-            <Button color='gold' onClick={toggleBookingForm} />
+            <Button color="gold" onClick={toggleBookingForm} />
             {showBookingForm && (
               <div className={styles.bookingFormPopup}>
                 <div className={styles.bookingFormContent}>
@@ -262,8 +261,8 @@ const Website = () => {
           </div>
           <div className={styles.fourthRight}>
             <img
-              src='./images/website_sec4.png'
-              alt='A graph with an arrow to the top '
+              src="/images/websitePage/website_sec4.png"
+              alt="A graph with an arrow to the top "
             />
           </div>
         </div>
@@ -274,8 +273,8 @@ const Website = () => {
       <div className={styles.mobileFourthWebsiteContainer}>
         <div className={styles.fourthRightMobile}>
           <img
-            src='./images/website_sec4.png'
-            alt='A graph with an arrow to the top '
+            src="/images/websitePage/website_sec4.png"
+            alt="A graph with an arrow to the top "
           />
         </div>
         <div className={styles.fourthLeftMobile}>
@@ -292,7 +291,7 @@ const Website = () => {
             way past your paywalls by answering surveys or testing apps on our
             customized offerwall.
           </p>
-          <Button color='gold' onClick={toggleBookingForm} />
+          <Button color="gold" onClick={toggleBookingForm} />
           {showBookingForm && (
             <div className={styles.bookingFormPopup}>
               <div className={styles.bookingFormContent}>
