@@ -124,7 +124,7 @@ const Home = () => {
               <div className={styles.bottomHero}>
                 <h1 className={styles.bottomHero1}>+50%</h1>
                 <h2>
-                  Sales increase <br /> hrough existing users
+                  Sales increase <br /> through existing users
                 </h2>
                 <h1 className={styles.bottomHero2}>1000+</h1>
                 <h2>
