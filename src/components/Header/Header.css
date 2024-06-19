@@ -1,6 +1,6 @@
 .header {
   position: sticky;
-  height: 100px;
+  height: 70px;
   width: 100%;
   top: 0;
   z-index: 55;
@@ -47,7 +47,7 @@
 }
 
 .headerBox {
-  height: 100px;
+  height: 70px;
   max-width: 1530px;
   margin: auto;
   display: flex;

@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import ReactGA from 'react-ga';
 import Hero from '../../components/Hero/Hero.jsx';
+import Second from '../../components/Second/Second.jsx';
 
 const Home = () => {
   // CONTACT FORM POPUP
@@ -76,6 +77,7 @@ const Home = () => {
 
       <div className={styles.app}>
         <Hero/>
+        <Second/>
       </div>
 
       {/* First Home mobile responsiveness */}
