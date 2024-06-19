@@ -1,9 +1,0 @@
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.bodyWrapper {
-  white-space: pre-line;
-}

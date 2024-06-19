@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import styles from './Footer.module.css';
 import { useHandleSubscriptionNewsletter } from '../../common/useHandleSubscriptionNewsletter';
@@ -75,7 +76,7 @@ const Footer = ({ showFormFooter }) => {
             </div>
             <div className={styles.company}>
               <a className={styles.spanTitleBottom}>Company </a>
-              <a href="/aboutus" className={styles.spanTextBottom}>
+              <a  className={styles.spanTextBottom}>
                 Our mission{' '}
               </a>
             </div>
@@ -87,13 +88,13 @@ const Footer = ({ showFormFooter }) => {
             </div>
             <div className={styles.legal}>
               <a className={styles.spanTitleBottom}>Legal </a>
-              <a href="/imprint" className={styles.spanTextBottom}>
+              <a  className={styles.spanTextBottom}>
                 Imprint{' '}
               </a>
-              <a href="/dataprivacy" className={styles.spanTextBottom}>
+              <a  className={styles.spanTextBottom}>
                 Data Security{' '}
               </a>
-              <a href="/toc" className={styles.spanTextBottom}>
+              <a  className={styles.spanTextBottom}>
                 ToC{' '}
               </a>
               {/* <a className={styles.spanTextBottom}>Cookies</a> */}
@@ -152,22 +153,22 @@ const Footer = ({ showFormFooter }) => {
             </div>
             <div className={styles.companyMobile}>
               <a className={styles.spanTitleBottomMobile}>Company </a>
-              <a href="/aboutus" className={styles.spanTextBottomMobile}>
+              <a  className={styles.spanTextBottomMobile}>
                 Our mission{' '}
               </a>
             </div>
             <div className={styles.legalMobile}>
               <a className={styles.spanTitleBottomMobile}>Legal </a>
-              <a href="/imprint" className={styles.spanTextBottomMobile}>
+              <a  className={styles.spanTextBottomMobile}>
                 Imprint{' '}
               </a>
-              <a href="/dataprivacy" className={styles.spanTextBottomMobile}>
+              <a  className={styles.spanTextBottomMobile}>
                 Data Security{' '}
               </a>
-              <a href="/toc" className={styles.spanTextBottomMobile}>
+              <a  className={styles.spanTextBottomMobile}>
                 ToC{' '}
               </a>
-              {/* <a href='/imprint' className={styles.spanTextBottomMobile}>Cookies</a> */}
+
             </div>
             <div className={styles.servicesMobile}>
               <a className={styles.spanTitleBottomMobile}>Services </a>

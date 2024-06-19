@@ -1,9 +1,7 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useRef, useState } from 'react';
 import './Header.css';
 import { AiOutlineUp, AiOutlineDown } from 'react-icons/ai';
-import { lists } from '../../businessList.js';
-import { Link } from 'react-router-dom';
-import { AppRoutes } from '../../common/routes/AppRoutes';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Header = () => {
@@ -179,7 +177,7 @@ const Header = () => {
 
               {/* Easy fix to bottom of item being hard to see */}
               <li className="nav-item">
-                <a href="" onClick={closeMenu}></a>
+                <a onClick={closeMenu}> </a>
               </li>
             </ul>
           </div>

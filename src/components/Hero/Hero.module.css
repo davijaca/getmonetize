@@ -1,0 +1,9 @@
+.topFirst {
+  background: url(/public/images/backgroundImgs/heroBackground.svg) no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 1024px;
+  display: flex;
+  justify-content: center;
+}
+
