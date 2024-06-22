@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './Home.module.css';
 import { Helmet } from 'react-helmet';
-import { helmetJsonLdProp } from 'react-schemaorg';
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-import ReactGA from 'react-ga';
+// import { helmetJsonLdProp } from 'react-schemaorg';
+// import { useEffect } from 'react';
+// import { useLocation } from 'react-router-dom';
+// import ReactGA from 'react-ga';
 import Hero from '../../components/Hero/Hero.jsx';
 import Second from '../../components/Second/Second.jsx';
 
 const Home = () => {
   // CONTACT FORM POPUP
 
-  {
+  
     /* SEO SECTION - DO NOT TOUCH */
-  }
+  
 
   const articleStructuredData = {
     '@context': 'https://schema.org',
@@ -29,9 +29,9 @@ const Home = () => {
     },
   };
 
-  {
+  
     /* END OF SEO SECTION */
-  }
+  
 
   return (
     <div className={styles.homeContainer}>
@@ -77,6 +77,7 @@ const Home = () => {
 
       <div className={styles.app}>
         <Hero
+          backgroundImage="../../images/backgroundImgs/Background1.png"
           H1="Boost Monetization."
           H2="Retain Users."
           H3="MONETIZE"
@@ -86,7 +87,7 @@ const Home = () => {
           width="647px" 
           height="605px"
           showBot={true}
-          />
+        />
         <Second/>
       </div>
 

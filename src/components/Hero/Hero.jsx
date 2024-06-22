@@ -3,12 +3,16 @@ import styles from './Hero.module.css';
 import Button from '../Button/Button.jsx';
 
 
-const Hero = ({ src, alt, H1, H2, H3, H4, width = '100%', height = 'auto', showBot = true}) => {
-
-
+const Hero = ({backgroundImage, src, alt, H1, H2, H3, H4, width = '100%', height = 'auto', showBot = true}) => {
+  
+  const bgStyle = {
+    backgroundImage: backgroundImage ? `url(${backgroundImage})` : 'none',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+};
   
   return (
-    <div className={styles.heroContainer}>
+    <div className={styles.heroContainer} style={bgStyle}>
       <div className={styles.topFirst}>
         
         <div className={styles.heroRight}>
