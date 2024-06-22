@@ -76,7 +76,17 @@ const Home = () => {
       {/* First Home */}
 
       <div className={styles.app}>
-        <Hero/>
+        <Hero
+          H1="Boost Monetization."
+          H2="Retain Users."
+          H3="MONETIZE"
+          H4="Metered paywalls have an average conversion rate of just 0.36%. Smatched builds customized ‘earn to play’ offerwalls that boost monetization on your mobile app or website and helps you retain users by offering more choice."
+          src="../../images/hero/heroImage.png" 
+          alt="Description for image 1" 
+          width="647px" 
+          height="605px"
+          showBot={true}
+          />
         <Second/>
       </div>
 

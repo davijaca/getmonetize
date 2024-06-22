@@ -44,7 +44,7 @@ const Header = () => {
               <img src="/images/logo/logo.svg" alt="Logo" />
             </a>
             <nav className="topMenu">
-              {/* <a className='topMenuItem' href="/">PRODUCT</a> */}
+              <a className='topMenuItem' href="/">PRODUCT</a>
               {/*<a className={styles.topMenuItem}>How it Works</a>*/}
               <a className="topMenuItem" href="/">
                 OUR MISSION

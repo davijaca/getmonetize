@@ -73,7 +73,7 @@
   gap: 100px;
   align-items: center;
   justify-content: right;
-  margin-left: 700px;
+  margin-left: 350px;
 }
 
 .topMenuItem {
@@ -150,9 +150,11 @@
 .contact {
   background: transparent;
   color: white;
-  border: 1px solid #ffffff;
-  width: 191px;
-  height: 45px;
+  border-radius: 60px;
+  border: 1px solid #FFF;
+  width: 133px;
+  height: 38px;
+  padding: 5px 25px;
 }
 
 .mobileHamburgerMenu {
@@ -162,6 +164,7 @@
 .contact:hover {
   cursor: pointer;
   border-radius: 0px;
+  border-radius: 60px;
   background: white;
 }
 

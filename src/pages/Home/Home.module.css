@@ -1,13 +1,3 @@
-@font-face {
-  font-family: gotham-medium;
-  src: url('/public/fonts/Gotham/Gotham-Medium.otf');
-}
-
-@font-face {
-  font-family: gotham-book;
-  src: url('/public/fonts/Gotham/Gotham-Book.otf');
-}
-
 .home,
 .home * {
   box-sizing: border-box;
@@ -19,16 +9,6 @@
   box-sizing: inherit;
 }
 
-h1 {
-  margin: 0;
-}
-
-h2 {
-  margin: 0;
-}
-
-
-
 .homeContainer {
   width: 100vw;
   max-width: 1920px;
@@ -39,3 +19,14 @@ h2 {
   justify-content: center;
 }
 
+h2 {
+  padding-bottom: 40px;
+}
+
+h3 {
+  padding-bottom: 10px;
+}
+
+h4 {
+  padding-bottom: 40px;
+}
