@@ -7,7 +7,7 @@
   background: transparent;
 }
 .header-bg {
-  background: url(../../../public/images/backgroundImgs/Header1.png) center
+  background: center
     center no-repeat;
   background-size: cover;
 }
