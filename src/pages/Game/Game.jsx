@@ -77,16 +77,17 @@ const Game = () => {
 
       <div className={styles.app}>
         <Hero
-          backgroundImage="../../images/backgroundImgs/Background1.png"
-          H1="Boost Monetization."
-          H2="Retain Users."
-          H3="MONETIZE"
-          H4="Metered paywalls have an average conversion rate of just 0.36%. Smatched builds customized ‘earn to play’ offerwalls that boost monetization on your mobile app or website and helps you retain users by offering more choice."
-          src="../../images/hero/heroImage.png" 
+          backgroundImage="../../images/backgroundImgs/Background2.png"
+          H1="<b>Enhance</b> your game"
+          H2="monetization model."
+          H3="GAME INDUSTRY"
+          H4="Give players more choice when it comes to monetization. While gaming payment gateways are a necessary evil for many gaming companies, many gamers are not <br />willing to pay for games upfront."
+          src="../../images/hero/heroGame.png" 
           alt="Description for image 1" 
-          width="647px" 
-          height="605px"
-          showBot={true}
+          width="auto" 
+          height="654px"
+          showBot={false}
+          imgPaddingTop = '45px'
         />
         <Second/>
       </div>

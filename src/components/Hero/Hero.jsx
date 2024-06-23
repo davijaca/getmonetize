@@ -3,7 +3,7 @@ import styles from './Hero.module.css';
 import Button from '../Button/Button.jsx';
 
 
-const Hero = ({backgroundImage, src, alt, H1, H2, H3, H4, width = '100%', height = 'auto', showBot = true}) => {
+const Hero = ({backgroundImage, src, alt, H1, H2, H3, H4, width = '100%', height = 'auto', showBot = true, imgPaddingTop = '0'}) => {
   
   const bgStyle = {
     backgroundImage: backgroundImage ? `url(${backgroundImage})` : 'none',
@@ -17,17 +17,16 @@ const Hero = ({backgroundImage, src, alt, H1, H2, H3, H4, width = '100%', height
         
         <div className={styles.heroRight}>
           <div className={styles.heroH3}>
-            <h3>{H3}
-            </h3>
+            <h3 dangerouslySetInnerHTML={{ __html: H3 }}></h3>
           </div>
           <div className={styles.heroH1}>
-            <h1>{H1}</h1>
+            <h1 dangerouslySetInnerHTML={{ __html: H1 }}></h1>
           </div>
           <div className={styles.heroH2}>
-            <h2>{H2}</h2>
+            <h2 dangerouslySetInnerHTML={{ __html: H2 }}></h2>
           </div>
           <div className={styles.heroH4}>
-            <h4>{H4}</h4>
+            <h4 dangerouslySetInnerHTML={{ __html: H4 }}></h4>
           </div>
           <Button/>
 
@@ -48,7 +47,7 @@ const Hero = ({backgroundImage, src, alt, H1, H2, H3, H4, width = '100%', height
         </div>
         
         <div className={styles.heroLeft}>
-          <img src={src} alt={alt} style={{ width, height }} />
+          <img src={src} alt={alt} style={{ width, height, paddingTop: imgPaddingTop }} />
         </div>
 
       </div>
