@@ -38,6 +38,7 @@
     "typescript": "^5.5.2"
   },
   "scripts": {
+    "preinstall": "npx only-allow pnpm", 
     "start": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview",
