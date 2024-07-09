@@ -1,11 +1,15 @@
 import React from 'react';
+import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { hydrate, render } from "react-dom";
- 
-const rootElement = document.getElementById("root");
-if (rootElement.hasChildNodes()) {
-  hydrate(<App />, rootElement);
+
+//https://react.dev/blog/2022/03/08/react-18-upgrade-guide#updates-to-client-rendering-apis
+
+const domNode = document.getElementById('root');
+const root = createRoot(domNode);
+
+if (domNode.hasChildNodes()) {
+  root.hydrate(<App />);
 } else {
-  render(<App />, rootElement);
+  root.render(<App />);
 }
