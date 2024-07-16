@@ -16,9 +16,70 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family: gotham-medium;
+  src: url('/fonts/Gotham/Gotham-Medium.otf');
+}
+
+@font-face {
+  font-family: gotham-book;
+  src: url('/fonts/Gotham/Gotham-Book.otf');
+}
+
+@font-face {
+  font-family: gotham-light;
+  src: url('/fonts/Gotham/Gotham-Light.otf');
+}
+
+h1 {
+  margin: 0;
+  color: #FFF;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-book;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 108.5%; /* 65.1px */
+}
+
+h2 {
+  color: #FFF;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-book;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 65px */
+}
+
+h3 {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.70);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-book;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 27.2px */
+  padding-bottom: 10px;
+}
+
+h4 {
+  margin: 0;
+  color: #FFF;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: gotham-light;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 20.8px */
+  padding-bottom: 40px;
 }

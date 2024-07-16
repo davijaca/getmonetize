@@ -1,66 +1,5 @@
-@font-face {
-  font-family: gotham-medium;
-  src: url('/fonts/Gotham/Gotham-Medium.otf');
-}
-
-@font-face {
-  font-family: gotham-book;
-  src: url('/fonts/Gotham/Gotham-Book.otf');
-}
-
-@font-face {
-  font-family: gotham-light;
-  src: url('/fonts/Gotham/Gotham-Light.otf');
-}
-
-h1 {
-  margin: 0;
-  color: #FFF;
-  font-feature-settings: 'clig' off, 'liga' off;
-  font-family: gotham-book;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 108.5%; /* 65.1px */
-}
-
-h2 {
-  margin: 0;
-  font-family: gotham-book;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 108.5%; /* 65.1px */
-  color: var(--White, #fff);
-  padding-bottom: 40px;
-}
-
-h3 {
-  margin: 0;
-  color: rgba(255, 255, 255, 0.70);
-  font-feature-settings: 'clig' off, 'liga' off;
-  font-family: gotham-book;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 170%; /* 27.2px */
-  padding-bottom: 10px;
-}
-
-h4 {
-  margin: 0;
-  color: #FFF;
-  font-feature-settings: 'clig' off, 'liga' off;
-  font-family: gotham-light;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%; /* 20.8px */
-  padding-bottom: 40px;
-}
 
 .heroContainer {
-
   background-size: cover;
   width: 100%;
   height: 944px;
@@ -152,6 +91,7 @@ h4 {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -2.25px;
+  margin-top: 0px;
 }
 
 .bottomHero h3 {
@@ -178,4 +118,5 @@ h4 {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -2.25px;
+  margin-top: 0px;
 }

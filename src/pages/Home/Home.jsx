@@ -76,8 +76,8 @@ const Home = () => {
         <div className={styles.app}>
           <Hero
             backgroundImage="../../images/backgroundImgs/Background1.png"
-            H1="<b>Boost Monetization.</b>"
-            H2="Retain Users."
+            H1="<b>Boost Monetization.</b> Retain Users."
+            // H2="Retain Users."
             H3="MONETIZE"
             H4="Metered paywalls have an average conversion rate of just 0.36%. Smatched builds customized ‘earn to play’ offerwalls that boost monetization on your mobile app or website and helps you retain users by offering more choice."
             src="../../images/hero/heroHome.png"
@@ -86,7 +86,22 @@ const Home = () => {
             height="605px"
             showBot={true}
           />
-          <Second />
+          <Second
+          backgroundColor="#1E1E1E"
+          H2="Monetize provides an alternative Subscription Model"
+          H3="Paywalls are a great revenue option for many businesses but unfortunately, making users pay means your revenue potential is capped. Businesses that offer more than one monetization model retain <b>50% more users</b>.</br></br>
+          What if your users could earn their way past a paywall without having to open their wallet?"
+          B1="Implement Optimized Offerwall"
+          B2="Users earn rewards"
+          B3="Users can use rewards as in-app</br>currency"
+          B4="You increase revenue & retention"
+          width='150px'
+          src1="../../images/second/secondHome1.svg"
+          src2="../../images/second/secondHome2.svg"
+          src3="../../images/second/secondHome3.svg"
+          src4="../../images/second/secondHome4.svg"
+          
+          />
         </div>
 
         {/* First Home mobile responsiveness */}

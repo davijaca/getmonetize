@@ -1,5 +1,7 @@
+
+
 .secondContainer {
-  background: #101010;
+  /* background: #101010; */
   background-size: cover;
   width: 100%;
   height: 965px;
@@ -14,7 +16,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 1728px;
-  height: 804px;
+  height: 850px;
   justify-content: center;
   align-items: center;
   border-style: solid;
@@ -47,6 +49,7 @@
 
 .secondBottom {
   display: flex;
+  flex-direction: row;
   width: 1510px;
   height: 50%;
   justify-content: center;
@@ -54,3 +57,41 @@
   outline:1px solid blue;
 }
 
+.secondH2 {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.secondH3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.secondBottomFirst{
+  display: flex;
+  width: 25%;
+  justify-content: center;
+  text-align: center;
+}
+
+.secondBottomSecond{
+  display: flex;
+  width: 25%;
+  justify-content: center;
+  text-align: center;
+}
+
+.secondBottomThird{
+  display: flex;
+  width: 25%;
+  justify-content: center;
+  text-align: center;
+}
+
+.secondBottomFourth{
+  display: flex;
+  width: 25%;
+  justify-content: center;
+  text-align: center;
+}

@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet';
 // import { useEffect } from 'react';
 // import { useLocation } from 'react-router-dom';
 // import ReactGA from 'react-ga';
+import Container from '../../components/Container/Container.jsx';
 import Hero from '../../components/Hero/Hero.jsx';
 import Second from '../../components/Second/Second.jsx';
 
@@ -35,6 +36,7 @@ const Game = () => {
 
   return (
     <div className={styles.homeContainer}>
+      <Container>
       {/* SEO SECTION - DO NOT TOUCH */}
       <Helmet>
         <meta charSet="utf-8" />
@@ -89,7 +91,8 @@ const Game = () => {
           showBot={false}
           imgPaddingTop = '45px'
         />
-        <Second/>
+        <Second
+        backgroundColor="white"/>
       </div>
 
       {/* First Home mobile responsiveness */}
@@ -102,7 +105,7 @@ const Game = () => {
       </div>
 
 
-
+      </Container>
     </div>
   );
 };
