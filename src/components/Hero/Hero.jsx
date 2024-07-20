@@ -40,8 +40,8 @@ const Hero = ({backgroundImage, src, alt, H1, H2, H3, H4, width = '100%', height
                 <h2 className={styles.bottomHero2}>1000+</h2>
                 <h3>
                   New <br /> subscriptions
-                </h3>
-              </div>}
+              </h3>
+            </div>}
           </div>
           
         </div>

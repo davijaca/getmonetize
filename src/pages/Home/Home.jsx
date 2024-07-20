@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './Home.module.css';
 import { Helmet } from 'react-helmet';
 // import { helmetJsonLdProp } from 'react-schemaorg';
 // import { useEffect } from 'react';
@@ -31,7 +30,7 @@ const Home = () => {
   /* END OF SEO SECTION */
 
   return (
-    <div className={styles.homeContainer}>
+    <>
       <Container>
         {/* SEO SECTION - DO NOT TOUCH */}
         <Helmet>
@@ -73,7 +72,7 @@ const Home = () => {
 
         {/* First Home */}
 
-        <div className={styles.app}>
+        <div className="app">
           <Hero
             backgroundImage="../../images/backgroundImgs/Background1.png"
             H1="<b>Boost Monetization.</b> Retain Users."
@@ -103,16 +102,8 @@ const Home = () => {
           
           />
         </div>
-
-        {/* First Home mobile responsiveness */}
-
-        <div className={styles.mobileFirstHomeContainer}>
-          <div className={styles.topFirst}>
-            <div className={styles.mobileTopFirstBg}></div>
-          </div>
-        </div>
       </Container>
-    </div>
+    </>
   );
 };
 

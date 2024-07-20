@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './Game.module.css';
 import { Helmet } from 'react-helmet';
 // import { helmetJsonLdProp } from 'react-schemaorg';
 // import { useEffect } from 'react';
@@ -35,7 +34,7 @@ const Game = () => {
   
 
   return (
-    <div className={styles.homeContainer}>
+    <>
       <Container>
       {/* SEO SECTION - DO NOT TOUCH */}
       <Helmet>
@@ -77,7 +76,7 @@ const Game = () => {
 
       {/* First Home */}
 
-      <div className={styles.app}>
+      <div className="app">
         <Hero
           backgroundImage="../../images/backgroundImgs/Background2.png"
           H1="<b>Enhance</b> your game"
@@ -95,18 +94,10 @@ const Game = () => {
         backgroundColor="white"/>
       </div>
 
-      {/* First Home mobile responsiveness */}
-
-      <div className={styles.mobileFirstHomeContainer}>
-        <div className={styles.topFirst}>
-          <div className={styles.mobileTopFirstBg}>
-          </div>
-        </div>
-      </div>
 
 
       </Container>
-    </div>
+    </>
   );
 };
 
